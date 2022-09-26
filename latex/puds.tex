@@ -1,0 +1,2304 @@
+
+\newcommand{\cabecalho}{
+\begin{center}
+{	\vspace{-5em}
+	\includegraphics[width=0.36\textwidth]{logo_taua_pb.png}
+
+ }
+        \ABNTEXchapterfont
+        \footnotesize
+       
+       % \includegraphics[width=.15\linewidth]{ifce_peb.png}\\
+        DEPARTAMENTO DE ENSINO\\
+        COORDENAÇÃO DO CURSO: TÉCNICO  EM INFORMÁTICA PARA INTERNET\\
+        PROGRAMA DE UNIDADE DIDÁTICA -- PUD
+\end{center}
+}
+
+
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\small
+
+\renewcommand{\arraystretch}{1.3}
+
+\newcommand{\pudinfo}[8]{
+	\newpage
+	%\section{#2}
+    \noindent\begin{tabularx}{\linewidth}{ | X X X X X X | } 
+
+    \multicolumn{6}{p{\textwidth-2\tabcolsep}}{\cabecalho} \\
+
+	
+    \multicolumn{1}{p{.16\textwidth-2\tabcolsep}}{\cellcolor{gray!40}\bfseries\large #1} & \multicolumn{5}{p{.84\textwidth-2\tabcolsep}}{\cellcolor{gray!30}\bfseries\uppercase{#2}} \\ 
+    
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Carga Horária}  &
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Teórica} & 
+    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Prática}   \\
+    
+
+    
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{ \MULTIPLY{20}{#6}{\solution} \solution } &
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#4} & 
+    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#5} \\
+    
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Número de Créditos}  &
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Código Pré-Requisito} & 
+    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Semestre}   \\
+    
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#6} &
+    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\small #3} & 
+    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#7} \\ 
+    
+    
+	\end{tabularx}
+
+
+
+	
+
+}
+
+\newenvironment{pud}{
+	\normalsize
+	\SingleSpacing
+	\setlength{\parindent}{0em}
+	
+}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ | X X | }
+		
+	
+	\multicolumn{2}{p{\textwidth-2\tabcolsep}}{
+		\cellcolor{gray!20} 
+		\begin{tabular}{p{.45\linewidth} p{.45\linewidth}}
+			\multicolumn{1}{c }{\newline\,Coordenador do Curso} & \multicolumn{1}{c}{\newline\,Coordenadoria Técnico--Pedagógica}  \\
+			\\
+			\\
+			\hrulefill & \hrulefill
+		\end{tabular}
+    }
+    \end{tabularx}
+}
+
+\newenvironment{ementa}{
+
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{EMENTA}
+	\end{tabularx}\\[5pt]	
+	\noindent}{\newline}
+
+\newenvironment{objetivos}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{OBJETIVOS}
+	\end{tabularx}\\[5pt]	
+	\noindent}{\newline}
+
+\newenvironment{programa}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{PROGRAMA}
+	\end{tabularx}	
+	\noindent}{\newline}
+
+\newenvironment{metodologia}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{METODOLOGIA}
+	\end{tabularx}\\[5pt]	
+	\noindent}{\newline}
+
+\newenvironment{avaliacao}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{AVALIAÇÃO}
+	\end{tabularx}\\[5pt]	
+	\noindent}{\newline}
+
+\newenvironment{bibbasica}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{BIBLIOGRAFIA BÁSICA}
+	\end{tabularx}
+	\vspace{-1em}
+	\begin{flushleft}	
+	\begin{itemize}[label={},leftmargin=0.1em, itemsep=0.75em]}{
+	\end{itemize}
+	\end{flushleft}
+}
+
+\newenvironment{bibcomplementar}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\normalsize\textbf{BIBLIOGRAFIA COMPLEMENTAR}
+	\end{tabularx}
+	\vspace{-1em}
+	\begin{flushleft}	
+	\begin{itemize}[label={},leftmargin=0.1em, itemsep=0.75em]}{
+	\end{itemize}
+	\end{flushleft}
+}
+	
+	\begin{pud}
+	
+	\pudinfo{TSII.101}{Lógica de Programação}{---}{40}{40}{4}{1$^\circ$ Semestre}
+	
+	\ementa
+	Linguagens de baixo e alto nível, interpretadores e compiladores, variáveis e tipos de dados, operadores, expressões, estruturas de controle de fluxo, processamento de strings, funções e métodos, vetores e matrizes, arquivos e recursão.
+	
+	\objetivos	
+	Desenvolver a capacidade de criar programas para a solução de problemas, usando os fundamentos da programação estruturada.
+	
+	\begin{itemize}
+		\item  Conhecer os conceitos de algoritmos, linguagens de programação de baixo nível e alto nível, compilação e interpretação.
+		Identificar os tipos de dados elementares e os operadores relacionados.
+		
+		\item Conhecer variáveis,  expressões, precedência de operadores e conversões de tipos.
+		
+		\item Aprender comandos de entrada e saída de dados.
+		
+		\item Conhecer as principais estruturas de controle de fluxo de execução: estruturas de decisão tipo if-else, estruturas de repetição tipo for e while, comandos break e continue.
+		
+		\item Manipular dados armazenados em vetores e matrizes.
+		
+		\item Elaborar funções e métodos usando conceitos de modularização, passagem de parâmetros, variáveis locais e globais e recursão.
+		
+		\item Utilizar arquivos para armazenar e recuperar dados.
+
+		\item Criar funções que são definidas em termos de si mesmas usando recursão.
+	\end{itemize}
+	
+	
+	
+	\programa	
+	\begin{description}[itemsep=0em]
+	   \item[UNIDADE I:] Introdução;
+	    \item[UNIDADE II:] Tipos de dados;
+	    \item[UNIDADE III:]  Variáveis e expressões;
+	    \item[UNIDADE IV:]  Entrada e saída;
+	    \item[UNIDADE V:]  Controle de fluxo de execução (condicionais e estruturas de repetição);
+	    \item[UNIDADE VI:]  \textit{Strings} (cadeias de caracteres);
+	    \item[UNIDADE VII:]  Vetores e matrizes;
+	   \item[UNIDADE VIII:] Funções (métodos) e Arquivos.
+	\end{description}
+		
+		% 
+	\metodologia            	
+       Aulas expositivas e interativas com uso de recursos audiovisuais;
+       Atividades em grupo e prática de codificação de algoritmos em linguagem computacional.
+       Atividades práticas no laboratório de codificação de programas.
+	
+	
+	\avaliacao	
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+		\item ALVES, William Pereira. \textbf{Lógica de programação de computadores}: ensino didático. São Paulo: Érica, 2010. 176 p. Bibliografia. ISBN 9788536502892. 
+		\item FORBELLONE, André Luiz Villar. \textbf{Lógica de programação}: a construção de algoritmos e estruturas de dados. 3.ed. São Paulo: Pearson Prentice Hall, 2005.  ISBN 9788576050247. (BVU)
+	 	\item XAVIER, Gley Fabiano Cardoso. \textbf{Lógica de programação}. 13. ed. rev. e atual São Paulo: Senac, 2014. 318 p. (Nova série informática). ISBN 9788539604579.
+	 	 
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+		\item ASCENCIO, Ana Fernanda Gomes. \textbf{Fundamentos da programação de computadores}: algoritmos, Pascal, C/C++ e Java. 2. ed. São Paulo: Pearson, 2010. 434 p. Inclui bibliografia. ISBN 9788576051480.
+ (BVU)
+		\item DEITEL, Paul; DEITEL, Harvey. \textbf{Java}: como programar. Tradução de Edson Furmankiewicz. Revisão técnica de Fábio Luis Picelli Lucchini. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 1144 p. ISBN 9788576055631. (BVU)
+	    	
+
+    	\item FARREL, Joyce. \textbf{Lógica e design de programação}. Tradução de André Schifnagel Avrichir. Revisão técnica de Robert Joseph Didio. 5. ed. São Paulo: Cengage Learning, 2010. 416 p. Inclui bibliografia. ISBN 9788522107575.
+    	\item GUEDES, Sérgio (Org.). \textbf{Lógica de programação algorítmica}. São Paulo: Pearson Education do Brasil, 2014.  ISBN 9788543005546. (BVU)
+    	\item PEREIRA, Silvio do Lago. \textbf{Algoritmos e lógica de programação em C}: uma abordagem didática. São Paulo: Érica, 2010. 190 p. Bibliográfia. ISBN 9788536503271.
+		
+	\end{bibcomplementar}
+\end{pud}
+
+
+
+%%%%%
+
+\begin{pud}
+
+	\pudinfo{TSII.102}{Produção de Texto Técnico}{---}{20}{20}{2}{1$^\circ$ Semestre}
+	
+	\ementa	
+	Textualidade e discurso; Cena enunciativa; Intencionalidade discursiva; Sequências textuais; coesão e coerência; Aspectos descritivos e normativos da Língua Portuguesa; Tipologias e gêneros textuais.
+	
+	\objetivos	
+	Produzir textos de forma coerente, analisando, interpretando e aplicando os recursos de linguagens, relacionando textos com seus contextos, mediante a natureza, função, organização, estruturas de acordo com as condições de produção/recepção.
+	
+	\begin{itemize}
+	  	\item Reconhecer a importância da leitura como ato libertário e consequentemente necessário ao desenvolvimento humano;
+		\item Reconhecer a importância das linguagens verbal e não verbal dos sistemas de comunicação e informação para resolução de problemas sociais;
+		\item Identificar os elementos que concorrem para a progressão temática e para a organização e estruturação de textos de diferentes gêneros e tipos;
+		\item Ampliar o vocabulário do educando, bem como sua capacidade de pensar de forma clara e objetiva, transferindo esses pensamentos para o texto;
+		\item Estimular a expressão oral, a leitura pública dos textos produzidos pelos educandos e o debate de ideias;
+		\item Identificar, compreender e utilizar as convenções da língua de acordo com os gêneros, reconhecendo-as como recursos que favorecem a relação dialógica entre leitor/autor;
+		\item Ler diferentes tipos e gêneros textuais orais e escritos, considerando as condições discursivas de produção;
+		\item Produzir diferentes tipos e gêneros textuais orais e escritos, considerando as condições discursivas de produção;
+		\item Ler competentemente enunciados em função dos objetivos e das condições de produção.
+		\item Produzir competentemente enunciados em função dos objetivos e das condições de produção.
+	\end{itemize}
+	
+	
+	\programa
+		\begin{description}[itemsep=0em]
+	   	\item[UNIDADE I:] O texto dissertativo;
+	            \begin{enumerate}[itemsep=0em, topsep=0em]
+			    \item A linguagem da dissertação;
+			    \item Para atingir objetividade no texto; 
+			     \item Impessoalidade $\times$ imparcialidade;
+    		    \item Artifícios de coesão e coerência;
+		      %\item Artifícios de coesão e coerência;
+                    \begin{enumerate}[label*=\arabic*., itemsep=0em]
+                        \item Coesão referencial;
+                        \item Coesão sequencial;
+                        \item Coesão recorrencial.
+                    \end{enumerate}
+                \item Dissertação expositiva;
+                \item Dissertação argumentativa.
+
+
+			\end{enumerate}   
+	   
+	    \item[UNIDADE II:] As partes de um texto argumentativo: o parágrafo de introdução;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+                \item  Delimitação do tema e estabelecimento de teses;
+                \item Tipos de introdução.
+            \end{enumerate}
+            
+	    \item[UNIDADE III:]  As partes de um texto argumentativo: o desenvolvimento;
+  			\begin{enumerate}[itemsep=0em, topsep=0em]
+                \item A construção de tópicos frasais;
+                \item Argumentação;
+                \item  Argumentos por causalidade;
+                \item Argumentos por comparação;
+                \item Argumentos por exemplificação;
+                \item  Argumentos de autoridade;
+                \item A contra-argumentação;
+                \item A construção de repertório sociocultural.
+            \end{enumerate}
+	    \item[UNIDADE IV:]  As partes de um texto argumentativo: o parágrafo de conclusão;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+				\item O tópico frasal conclusivo;
+                \item As propostas de intervenção;
+                \item A escolha dos agentes de intervenção.
+            \end{enumerate}
+	    \item[UNIDADE V:]  A redação no Enem -- Competências de correção;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+                \item Competência 1 -- Demonstrar domínio da norma culta da língua escrita;
+                \item Competência 2 -- Compreender a proposta de redação e aplicar conceitos das várias áreas do conhecimento para desenvolver o tema, dentro dos limites estruturais do texto dissertativo-argumentativo;
+                \item Competência 3 -- Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista;
+                \item Competência 4 -- Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação;
+                \item Competência 5 -- Elaborar proposta de intervenção para o problema abordado, mostrando respeito aos direitos humanos e considerando a diversidade sociocultural.
+            \end{enumerate}
+	    \item[UNIDADE VI:] Análise de propostas de redação;
+	    \item[UNIDADE VII:]  Revisão gramatical instrumental.
+	\end{description}
+	
+	\metodologia	
+	Ler e produzir textos diversos, enfocando as sequências representativas dos gêneros estudados. Abordar as produções textuais nos Laboratórios de Redação. Realizar oficinas de Produção Textual de forma individual e /ou em grupo. Produção efetiva de textos.
+	
+	\avaliacao	
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+	
+		%\item ASSUMPÇÃO, Maria Elena O. Ortiz. \textbf{Para escrever bem.} 2.ed. Barueri SP: Manole, 2006.
+		\item ADAM, Jean Michel. \textbf{Textos}: tipos e protótipos. Tradução de Mônica Magalhães Cavalcante.  São Paulo: Contexto, 2019. 320 p. ISBN 9788552001416. (BVU)
+        \item SALDANHA, Luís Cláudio Dallier. \textbf{Fala, oralidade e práticas sociais}. Curitiba: Intersaberes, 2016.  ISBN 9788544303771. (BVU)
+        \item FARACO, Carlos Alberto. \textbf{Oficina de textos}. 11. ed. Petrópolis: Vozes, 2014. 327 p. ISBN 9788532628107.
+        %\item SAVIORI, Francisco Platão; FIORIN, José Luiz. \textbf{Lições de texto}: leitura e redação. 5.ed. São Paulo: Ática, 2006.
+
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+            \item BLIKSTEIN, Isidoro. \textbf{Técnicas de comunicação escrita}. 23. ed. São Paulo: Contexto, 2016. ISBN 9788572449373.  (BVU)
+            %\item CAMARGO, Thaís Nicolete de. \textbf{O uso da vírgula}. Barueri SP: Manoli, 2005.
+            \item COSTA, Iara Bemquerer. \textbf{A tessitura da escrita}. São Paulo: Contexto, 2013. 210 p. ISBN 9788572447829.  (BVU)
+            
+            \item ILHESCA, Daniela Duarte; SILVA, Mozara Rossetto da; SILVA, Débora Teresinha Mutter da. \textbf{Redação acadêmica}. Editora Intersaberes, 2013. Livro.  176 p. ISBN 9788582125359. (BVU)
+            
+            \item LOMBARDI, Roseli Ferreira (Org.). \textbf{Oficina de textos em português}.  São Paulo: Editora Pearson, 2017. 130 p. ISBN 9788543025872. (BVU)
+            %\item LAKATOS, Eva Maria; MARCONI, Marina de A. \textbf{Fundamentos de metodologia científica}. 7. ed. São Paulo: Atlas, 2010.
+            \item MOTTA-ROTH, Désirée; RABUSKE, Graciela H. \textbf{Produção textual na universidade}. São Paulo: Parábola Editorial, 2010. ISBN 9788579340253.
+            %\item PIGNATARI, Nínive. \textbf{Como escrever textos dissertativos}. São Paulo: Ática, 2010.
+	\end{bibcomplementar}
+
+\end{pud}
+
+
+%%%% SISTEMAS OPERACIONAIS
+
+
+\begin{pud}
+	\pudinfo{TSII.103}{Sistemas Operacionais}{---}{40}{40}{4}{1$^\circ$ Semestre}
+
+	\ementa
+	Introdução à Informática e a Sistemas Operacionais; Uso de processadores de texto; Uso de planilhas eletrônicas; Elaboração de apresentações de Slides;  Internet e aplicações. Sistema operacional Windows, sistema operacional GNU/Linux, procedimentos de instalação dos sistemas operacionais, configuração e gerenciamento de dispositivos de segurança.
+	
+	\objetivos
+	Capacitar o aluno a utilizar as principais ferramentas da Informática, proporcionando um melhor desempenho de suas atribuições como um profissional adequado ao atual competitivo mercado de trabalho.  Fornecer conhecimento sobre o ambiente Microsoft Windows e GNU/Linux, tanto a nível de usuário comum como de usuário avançado.
+	
+	\programa
+	\begin{description}[itemsep=0em]
+	   	\item[UNIDADE I:] Informática básica;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+				\item Utilização da informática;
+                \item Uso de processadores de texto;
+                \item  Elaboração de planilhas eletrônicas e de gráficos;
+                \item  Elaboração de slides para apresentações;
+                \item Internet e aplicações.
+            \end{enumerate}
+ 
+        \item[UNIDADE II:]  Sistemas operacionais;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+	         	\item Processos;
+				\item Organizações de sistemas operacionais;
+				\item Chamadas de sistema. 
+                
+            \end{enumerate}
+ 
+        \item[UNIDADE III:] Microsoft Windows;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+				\item Introdução ao Windows;
+				\item Configurações/Painel de Controle;
+				\item  Configuração de dispositivos;
+				\item Gerenciamento de arquivos e diretórios;
+				\item Conceitos de contas de usuário e grupos locais;
+				\item Instalação.                
+            \end{enumerate}
+
+        \item[UNIDADE IV:] GNU/Linux.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+				\item Introdução ao GNU/Linux;
+				\item Comandos básicos (cd, ls, mkdir e outros);
+	   			\item Gerenciamento de arquivos e diretórios;
+				\item Conceitos de contas de usuário e grupos locais;
+				\item Instalação;
+				\item Instalação de aplicativos através de linha de comando.
+	                
+            \end{enumerate}
+        \end{description}
+
+
+	\metodologia
+	A disciplina contará com aulas expositivas dialogadas, atividades práticas em laboratório e a realização de trabalhos em equipe e individuais, além da análise e discussão de estudos de caso e a aplicação de metodologias ativas para promover a construção do conhecimento no estudante.
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+		
+		%\item BIANCI, L. BIZZOTTO, C. E. N. \textbf{Informática básica}: passo a passo. Blumenau: Acadêmica, 2000.
+		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do Linux}: guia do administrador. Tradução de Carlos Schafranski, Edson Furmankiewicz. Revisão técnica de Nivaldo Foresti. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
+		
+		\item SILBERSCHATZ, Abraham \textit{et al}. \textbf{Fundamentos de sistemas operacionais}. 8. ed. Rio de Janeiro, RJ: LTC, 2012. 515 p. ISBN 9788521617471.
+		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo, SP: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
+	
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+		\item DEITEL, Harvey M.; DEITEL, Paul J.; CHOFFNES, David R. \textbf{Sistemas Operacionais}. 3. ed. Editora Pearson, 2005. Livro.  784 p.  ISBN 9788576050117. (BVU)
+  		\item  SILVA, Mário Gomes. \textbf{Informática -- Terminologia}: Microsoft Windows 8, Internet, Segurança, Microsoft Office Word 2010, Microsoft Office Excel 2010, Microsoft Office PowerPoint 2010, Microsoft Office Access 2010. São Paulo, SP: Érica, 2012. 380 p. Inclui bibliografia. ISBN 9788536504339.
+		\item STALLINGS, William. \textbf{Arquitetura e organização de computadores}. Tradução de Daniel Vieira, Ivan Bosnic. Revisão técnica de Ricardo Pannain. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 624 p. Inclui bibliografia. ISBN 9788576055648.  (BVU)
+		\item TANENBAUM, Andrew S. \textbf{Organização estruturada de computadores}. 6. ed. São Paulo, Pearson, 2007. ISBN 9788581435398. (BVU)
+        \item  TANENBAUM, Andrew S.; WETHERALL, David J.  \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU)
+	
+	\end{bibcomplementar}
+	
+\end{pud}
+
+
+%%%% Web Design
+
+\begin{pud}
+	\pudinfo{TSII.104}{Web Design}{---}{40}{40}{4}{1$^\circ$ Semestre}
+	
+	\ementa
+	Introdução à Internet e World Wide Web: histórico da internet e web, conceitos básicos de arquitetura cliente-servidor, serviços da internet; Hypertext Markup Language (HTML): estrutura, semântica, elementos, boas práticas, multi pages websites; Cascading Style Sheets (CSS): especificidade, seletores, elementos, CSS Resets, media queries; Estruturação para a apresentação da informação: box model, posicionamento com floats, grids; Efeitos gráficos e animações: animações, transições e transformações CSS; Framework para front-end: introdução e instalação, CSS responsivo, Grid responsivo; Design da experiência de usuário (UX): Princípios de IHC, princípios e elementos da UX, requisitos de usabilidade, acessibilidade na web, padrões de interação e navegação na Web, layout e composição, avaliação de usabilidade.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	
+	Construir páginas WEB observando as tecnologias mais atuais e as melhores práticas de construção e formatação de seus elementos, focando na aplicação de práticas e técnicas de Design da Experiência de Usuário na construção de Interfaces Humano-Computador (IHC).
+	\newline\\
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		\item Compreender os mecanismos elementares de funcionamento da Internet e da Web; 
+		\item Reconhecer a diferença entre linguagens de Marcação, Formatação e Dinâmicas;   
+		\item Entender o processo de projeto e produção de front-end para internet;
+		\item Adquirir competências sobre marcação com a tecnologia HTML5; 
+		\item Adquirir competências sobre marcação com a tecnologia CSS3;
+		\item Conhecer ferramentas, técnicas e frameworks para o desenvolvimento de Interfaces Web com tecnologias do lado cliente;
+		\item Adquirir competências sobre Design da Experiência do Usuário e IHC para web.
+	\end{itemize}
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Introdução à Internet e World Wide Web (WWW);
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item O Ambiente Web: Histórico da Internet e Web;
+				\item Conceitos Básicos da Arquitetura Cliente-Servidor; 
+                \item Serviços da Internet.
+                
+            \end{enumerate}
+        \item[UNIDADE II:] Hypertext Markup Language (HTML);
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Estrutura;
+                \item Semântica;
+                \item Elementos  (\textit{block} e \textit{inline}, de texto, de estrutura, aninhamento,  \textit{links}, listas, tabelas, formulários);
+                \item Boas práticas;
+				\item \textit{Multi Page Websites}.	
+                
+            \end{enumerate}
+            
+         \item[UNIDADE III:] \textit{Cascading Style Sheets};
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Especificidade;
+				\item Seletores;
+                \item  Cores;
+                \item  Comprimentos;
+                \item Tipografia;
+                \item  Background e Gradientes;
+                \item  CSS Resets;
+                \item  \textit{Media Queries}.        
+            \end{enumerate}
+            
+         \item[UNIDADE IV:] Estruturação para a apresentação da informação;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+ 				\item \textit{Box model};
+				\item Posicionamento com \textit{floats};
+				\item \textit{Grids}.         	
+                
+            \end{enumerate}
+            
+          \item[UNIDADE V:] \textit{Frameworks} para \textit{front-end};
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Introdução e instalação;
+				\item CSS responsivo;
+				\item \textit{Grid} responsivo.                
+            \end{enumerate}
+            
+          \item[UNIDADE VI:]  Design da experiência de usuário;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+  				\item Princípios de IHC (Ergonomia e Usabilidade, e Engenharia de Usabilidade);
+				\item Principios e elementos da UX;
+				\item Requisitos de usabilidade;
+				\item Acessibilidade na Web;
+				\item Padrões de interação e navegação na Web;
+				\item Layout e composição;
+				\item Avaliação de usabilidade.
+	        
+                
+            \end{enumerate}
+	\end{description}
+	
+	
+		
+	\metodologia	
+    A disciplina contará com aulas expositivas dialogadas, atividades práticas em laboratório e a realização de trabalhos em equipe e individuais, além da análise e discussão de estudos de caso e a aplicação de metodologias ativas para promover a construção do conhecimento no estudante.
+    
+
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+		
+		\item CYBIS, Walter; BETIOL, Adriana Holtz; FAUST, Richard. \textbf{Ergonomia e Usabilidade}: Conhecimentos, Métodos e Aplicações. 2 ed. São Paulo: Novatec, 2010. ISBN 9788575222324.
+	    \item FLATSCHART, Fábio. \textbf{HTML5}: Embarque imediato. Rio de Janeiro: Brasport, 2011.  ISBN 9788574525778. (BVU)
+	    \item MANZANO, José Augusto N. G.; TOLEDO, Suely Alves de. \textbf{Guia de orientação e desenvolvimento de sites HTML, XHTML, CSS e Javascript/JScript}. 2. ed. São Paulo: Érica, 2010. ISBN 9788536501901.
+
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+ 		\item CHARK, Andrew. \textbf{Como criar sites persuasivos}: clique aqui. São Paulo: Pearson, 2004. ISBN 9788534615112. (BVU)
+        \item NIELSEN, Jakob. \textbf{Projetando Websites.} Rio de Janeiro: Campus, 2000. ISBN 85-352-0656-6.
+        \item OLIVIERO, Carlos A. J. \textbf{Faça Um Site HTML 4.0}: conceitos e aplicações. São Paulo: Erica, 2007. ISBN 9788536501635.
+        \item SEGURADO, Valquiria Santos (Org.). \textbf{Projeto de interface com o usuário}. São Paulo: Pearson Education do Brasil, 2015. Livro. 195 p. ISBN 9788543017303. (BVU)
+        \item TERUEL, Evandro Carlos. \textbf{Web total}: desenvolva sites com tecnologias de uso livre: prático e avançado. São Paulo: Érica, 2009. 336p. Bibliografia. ISBN 9788536502328.	
+
+	\end{bibcomplementar}
+	
+\end{pud}
+
+
+%%REDES DE COMPUTADORES
+
+
+\begin{pud}
+	\pudinfo{TSII.105}{Redes de  Computadores}{---}{30}{10}{2}{1$^\circ$ Semestre}
+	
+	\ementa
+	Princípios de Comunicação de dados, Topologias, Arquiteturas de redes de computadores, Nível físico, Nível de enlace, Padrões para nível físico e de enlace, Nível de rede, Ligação Inter--Redes, Nível de aplicação e atividade prática em laboratório físico ou virtual.
+	
+	\objetivos
+	Propiciar ao aluno o entendimento do funcionamento básico da comunicação digital de dados; Compreender os modelos de referências, protocolos e serviços básicos de redes de computadores.
+	
+
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Introdução à redes de computadores; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+	            \item Histórico;
+	            \item Aplicações;
+	            \item Tecnologias e Topologias de Rede;
+	            \item Arquitetura de Rede: Modelos OSI, TCP/IP e Híbrido.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Conceitos básicos em redes de computadores;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Protocolo e encapsulamento;
+                \item Atraso;
+                \item Erros;
+                \item Vazão.
+            \end{enumerate}
+            
+         \item[UNIDADE III:]  Camada de enlace de dados;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Terminologia e funções;
+                \item  Endereçamento MAC;
+                \item  Detecção e correção de erros;
+                \item  Protocolos de acesso ao meio;
+                \item  Protocolo ARP;
+                \item  \textit{Switch};
+                \item  Protocolo Ethernet.        
+            \end{enumerate}
+            
+         \item[UNIDADE IV:] Camada de  rede;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Serviços da camada de rede;
+                \item Modelos de serviço de Rede;
+                \item Protocolo IP;
+                \item Endereçamento IP;
+                \item Roteamento.
+            \end{enumerate}
+
+         \item[UNIDADE V:] Camada de  transporte;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Funções e serviços da camada de transporte;
+                \item Multiplexação;
+                \item Entrega confiável;
+                \item UDP e TCP.
+            \end{enumerate}
+            
+         \item[UNIDADE VI:] Camada de  aplicação;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+            	\item Arquiteturas de aplicação: modelos cliente-servidor e P2P;
+            	\item Características gerais;
+            	\item HTTP, DNS, SMTP e FTP.
+            \end{enumerate}
+                                    
+	\end{description}	
+	
+	\metodologia
+	O conteúdo será apresentado através de aulas expositivas, com participação dos alunos e resolução de exercícios individualmente e em grupo. Para aplicar a teoria na prática serão feitas práticas de laboratório sobre temas presentes na ementa da disciplina.
+
+
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+		
+	\begin{bibbasica}
+		\item BALL, Bill; DUFF, Hoyt. \textbf{Dominando Linux}: Red Hat e Fedora. Editora Pearson. ISBN 9788534615174. (BVU)
+		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. (BVU)
+		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do linux}: guia do administrador. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
+		
+		\item TANENBAUM, Andrew S. \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU) 
+
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+		\item ALENCAR, Marcelo Sampaio de. \textbf{Engenharia de redes de computadores}. São Paulo: Érica, 2012. 286 p. Bibliografia. ISBN 9788536504117.
+		\item COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. \textbf{Sistemas distribuídos}: conceitos e projeto. Tradução de João Eduardo Nóbrega Tortello. Revisão técnica de Alexandre da Silva Carissimi. 4. ed. Porto Alegre: Bookman, 2007. 784 p. Inclui bibliografia. ISBN 9788560031498.
+		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
+		\item SOUSA, Lindeberg Barros de. \textbf{Projetos e implementação de redes}: fundamentos, soluções, arquiteturas e planejamento. 3. ed. , rev. São Paulo: Érica, 2013. 318 p. ISBN 9788536501666.		
+		\item TANENBAUM, Andrew S.; STEEN, Maarten Van. \textbf{Sistemas distribuídos}: princípios e paradigmas. Tradução de Arlete Simille Marques. Revisão técnica de Wagner Luiz Zucchi. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 402 p. Inclui bibliografia. ISBN 9788576051428. (BVU)
+
+	\end{bibcomplementar}
+
+\end{pud}
+
+%%%%%%%% EMPREENDEDORISMO
+
+\begin{pud}
+	\pudinfo{TSII.106}{Empreendedorismo}{---}{36}{4}{2}{1$^\circ$ Semestre}
+	
+	
+	\ementa
+	Introdução ao ``Mundo dos Negócios''; Industria 4.0; Economia criativa $\times$ Economia tradicional; Conceitos de empreendedorismo e inovação; Tipos de empreendedorismo; Atitude empreendedora; Protagonismo empreendedor (Mulheres, Negros e outras minorias); Descoberta $\times$ Invenção $\times$ Inovação; Tipos de inovação e \textit{Open innovation}; Ideias $\times$ Oportunidades: como identificar oportunidades de negócios; \textit{Startup}: Conceito e tipos de \textit{Startup}; Estágios de um \textit{Startup}; Ecossistema Empreendedor; Metodologias de Modelagem de Negócios: \textit{Lean Startup, Business Model Canvas, Design Thinking} e Plano de Negócios; Tipos de assessorias: incubadoras, aceleradoras, \textit{franchising}, mentoria, investidor anjo e capitalista de risco; Fontes de financiamentos: Recursos próprios, Subvenções, \textit{Crowdfunding}, Aceleradoras e Fundos de Investimentos; Arranjos empresariais: Arranjos produtivos locais (APL), \textit{clusters} e rede de empresas; Futuro do perfil empreendedor: Competências, Habilidades, e Atitudes. 
+	
+	\objetivos
+		Propiciar ao discente o conhecimento teórico das competências, habilidades e atitudes empreendedoras; 
+		Apresentar os conceitos e tipos de empreendedorismo; atitudes empreendedoras e inovação;
+		Diferenciar ideias/oportunidade e economia tradicional/criativa;
+		Conceituar um Startup;
+		Identificar um Startup;
+		Conhecer a aplicação das ferramentas empreendedoras;
+		Conhecer os tipos de assessoria, financiamentos e arranjos empresariais; 
+		Compreender o perfil do empreendedor no futuro.
+        \newline
+        \textbf{OBS}: a aplicação do conhecimento teórico será desenvolvido no Projeto Integrador I e II.
+	
+	
+	\programa
+	\begin{enumerate}[itemsep=0em]
+		\item Introdução ao  ``Mundo dos Negócios'';
+		\item Industria 4.0;
+		\item Economia criativa $\times$ Economia tradicional; 
+		\item Conceitos de empreendedorismo e inovação;
+		\item Tipos de empreendedorismo;
+		\item Atitude empreendedora;
+		\item Protagonismo empreendedor (Mulheres, Negros e outras minorias);
+		\item Descoberta $\times$ Invenção $\times$ Inovação;
+		\item Tipos de inovação e \textit{Open innovation}; 
+		\item Ideias $\times$ Oportunidades: como identificar oportunidades de negócios;
+		\item \textit{Startup}: Conceito e tipos de \textit{Startup}, Estágios de um \textit{Startup} e Ecossistema Empreendedor;
+		\item Metodologias de Modelagem de Negócios: \textit{Lean Startup, Business Model Canvas, Design Thinking} e Plano de Negócios;
+		\item Tipos de assessoria: Incubadoras, Aceleradoras, \textit{Franchising}, Mentoria, Investidor anjo e Capitalista de risco;
+		\item Fontes de financiamentos: Recursos próprios, Subvenções, \textit{Crowdfunding}, Aceleradoras e Fundos de Investimentos; 
+		\item Arranjos empresariais: Arranjos produtivos locais (APL), \textit{clusters} e rede de empresas;
+		\item Futuro do perfil empreendedor: competências e habilidades.
+		 
+	\end{enumerate}
+	
+	
+	\metodologia
+	Aulas teóricas: expositivo-dialogadas com aplicação e resolução de exercícios, estudos dirigidos, seminários, vídeos e dinâmicas de grupo. Aulas práticas: realizadas em jogos simulados, laboratório, visitas técnicas e/ou participações em eventos. Recursos: quadro branco, cartolina, pincéis, post-it, lousa digital, data-show, aparelho de som, computador pessoal, smartphone, Internet, e-mail; redes sociais, Ambiente Virtual de Aprendizagem (AVA) e outros.
+	
+	\avaliacao
+	Verificação de conhecimentos através de avaliação presencial, avaliação a distância desenvolvidas em Ambiente Virtual de Aprendizagem empregando a metodologia de avaliação disponível no Google Sala de Aula e auto avaliação permitindo ao aluno saber seu desempenho.
+	A avaliação será desenvolvida nas seguintes formas:
+		\begin{description}[itemsep=0em]
+            \item[$\bullet$ Diagnóstica --] levantamento dos conhecimentos prévio dos alunos;
+            \item[$\bullet$ Continuada --] análise de todo o processo de ensino-aprendizagem observando a participação individual e em grupo, o envolvimento nas atividades, o desenvolvimento dos conteúdos e o nível de percepção apresentado, isto é, o olhar não apressado que consegue descobrir detalhes, estabelecer comparações e conexões com o dia-a-dia, a condição humana, enfim, a própria vida;            
+        \end{description}
+        
+        Tipos de verificação do conhecimento construído durante as aula: 
+	    \begin{description}[itemsep=0em]
+            \item[$\bullet$ Escrita,] através de questionário individual e/ou equipe;
+            \item[$\bullet$ Oral,] através de apresentação individual e/ou equipe;
+            
+        \end{description}
+		Os recursos avaliativos serão utilizados com base  no art. 94 \S~1$^\circ$ alínea de I a XV do Regulamento de Organização Didática.
+
+	\begin{bibbasica}
+		\item DEGEN, Ronald Jean. \textbf{O Empreendedor}: fundamentos da iniciativa empresarial. 8. ed. Editora Pearson. Livro. 384 p. ISBN 9788534602174.  (BVU) % Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788534602174>. Acesso em: 31 mar. 2020.
+        
+		%\item DORNELAS, José Carlos Assis. \textbf{Empreendedorismo na prática}: mitos e verdades do empreendedor de sucesso. 3.ed. Rio de Janeiro: LTC, 2015. 141 p.
+		\item MAXIMIANO, Antonio Cesar Amaru. \textbf{Empreendedorismo}. Editora Pearson. Livro. 186 p. ISBN 9788564574342. (BVU)
+		
+		\item SERTEK, Paulo. \textbf{Empreendedorismo}.  Editora Intersaberes. Livro. 240 p.  ISBN 9788565704199. (BVU) %Disponível em: <http://ifcefortaleza.bv3.digitalpages.com.br/users/publications/9788565704199/pages/-2>. Acesso em: 31 mar. 2020.
+         
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+		\item ACADEMIA PEARSON. \textbf{Criatividade e Inovação}. São Paulo: Pearson Prentice Hall, 2011. Livro. 150 p. ISBN 9788576058847. (BVU)
+        \item BERNARDI, Luiz Antonio. \textbf{Manual de empreendedorismo e gestão}: fundamentos, estratégias e dinâmicas. São Paulo: Atlas, 2012. 314 p. ISBN 9788522433384. 
+		
+        \item DEGEN, Ronald Jean. \textbf{O Empreendedor}: empreender como opção de carreira. São Paulo: Pearson Prentice Hall, 2009. 440 p. ISBN 9788576052050.  (BVU)
+		\item DORNELAS, José Carlos Assis. \textbf{Empreendedorismo na prática}:  mitos e verdades do empreendedor de sucesso. 3.ed. Rio de Janeiro: LTC, 2015. 141 p. ISBN 9788521627920. 
+       
+         \item MAXIMIANO, Antonio Cesar Amaru. \textbf{Administração para empreendedores}: fundamentos da criação e gestão de novos negócios. 2. ed. Pearson.  258 p. ISBN 9788576058762.  (BVU) %Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788576058762>. Acesso em: 31 mar. 2020.
+% 		%\item MORAIS, Roberto Souza de. \textbf{O profissional do futuro}: uma visão empreendedora. Manole. E-book. 156 p. %(BVU)%  Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788578680978>. Acesso em: 31 mar. 2020.
+%         \item OSTERWALDER, Alexandrer; PIGNEUR, Yves. Business \textbf{Model Generation}: A Handbook for Visionaries, Game Changers, and Challengers. John Wiley \& Sons, 2013. Disponível em: \url{https://www.strategyzer.com/books/business-model-generation}. Acesso em: 31 mar. 2020. 
+%         \item OSTERWALDER, Alexandrer \textit{et al}. \textbf{Testing Business Ideas}: A Field Guide for Rapid Experimentation. John Wiley \& Sons, 2019. Disponível em: \url{https://www.strategyzer.com/books/testing-business-ideas-david-j-bland}. Acesso em: 31 mar. 2020.
+%         \item OSTERWALDER, Alexandrer \textit{et al}. \textbf{Value Proposition Design}: How to Create Products and Services Customers Want. John Wiley \& Sons, 2015. Disponível em: \url{https://www.strategyzer.com/books/value-proposition-design}. Acesso em: 31 mar. 2020. 
+%         \item SILVA, Lacy de Oliveira; GITAHY, Yuri. \textbf{Disciplina de empreendedorismo e inovação}: manual do estudante. Brasília: Sebrae, 2016. Disponível em: \url{https://drive.google.com/file/d/0B5ytz8zSeF7ZUFRVZzlKSUdNUWpZZnpfR2Q5R1FueTNodlRF/view?usp=sharing}. Acesso em: 31 mar. 2020.	
+
+	\end{bibcomplementar}
+	
+		
+\end{pud}
+
+
+\begin{pud}
+
+	\pudinfo{TSII.107}{Projeto Integrador I}{--}{20}{4}{2}{1$^\circ$ Semestre}
+	
+	
+	\ementa
+	A disciplina aborda a pesquisa científica. Explora temáticas relacionadas às questões étnico-raciais, história e cultura afro-brasileira e indígena, bem como educação ambiental. Trabalha o desenvolvimento de projetos de pesquisa para resolução de problemas que envolvam as temáticas em questão de forma integradora. Busca desenvolver uma cultura científica interdisciplinar.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Possibilitar o desenvolvimento de aprendizagens no âmbito da produção científica consolidada na forma de projetos integradores que envolvam saberes em uma perspectiva interdisciplinar envolvendo temas como tecnologia, questões étnico-raciais, indígenas e educação ambiental.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		\item Discutir e relacionar os conceitos de tecnologia, cultura e sociedade;
+        \item Discutir os conceitos identidade, identidade negra, raça, etnia, racismo, etnocentrismo, preconceito racial, discriminação racial, democracia racial; políticas de ações afirmativas; 
+        \item Apontar acontecimentos que demonstrem o protagonismo negro e indígena no mercado de trabalho;
+        \item Pensar a pesquisa e o desenvolvimento de projeto a partir de uma perspectiva interdisciplinar;
+        \item Desenvolver propostas de pesquisa que contemplem soluções científicas em que dialoguem tecnologia, questões étnico-raciais, indígena e educação ambiental.
+	\end{itemize}
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Tecnologia e sociedade;	 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Conceito de Tecnologia;
+				\item Sociedade na Perspectiva Contemporânea.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Questões etino-racial e indígena;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Racismo Estrutural, Identidade, Etnocentrismo, Preconceito racial e Discriminação racial;
+                \item Políticas de Ações Afirmativas;
+                \item Cultura afro-brasileira e indígena;
+                \item Empreendedorismo negro;
+                \item Protagonismo negro e indígena no mercado de trabalho.
+            \end{enumerate}
+            
+         \item[UNIDADE III:]  Educação Ambiental e Questões Sociais;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Meio Ambiente e Educação;
+				\item Problemas Ambientais Contemporâneos.       
+            \end{enumerate}
+            
+         \item[UNIDADE IV:] Projeto integrador.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Conceito de Ciência;
+                \item Tipos de Pesquisa e Interdisciplinaridade;
+                \item Estrutura do Projeto de Pesquisa Integrador.
+            \end{enumerate}
+	\end{description}
+	
+	
+	\metodologia
+	A metodologia aborda uma postura diversificada contemplando a seguintes ações: (i) Aulas expositivas do tipo dialogadas; (ii) Leituras e discussão de textos de forma coletiva; e (iii) Rodas de conversa sobre os conteúdos estudados nas demais disciplina a fim de percebê-los como elementos norteadores para a definição dos temas de pesquisa.
+	A carga horária destinada às atividades práticas será contemplada nos momentos de orientação e também de escrita do projeto, bem como sua socialização em sala de aula.
+
+
+	\avaliacao
+	A avaliação da aprendizagem deve considerar inicialmente as discussões em sala de aula, bem como os textos escritos durante a disciplina. Também, deve-se avaliar a consolidação dos projetos integradores com temáticas que envolvam tecnologia e os demais temas como questões étnico- raciais e indígenas e educação ambiental.
+	
+	
+
+	\begin{bibbasica}
+			
+        \item AFONSO, Germano. B.; CREMONEZE, Cristina; BUENO, Luiz. (Orgs). \textbf{Ensino de História e Cultura Indígenas}. Curitiba: InterSaberes, 2016. (BVU)
+		\item BOSI, Alfredo. \textbf{Dialética da colonização}. 4. ed. São Paulo: Companhia das Letras, 2016. 420 p. ISBN 978-85-7164-276-8. %10 Exs. 981 B741d
+		\item CERVO, Amado Luiz; BERVIAN, Pedro Alcino; SILVA, Roberto da. \textbf{Metodologia científica}. 6. ed. São Paulo: Pearson Prentice Hall, 2007. 159 p. Inclui bibliografia. ISBN 8576050471. (BVU) %CAMPUS TAUÁ: 7 ex. 001.42 C419m
+		\item GIL, Antônio Carlos. \textbf{Métodos e técnicas de pesquisa social}. 6.ed.  São Paulo: Atlas, 2016. 200 p. ISBN 978-85-224-5142-5. %CAMPUS TAUÁ: 30 ex. 001.42 G463m
+		\item MARCONI, Marina de Andrade; LAKATOS, Eva Maria. \textbf{Fundamentos de metodologia científica}. 7. ed. São Paulo: Atlas, 2010. 297 p. Inclui bibliografia. ISBN 978852245758. %CAMPUS TAUÁ: 8 ex. 001.42 M321f
+		\item PINOTTI, Rafael. \textbf{Educação ambiental para o século XXI}: no Brasil e no mundo. 2. ed. São Paulo: Blucher, 2016. (BVU)
+		\item SABBAG, Paulo Yazigi. {\bfseries Gerenciamento de projetos e empreendedorismo}. 2. ed. São Paulo: Saraiva, 2013. 226 p. Inclui bibliografia. ISBN 9788502204447. %CAMPUS TAUÁ: 7 ex. 658.404 S114g
+		\item SEVERINO, Antônio Joaquim. {\bfseries Metodologia do trabalho científico}. 23. ed. rev. e atual São Paulo: Cortez, 2012. 304 p. Inclui bibliografia. ISBN 9788524913112. %CAMPUS TAUÁ: 7 ex. 001.42 S498m
+	 
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+        	\item AMARO, Sarita. \textbf{Racismo, igualdade racial e políticas de ações afirmativas no Brasil}.  Porto Alegre: EDIPUCRS, 2015. (BVU)
+		
+ 			\item ARAÚJO, Ulisses F.  {\bfseries Temas transversais, pedagogia de projetos e mudanças na educação}.  São Paulo: Summus, 2014. (BVU)
+ 			\item FAZENDA, Ivani C. A.; TAVARES, Dirce E.; GODOY, Hermínia P. \textbf{Interdisciplinaridade na pesquisa científica}. [livro eletrônico].  Campinas, SP: Papirus Editora, 2017.  ISBN 9788544902776. (BVU)
+		
+		%	\item CERVO, Amado Luiz; BERVIAN, Pedro Alcino; SILVA, Roberto da.  {\bfseries Metodologia científica}. 6. ed. São Paulo: Pearson Prentice Hall, 2007. 159 p. Inclui bibliografia. ISBN 8576050471. % CAMPUS TAUÁ: 7 ex. 001.42 C419m
+%			\item FHILIPPI JR., Arlindo (Coord).  {\bfseries Direitos humanos e meio ambiente}: minorias ambientais. [recurso eletrônico]. Barieri, SP: Manole, 2017. %(BVU)
+			\item MACHADO, Anna Rachel; LOUSADA, Eliane; ABREU-TARDELLI, Lília Santos.  {\bfseries Planejar gêneros acadêmicos}: escrita científica, texto acadêmico, diário de pesquisa, metodologia. São Paulo: Parábola, 2005. 116 p. (Leitura e produção de textos técnicos e acadêmicos ; 3). Inclui bibliografia. ISBN 9788588456433. %CAMPUS TAUÁ: 3 ex. 001.42 M149p
+			\item MATTAR, João.  {\bfseries Metodologia científica na era da informática}. 3. ed. rev. e atual São Paulo: Saraiva, 2008. 308 p. Inclui bibliografia. ISBN 9788502064478.
+			\item MATTOS, João Roberto Loureiro de; GUIMARÃES, Leonam dos Santos.  {\bfseries Gestão da tecnologia e inovação}: uma abordagem prática. 2. ed. e atual São Paulo: Saraiva, 2012. 433 p. Inclui referência. ISBN 9788502178946. %CAMPUS TAUÁ: 7 ex. 658.4 M389g
+			
+			%\item ULISSES F. ARAÚJO. \textbf{Temas transversais, pedagogia de projetos e mudanças na educação}. Summus Editorial. Livro. 120 p. ISBN 9788532309679. 
+	\end{bibcomplementar}
+		
+	
+\end{pud}
+
+
+%%%% 2o SEMESTRE
+
+%% POO
+\begin{pud}
+	
+	\pudinfo{TSII.208}{Programação Orientada a Objetos}{TSII.101}{40}{40}{4}{2$^\circ$ Semestre}
+	
+
+	\ementa
+	Fundamentos do paradigma orientado a objetos (abstração, encapsulamento, classes, objetos, atributos, métodos e construtores), conceitos avançados de orientação a objetos (herança, polimorfismo, classes abstratas, interfaces e pacotes), metodologia de desenvolvimento orientada a objetos e aplicação dos conceitos de orientação a objetos através de uma linguagem de programação apropriada. \textit{Collections} (Estruturas de dados genéricas). Tratamento de exceções. Interface gráfica com o usuário.
+	
+	\objetivos
+	Compreender o mundo real e usar a habilidade de abstração para mapeá-lo em classes e objetos a fim de construir programas que solucionem os mais variados problemas; Interpretar a necessidade do usuário e mapeá-la para diagramas UML que servirão de insumo para o projeto de sistemas orientado a objetos.
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Fundamentos da metodologia de desenvolvimento orientada a objetos; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Histórico das Linguagens de Programação;
+                \item Introdução ao Paradigma Orientado a objetos.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Fundamentos da Orientação a Objetos;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Classes, objetos, atributos, métodos e construtores;
+				\item Instanciação;
+				\item Atributos estáticos;
+				\item Modificadores de acesso;
+				\item Cláusula de auto referência (\textit{this, self}).
+				\item A Linguagem de Modelagem UML;
+            \end{enumerate}
+            
+         \item[UNIDADE III:] Conceitos Avançados de Orientação a Objetos;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Herança e polimorfismo;
+				\item Operador de herança;
+				\item Sobrecarga $\times$ sobrescrita de métodos;
+				\item Classes abstratas;
+				\item Interfaces;
+				\item Tratamento de exceção;
+				\item Coleções genéricas.      
+            \end{enumerate}
+            
+         \item[UNIDADE IV:]  Projeto orientado a objetos;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Fundamentos de projeto de software orientado a objetos;
+				\item Diagrama de casos de uso e de classes;
+				\item Interfaces gráficas de usuário;
+				\item Testes unitários.
+            \end{enumerate}
+	\end{description}	
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais.  Atividades em grupo e prática de codificação de algoritmos em linguagem de programação orientada a objetos. Atividades práticas no laboratório de codificação de programas.
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	
+
+	\begin{bibbasica}
+		\item BARNES, David J.; KÖLLING, Michael. \textbf{Programação orientada a objetos com Java}: uma introdução prática usando o BLUEJ. Tradução de Edson Furmankiewicz. Revisão técnica de João Luiz Silva Barbosa. 4. ed. São Paulo: Pearson Prentice Hall, 2009. 455 p. Inclui bibliografia. ISBN 9788576051879. 
+		\item DEITEL, Paul; DEITEL, Harvey M. \textbf{Java}: como programar. 8. ed. Editora Pearson. Livro. 1178 p. ISBN 9788576055631. (BVU)
+		\item HORSTMANN, Cay S.; CORNELL, Gary. \textbf{Core Java}: volume I - fundamentos. Tradução de Edson Furmankiewicz, Carlos Schafranski. Revisão técnica de Nivaldo Foresti. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 383 p. (I). ISBN 9788576053576.
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+        \item LARMAN, Craig. \textbf{Utilizando UML e padrões}: uma introdução à análise e ao projeto orientados a objetos e ao desenvolvimento iterativo. Tradução de Rosana T. Vaccare Braga. 3, ed. Porto Alegre: Bookman, 2007. 695 p. Inclui bibliografia. ISBN 9788560031528. 
+		\item MCLAUGHLIN, Brett; POLLICE, Gary; WEST, David. \textbf{Use a cabeça}: análise  e projeto orientado ao objeto. Tradução de Betina Macêdo. Revisão técnica de Eduardo Velasco. Rio de Janeiro: Alta Books, 2007. 442 p. ISBN 9788576081456.
+		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo. definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297.  (BVU)
+		\item PAGE-JONES, Meilir. \textbf{Fundamentos do desenho orientado a objeto com UML}.  Editora Pearson. Livro. 488 p. ISBN 9788534612432.  (BVU)
+		\item SANTOS, Rafael. \textbf{Introdução à programação orientada a objetos usando Java}. 2. ed. Rio de Janeiro: Elsevier, 2013. 313 p. (Campus SBC - Sociedade Brasileira de Computação). Inclui bibliografia e índice. ISBN 9788535274332.
+	
+	\end{bibcomplementar}
+		
+	
+\end{pud}
+
+
+% BANCO DE DADOS
+
+\begin{pud}
+
+	\pudinfo{TSII.209}{Banco de Dados}{---}{40}{40}{4}{2$^\circ$ Semestre}
+	
+	
+	\ementa
+	Introdução a Banco de Dados. Instalação de um SGBD. Configuração de um SGBD. Conceitos Básicos: tabelas, campos e registros, chave primária, chave secundária, chave estrangeira. Modelagem: conceitual, modelo entidade-relacionamento, modelo relacional. Linguagem SQL Básica: DML, DDL, e programação. Normalização e dependência de dados. Linguagem SQL avançada. Projeto de um banco de dados. Gatilhos (\textit{Triggers}). Funções e procedimentos. \textit{Backup} e restauração.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Entender os conceitos básicos de um banco de dados relacional e como ele se relaciona com sistemas de informação WEB e \textit{Desktop}; Realizar consultas em um banco de dados existente a partir de um diagrama de Entidade/Relacionamento e um requisito formal; Construir um pequeno banco de dados a partir de uma lista de requisitos.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		\item Compreender os conceitos relacionados a sistemas gerenciadores de banco de dados;
+		\item Conhecer técnicas de modelagem de dados;
+		\item  Manipular bancos de dados por meio da linguagem de consulta SQL.
+		\item  Implementar bancos de dados relacionais que ofereçam os serviços de seleção e manipulação de dados a usuários e aplicações, a partir do levantamento e análise dos requisitos de um ambiente;
+		\item Construir requisições aos dados solicitadas por usuários e aplicações, utilizando instruções da Linguagem SQL.
+	\end{itemize}
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Fundamentos de  Banco de Dados; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Bancos de dados;
+                \item Sistemas Gerenciadores de Bancos de Dados;
+                \item Sistemas de Banco de Dados;
+                \item Projeto de Banco de Dados.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Modelo Relacional;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item  Conceitos básicos (tabelas, campos e registros, chave primária, chave secundária e chave estrangeira);
+				\item Restrições;
+				\item Operações;
+				\item  Normalização;
+            \end{enumerate}
+            
+         \item[UNIDADE III:] Linguagem SQL;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item  Fundamentos da linguagem SQL;
+				\item Definição de dados (DDL);
+				\item Manipulação de dados (DML);
+				\item  Consultas básicas e complexas;
+				\item Programação.        
+            \end{enumerate}
+            
+         \item[UNIDADE IV:]  Projeto de banco de dados  e Modelagem Conceitual;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Fases do projeto de banco de dados;
+				\item Mapeamento entre modelos entidade-relacionamento e relacional;
+				\item Dependências funcionais, multivalorada e de junção.
+            \end{enumerate}
+
+         \item[UNIDADE V:] Projeto de banco de dados; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Modelagem conceitual em banco de dados;
+				\item Modelo Entidade--Relacionamento;
+				\item Diagramas Entidade--Relacionamento.      
+            \end{enumerate}
+            
+         \item[UNIDADE VI:]  Banco de dados avançado.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Funções e procedimentos;
+				\item  Gatilhos (\textit{Triggers});
+				\item \textit{Backup} e restauração.  
+            \end{enumerate}
+	\end{description}		
+	
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Atividades em grupo, exercícios de modelagem, codificação de consultas e atividades práticas no laboratório de informática utilizando ferramentas computacionais de modelagem de dados e SGBDs.
+
+
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+
+	\begin{bibbasica}
+			
+        \item DATE, C. J. \textbf{Introdução a sistemas de banco de dados}. 8. ed. Rio de Janeiro: Elsevier, 2004. ISBN 9788535212730. 
+		\item ELMASRI, Ramez. E.; NAVATHE, Shamkant B. \textbf{Sistemas de banco de dados}. 6. ed. São Paulo: Pearson Addison Wesley, 2011. ISBN 9788579360855. (BVU)
+		\item SILBERSCHATZ, Abraham; KORTH, Henry; SUDARSHAN, S. \textbf{Sistema de banco de dados}. 6. ed. Rio de Janeiro: Elsevier, 2012. ISBN 9788535245356. 
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+	    \item ALVES, William Pereira. \textbf{Bancos de dados}: teoria e desenvolvimento. São Paulo: Érica, 2009. 286 p. ISBN 9788536502557.
+		\item GRAVES, Mark. \textbf{Projeto de banco de dados com XML}. São Paulo: Pearson Education do Brasil, 2003.  ISBN 9788534614719. (BVU)
+		\item HOTKA, Dan. \textbf{Aprendendo Oracle 9i}. São Paulo: Pearson Education do Brasil, 2002. 454 p. ISBN 9788534613248. (BVU)
+		\item LAUDON, Keneth C.; LAUDON, Jane P. \textbf{Sistemas de informação gerenciais}. 11. ed. São Paulo: Pearson Education do Brasil, 2014.  ISBN 9788543005850. (BVU)
+		\item PUGA, Sandra; FRANÇA, Edson; GOYA, Milton. \textbf{Banco de dados}: implementação em SQL, PL/SQL e Oracle 11g. São Paulo: Pearson Education do Brasil, 2013. ISBN 9788581435329. (BVU)
+		 
+	\end{bibcomplementar}
+		
+\end{pud}
+
+%%%%%  Engenharia de Software
+
+\begin{pud}
+	\pudinfo{TSII.210}{Engenharia de Software}{---}{40}{40}{4}{2$^\circ$ Semestre}
+	
+	\ementa
+	Definição de Engenharia de Software. Processos de desenvolvimento de software. Desenvolvimento ágil de software. Engenharia de requisitos. Projeto, desenvolvimento e evolução de sistemas. Documentação, testes e manutenção de software. Métricas e qualidade de software. Ambientes de desenvolvimento de software.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Entender os conceitos relacionados ao surgimento e a evolução da Engenharia de Software, suas técnicas e metodologias, sua aplicação e importância nas mais diversas áreas em que o desenvolvimento de software está presente.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		\item Assimilar o que é Engenharia de Software e qual a sua importância;
+		\item Compreender questões profissionais e éticas relevantes para os engenheiros de software; 
+		\item Conhecer as fases que compõem o processo de desenvolvimento de software;
+		\item Analisar a importância do planejamento de projeto em todos os projetos de software;
+		\item Aprender os principais modelos de processo a fim de saber quando e como aplicá-los; 
+		\item Saber aplicar as metodologias de testes e qualidade de software;
+		\item Avaliar os custos da evolução do software e a importância de utilização de boas práticas de desenvolvimento e padrões de projeto para uma evolução sustentável.
+	\end{itemize}
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Visão geral de Engenharia de Software; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Conceitos e contextualização da Engenharia de Software;
+				\item Princípios de Engenharia de Software;
+                \item Ética na Engenharia de Software;
+				\item Modelos de Software (genéricos e iterativos);
+				\item Desenvolvimento ágil (\textit{Extreme Programming} e \textit{Scrum});
+				\item Aspectos gerais das etapas de desenvolvimento de software.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Requisitos de Software;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Processo de engenharia de requisitos;
+			    \item Técnicas de elicitação de requisitos; %(requisitos de usuário, requisitos de sistema, requisitos funcionais, não funcionais e de domínio);
+			    \item Estudo de viabilidade;
+			    \item Gerenciamento de requisitos;
+			    \item Matriz de rastreabilidade.
+            \end{enumerate}
+            
+         \item[UNIDADE III:] Gerência de projetos de software;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Espectro da gestão;
+				\item Planejamento e acompanhamento do projeto;
+				\item Métricas de processo e projeto de software;
+				\item Plano de projeto de software;
+				\item Diagrama de barras (\textit{Gantt chart}).        
+            \end{enumerate}
+            
+         \item[UNIDADE IV:]  Modelagem de sistemas;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Linguagem de Modelagem Unificada (UML);
+				\item Modelagem de casos de uso;
+				\item Diagramas estruturais e comportamentais da UML.
+            \end{enumerate}
+
+         \item[UNIDADE V:] Verificação e Validação de Software;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Planejamento de verificação e validação;
+				\item Estratégias de teste de software, de release e de usuário;
+				\item Testes automatizados com ferramentas de automação de testes;
+				\item  Integração e entrega contínua.      
+            \end{enumerate}
+            
+         \item[UNIDADE VI:]  Disponibilização, Evolução e Qualidade de Software.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Disponibilização de software;
+				\item Evolução e manutenção de software;
+				\item Conceito de qualidade de software;
+				\item Normas de qualidade do produto e do processo de software.  
+            \end{enumerate}
+	\end{description}
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Atividades práticas relacionadas a técnicas e métodos atuais de Engenharia de Software. Além disso, atividades em grupo com pesquisa em artigos científicos da área de Engenharia de Software.
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+			
+        %\item PAULA FILHO, Wilson de Pádua. \textbf{Engenharia de Software}: fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009.
+ 		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo.definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297. (BVU) 
+		
+ 		\item PRESSMAN, Roger S.; MAXIM, Bruce R. \textbf{Engenharia de software}: uma abordagem profissional.  Tradução de Ariovaldo Griesi, Mario Moro Fecchio. Revisão técnica de Reginaldo Arakaki, Renato Manzan de Andrade, Julio Arakaki. 7. ed. Porto Alegre: AMGH, 2011. 780 p. Inclui bibliografia. ISBN 9788563308337. 
+ 		\item SOMMERVILLE, Ian. \textbf{Engenharia de software}. Tradução de Kalinka Oliveira, Ivan Bosnic. Revisão técnica de Kechi Hirama. 9. ed. São Paulo: Pearson Prentice Hall, 2011. 529 p. Inclui bibliografia. ISBN 9788579361081. (BVU)
+ 		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+		
+		
+		\item ENGHOLM JÚNIOR, Hélio. \textbf{Engenharia de software na prática}. São Paulo: Novatec, 2010. 438 p. Inclui bibliografia. ISBN 9788575222171.
+		\item LIMA, Adilson da Silva. \textbf{UML 2.3}: do requisito à solução. São Paulo: Érica, 2011. 368 p. Inclui bibliografia e índice. ISBN 9788536503776.
+		\item MAGELA, Rogério. \textbf{Engenharia de software aplicada}: fundamentos. Rio de Janeiro: Alta Books, 2006. 418 p. Inclui bibliografia. ISBN 8576081237.
+		\item PFLEEGER, Shari Lawrence. \textbf{Engenharia de Software}: teoria e prática. 2. ed. São Paulo: Prentice Hall, 2004. Livro. 560 p.  ISBN 8587918311 (BVU)
+		\item  VAZQUEZ, C	arlos Eduardo; SIM\~OES, Guilherme Siqueira. \textbf{Engenharia de Requisitos}: software orientado ao negócio. Editora Brasport, 2016.  294 p. ISBN 9788574527963. (BVU)
+		
+
+% 	    \item BOOCH, Grady; RUMBAUGH, James; JACOBSON, Ivar. \textbf{UML}: guia do usuário.  2. ed. Rio de Janeiro: Elsevier, 2012.
+% 		\item BOURQUE, Pierre; FAIRLEY, Richard E. \textbf{SWEBOK v3.0}: guide to the software engineering body of knowledge. IEEE Computer Society Press, 2014. Disponível em: \url{www.computer.org/web/swebok/v3}. Acesso em: 16 ago. 2018.
+% 		\item COHN, Mike. \textbf{Desenvolvimento de software com SCRUM}: aplicando métodos ágeis com sucesso. Porto Alegre: Bookman, 2011.
+% 		\item SHORE, J.; WARDEN, S. \textbf{A arte do desenvolvimento ágil}. Rio de Janeiro: Alta Books, 2008.
+% 		\item WAZLAWICK, Raul Sidney. \textbf{Engenharia de software}: conceitos e práticas. Rio de Janeiro: Elsevier, 2013.
+% 		 
+	\end{bibcomplementar}
+\end{pud}
+
+\begin{pud}
+	
+	\pudinfo{TSII.211}{Desenvolvimento WEB I}{TSII.101, TSII.104}{40}{40}{4}{2$^\circ$ Semestre}
+	
+	\ementa
+	Linguagem de desenvolvimento \textit{back-end}: Introdução, Condicionais e Repetição, Funções, Formulários, Arquivos, Manutenção de Estado (Sessions e Cookies) e Orientação a Objetos; Aplicação Web: Dinâmica, Gerenciamento de sessão, Controle de Cache, Protocolos de comunicação;  Acesso a banco de dados em sistemas Web (\textit{back-end}): Conexão com Sistema de Gerenciamento de Banco de Dados; CRUD e RESTful API. Ciclo de desenvolvimento versionado: Controle de versões, Ferramentas de versionamento, \textit{Branching} e \textit{tracking}, e Correção de erros.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Construir páginas Web interativas observando as boas práticas de construção e formatação de seus elementos, além de aprender sobre a integração destes elementos com serviços externos a partir do auxílio de linguagem de programação WEB.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		
+		\item Conhecer os diversos elementos da construção de interfaces WEB de modo a fazer uso de tais elementos de forma eficiente na construção de projetos;
+		\item Construir interfaces Web utilizando modelos e métodos consolidados pelo mercado e indústria;
+		\item Expor o que há de novo na área de desenvolvimento WEB, tanto na construção quanto na manutenção e progressão de softwares online, de modo a acentuar a progressão profissional do discente.
+
+	\end{itemize}
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Linguagem de desenvolvimento \textit{back-end}; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+                \item Introdução;
+				\item Condicionais e estruturas de repetição;
+				\item Funções;
+				\item Formulários e requisições;
+				\item Arquivos;
+				\item Manutenção de Estado (\textit{Sessions} e \textit{Cookies}).
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Aplicação WEB;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Gerenciamento de sessão;
+				\item Controle de Cache;
+				\item Controle de acesso (autenticação e autorização);
+				\item Protocolos de comunicação.
+            \end{enumerate}
+            
+         \item[UNIDADE III:] Persistência e manipulação de dados em servidores \textit{back-end};
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Interação com Banco de Dados;
+				\item Formatos de transporte de dados (JSON, XML, texto plano);
+				\item Interface de Programação de Aplicações (API) para WEB;
+				\item CRUD e RESTful API.        
+            \end{enumerate}
+            
+         \item[UNIDADE IV:]  Ciclo de desenvolvimento versionado;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Controle de versões;
+                \item Ferramentas de versionamento;
+                \item \textit{Branching} e \textit{tracking};
+                \item Correção de erros.
+            \end{enumerate}
+
+	\end{description}
+	
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Atividades práticas relacionadas a técnicas e métodos atuais de Desenvolvimento WEB. Além disso, trabalhos individuais e em grupo, utilização de laboratório com exercícios práticos que possam auxiliar o treinamento e desenvolvimento de aplicações para WEB, envolvendo todos os aspectos aprendidos durante a disciplina e o curso.
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+			
+        \item DALL'OGLIO, Pablo. \textbf{PHP}: programando com orientação a objetos. 2. ed. São Paulo: Novatec Editora, 2009.  ISBN 9788575222003.
+		\item DEITEL, Paul J.; DEITEL, Harvey M.  \textbf{Ajax, Rich Internet Applications e Desenvolvimento Web para Programadores}. Editora Pearson. 776 p. ISBN 9788576051619. (BVU)
+		%\item OLIVIERO, Carlos A. J. \textbf{Faça um site PHP 5.2 com MySQL 5.0}: comércio eletrônico orientado por projeto. São Paulo: Érica, 2010.
+		\item SOARES, Walace. \textbf{Crie um framework para sistemas web e com PHP 5 e Ajax}. São Paulo: Érica, 2009.  ISBN 9788536502373.
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+	    
+		\item FLATSCHART, F\'abio. \textbf{HTML 5}: embarque Imediato. Editora Brasport. 256 p. ISBN 9788574525778. (BVU)
+		\item LEMAY, Laura; COLBURN, Rafe; TYLER, Denise. \textbf{Aprenda a Criar P\'aginas Web com HTML e XHTML em 21 Dias}. São Paulo: Pearson Education do Brasil, 2002.  1158 p. ISBN 9788534614283. (BVU)
+ 		\item MARINHO, Antônio Lopes (Org.). \textbf{Desenvolvimento de aplicações para Internet}. São Paulo: Pearson Education do Brasil, 2016. Livro. 139 p. ISBN 9788543020112. (BVU)
+ 		
+ 		\item PUGA, Sandra; FRANCA, Edson; GOYA, Milton. \textbf{Banco de dados}: Implementa\c{c}\~ao em SQL, PL/SQL e Oracle 11g.  São Paulo: Pearson Education do Brasil, 2013. 356 p.  ISBN 9788581435329. (BVU)
+ 		\item SEGURADO, Valquiria Santos (Org.). \textbf{Projeto de interface com o usuário}. São Paulo: Pearson Education do Brasil, 2015. Livro. 195 p. ISBN 9788543017303. (BVU) 
+ 		%\item SILVA, Maur\'icio Samy. \textbf{JavaScript}: guia do programador. S\~ao Paulo: Novatec, 2010. 604 p. Inclui bibliografia e \'indice. ISBN 9788575222485.  
+		 
+	\end{bibcomplementar}
+	
+
+\end{pud}
+
+
+
+%%%% SERVIDOR
+
+\begin{pud}
+	
+	\pudinfo{TSII.212}{Servidores}{TSII.105}{20}{20}{2}{2$^\circ$ Semestre}
+	
+	\ementa
+	Definição de servidor e serviço. Hardware de servidores. Sistemas operacionais para servidores abertos e proprietários. Tipos de Servidores. Servidor DHCP. Servidor de Nomes. Servidor de Arquivos. Servidor Web. Outros serviços de rede.
+	
+	\objetivos
+	Compreender a estrutura e funcionamento de servidores de rede; Aprender a configurar computadores clientes para utilizar serviços de rede;  Instalar serviços de rede em diferentes tipos de sistemas operacionais; Configurar serviços de rede em diferentes tipos de sistemas operacionais.
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Introdução a servidores; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Definição de servidor;
+				\item Tipos de servidores;
+				\item Hardware de servidores.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Servidor DNS;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Definição do serviço de DNS;
+				\item Instalação e configuração de servidor DNS.
+            \end{enumerate}
+            
+         \item[UNIDADE III:] Servidor WEB;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Conceituação do serviço WEB;
+				\item Instalação e configuração de servidor WEB.        
+            \end{enumerate}
+            
+         \item[UNIDADE IV:]  Ciclo de desenvolvimento versionado;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Compartilhamento de arquivos em rede;
+				\item Configuração de servidor de rede;
+				\item Configuração de compartilhamento e acesso a arquivos.
+            \end{enumerate}
+            
+         \item[UNIDADE V:]  Virtualização de servidores.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Visão geral e Tipos de virtualização;
+                \item Configuração de Servidores Virtuais.
+            \end{enumerate}
+
+	\end{description}
+	
+	\clearpage
+	
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Aulas práticas a serem realizadas de forma individual ou em grupo com o auxílio de computadores e softwares de simulação e virtualização que contribuam para a aprendizagem do conteúdo. Análise de estudos de caso e situações relacionadas aos assuntos estudados.
+	
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+		
+	\begin{bibbasica}
+		\item BALL, Bill; DUFF, Hoyt. \textbf{Dominando Linux}: Red Hat e Fedora. Editora Pearson. ISBN 9788534615174. (BVU)
+		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. (BVU)
+		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do linux}: guia do administrador. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
+		
+		\item TANENBAUM, Andrew S.; WETHERALL, David J.  \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU) 
+
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+		\item ALENCAR, Marcelo Sampaio de. \textbf{Engenharia de redes de computadores}. São Paulo: Érica, 2012. 286 p. Bibliografia. ISBN 9788536504117.
+		\item COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. \textbf{Sistemas distribuídos}: conceitos e projeto. Tradução de João Eduardo Nóbrega Tortello. Revisão técnica de Alexandre da Silva Carissimi. 4. ed. Porto Alegre: Bookman, 2007. 784 p. Inclui bibliografia. ISBN 9788560031498.
+		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
+		\item SOUSA, Lindeberg Barros de. \textbf{Projetos e implementação de redes}: fundamentos, soluções, arquiteturas e planejamento. 3. ed. , rev. São Paulo: Érica, 2013. 318 p. ISBN 9788536501666.		
+		\item TANENBAUM, Andrew S.; STEEN, Maarten Van. \textbf{Sistemas distribuídos}: princípios e paradigmas. Tradução de Arlete Simille Marques. Revisão técnica de Wagner Luiz Zucchi. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 402 p. Inclui bibliografia. ISBN 9788576051428. (BVU)
+
+	\end{bibcomplementar}
+	
+
+\end{pud}
+
+%%%% PROJETO INTEGRADOR 2
+
+\begin{pud}
+
+	\pudinfo{TSII.213}{Projeto Integrador II}{TSII.107}{20}{20}{2}{2$^\circ$ Semestre}
+	
+	
+	\ementa
+	Elementos do contexto sócio-político-econômico da sociedade brasileira.  Movimentos Sociais e a conquista de direitos; Formas de organização e participação em trabalhos sociais. Introdução aos Direitos Humanos e a cidadania.  Formação de valores éticos e de autonomia, pré-requisitos necessários de participação social Métodos e Técnicas de elaboração de projetos sociais. Pressupostos teóricos e práticos a serem considerados na construção de projetos integradores/sociais. Introdução ao Projeto Integrador II. Construção do projeto formal. Desenvolvimento do projeto. Socialização dos limites e possibilidades (resultados).
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Capacitar o aluno quanto à realização de um projeto multidisciplinar que possibilite o desenvolvimento de uma visão dialógica e integrada com as diversas disciplinas do curso Técnico Subsequente em Informática para Internet e suas relações com a sociedade contemporânea, a fim de que o aluno desenvolva habilidades diversas, no sentido de construir um projeto que integre os saberes das disciplinas e busque articular na prática, propondo essas ações através do projeto-problema proposto.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		
+		\item Aprofundar o conhecimento em relação  aspectos sociais articulando com a  prática;
+		\item  Explorar a resolução de problemas reais e/ou inovadores, buscando apontar possíveis soluções   no sentido de integrar a instituição de ensino à sociedade;
+		\item Dominar todas as etapas de planejamento do projeto social, tais como: execução, controle e avaliação de todas as ações de um projeto social;
+		\item Desenvolver a habilidade de trabalho em equipe;
+		\item Elaborar projetos integradores. 
+
+	\end{itemize}	
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Fundamentos da economia, sociedade e cultura da sociedade brasileira; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Desigualdade social e politicas públicas;
+                \item Direitos humanos: democracia e cidadania; % --- (podem ser tratados os direitos de terceira geração/diversos aspectos sociais);
+                \item Movimentos sociais e projetos de integração da sociedade civil;
+                \item Ética como de inserção e de expressão de um mundo mais justo e igualitário.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Projeto integrador: pressupostos, construção e aplicação;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Objetivos e finalidades do projeto integrador;
+                \item Elementos estruturais do projeto integrador, propostas e temas;
+                \item Construção de um projeto integrador (escrito) que articule habilidade e práticas desenvolvidas e construídas a partir da relação ensino-aprendizagem no curso com questões e âmbitos sociais locais e regionais;
+                \item Aplicação, avaliação e socialização de resultados, limites e possibilidades.
+            \end{enumerate}
+            
+
+	\end{description}
+	
+	\metodologia
+	\textbf{Na primeira etapa}, desenvolveremos estudos de temas relacionados à diversos temas contemporâneos, tendo em vista a instrumentalização teórico-metodológica para a construção de um projeto que integre conhecimentos e práticas desenvolvidas no curso com a realidade concreta local, institucional, a partir de habilidades desenvolvidas em todo o percurso formativo. Considerar-se-á, a realidade econômica, social, cultural e politica da sociedade brasileira. \textbf{Na segunda etapa}, dois momentos serão subsequentes e complementares. Inicialmente será orientada a construção do projeto, articulado às 20 horas/aula teóricas. A articulação e diálogo com professores de áreas especificas será necessário nessa fase da aprendizagem.  Após a construção, segue-se para o contato com os ambientes onde será aplicado, que necessariamente será desenvolvido em momentos subsequentes, a saber: diálogo inicial com a instituição para diagnóstico, divulgação e organização do período de aplicação, seguida de aplicação prática e avaliação. \textbf{O terceiro momento} recairá sobre a socialização de todo o processo de construção e aplicação do projeto, expressando seus resultados, limites e possibilidades.
+	
+	
+	\avaliacao
+	A avaliação será realizada de forma contínua e processual, através da interação professor aluno, observando a participação dos discentes, percebendo o alcance dos objetivos propostos. Serão levados em consideração a atenção e análise dos pontos abordados. Vale ressaltar que a avaliação é dialógica, e levará em consideração os aspectos diagnósticos, somativos e formativos, ou seja, ela se dará pela soma de todos os elementos postos em discussão, pela compreensão de saber onde estamos para podermos avançar e, por todo o processo de ensino-aprendizagem. Alguns critérios:
+	\begin{itemize}
+		\item Participação nos debates e discussões;
+        \item Assiduidade; 
+        \item Responsabilidade na entrega dos trabalhos e realização de leituras solicitadas, dentre outros. 
+	\end{itemize}
+	
+	Instrumentos de avaliação:
+	\begin{itemize}
+		\item Realização de trabalhos individuais e coletivos, (resumo, fichamentos, etc);
+        \item Seminário; 
+        \item Construção de projeto integrador;
+        \item Aplicação e socialização do projeto integrador.
+    \end{itemize}
+    
+	
+	\begin{bibbasica}
+			
+        \item COHEN, Ernesto; FRANCO, Rolando. \textbf{Avaliação de projetos sociais}.  11 ed. Petrópolis: Vozes, 2016.  ISBN 9788532610577. 
+        \item OLIVEIRA, Valdeir Claudinei de (Org.). \textbf{Capitalismo e questão social}. Editora Pearson, 2014. Livro.  146 p.  ISBN 9788543009780.  (BVU)
+        \item POOLI, Jo\~ao \textit{et. al}. \textbf{Projetos interdisciplinares}.  Curitiba: Editora Intersaberes, 2013. Livro.  202 p.  ISBN 9788582127629. (BVU)
+ 		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+		\item AMARO, Sarita. \textbf{Racismo, igualdade racial e políticas de ações afirmativas no Brasil}. Porto Alegre: EDIPUCRS, 2015. Livro. 160 p. ISBN 9788539707331. (BVU)
+    	\item HACK, Neiva Silvana. \textbf{Assessoria, consultoria e avaliação de políticas, programas e projetos sociais}. Curitiba: Contentus, 2020. Livro. 55 p. ISBN 9786557451694. (BVU)
+		\item PROJECT MANAGEMENT INSTITUTE. \textbf{Um Guia do conhecimento em gerenciamento de Projetos}:  guia PMBOK\textregistered. 5. ed. São Paulo: Saraiva, 2014.  589 p. ISBN 9788502223721.
+		\item SANTOS, Boaventura de Souza. \textbf{Pela mão de Alice}: o social e o político na pós modernidade. 12. ed. São Paulo: Cortez, 2008. 348 p. Inclui bibliografia. ISBN 9788524905780.
+		\item SILVA, Marcos Ruiz da. \textbf{Projetos integradores e transversais em educação física escolar}. Curitiba: Contentus, 2020. Livro. 82 p. ISBN 9786557452363. (BVU)
+
+	\end{bibcomplementar}
+	
+	
+    
+    
+    
+	
+\end{pud}
+
+%%%% 3o SEMESTRE
+
+%%%% PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS
+
+\begin{pud}
+
+	\pudinfo{TSII.314}{Programação para Dispositivos Móveis}{TSII.208, TSII.209}{40}{80}{6}{3$^\circ$ Semestre}
+
+
+	\ementa
+	Histórico do desenvolvimento dos aplicativos móveis; Interfaces gráficas; Eventos de aplicações; Aplicações multimídia; Comunicação; Persistência de dados; Mapas e Geolocalização; Desenvolvimento prático de um sistema para dispositivos móveis; Fundamentos de teste de software; Ferramentas e estratégias de testes para aplicativos móveis.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Aprender a construir os mais variados aplicativos para dispositivos móveis, com foco em \textit{smartphones} e \textit{tablets}, de modo a possibilitar ao aluno a oportunidade de exercitar conceitos de Programação Orientada a Objetos e desenvolvimento ágil, aplicando-os a dispositivos móveis; Desenvolver casos de testes para as diversas situações e fases do desenvolvimento do aplicativo, de tal forma que o aluno possa aplicar os conhecimentos e ter uma visão geral da área de verificação, validação e teste de software no âmbito do desenvolvimento de aplicativos.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		
+		\item Identificar características de potenciais aplicativos;
+		\item Arquitetar aplicações para dispositivos móveis; 
+		\item Implementar aplicações para dispositivos móveis; 
+		\item Aplicar técnicas de desenvolvimento de softwares em dispositivos móveis. 
+
+	\end{itemize}
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Introdução ao desenvolvimento para dispositivos móveis; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Evolução dos dispositivos móveis;
+				\item Características dos dispositivos móveis;
+				\item Arquiteturas de aplicação móvel;
+				\item Infraestrutura móvel.
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Tratamento de eventos (interações do usuário);
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Padrões de projetos mais comuns para tratamento de eventos;
+				\item Componentes gráficos, eventos relacionados e formas de tratamento.
+            \end{enumerate}
+
+		\item[UNIDADE III:] Aplicações multimídia; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Armazenamento e processamento de dados multimídia;
+				\item Tratamento de eventos relacionados a imagens e sons.
+            \end{enumerate}
+            
+        \item[UNIDADE IV:] Comunicação com servidores;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item O modelo cliente-servidor;
+				\item API's nativas para WEB.
+            \end{enumerate}
+            
+		\item[UNIDADE V:] Persistência de dados; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Armazenamento de dados no dispositivo;
+                \item Aplicações e Banco de Dados mais comuns para dispositivos móveis;
+                \item Relacionando formulários com Banco de Dados;
+                \item Visualização de dados.
+            \end{enumerate}
+            
+        \item[UNIDADE VI:] Geolocalização;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Sistemas de coordenadas geográficas;
+         		\item Provedores de localização mais comuns;
+                \item Eventos de localização;
+				\item Mapas.
+            \end{enumerate}
+
+		\item[UNIDADE VII:] Desenvolvimento prático de um sistema para Dispositivos Móveis; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item  Levantamento de requisitos de software de um aplicativo para dispositivos móveis;
+	            \item  Projeto de interface de um aplicativo móvel;
+	            \item  Projeto de arquitetura de software para um aplicativo móvel;
+	            \item  Projeto de persistência de dados e comunicação para um aplicativo para dispositivos móveis.
+            \end{enumerate}
+            
+        \item[UNIDADE VIII:] Aplicação de teste de software em desenvolvimento de aplicativos.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item  Desenvolvimento de software dirigido por testes;
+				\item Técnicas de testes;
+				\item Planejamento e execução de testes aplicativo para dispositivos móveis.icas desenvolvidas e construídas a partir da relação ensino-aprendizagem no curso com questões e âmbitos sociais locais e regionais;
+                
+            \end{enumerate}                                    
+
+	\end{description}
+	
+	\metodologia
+	A disciplina contará com aulas expositivas dialogadas, atividades práticas em laboratório e a realização de trabalhos em equipe e individuais, além da análise e discussão de estudos de caso e a aplicação de metodologias ativas para promover a construção do conhecimento no estudante. A partir das atividades de desenvolvimento de aplicativos realizadas durante a disciplina, fazer uso dos conceitos de testes para criação dos casos de testes e execução destes sobre os aplicativos ou o sistema prático desenvolvidos na disciplina.
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+    
+	\clearpage
+	\begin{bibbasica}
+			
+        \item LECHETA, R. R. \textbf{Google Android}: aprenda a criar aplicações para dispositivos móveis com o Android SDK.  ed. rev. e ampl. São Paulo: Novatec, 2013. 824 p. ISBN 9788575223444. 
+ 		\item LEE, V.; SCHENEIDER, H.; SCHELL, R. \textbf{Aplicações móveis}: arquitetura, projeto e desenvolvimento. Editora Pearson. Livro. 350 p. ISBN 9788534615402. (BVU)
+		\item SILVA, Diego (Org.). \textbf{Desenvolvimento para dispositivos móveis}.  São Paulo: Pearson Education do Brasil, 2016.  Livro. 123 p. ISBN 9788543020259. (BVU)
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+    	\item  BONATTI, Denilson. \textbf{Desenvolvimento de Jogos em HTML5}. Rio de Janeiro: Editora Brasport, 2014. Livro. 256 p. ISBN 9788574527017. (BVU)
+ 		\item DEITEL, Paul; DEITEL, Harvey M. \textbf{Java}: como programar. Tradução de Edson Furmankiewicz. Revisão técnica de Fábio Luis Picelli Lucchini. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 1144 p. ISBN 9788576055631. (BVU) 
+		\item FLATSCHART, Fábio. \textbf{HTML5}: Embarque imediato. Rio de Janeiro: Brasport, 2011.  256 p. ISBN 9788574525778. (BVU)
+		\item LECHETA, Ricardo R. \textbf{Google Android para tablets}: aprenda a desenvolver aplicações para o Android - de smartphones a tablets. São Paulo: Novatec, 2012. 448 p. Inclui bibliografia. ISBN 9788575222928.
+		
+		\item TANENBAUM, Andrew S.; Bos, Herbert. \textbf{Sistemas operacionais modernos}. Editora Pearson. Livro. 778 p. ISBN 9788543005676. (BVU)
+		
+	\end{bibcomplementar}
+	
+	
+    	
+	
+\end{pud}
+
+
+%%%% Análise e Projeto de Sistemas
+
+\begin{pud}
+	
+	\pudinfo{TSII.315}{Análise e Projeto de Sistemas}{TSII.209, TSII.210}{20}{20}{2}{3$^\circ$ Semestre}
+	
+	\ementa
+	Fundamentos de Análise e Projeto de Sistemas de Informação. Modelagem de Sistemas. Técnicas de Modelagem: Estruturada e Orientada a Objetos. Linguagem de Modelagem Unificada -- UML. Aplicação de ferramentas computacionais de apoio ao processo de análise e projeto de sistemas. Padrões de projeto. Conceitos de engenharia de software aplicáveis a sistemas. Desenvolvimento da análise e projeto baseado em objetos de um sistema.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Conhecer o processo de Análise e Projeto de Sistemas, aplicando conceitos de engenharia para construção de softwares.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		
+		\item Assimilar as etapas e fundamentos que compõem a análise de sistemas em sistemas computacionais;
+		\item Compreender a utilização da UML como uma linguagem de modelagem conceitual e unificada;
+		\item Desenvolver diagramas UML para as fases de análise, projeto e implementação de um software orientado a objetos;
+		\item Compreender as ferramentas utilizadas para análise de projeto de sistemas. 
+
+	\end{itemize}
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Fundamentos de Análise e Projeto de Sistemas de Informação; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Aspectos introdutórios da análise e projeto orientados a objeto;
+               	\item Fases da engenharia de requisitos;
+               	\item Casos de uso;
+            \end{enumerate}
+            
+        \item[UNIDADE II:] Modelagem;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Modelagem de aspectos estáticos e dinâmicos de software;
+                \item  Linguagem de Modelagem Unificada -- UML;
+				\item  Utilização de ferramentas para modelagem UML;
+            \end{enumerate}
+
+		\item[UNIDADE III:] Projeto e implementação de sistemas; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Principais diagramas da UML (estruturais, comportamentais  e interativos);
+				\item Codificação de diagramas;
+				\item Padrões de Projeto.
+            \end{enumerate}
+            
+        \item[UNIDADE IV:] Análise e projeto de sistemas para WEB;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Análise e projeto de sistemas no âmbito WEB;
+				\item Especificidades do ambiente WEB.
+            \end{enumerate}
+
+                                    
+
+	\end{description}
+	
+	
+	\metodologia
+	A disciplina contará com aulas expositivas dialogadas, atividades práticas em laboratório e a realização de trabalhos em equipe e individuais, além da análise e discussão de estudos de caso e a aplicação de metodologias ativas para promover a construção do conhecimento no estudante. As aulas práticas contarão com exemplos implementados em um contexto de linguagem de programação.
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	
+	
+	\begin{bibbasica}
+		 %\item BEZERRA, Eduardo. \textbf{Princípios de Análise e Projeto de Sistemas com UML}: um guia prático para modelagem de sistemas. 3. ed. Elsevier, 2015. ISBN: 9788535226263
+		 \item LARMAN, Craig. \textbf{Utilizando UML e padrões}: uma introdução à análise e ao projeto orientados a objetos e ao desenvolvimento iterativo. Tradução de Rosana T. Vaccare Braga. 3, ed. Porto Alegre: Bookman, 2007. 695 p. Inclui bibliografia. ISBN 9788560031528.
+		 %\item WAZLAWICK, R. \textbf{Análise e Projeto de Sistemas de Informação Orientados}. 2. ed. Elsevier Brasil, 2010.
+		\item MCLAUGHLIN, Brett; POLLICE, Gary; WEST, David. \textbf{Use a cabeça}: análise e projeto orientado ao objeto. Tradução de Betina Macêdo. Revisão técnica de Eduardo Velasco. Rio de Janeiro: Alta Books, 2007. 442 p. ISBN 9788576081456.
+        
+		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297. (BVU)
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+ 		\item DEITEL, Paul; DEITEL, Harvey. \textbf{Java}: como programar 8. ed. São Paulo: Pearson Education do Brasil, 2017. ISBN 9788576055631. (BVU)
+		\item FOWLER, Martin. \textbf{UML essencial}: um breve guia para a linguagem - padrão de modelagem de objetos. Tradução de João Eduardo Nóbrega Tortello. 3. ed. Porto Alegre: Bookman, 2005. 160 p. ISBN 8536304545.
+		% \item FILHO, Wilson de Pádua Paula. Engenharia de Software: fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009.
+		%\item MACHADO, F.N.R. \textbf{Análise e Gestão de Requisitos de Software}: onde nascem os sistemas. Editora Saraiva, 2018.
+		\item PAGE-JONES, Meilir. \textbf{Fundamentos do Desenho Orientado a Objeto com UML}. Editora Pearson. Livro. 488 p. ISBN 9788534612432. 
+		\item PRESSMAN, Roger S.; MAXIM, Bruce R. \textbf{Engenharia de software}: uma abordagem profissional. Tradução de Ariovaldo Griesi, Mario Moro Fecchio. Revisão técnica de Reginaldo Arakaki, Renato Manzan de Andrade, Julio Arakaki. 7. ed. Porto Alegre: AMGH, 2011. 780 p. Inclui bibliografia. ISBN 9788563308337.				 
+		
+		\item SOMMERVILLE, Ian. \textbf{Engenharia de software}. Tradução de Kalinka Oliveira, Ivan Bosnic. Revisão técnica de Kechi Hirama. 9. ed. São Paulo: Pearson Prentice Hall, 2011. 529 p. Inclui bibliografia. ISBN 9788579361081.	
+		
+		
+	\end{bibcomplementar}
+	
+	
+    	
+	
+\end{pud}
+
+%%% Desenvolvimento WEB II
+
+\begin{pud}
+	
+	\pudinfo{TSII.316}{Desenvolvimento WEB II}{TSII.208, TSII.209, TSII.211}{40}{40}{4}{3$^\circ$ Semestre}
+	
+	\ementa
+	Linguagem de desenvolvimento \textit{back-end}: Orientação a Objetos. \textit{Frameworks} WEB: Introdução à \textit{frameworks} para desenvolvimento WEB. Acesso a banco de dados em sistemas WEB via \textit{framework} de Mapeamento objeto-relacional (ou ORM, do inglês: \textit{Object-relational mapping}). Engenharia WEB: Desempenho com \textit{cluster}, balanceamento de carga, alta disponibilidade, criptografia, SQL \textit{injection}.
+	
+	\objetivos
+	Construir sistemas Web observando as boas práticas de construção com \textit{Frameworks} de desenvolvimento WEB Orientação a Objetos com ORM ou tecnologias similares.  Analisar desempenho de sistemas WEB.
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Atividades práticas relacionadas a técnicas e métodos atuais de Desenvolvimento WEB com \textit{Frameworks}. Além disso, trabalhos individuais e em grupo, utilização de laboratório com exercícios práticos que possam auxiliar o treinamento e desenvolvimento de aplicações para WEB com \textit{Frameworks}, envolvendo todos os aspectos aprendidos durante a disciplina e o curso.    
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Linguagem de desenvolvimento \textit{back-end} Orientação a Objetos;
+	    \item[UNIDADE II:]  \textit{Framework} WEB Orientado a Objetos;
+        \item[UNIDADE III:] \textit{Framework} de Mapeamento Orientado a Objetos (ORM);
+        \item[UNIDADE IV:] Projeto de Sistemas WEB com \textit{Frameworks}.
+	\end{description}
+	
+	
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	
+	\clearpage
+	
+	\begin{bibbasica}
+			
+        \item DALL'OGLIO, Pablo. \textbf{PHP}: programando com orientação a objetos. 2. ed. São Paulo: Novatec Editora, 2009.  ISBN 9788575222003.
+		\item DEITEL, Paul J.; DEITEL, Harvey M.  \textbf{Ajax, Rich Internet Applications e Desenvolvimento Web para Programadores}. Editora Pearson. 776 p. ISBN 9788576051619. (BVU)
+		%\item OLIVIERO, Carlos A. J. \textbf{Faça um site PHP 5.2 com MySQL 5.0}: comércio eletrônico orientado por projeto. São Paulo: Érica, 2010.
+		\item SOARES, Walace. \textbf{Crie um framework para sistemas web e com PHP 5 e Ajax}. São Paulo: Érica, 2009.  ISBN 9788536502373.
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+	    
+		\item FLATSCHART, F\'abio. \textbf{HTML 5}: embarque Imediato. Rio de Janeiro: Editora Brasport, 2011. 256 p. ISBN 9788574525778. (BVU)
+		\item LEMAY, Laura; COLBURN, Rafe; TYLER, Denise. \textbf{Aprenda a Criar P\'aginas Web com HTML e XHTML em 21 Dias}.  São Paulo: Pearson Education do Brasil, 2002.  1158 p. ISBN 9788534614283. (BVU)
+ 		
+ 		\item MARINHO, Antônio Lopes (Org.). \textbf{Desenvolvimento de aplicações para Internet}. São Paulo: Pearson Education do Brasil, 2016. Livro. 139 p. ISBN 9788543020112. (BVU)
+ 		\item PUGA, Sandra; FRANCA, Edson; GOYA, Milton. \textbf{Banco de dados}: Implementa\c{c}\~ao em SQL, PL/SQL e Oracle 11g.  São Paulo: Pearson Education do Brasil, 2013. 356 p.  ISBN 9788581435329. (BVU)
+ 		\item SEGURADO, Valquiria Santos (Org.). \textbf{Projeto de interface com o usuário}. São Paulo: Pearson Education do Brasil, 2015. Livro. 195 p. ISBN 9788543017303. (BVU) 
+ 		%\item SILVA, Maur\'icio Samy. \textbf{JavaScript}: guia do programador. S\~ao Paulo: Novatec, 2010. 604 p. Inclui bibliografia e \'indice. ISBN 9788575222485.  
+		 
+	\end{bibcomplementar}
+	
+	
+	
+\end{pud}
+
+%%%%% SEGURANCA DE REDES
+\begin{pud}
+	
+	\pudinfo{TSII.317}{Segurança de Redes}{TSII.212}{20}{20}{2}{3$^\circ$ Semestre}
+	
+	\ementa
+	Fundamentos de gerenciamento em redes de computadores. Protocolos de gerenciamento de redes, Metodologias para resolução de problemas em redes. Ferramentas para gerenciamento. Fundamentos de segurança da informação, Introdução à criptografia. \textit{Firewalls}. Detecção e prevenção de invasões. Segurança em redes sem fio. 
+	
+	
+	\objetivos
+	Fornecer ao aluno conhecimento para garantir funcionamento, manutenção e reparos em redes de computadores. Abordar aspectos de gerenciamento e políticas de segurança da informação.
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:]Fundamentos de Segurança da Informação; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Definições de segurança;
+				\item A segurança da informação;
+				\item Modelos de referência da segurança;
+				\item Plano de segurança;
+				\item Análise e gerenciamento de riscos;
+				\item Política de segurança.
+	        \end{enumerate}
+	        
+	    \item[UNIDADE II:] Criptografia;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Histórico;
+				\item Terminologia;
+				\item Usos da criptografia;
+				\item Chaves criptográficas;
+				\item Algoritmos de criptografia;
+				\item Tipos de criptografia;
+				\item Funções \textit{hash};
+				\item Certificação digital.
+	        \end{enumerate}
+	
+		\item[UNIDADE III:] \textit{Firewalls};
+	        
+	    \item[UNIDADE IV:] Detecção e Prevenção de Invasões;
+	
+	        
+	    \item[UNIDADE II:] Tipos de Ataques e Contramedidas.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Vírus;
+				\item \textit{Phishing};
+				\item Negação de serviço (DoS e DDoS);
+				\item \textit{Spoofing};
+				\item \textit{Aircrack}.
+	        \end{enumerate}
+	                                
+	
+	\end{description}
+	
+	\metodologia
+	Aulas teóricas sobre gerência e segurança de redes e aulas práticas utilizando ferramentas de gerenciamento de rede. Além disso, ocorrerão aulas práticas para execução de um projeto de segurança em redes de computadores.
+
+
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+		
+	
+	\begin{bibbasica}
+	
+		\item BOMFATI, Cláudio Adriano; KOLBE JUNIOR, Armando. \textbf{Crimes cibernéticos}. Editora Intersaberes. Livro. 198 p. ISBN 9788522702916. (BVU)
+		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. (BVU)
+		\item STALLINGS, William. \textbf{Criptografia e segurança de redes}: princípios e práticas. 4. ed.  Editora Pearson. Livro. 580 p. ISBN 9788543005898. (BVU)
+		
+		
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+		\item ALENCAR, Marcelo Sampaio de. \textbf{Engenharia de redes de computadores}. São Paulo: Érica, 2012. 286 p. Bibliografia. ISBN 9788536504117.
+		\item COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. \textbf{Sistemas distribuídos}: conceitos e projeto. Tradução de João Eduardo Nóbrega Tortello. Revisão técnica de Alexandre da Silva Carissimi. 4. ed. Porto Alegre: Bookman, 2007. 784 p. Inclui bibliografia. ISBN 9788560031498.
+		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
+		%\item SOUSA, Lindeberg Barros de. \textbf{Projetos e implementação de redes}: fundamentos, soluções, arquiteturas e planejamento. 3. ed. , rev. São Paulo: Érica, 2013. 318 p. ISBN 9788536501666.		
+		\item TANENBAUM, Andrew S. ; WETHERALL, David J. \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU)
+		\item TANENBAUM, Andrew S.; STEEN, Maarten Van. \textbf{Sistemas distribuídos}: princípios e paradigmas. Tradução de Arlete Simille Marques. Revisão técnica de Wagner Luiz Zucchi. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 402 p. Inclui bibliografia. ISBN 9788576051428. (BVU)
+		
+	\end{bibcomplementar}
+	
+	
+	
+\end{pud}
+
+
+
+%%%% GESTAO DE PROJETOS
+
+\begin{pud}
+
+	\pudinfo{TSII.318}{Gestão de Projetos}{TSII.106}{36}{4}{2}{3$^\circ$ Semestre}
+	
+	\ementa
+	Introdução ao gerenciamento de projetos. Ciclo de vida de um projeto. Análise de riscos e custos. Gerenciamento da qualidade. Liderança e trabalho em equipe. Avaliação de resultados de um projeto. Melhores práticas em gerenciamento de projetos.
+	
+	\objetivos
+	Conhecer os conceitos e práticas da gerência de projetos. Aprender as técnicas e ferramentas de gerenciamento de projetos na concepção, planejamento, implementação, controle e conclusão de atividades de projeto de software.  Conhecer as práticas e ferramentas de gerenciamento de projetos.
+	
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Introdução ao gerenciamento de projetos;
+		\begin{enumerate}[itemsep=0em, topsep=0em]
+			\item Conceitos e tipos de projetos;
+			\item Portifólio, programa e projeto;
+			\item Origem e evolução do gerenciamento de projetos;
+			\item Ciclo de vida de um projeto;
+			\item Escopo, tempo e dinheiro de um projeto;
+			\item Metodologias de gerenciamento de projetos;
+			\item Ferramentas no gerenciamento de projetos.
+		\end{enumerate}
+		
+	    \item[UNIDADE II:] Ciclo de vida de um projeto;
+		\begin{enumerate}[itemsep=0em, topsep=0em]
+			\item Processos de iniciação, execução, controle e encerramento de projetos;
+			\item Estrutura analítica do projeto;
+			\item Cronograma e métodos de avaliação e acompanhamento;
+			\item Alocação de recursos no projeto.
+		\end{enumerate}
+		
+        \item[UNIDADE III:] Análise de riscos e custos;
+		\begin{enumerate}[itemsep=0em, topsep=0em]
+			\item  Definição de risco e custos;
+			\item  Identificação e categorização de riscos;
+			\item  Estratégias e plano de resposta aos riscos.
+		\end{enumerate}
+
+        \item[UNIDADE IV:] Gerenciamento da qualidade;
+		\begin{enumerate}[itemsep=0em, topsep=0em]
+			\item Definição de qualidade;
+			\item Qualidade de produto/processo/projeto;
+			\item Planejamento da qualidade;
+			\item Processos de auditorias e inspeções;
+			\item Certificação.
+		\end{enumerate}
+		
+		\item[UNIDADE V:] Liderança e trabalho em equipe;
+		\begin{enumerate}[itemsep=0em, topsep=0em]
+			\item  Liderança versus gerência;
+			\item  Características dos líderes e estilos de liderança;
+			\item  Vantagens de trabalho em equipe;
+			\item  Liderança compartilhada;
+			\item  Flexibilidade e adaptabilidade.
+		\end{enumerate}
+		
+		\item[UNIDADE VI:]  Avaliação de resultados de um projeto;
+				
+		\item[UNIDADE VII:]  Melhores práticas em gerenciamento de projetos.
+		
+	\end{description}
+	
+	\metodologia
+	Aulas teóricas: expositivo-dialogadas com aplicação e resolução de exercícios, estudos dirigidos, seminários, vídeos e dinâmicas de grupo. Aulas práticas: realizadas em jogos simulados, laboratório, visitas técnicas e/ou participações em eventos. Recursos: quadro branco, cartolina, pincéis, post-it, lousa digital, data-show, aparelho de som, computador pessoal, smartphone, Internet, e-mail; redes sociais, Ambiente Virtual de Aprendizagem (AVA) e outros.
+	
+	
+	\avaliacao
+	Verificação de conhecimentos através de avaliação presencial, avaliação a distância desenvolvidas em Ambiente Virtual de Aprendizagem empregando a metodologia de avaliação disponível no Google Sala de Aula e auto avaliação permitindo ao aluno saber seu desempenho. A avaliação será desenvolvida nas seguintes formas:
+	\begin{description}[itemsep=0em, ]
+		\item[$\bullet$ Diagnóstica --] levantamento dos conhecimentos prévio dos alunos;
+        \item[$\bullet$ Continuada --] análise de todo o processo de ensino-aprendizagem observando a participação individual e em grupo, o envolvimento nas atividades, o desenvolvimento dos conteúdos e o nível de percepção apresentado, isto é, o olhar não apressado que consegue descobrir detalhes, estabelecer comparações e conexões com o dia-a-dia, a condição humana, enfim, a própria vida;
+	\end{description}
+        
+    Tipos de verificação do conhecimento construído durante as aula: 
+	\begin{description}[itemsep=0em, ]
+		\item[$\bullet$ Escrita,] através de questionário individual e/ou equipe;
+        \item[$\bullet$ Oral,] através de apresentação individual e/ou equipe;
+	\end{description}
+	Os recursos avaliativos serão utilizados com base  no art. 94 \S~1$^\circ$ alínea de I a XV do Regulamento de Organização Didática.
+
+
+	\clearpage
+	\begin{bibbasica}
+		
+		\item CLEMENTS, James P.; GIDO, Jack. \textbf{Gestão de projetos}. 3\textordfeminine\ reimpr. da 2. ed. São Paulo: Cengage Learning, 2016. 511 p. ISBN 978-85-221-1276-0.	
+        \item KERZNER, Harold; RIBEIRO, Lene Belon; BORBA, Gustavo Severo de. \textbf{Gestão de projetos}: as melhores práticas. 2. ed. Porto Alegre: Bookman, 2006. 824 p. Inclui Bibliografia. ISBN 9788536306186.
+		\item VALERIANO, Dalton L. \textbf{Gerenciamento Estratégico e Administração por Projetos}. Editora Pearson. Livro. 324 p. ISBN 9788534612081. (BVU) 	
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    	
+    	\item PROJECT MANAGEMENT INSTITUTE. \textbf{Um Guia do conhecimento em gerenciamento de Projetos}:  guia PMBOK\textregistered. 5. ed. São Paulo: Saraiva, 2014.  589 p. ISBN 9788502223721.
+		\item SABBAG, Paulo Yazigi. \textbf{Gerenciamento de projetos e empreendedorismo}. 2. ed. São Paulo: Saraiva, 2013. 226 p. Inclui bibliografia. ISBN 9788502204447.
+		\item VALLE, André Bittencourt do. \textbf{Fundamentos do gerenciamento de projetos}. 2. ed. Rio de Janeiro: FGV, 2010. 172 p. (Gerenciamento de projetos). ISBN 9788522507986.
+		\item VALERIANO, Dalton. \textbf{Moderno gerenciamento de projetos}. 2.ed Editora Pearson. Livro. 284 p. ISBN 9788543004518. (BVU)
+		\item XAVIER, Carlos Magno da Silva. \textbf{Gerenciamento de projetos}: como definir e controlar o escopo do projeto. 2. ed. São Paulo: Saraiva, 2009. 258 p.  ISBN 9788502061958. 	
+		
+	\end{bibcomplementar}
+	
+\end{pud}
+
+
+%%%% PROJETO INTEGRADOR III
+
+\begin{pud}
+
+	\pudinfo{TSII.319}{Projeto Integrador III}{TSII.213}{08}{72}{4}{3$^\circ$ Semestre}
+	
+	\ementa
+	Idealizando negócios inovadores. Proposta de valor. Testando Hipóteses. Validação. Prototipação. \textit{Pitch} de negócios. Administração Mercadológica. Viabilidade Financeira. Produto Mínimo Viável (MVP). \textit{Valuation}. Pitch para Investidores.
+	
+	\objetivos
+	Realizar a elaboração, testagem e prototipação de um modelo de negócio;
+	Elaborar uma estratégia de marketing;
+    Implementar uma estratégia de marketing; 
+    Projetar a viabilidade financeira e valor da proposta de negócio;
+    Desenvolver um Produto Mínimo Viável (MVP);
+    Lançar um Produto Mínimo Viável (MVP).
+	
+	\par \textbf{OBS}: o desenvolvimento do produto/serviço constitui-se Prática Profissional Integrada (PPI).
+	
+	
+
+	\programa
+	\begin{description}[itemsep=0em, topsep=0em]
+		\item[UNIDADE I:] \quad
+		\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+			\item Idealizando negócios inovadores;
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+				\item Dores do Mercado (Cliente): Identificação e validação de problemas (Brainstorming);
+				\item Remédios/Soluções: Idealizando e analisando hipóteses de soluções de negócios;
+				\item Apresentando a proposta de negócio (CANVAS). 
+			\end{enumerate}
+			
+			\item Proposta de valor;
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+				\item Identificando o Perfil do cliente: Atividades/Trabalho, Dores/Problemas, Ganhos/
+Benefícios, Classificando, Mapeando o cliente;
+				\item Mapeando os valores: Produtos e serviços, Analgésico, Criadores de ganhos, Mapeando os valores;
+				\item Ajustando os valores aos clientes: Ganhos essenciais do cliente, Problemas extremos do cliente, Ajustes (solução do problema, produto ao Mercado, modelo de negócio);
+				\item Compreendendo o cliente: Pesquisa e analise do perfil do cliente. 
+			\end{enumerate}
+			
+			\item Avaliando Hipóteses;
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+				\item Desenhando Hipóteses de negócios (testável, precisa e discreta);
+				\item Avaliando Hipóteses $\times$ Riscos: Desejos do MERCADO, Viabilidade de INFRA-ESTRUTURA, Viabilidade FINANCEIRA;
+				\item Mapeando Hipóteses: Identificando as Hipóteses, priorizando as Hipóteses, analisando as Hipóteses. 
+			\end{enumerate}
+			
+			\item Validação de Hipóteses;
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+				\item Testar hipóteses;
+				\item Aprender com os resultados;
+            	\item Desenhar o protótipo ou testar novas hipóteses (pivotar). 
+			\end{enumerate}
+			
+			\item Prototipagem: Planejar, Testar, Validar, Avaliar, Redesenhar experimento ou Desenhar Modelo de Negócios;
+			\item Pitch de negócios: apresentação do modelo e resultados.
+
+		\end{enumerate}
+		
+	    \item[UNIDADE II:] \quad
+		\begin{enumerate}[itemsep=0em, topsep=0em]
+			\item Administração mercadológica;
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+				\item Avaliando maturidade do modelo de negócio;
+				\item Governança Corporativa: memorando de entendimento e termo de confidencialidade;
+				\item Gestão da marca: planejamento, criação, gerenciamento e registro da marca;
+				\item Experiência do usuário - UX: análise e desenho do design do produto/serviço;
+				\item \textit{Inbound Marketing}: atrair, converter e encantar clientes.
+				\item \textit{Growth Hacking}: identificar oportunidades/brechas para resultados e crescimento rápido. 
+			\end{enumerate}
+			
+			\item Viabilidade Financeira;
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+				\item Análise de mercado;
+				\item Projeções financeiras: receitas, custos, despesas, investimentos, fluxos de caixa futuros;
+				\item Indicadores: Taxa Mínima de Atratividade (TMA), Taxa Interna de Retorno (TIR), Valor Presente Líquido (VPL) e \textit{PAYBACK}. 
+			\end{enumerate}
+			
+			\item Produto Mínimo Viável (MVP);
+			\begin{enumerate}[itemsep=0em, topsep=0em, label*=\arabic*.]
+			  \item Planejar, Lançar, Testar, Medir, Avaliar e Melhoria cont\'inua do MVP. 
+			\end{enumerate}
+			
+			\item \textit{Valuation}: métodos de análise e simulação de cenários;
+			\item \textit{Pitch} para Investidores: apresentação do modelo do negócio, MVP e resultados.
+		\end{enumerate}
+		
+	\end{description}
+	   
+	
+	\metodologia
+	\textbf{Aulas práticas}: realizadas com aplicação e resolução de exercícios, estudos dirigidos, seminários, vídeos, dinâmicas de grupo, jogos simulados, laboratório, visitas técnicas e/ou participações em eventos.
+	\textbf{Recursos}: quadro branco, cartolina, pincéis, post-it, lousa digital, data-show, aparelho de som, computador pessoal, smartphone, Internet, e-mail; redes sociais, Ambiente Virtual de Aprendizagem (AVA) e outros.
+	
+	\avaliacao
+	Verificação de conhecimentos através de avaliação presencial, avaliação a distância desenvolvidas em Ambiente Virtual de Aprendizagem empregando a metodologia de avaliação disponível no Google Sala de Aula e auto avaliação permitindo ao aluno saber seu desempenho. A avaliação será desenvolvida nas seguintes formas:
+	\begin{description}
+		\item[$\bullet$ Diagnóstica --] levantamento dos conhecimentos prévio dos alunos;
+        \item[$\bullet$ Continuada --] análise de todo o processo de ensino-aprendizagem observando a participação individual e em grupo, o envolvimento nas atividades, o desenvolvimento dos conteúdos e o nível de percepção apresentado, isto é, o olhar não apressado que consegue descobrir detalhes, estabelecer comparações e conexões com o dia-a-dia, a condição humana, enfim, a própria vida;
+	\end{description}
+        
+    Tipos de verificação do conhecimento construído durante as aula: 
+	\begin{description}
+		\item[$\bullet$ Escrita,] através de questionário individual e/ou equipe;
+		\item[$\bullet$ Oral,] através de apresentação individual e/ou equipe;
+	\end{description}
+	Os recursos avaliativos serão utilizados com base  no art. 94 \S~1$^\circ$ alínea de I a XV do Regulamento de Organização Didática.
+
+	
+	\begin{bibbasica}
+	
+		\item SAMANEZ, Carlos Patrício. \textbf{Gestão de Investimentos e Geração de Valor}. São Paulo: Pearson Prentice Hall, 2007. Livro. 400 p. ISBN 9788576051046. (BVU)
+		\item VIDAL, André. \textbf{Agile Think Canvas}. São Paulo: Editora Brasport, 2017. Livro. 217 p. ISBN 9788574528328. (BVU)
+		\item VOLPATO, Neri \textit{et al}.  \textbf{Prototipagem rápida}. São Paulo: Editora Blucher, 2006. Livro. 267 p. ISBN 9788521215059. (BVU)
+		
+		
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+ 	
+ 		\item DEGEN, Ronald Jean. \textbf{O Empreendedor}: empreender como opção de carreira. São Paulo: Pearson Prentice Hall, 2009. 466 p. ISBN 9788576052050. (BVU)
+		\item DEGEN, Ronald Jean. \textbf{O Empreendedor}: fundamentos da iniciativa empresarial. 8. ed. São Paulo: Makron Books, 1989. E-book. (BVU)
+		\item DORNELAS, José Carlos Assis. Empreendedorismo na prática: mitos e verdades do empreendedor de sucesso. 3.ed. Rio de Janeiro: LTC, 2015. 141 p. ISBN 9788521627920.
+		\item MAXIMIANO, Antonio Cesar Amaru.  \textbf{Administração para empreendedores}: fundamentos da criação e gestão de novos negócios. 2. ed. Pearson. 258 p. ISBN 9788576058762. (BVU)
+		\item MAXIMIANO, Antonio Cesar Amaru. \textbf{Empreendedorismo}. Editora Pearson. Livro. 186 p. ISBN 9788564574342. (BVU)
+		\item SERTEK, Paulo. \textbf{Empreendedorismo}. Editora Intersaberes. Livro. 240 p. ISBN 9788565704199. (BVU)
+		
+	\end{bibcomplementar}
+	
+		
+	
+	
+\end{pud}
+
+
+%%%% OPTATIVAS
+
+
+
+%%%% Artes
+% level 1
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\theenumi.}
+% level 2
+\renewcommand{\theenumii}{\arabic{enumii}}
+\renewcommand{\labelenumii}{\theenumi.\theenumii}
+% level 3
+\renewcommand{\theenumiii}{\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\theenumi.\theenumii.\theenumiii}
+% level 4
+\renewcommand{\theenumiv}{\arabic{enumiv}}
+\renewcommand{\labelenumiv}{\theenumi.\theenumii.\theenumiii.\theenumiv}
+
+\begin{pud}
+
+	\pudinfo{TSII.401}{Artes}{--}{20}{20}{2}{Optativa}
+	
+	\ementa
+	Apresentação e discussão sobre aspectos histórico-sociais que envolvem a produção em música em diálogo com a tecnologia. Utilização de ferramentas computacionais para a criação em música.
+	
+	
+	\objetivos
+	\begin{itemize}[itemsep=0em, topsep=0em]
+		\vspace{-1em}
+		\item Compreender os elementos constituintes da música e as propriedades do som;
+		\item Conhecer os aspectos histórico-sociais da música nos períodos históricos, discutindo, sobretudo, as transformações na produção musical a partir do advento dos recursos fonográficos;
+		\item Conhecer as principais ferramentas computacionais para a produção e criação musical;
+		\item Desenvolver habilidades de produção e criação utilizando ferramentas computacionais.
+	\end{itemize}
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Produção musical e tecnologia; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Parâmetros sons e elementos da Música;
+				\begin{enumerate}
+                	\item O som enquanto matéria da música;
+                	\item Aspectos físicos do som: altura, intensidade, duração e timbre;
+					\item Aspectos melódicos, rítmicos e harmônicos da música.
+                \end{enumerate}
+                
+				\item Aspectos históricos e a construção da tradição da música ocidental.
+				\begin{enumerate}
+                	\item Períodos históricos da música e suas estéticas;
+                	\item Música no século XX e XXI;
+					\item Tradições e vanguardas na música europeia.
+                \end{enumerate}
+	        \end{enumerate}
+	        
+	    \item[UNIDADE II:] Aspectos criativos e tecnológicos em música;
+	    	
+	        \begin{enumerate}[itemsep=0em, topsep=0em]
+				\setcounter{enumi}{2}
+				\item Música e tecnologia.
+				
+				\begin{enumerate}[itemsep=0em, topsep=0em]
+					\item Ferramentas computacionais para criação musical:
+					
+					\begin{enumerate}[itemsep=0em, topsep=0.25em]
+                		\item Digital Audio Workstation (DAW);
+    					\item Microfones;
+    					\item Gravação de áudio;
+    					\item Edição e mixagem.
+                	\end{enumerate}
+                	
+				\end{enumerate}
+				
+	        \end{enumerate}
+	        
+	
+	\end{description}
+	
+	\clearpage
+	\metodologia
+	As atividades serão desenvolvidas por meio de estudos teóricos e práticos. As aulas serão organizadas com base nas seguintes metodologias de ensino: (i) aulas expositivas; (ii) metodologias ativas de aprendizagem, como: debates, estudos dirigidos, jogos, criação de mapas mentais, entre outros; (iii) atividades de orientação de pesquisa, produção textual e apresentação oral; (iv) dinâmicas de criação e produção artística; (v) desenvolvimento de projetos integradores e interdisciplinares.
+
+	
+	\avaliacao
+	A avaliação da aprendizagem na disciplina Artes será, parcialmente, realizada no decurso das aulas observando individualmente o gradual desenvolvimento dos alunos. A avaliação dar-se-á considerando a participação e produção dos alunos nas atividades propostas individualmente e em grupos durante todo o período letivo. O exercício da pesquisa será incentivado como ferramenta de construção do conhecimento. Assim, a produção da pesquisa, a produção textual e a apresentação oral em forma de seminário serão ferramentas de avaliação do trabalho desenvolvido. Serão considerados critérios avaliativos: (i) o envolvimento e a organização no processo de produção da pesquisa, (ii) a correção textual e o desenvolvimento argumentativo dos textos produzidos; (iii) desenvolvimento e organização da apresentação oral dos conteúdos pesquisados. 
+	
+		
+	
+	\begin{bibbasica}
+			
+		\item ALFONSO, Sandra Mara. \textbf{O violão, da marginalidade à academia}: trajetória de Jodacil Damaceno. Uberlândia, MG: EDUFU, 2009. ISBN 9788570781925.
+		\item BENNETT, Roy. \textbf{Elementos Básicos Da Música}.Rio de Janeiro: Zahar, 2014. 98 p., il. ISBN 9788571101449. 
+		\item BENNETT, Roy. \textbf{Uma Breve História Da Música}. Rio de Janeiro: Zahar, 2007. 79 p. (Cadernos de música da Universidade de Cambridge). ISBN 9788571103658. 
+		\item VICENTE, Eduardo. \textbf{Da vitrola ao iPod}: uma história da indústria fonográfica no Brasil. Alameda Casa Editorial, 2014. ISBN 8579392055.
+	
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    
+		\item GRIFFITHS, Paul. \textbf{A música moderna}: uma história concisa e ilustrada de Debussy a Boulez. Zahar, 1987. ISBN 8571100047.
+		\item SEVERIANO, Jairo. \textbf{Uma História da música popular brasileira}:  das origens à modernidade. 4 ed. São Paulo: Editora 34, 2017. 499 p. ISBN 97788573263961. 
+		\item TABORDA, Marcia. \textbf{Violão e identidade nacional}: Rio de Janeiro, 1830-1930. Rio de Janeiro: Civilização Brasileira, 2011. 301 p. ISBN 9788520010297. 
+		\item WITT, Stephen. \textbf{Como a música ficou grátis}: o fim de uma indústria, a virada do século e o paciente zero da pirataria. Rio de Janeiro: Intrínseca, 2015. ISBN 8580577705.
+		\item ZUBEN, Paulo. \textbf{Música e tecnologia}: o som e seus novos instrumentos. Irmãos Vitale, 2004. ISBN 9788574071787. 
+					
+	\end{bibcomplementar}
+	
+	
+
+\end{pud}
+
+
+%%%% Educacao fisica
+\begin{pud}
+
+	\pudinfo{TSII.402}{Educação Física}{--}{15}{25}{2}{Optativa}
+	
+	\ementa
+	A educação física no ensino técnico subsequente, que se caracteriza como o ciclo de aprofundamento e sistematização do conhecimento, tem como proposta despertar no aluno e aluna a compreensão de sujeito crítico capaz de intervir e modificar a realidade na qual se insere, bem como a valorização do seu corpo e da atividade física, por meio da ginástica, da dança, da luta, dos jogos e brincadeiras, do esporte, etc. Introdução ao processo de aquisição do conhecimento sistematizado acerca da cultura corporal. Desenvolvimento de reflexões, pesquisas e vivências da relação corpo, natureza e cultura e suas relações com a tecnologia. Princípios didático-pedagógicos para apropriação do conhecimento produzido e redimensionado pela humanidade ao longo de sua história.
+	
+	\objetivos
+	\textbf{OBJETIVO GERAL}:
+	Construir o conhecimento crítico-reflexivo sobre as práticas corporais, assegurando a participação irrestrita nas diversas vivências pertinentes à cultura corporal e sua relação com a área da informática.	
+	\newline\\	
+	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\begin{itemize}
+		
+		\item Conhecer as diversas manifestações da cultura corporal produzidas pelas diversas sociedades;
+		\item Ressignificar as diversas manifestações da cultura corporal produzidas pelas diversas sociedades;
+		\item  Vivenciar, de maneira teórica e prática, os elementos dos jogos, das danças, das lutas, das ginásticas, dos esportes e da qualidade de vida, atribuindo-lhes um sentido e um significado próprios;
+		\item  Relacionar os conteúdos da educação física com a temática da tecnologia e sua atuação profissional no campo da informática;
+		\item  Desenvolver atitudes e valores intrínsecos da cultura corporal, tais como ética, cooperação, liderança, autonomia, a criatividade, a integração, a capacidade de comunicação, reflexão, crítica, co-decisão e co-educação. 
+
+	\end{itemize}
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:]\qquad 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Manifestações da Cultura Corporal:
+				\begin{itemize}
+					\item Conhecimentos introdutórios sobre o corpo, saúde e qualidade de vida.
+				\end{itemize}
+	        \end{enumerate}
+	        
+	    \item[UNIDADE II:] \qquad
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Jogos, brinquedos e brincadeiras digitais;
+				\item Lutas e jogos de oposição.
+	        \end{enumerate}
+	
+		\item[UNIDADE III:] \qquad
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item   Danças e atividades rítmicas;
+				\item Ginástica e atividade física (Exergames).
+	        \end{enumerate}
+	                
+	    \item[UNIDADE IV:] \qquad
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Esportes convencionais, não-convencionais e práticas corporais de aventura;
+				\item Lazer, tempo livre e recreação.
+	        \end{enumerate}
+                                        
+
+	\end{description}
+	
+	\metodologia
+	\begin{enumerate}[itemsep=0em, topsep=0em]
+		\vspace{-1em}
+		\item  Aulas expositivas e dialogadas;
+		\item Vivências práticas; 
+		\item Produções textuais individuais e coletivas; 
+		\item Leitura, interpretação e discussão de textos; 
+		\item Exposições orais compartilhadas.
+	\end{enumerate}
+	
+	\avaliacao
+	\begin{description}[itemsep=0em, topsep=0em]
+		\vspace{-1em}
+		\item CONCEITUAL: Compreensão e apropriação dos conceitos, teorias e informações. 
+		\begin{itemize}
+			\item  Produções textuais;
+			\item  Resolução de situações-problema;
+			\item   Sínteses orais;
+			\item   Pesquisa, síntese e apresentação.
+		\end{itemize}
+		
+		\item PROCEDIMENTAL: Vivência, participação e desempenho crítico das atividades propostas. 
+		\begin{itemize}
+			\item  Participação efetiva; 
+			\item   Envolvimento nos diversos momentos da aula; 
+			\item   Criatividade e capacidade de ser co-autor do processo.
+		\end{itemize}
+		
+		\item ATITUDINAL: Postura e atitude a nível pessoal e profissional: 
+		\begin{itemize}
+			\item  Atitudes que demonstrem companheirismo, ética, liderança e respeito (a si mesmo, aos demais e às regras).
+		\end{itemize}
+		
+	\end{description}
+	
+	
+	\begin{bibbasica}
+			
+		\item DARIDO, Suraya Cristina. \textbf{Para ensinar educação física}: possibilidades de intervenção na Escola. Campinas: Papirus, 2015. ISBN 9788530811556. (BVU)
+		\item FINCK, Silvia Christina Madrid. \textbf{A Educação Física e o Esporte na Escola}: cotidiano, saberes e formação.  Curitiba: Editora Intersaberes, 2012. Livro. 188 p. ISBN 9788582120330. (BVU)
+		\item MAFFEI, Willer Soares. \textbf{Introdução à formação em educação física}. Editora Intersaberes, 2017. 266 p. ISBN 9788559726015. (BVU) 
+	
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+    	\item CANO, Márcio Rogério de Oliveira; NEIRA, Marcos Garcia. \textbf{Educação física cultural}. Editora Blucher. Livro. 185  p. ISBN 9788521210443. (BVU)
+		\item CASTELLANI FILHO, Lino. \textbf{Educação no Brasil}: a história que não se conta. 18. ed. Campinas: Papirus, 2010. ISBN 8530800214. (BVU)
+		
+		\item SANTOS, Ednei Fernando dos. \textbf{Manual de Primeiros Socorros da Educação Física aos Esportes}: o papel do educador físico no atendimento de socorro. Editora Interciência. Livro. 130 p. ISBN 9788563960085. (BVU)
+		\item SILVA JÚNIOR, Vagner Pereira da. \textbf{Lazer e esporte no século XXI? Novidades no horizonte?}. Editora Intersaberes. Livro. 318 p. ISBN 9788559726930. (BVU)
+		
+		\item SILVA, Marcos Ruiz da; ALMEIDA, Bárbara Schausteck de; MICALISKI, Emerson Liomar. \textbf{Esportes complementares}. Editora Intersaberes. Livro. 226 p. ISBN 9788559729825. (BVU) % Disponível em: https://middleware-bv.am4.com.br/SSO/ifce/9788559729825. Acesso em: 9 Oct. 2020. 
+					
+	\end{bibcomplementar}
+	
+	
+	
+	
+\end{pud}
+
+%%% LIBRAS
+
+\begin{pud}
+	
+	\pudinfo{TSII.403}{Libras}{--}{20}{20}{2}{Optativa}
+	
+	\ementa
+	Concepção de linguagens de sinais. Linguagem de sinais brasileira. O código de ética. Resolução do encontro de Montevidéu. A formação de intérprete no mundo e no Brasil. Língua e identidade: um contexto de política linguística. Cultura surda e cidadania brasileira.
+	
+	\objetivos
+	Compreender os principais aspectos da Língua Brasileira de Sinais -- Libras, língua oficial da comunidade surda brasileira, considerando a cultura surda, as identidades surdas, a história da surdez, a legislação vigente e o uso da língua.
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Introdução a Libras; 
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item  Os surdos na Antiguidade;
+				\item  O surdo na Idade Moderna;
+				\item  O surdo na idade contemporânea;
+				\item  O surdo do século XX;
+				\item  Fundamentação Legal da Libras;
+				\item  Conceito de Linguagem;
+				\item  Parâmetros da LIBRAS;
+				\item  Diálogos em LIBRAS;
+				\item  Alfabeto Manual e Numeral;
+				\item  Calendário em LIBRAS;
+				\item  Pessoas/Família;
+				\item  Documentos;
+				\item  Pronomes; 
+				\item Lugares;
+				\item Natureza; 
+				\item Cores; 
+				\item Escola; 
+				\item Casa; 
+				\item Alimento. 
+	        \end{enumerate}
+	        
+	    \item[UNIDADE II:] Libras no dia a dia;
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item   Bebidas;
+				\item  Vestuários/Objetos Pessoais;
+				\item  Profissões;
+				\item Animais;
+				\item  Corpo Humano;
+				\item  Higiene;
+				\item  Saúde;
+				\item  Meios de Transporte;
+				\item  Meios de comunicação;
+				\item  Lazer/Esporte;
+				\item  Instrumentos Musicais.
+	        \end{enumerate}
+	
+		\item[UNIDADE III:] Português da Libras.
+	         \begin{enumerate}[itemsep=0em, topsep=0em]
+				\item Verbos;
+				\item Negativos;
+				\item Adjetivos/Advérbios;
+				\item Atividades Escritas e Oral;
+				\item O código de ética do interprete;
+				\item A formação de interprete no mundo e no Brasil.
+	        \end{enumerate}
+	                                
+	
+	\end{description}
+	
+	\metodologia
+	Serão aplicadas técnicas de exposição dialogada, dinâmica de grupo, pesquisa bibliográfica, apresentação e discussão de filmes; produção de texto, seminários, trabalhos individuais e em grupo.
+	
+	\avaliacao
+	A  avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 § 1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	
+	\begin{bibbasica}
+		\item FERNANDES, Sueli. \textbf{Educação de surdos}. Curitiba: InterSaberes, 2012. Livro.  144 p. ISBN 9788582120149. (BVU)
+		%\item GESSER, Andrei. \textbf{Libras? Que língua é essa?}: crenças e preconceitos em torno da língua de sinais e da realidade surda. São Paulo: Parábola, 2009. ISBN 9788579340017.
+		\item QUADROS, Ronice Muller. \textbf{Língua de sinais brasileira}: estudos linguísticos. Volume único. Porto Alegre: Artmed. 2004. ISBN  8536303085.		
+		\item SACKS, Oliver W. \textbf{Vendo vozes}: uma viagem ao mundo dos surdos.   São Paulo: Companhia das Letras, 2015. 215 p. ISBN 978-85-359-1608-9.
+	
+	\end{bibbasica}
+	
+	\clearpage
+	\begin{bibcomplementar}
+    
+		\item BAGGIO, Maria Auxiliadora; CASA NOVA, Maria da Graça. \textbf{Libras}. Editora Intersaberes, 2017. Livro. 146 p. ISBN 9788544301890. (BVU)
+		%\item BRASIL. \textbf{Decreto 5.626 de 22 de dezembro de 2005}. Brasília. 2005. Disponível em: \url{http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/decreto/d5626.htm}. Acesso em: 16 ago. 2018.
+		\item PEREIRA, Maria Cristina da Cunha (Org.). \textbf{Libras}: conhecimento além dos sinais.  Editora Pearson. Livro.  146 p. ISBN 9788576058786. (BVU)
+		\item QUADROS, Ronice Muller de. \textbf{Educação de surdos}: a aquisição da linguagem. Porto Alegre: Artmed, 2008. 126 p. ISBN 9788573072655.
+		\item SANTANA, Ana Paula. \textbf{Surdez e linguagem}: aspectos e aplicações. 5. ed. São Paulo: Summus Editorial, 2015.  Livro. 328 p. ISBN 9788585689971. (BVU) 
+		\item SILVA, Rafael Dias (Org.). \textbf{Língua brasileira de sinais}: libras.  Editora Pearson. Livro. 218 p. ISBN 9788543016733. (BVU)
+		
+		%\item HONORA, Márcia. \textbf{Livro ilustrado de Língua Brasileira de Sinais}: desvendando a comunicação usada pelas pessoas com surdez. Colaboração de Mary Lopes Esteves Frizanco. São Paulo: Ciranda Cultural, 2009. ISBN 9788538014218
+		%\item SKLIAR, Carlos Obra: \textbf{A Surdez}: um olhar sobre as diferenças. Porto Alegre: Mediação. 1998.
+	
+	\end{bibcomplementar}		
+	
+		
+\end{pud}
