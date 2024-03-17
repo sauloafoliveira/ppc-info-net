@@ -116,6 +116,13 @@
 	\end{tabularx}\\[5pt]	
 	\noindent}{\newline}
 
+\newenvironment{recursos}{
+	\vspace{0.5em}
+	\noindent\begin{tabularx}{\linewidth}{ X }
+		\cellcolor{gray!10}\textbf{RECURSOS}
+	\end{tabularx}\\[5pt]	
+	\noindent}{\newline}
+
 \newenvironment{bibbasica}{
 	\vspace{0.5em}
 	\noindent\begin{tabularx}{\linewidth}{ X }
@@ -139,6 +146,103 @@
 	\end{itemize}
 	\end{flushleft}
 }
+
+\begin{pud}
+	
+	\pudinfo{TSII.100}{Introdução à Computação}{---}{20}{20}{2}{1$^\circ$ Semestre}
+	
+	\ementa
+	Visão geral do Curso de Informática para Internet. Princípios fundamentais da Computação. Noções de arquitetura de computadores. Funcionamento das linguagens de programação.
+
+	\objetivos
+	Conhecer os componentes de hardware que formam os dispositivos computacionais e identificar o que estes componentes afetam no desempenho do software.
+	\begin{itemize}
+	  \item Distinguir as áreas de atuação e os recursos utilizados pelos profissionais da área de análise e desenvolvimento de sistemas;
+	  \item Conhecer o funcionamento básico dos subsistemas que integram o computador;
+	  \item Reconhecer e descrever sistemas digitais e componentes fundamentais;
+	  \item Discorrer sobre as principais abordagens para a representação de algoritmos e tradução de códigos-fontes nos dispositivos computacionais;
+	  \item Identificar novos temas relacionados a tecnologias emergentes relacionadas à computação.
+	\end{itemize}
+	
+	
+	
+	\programa	
+	\begin{description}[itemsep=0em]
+	   
+	   \item[UNIDADE I:]  Visão geral do Curso de Informática para Internet;
+	   \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Histórico do curso;
+	     \item Características e diferenças dos cursos da área de computação;
+	     \item Objetivos gerais do curso, competências, habilidades e perfil do egresso;
+	     \item Organização curricular do curso no IFCE \textit{campus} Tauá.
+	   \end{enumerate}
+	   
+	   \item[UNIDADE II:] Fundamentos da Computação;
+	   \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item História da computação;
+	     \item Hardware e Software.
+	   \end{enumerate}
+	   
+	    \item[UNIDADE III:]  Noções de Arquitetura de Computadores;
+	   \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Organização de computadores;
+	     \item Representação de dados;
+	     \item Operações matemáticas sobre números binários e hexadecimais;
+	     \item Representação de dados em sistemas computacionais.
+	   \end{enumerate}
+	   
+	   	    
+	    \item[UNIDADE IV:] Funcionamento das Linguagens de Programação.
+	    \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Lógica computacional;
+	     \item Linguagens de Programação;
+	     \item Interpretação e compilação de programas.
+	   \end{enumerate}
+	   
+	\end{description}
+	
+	
+	\metodologia            	
+       Aulas expositivas e interativas com uso de recursos audiovisuais;
+       Atividades em grupo e prática de codificação de algoritmos em linguagem computacional.
+       Atividades práticas no laboratório de codificação de programas.
+	
+	\recursos
+	Data-show, pincel e quadro branco, aparelho de som, laboratório de informática e
+dicionários.
+	
+	\avaliacao	
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	
+	\begin{bibbasica}
+		\item CARVALHO, André C. P. L. F. de, LORENA, Ana Carolina. \textbf{Introdução à
+computação}: hardware, software e dados. Rio de Janeiro: Editora LTC, 2017. 182
+p. ISBN 9788521631071.
+		\item FOROUZAN, B; MOSHARRAF, F. \textbf{Fundamentos da Ciência da Computação}. 2
+ed. São Paulo: Cengage Learning. 2011.560 p. ISBN 9788522110537.
+		\item TANENBAUM, A. S. \textbf{Organização estruturada de computadores}. 6.ed. São
+Paulo: Pearson Prentice Hall, 2013. 605 p. ISBN 9788581435398.
+	 	 
+	\end{bibbasica}
+	
+	\begin{bibcomplementar}
+	
+		\item SILBERSCHATZ, A. et. al. \textbf{Fundamentos de sistemas operacionais}. 9.ed. Rio de Janeiro: LTC, 2013. 508 p. ISBN 9788521629399.
+		\item SCHILDT, Herbert. \textbf{C}: completo e total. 3. ed. rev. e atual São Paulo: Pearson
+		Makron Books, 1997. 827 p. ISBN 9788534605953.
+		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo: Érica,
+		2010. 206 p. ISBN 9788536503219.
+		\item STALLINGS, William. \textbf{Arquitetura e organização de computadores}. 8. ed. São
+		Paulo: Pearson Prentice Hall, 2010. 624 p. ISBN 9788576055648.
+		\item TANENBAUM, Andrew S. \textbf{Sistemas operacionais modernos}. 4. ed. São Paulo:
+		Prentice-Hall, 2016. 758 p. ISBN 9788543005676.
+		
+	\end{bibcomplementar}
+	
+	
+\end{pud}
+
+
 	
 	\begin{pud}
 	
@@ -179,7 +283,7 @@
 	    \item[UNIDADE IV:]  Entrada e saída;
 	    \item[UNIDADE V:]  Controle de fluxo de execução (condicionais e estruturas de repetição);
 	    \item[UNIDADE VI:]  \textit{Strings} (cadeias de caracteres);
-	    \item[UNIDADE VII:]  Vetores e matrizes;
+	    \item[UNIDADE VII:]  Listas;
 	   \item[UNIDADE VIII:] Funções (métodos) e Arquivos.
 	\end{description}
 		
@@ -215,213 +319,295 @@
 \end{pud}
 
 
+\begin{pud}
+
+	\pudinfo{TSII.102}{Inglês Técnico}{---}{30}{20}{2}{1$^\circ$ Semestre}
+	
+	\ementa 
+	Aspectos fundamentais da gramática de língua inglesa. Leitura, análise e interpretação de textos técnicos. Estratégias de leitura em língua estrangeira.
+
+	\objetivos
+	Compreender textos escritos em diferentes gêneros textuais em língua inglesa, especialmente aqueles necessários ao desempenho de sua profissão.
+
+	\begin{itemize}
+	  \item Desenvolver a competência leitora em língua estrangeira;
+	  \item Ler e interpretar textos de sua área de atuação profissional escritos em língua inglesa.
+	\end{itemize}
+	
+	\programa
+	\begin{description}[itemsep=0em]
+		\item[UNIDADE I:] Leitura para Compreensão Geral.
+	    \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Fundamentos básicos;
+	     \item Informação não-verbal;
+	     \item Previsão e evidências tipográficas;
+	     \item Skimming;
+	     \item Seletividade;
+	     \item Palavras cognatas e falso-cognatas;
+	     \item Uso estratégico do dicionário.
+	   \end{enumerate}
+	   
+	   \item[UNIDADE II:] Leitura para Compreensão das Ideias Principais
+	    \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Scanning;
+	     \item Inferência contextual;
+	     \item Summarizing (outlining, concept maps, taking notes);
+	     \item Estrutura da oração (grupos nominais e verbais);
+	     \item Coerência e coesão;
+	     \item Marcadores Discursivos.
+	   \end{enumerate}
+	   
+	   \item[UNIDADE III:] Leitura para compreensão de detalhes.
+	    \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Formação de palavras;
+	     \item Leitura crítica;
+	     \item Sintagma Nominal e Verbal.
+	   \end{enumerate}
+	   
+	   \item[UNIDADE IV:] Tópicos Gramaticais.
+	    \begin{enumerate}[itemsep=0em, topsep=0em]
+	     \item Simple present e present continuous;
+	     \item Simple Past (regular e irregular verbs);
+	     \item Present perfect e past perfect;
+	     \item Immediate future e simple future;
+	     \item Modal Verbs.
+	   \end{enumerate}
+	\end{description}
+	
+	\bibbasica
+		\item ALMEIDA, Rubens Queiros de. \textbf{As palavras mais comuns da Língua Inglesa}. São Paulo: Novatec, 2003.312 p. ISBN 97885575220373.
+		\item BROWN, H. Douglas. \textbf{Teaching by Princinples}: An Interactive Approach to Language Pedagogy. 2ed. New York: Longman, 2001.
+		\item HORNBY, A. S. \textbf{Oxford advanced learners Dictionary of Current English}. 7. ed. Oxford (Inglaterra): Oxford University Press, 2007. 1779 p., Il. + Inclui CD-ROM. ISBN 9780194001168 (Broch.).
+	
+	\bibcomplementar
+		\item DIAS, Reinildes. \textbf{Inglês Instrumental}: leitura crítica: uma abordagem construtiva. 3. ed. revista e ampliada. Belo Horizonte, UFMG, 2002.
+		\item GLENDINNING, Eric H.; MCEWAN, John. \textbf{Basic english for computing}. Oxford (Inglaterra): Oxford University Press, 2012. 136 p. ISBN 9780194574709.
+		\item LONGMAN. \textbf{Dicionário escolar}: inglês-português, português-inglês. 2. ed. Inglaterra: Pearson, 2009. 770 p. ISBN 9788576592754.
+		\item MUNHOZ, Rosângela. \textbf{Inglês instrumental}: estratégias de leitura: módulo I. São Paulo: Textonovo, 2004. 111 p. ISBN 8585734367.
+		\item MURPHY, Raymond; SMALZER, William R.; CHAPPLE, Joseph. \textbf{English grammar in use intermediate}: self-study reference and practice for students of North American English: with answers. 4th. ed. Cambridge (England): Cambridge University Press, 2018. 374 p. ISBN 9780521189392.
+		
+	\endgroup
+	
+\end{pud}
+
 
 %%%%%
 
-\begin{pud}
-
-	\pudinfo{TSII.102}{Produção de Texto Técnico}{---}{20}{20}{2}{1$^\circ$ Semestre}
-	
-	\ementa	
-	Textualidade e discurso; Cena enunciativa; Intencionalidade discursiva; Sequências textuais; coesão e coerência; Aspectos descritivos e normativos da Língua Portuguesa; Tipologias e gêneros textuais.
-	
-	\objetivos	
-	Produzir textos de forma coerente, analisando, interpretando e aplicando os recursos de linguagens, relacionando textos com seus contextos, mediante a natureza, função, organização, estruturas de acordo com as condições de produção/recepção.
-	
-	\begin{itemize}
-	  	\item Reconhecer a importância da leitura como ato libertário e consequentemente necessário ao desenvolvimento humano;
-		\item Reconhecer a importância das linguagens verbal e não verbal dos sistemas de comunicação e informação para resolução de problemas sociais;
-		\item Identificar os elementos que concorrem para a progressão temática e para a organização e estruturação de textos de diferentes gêneros e tipos;
-		\item Ampliar o vocabulário do educando, bem como sua capacidade de pensar de forma clara e objetiva, transferindo esses pensamentos para o texto;
-		\item Estimular a expressão oral, a leitura pública dos textos produzidos pelos educandos e o debate de ideias;
-		\item Identificar, compreender e utilizar as convenções da língua de acordo com os gêneros, reconhecendo-as como recursos que favorecem a relação dialógica entre leitor/autor;
-		\item Ler diferentes tipos e gêneros textuais orais e escritos, considerando as condições discursivas de produção;
-		\item Produzir diferentes tipos e gêneros textuais orais e escritos, considerando as condições discursivas de produção;
-		\item Ler competentemente enunciados em função dos objetivos e das condições de produção.
-		\item Produzir competentemente enunciados em função dos objetivos e das condições de produção.
-	\end{itemize}
-	
-	
-	\programa
-		\begin{description}[itemsep=0em]
-	   	\item[UNIDADE I:] O texto dissertativo;
-	            \begin{enumerate}[itemsep=0em, topsep=0em]
-			    \item A linguagem da dissertação;
-			    \item Para atingir objetividade no texto; 
-			     \item Impessoalidade $\times$ imparcialidade;
-    		    \item Artifícios de coesão e coerência;
-		      %\item Artifícios de coesão e coerência;
-                    \begin{enumerate}[label*=\arabic*., itemsep=0em]
-                        \item Coesão referencial;
-                        \item Coesão sequencial;
-                        \item Coesão recorrencial.
-                    \end{enumerate}
-                \item Dissertação expositiva;
-                \item Dissertação argumentativa.
-
-
-			\end{enumerate}   
-	   
-	    \item[UNIDADE II:] As partes de um texto argumentativo: o parágrafo de introdução;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]                
-                \item  Delimitação do tema e estabelecimento de teses;
-                \item Tipos de introdução.
-            \end{enumerate}
-            
-	    \item[UNIDADE III:]  As partes de um texto argumentativo: o desenvolvimento;
-  			\begin{enumerate}[itemsep=0em, topsep=0em]
-                \item A construção de tópicos frasais;
-                \item Argumentação;
-                \item  Argumentos por causalidade;
-                \item Argumentos por comparação;
-                \item Argumentos por exemplificação;
-                \item  Argumentos de autoridade;
-                \item A contra-argumentação;
-                \item A construção de repertório sociocultural.
-            \end{enumerate}
-	    \item[UNIDADE IV:]  As partes de um texto argumentativo: o parágrafo de conclusão;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]                
-				\item O tópico frasal conclusivo;
-                \item As propostas de intervenção;
-                \item A escolha dos agentes de intervenção.
-            \end{enumerate}
-	    \item[UNIDADE V:]  A redação no Enem -- Competências de correção;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]                
-                \item Competência 1 -- Demonstrar domínio da norma culta da língua escrita;
-                \item Competência 2 -- Compreender a proposta de redação e aplicar conceitos das várias áreas do conhecimento para desenvolver o tema, dentro dos limites estruturais do texto dissertativo-argumentativo;
-                \item Competência 3 -- Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista;
-                \item Competência 4 -- Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação;
-                \item Competência 5 -- Elaborar proposta de intervenção para o problema abordado, mostrando respeito aos direitos humanos e considerando a diversidade sociocultural.
-            \end{enumerate}
-	    \item[UNIDADE VI:] Análise de propostas de redação;
-	    \item[UNIDADE VII:]  Revisão gramatical instrumental.
-	\end{description}
-	
-	\metodologia	
-	Ler e produzir textos diversos, enfocando as sequências representativas dos gêneros estudados. Abordar as produções textuais nos Laboratórios de Redação. Realizar oficinas de Produção Textual de forma individual e /ou em grupo. Produção efetiva de textos.
-	
-	\avaliacao	
-	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
-	\begin{bibbasica}
-	
-		%\item ASSUMPÇÃO, Maria Elena O. Ortiz. \textbf{Para escrever bem.} 2.ed. Barueri SP: Manole, 2006.
-		\item ADAM, Jean Michel. \textbf{Textos}: tipos e protótipos. Tradução de Mônica Magalhães Cavalcante.  São Paulo: Contexto, 2019. 320 p. ISBN 9788552001416. (BVU)
-        \item SALDANHA, Luís Cláudio Dallier. \textbf{Fala, oralidade e práticas sociais}. Curitiba: Intersaberes, 2016.  ISBN 9788544303771. (BVU)
-        \item FARACO, Carlos Alberto. \textbf{Oficina de textos}. 11. ed. Petrópolis: Vozes, 2014. 327 p. ISBN 9788532628107.
-        %\item SAVIORI, Francisco Platão; FIORIN, José Luiz. \textbf{Lições de texto}: leitura e redação. 5.ed. São Paulo: Ática, 2006.
-
-	\end{bibbasica}
-	
-	\begin{bibcomplementar}
-	
-            \item BLIKSTEIN, Isidoro. \textbf{Técnicas de comunicação escrita}. 23. ed. São Paulo: Contexto, 2016. ISBN 9788572449373.  (BVU)
-            %\item CAMARGO, Thaís Nicolete de. \textbf{O uso da vírgula}. Barueri SP: Manoli, 2005.
-            \item COSTA, Iara Bemquerer. \textbf{A tessitura da escrita}. São Paulo: Contexto, 2013. 210 p. ISBN 9788572447829.  (BVU)
-            
-            \item ILHESCA, Daniela Duarte; SILVA, Mozara Rossetto da; SILVA, Débora Teresinha Mutter da. \textbf{Redação acadêmica}. Editora Intersaberes, 2013. Livro.  176 p. ISBN 9788582125359. (BVU)
-            
-            \item LOMBARDI, Roseli Ferreira (Org.). \textbf{Oficina de textos em português}.  São Paulo: Editora Pearson, 2017. 130 p. ISBN 9788543025872. (BVU)
-            %\item LAKATOS, Eva Maria; MARCONI, Marina de A. \textbf{Fundamentos de metodologia científica}. 7. ed. São Paulo: Atlas, 2010.
-            \item MOTTA-ROTH, Désirée; RABUSKE, Graciela H. \textbf{Produção textual na universidade}. São Paulo: Parábola Editorial, 2010. ISBN 9788579340253.
-            %\item PIGNATARI, Nínive. \textbf{Como escrever textos dissertativos}. São Paulo: Ática, 2010.
-	\end{bibcomplementar}
-
-\end{pud}
+% \begin{pud}
+% 
+% 	\pudinfo{TSII.102}{Produção de Texto Técnico}{---}{20}{20}{2}{1$^\circ$ Semestre}
+% 	
+% 	\ementa	
+% 	Textualidade e discurso; Cena enunciativa; Intencionalidade discursiva; Sequências textuais; coesão e coerência; Aspectos descritivos e normativos da Língua Portuguesa; Tipologias e gêneros textuais.
+% 	
+% 	\objetivos	
+% 	Produzir textos de forma coerente, analisando, interpretando e aplicando os recursos de linguagens, relacionando textos com seus contextos, mediante a natureza, função, organização, estruturas de acordo com as condições de produção/recepção.
+% 	
+% 	\begin{itemize}
+% 	  	\item Reconhecer a importância da leitura como ato libertário e consequentemente necessário ao desenvolvimento humano;
+% 		\item Reconhecer a importância das linguagens verbal e não verbal dos sistemas de comunicação e informação para resolução de problemas sociais;
+% 		\item Identificar os elementos que concorrem para a progressão temática e para a organização e estruturação de textos de diferentes gêneros e tipos;
+% 		\item Ampliar o vocabulário do educando, bem como sua capacidade de pensar de forma clara e objetiva, transferindo esses pensamentos para o texto;
+% 		\item Estimular a expressão oral, a leitura pública dos textos produzidos pelos educandos e o debate de ideias;
+% 		\item Identificar, compreender e utilizar as convenções da língua de acordo com os gêneros, reconhecendo-as como recursos que favorecem a relação dialógica entre leitor/autor;
+% 		\item Ler diferentes tipos e gêneros textuais orais e escritos, considerando as condições discursivas de produção;
+% 		\item Produzir diferentes tipos e gêneros textuais orais e escritos, considerando as condições discursivas de produção;
+% 		\item Ler competentemente enunciados em função dos objetivos e das condições de produção.
+% 		\item Produzir competentemente enunciados em função dos objetivos e das condições de produção.
+% 	\end{itemize}
+% 	
+% 	
+% 	\programa
+% 		\begin{description}[itemsep=0em]
+% 	   	\item[UNIDADE I:] O texto dissertativo;
+% 	            \begin{enumerate}[itemsep=0em, topsep=0em]
+% 			    \item A linguagem da dissertação;
+% 			    \item Para atingir objetividade no texto; 
+% 			     \item Impessoalidade $\times$ imparcialidade;
+%     		    \item Artifícios de coesão e coerência;
+% 		      %\item Artifícios de coesão e coerência;
+%                     \begin{enumerate}[label*=\arabic*., itemsep=0em]
+%                         \item Coesão referencial;
+%                         \item Coesão sequencial;
+%                         \item Coesão recorrencial.
+%                     \end{enumerate}
+%                 \item Dissertação expositiva;
+%                 \item Dissertação argumentativa.
+% 
+% 
+% 			\end{enumerate}   
+% 	   
+% 	    \item[UNIDADE II:] As partes de um texto argumentativo: o parágrafo de introdução;
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+%                 \item  Delimitação do tema e estabelecimento de teses;
+%                 \item Tipos de introdução.
+%             \end{enumerate}
+%             
+% 	    \item[UNIDADE III:]  As partes de um texto argumentativo: o desenvolvimento;
+%   			\begin{enumerate}[itemsep=0em, topsep=0em]
+%                 \item A construção de tópicos frasais;
+%                 \item Argumentação;
+%                 \item  Argumentos por causalidade;
+%                 \item Argumentos por comparação;
+%                 \item Argumentos por exemplificação;
+%                 \item  Argumentos de autoridade;
+%                 \item A contra-argumentação;
+%                 \item A construção de repertório sociocultural.
+%             \end{enumerate}
+% 	    \item[UNIDADE IV:]  As partes de um texto argumentativo: o parágrafo de conclusão;
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+% 				\item O tópico frasal conclusivo;
+%                 \item As propostas de intervenção;
+%                 \item A escolha dos agentes de intervenção.
+%             \end{enumerate}
+% 	    \item[UNIDADE V:]  A redação no Enem -- Competências de correção;
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+%                 \item Competência 1 -- Demonstrar domínio da norma culta da língua escrita;
+%                 \item Competência 2 -- Compreender a proposta de redação e aplicar conceitos das várias áreas do conhecimento para desenvolver o tema, dentro dos limites estruturais do texto dissertativo-argumentativo;
+%                 \item Competência 3 -- Selecionar, relacionar, organizar e interpretar informações, fatos, opiniões e argumentos em defesa de um ponto de vista;
+%                 \item Competência 4 -- Demonstrar conhecimento dos mecanismos linguísticos necessários para a construção da argumentação;
+%                 \item Competência 5 -- Elaborar proposta de intervenção para o problema abordado, mostrando respeito aos direitos humanos e considerando a diversidade sociocultural.
+%             \end{enumerate}
+% 	    \item[UNIDADE VI:] Análise de propostas de redação;
+% 	    \item[UNIDADE VII:]  Revisão gramatical instrumental.
+% 	\end{description}
+% 	
+% 	\metodologia	
+% 	Ler e produzir textos diversos, enfocando as sequências representativas dos gêneros estudados. Abordar as produções textuais nos Laboratórios de Redação. Realizar oficinas de Produção Textual de forma individual e /ou em grupo. Produção efetiva de textos.
+% 	
+% 	\avaliacao	
+% 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+% 	
+% 	\begin{bibbasica}
+% 	
+% 		%\item ASSUMPÇÃO, Maria Elena O. Ortiz. \textbf{Para escrever bem.} 2.ed. Barueri SP: Manole, 2006.
+% 		\item ADAM, Jean Michel. \textbf{Textos}: tipos e protótipos. Tradução de Mônica Magalhães Cavalcante.  São Paulo: Contexto, 2019. 320 p. ISBN 9788552001416. (BVU)
+%         \item SALDANHA, Luís Cláudio Dallier. \textbf{Fala, oralidade e práticas sociais}. Curitiba: Intersaberes, 2016.  ISBN 9788544303771. (BVU)
+%         \item FARACO, Carlos Alberto. \textbf{Oficina de textos}. 11. ed. Petrópolis: Vozes, 2014. 327 p. ISBN 9788532628107.
+%         %\item SAVIORI, Francisco Platão; FIORIN, José Luiz. \textbf{Lições de texto}: leitura e redação. 5.ed. São Paulo: Ática, 2006.
+% 
+% 	\end{bibbasica}
+% 	
+% 	\begin{bibcomplementar}
+% 	
+%             \item BLIKSTEIN, Isidoro. \textbf{Técnicas de comunicação escrita}. 23. ed. São Paulo: Contexto, 2016. ISBN 9788572449373.  (BVU)
+%             %\item CAMARGO, Thaís Nicolete de. \textbf{O uso da vírgula}. Barueri SP: Manoli, 2005.
+%             \item COSTA, Iara Bemquerer. \textbf{A tessitura da escrita}. São Paulo: Contexto, 2013. 210 p. ISBN 9788572447829.  (BVU)
+%             
+%             \item ILHESCA, Daniela Duarte; SILVA, Mozara Rossetto da; SILVA, Débora Teresinha Mutter da. \textbf{Redação acadêmica}. Editora Intersaberes, 2013. Livro.  176 p. ISBN 9788582125359. (BVU)
+%             
+%             \item LOMBARDI, Roseli Ferreira (Org.). \textbf{Oficina de textos em português}.  São Paulo: Editora Pearson, 2017. 130 p. ISBN 9788543025872. (BVU)
+%             %\item LAKATOS, Eva Maria; MARCONI, Marina de A. \textbf{Fundamentos de metodologia científica}. 7. ed. São Paulo: Atlas, 2010.
+%             \item MOTTA-ROTH, Désirée; RABUSKE, Graciela H. \textbf{Produção textual na universidade}. São Paulo: Parábola Editorial, 2010. ISBN 9788579340253.
+%             %\item PIGNATARI, Nínive. \textbf{Como escrever textos dissertativos}. São Paulo: Ática, 2010.
+% 	\end{bibcomplementar}
+% 
+% \end{pud}
 
 
 %%%% SISTEMAS OPERACIONAIS
 
-
-\begin{pud}
-	\pudinfo{TSII.103}{Sistemas Operacionais}{---}{40}{40}{4}{1$^\circ$ Semestre}
-
-	\ementa
-	Introdução à Informática e a Sistemas Operacionais; Uso de processadores de texto; Uso de planilhas eletrônicas; Elaboração de apresentações de Slides;  Internet e aplicações. Sistema operacional Windows, sistema operacional GNU/Linux, procedimentos de instalação dos sistemas operacionais, configuração e gerenciamento de dispositivos de segurança.
-	
-	\objetivos
-	Capacitar o aluno a utilizar as principais ferramentas da Informática, proporcionando um melhor desempenho de suas atribuições como um profissional adequado ao atual competitivo mercado de trabalho.  Fornecer conhecimento sobre o ambiente Microsoft Windows e GNU/Linux, tanto a nível de usuário comum como de usuário avançado.
-	
-	\programa
-	\begin{description}[itemsep=0em]
-	   	\item[UNIDADE I:] Informática básica;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]                
-				\item Utilização da informática;
-                \item Uso de processadores de texto;
-                \item  Elaboração de planilhas eletrônicas e de gráficos;
-                \item  Elaboração de slides para apresentações;
-                \item Internet e aplicações.
-            \end{enumerate}
- 
-        \item[UNIDADE II:]  Sistemas operacionais;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-	         	\item Processos;
-				\item Organizações de sistemas operacionais;
-				\item Chamadas de sistema. 
-                
-            \end{enumerate}
- 
-        \item[UNIDADE III:] Microsoft Windows;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]                
-				\item Introdução ao Windows;
-				\item Configurações/Painel de Controle;
-				\item  Configuração de dispositivos;
-				\item Gerenciamento de arquivos e diretórios;
-				\item Conceitos de contas de usuário e grupos locais;
-				\item Instalação.                
-            \end{enumerate}
-
-        \item[UNIDADE IV:] GNU/Linux.
-	         \begin{enumerate}[itemsep=0em, topsep=0em]                
-				\item Introdução ao GNU/Linux;
-				\item Comandos básicos (cd, ls, mkdir e outros);
-	   			\item Gerenciamento de arquivos e diretórios;
-				\item Conceitos de contas de usuário e grupos locais;
-				\item Instalação;
-				\item Instalação de aplicativos através de linha de comando.
-	                
-            \end{enumerate}
-        \end{description}
-
-
-	\metodologia
-	A disciplina contará com aulas expositivas dialogadas, atividades práticas em laboratório e a realização de trabalhos em equipe e individuais, além da análise e discussão de estudos de caso e a aplicação de metodologias ativas para promover a construção do conhecimento no estudante.
-	
-	\avaliacao
-	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
-	\begin{bibbasica}
-		
-		%\item BIANCI, L. BIZZOTTO, C. E. N. \textbf{Informática básica}: passo a passo. Blumenau: Acadêmica, 2000.
-		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do Linux}: guia do administrador. Tradução de Carlos Schafranski, Edson Furmankiewicz. Revisão técnica de Nivaldo Foresti. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
-		
-		\item SILBERSCHATZ, Abraham \textit{et al}. \textbf{Fundamentos de sistemas operacionais}. 8. ed. Rio de Janeiro, RJ: LTC, 2012. 515 p. ISBN 9788521617471.
-		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo, SP: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
-	
-	\end{bibbasica}
-	
-	\begin{bibcomplementar}
-		\item DEITEL, Harvey M.; DEITEL, Paul J.; CHOFFNES, David R. \textbf{Sistemas Operacionais}. 3. ed. Editora Pearson, 2005. Livro.  784 p.  ISBN 9788576050117. (BVU)
-  		\item  SILVA, Mário Gomes. \textbf{Informática -- Terminologia}: Microsoft Windows 8, Internet, Segurança, Microsoft Office Word 2010, Microsoft Office Excel 2010, Microsoft Office PowerPoint 2010, Microsoft Office Access 2010. São Paulo, SP: Érica, 2012. 380 p. Inclui bibliografia. ISBN 9788536504339.
-		\item STALLINGS, William. \textbf{Arquitetura e organização de computadores}. Tradução de Daniel Vieira, Ivan Bosnic. Revisão técnica de Ricardo Pannain. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 624 p. Inclui bibliografia. ISBN 9788576055648.  (BVU)
-		\item TANENBAUM, Andrew S. \textbf{Organização estruturada de computadores}. 6. ed. São Paulo, Pearson, 2007. ISBN 9788581435398. (BVU)
-        \item  TANENBAUM, Andrew S.; WETHERALL, David J.  \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU)
-	
-	\end{bibcomplementar}
-	
-\end{pud}
-
+% 
+% \begin{pud}
+% 	\pudinfo{TSII.103}{Sistemas Operacionais}{---}{40}{40}{4}{1$^\circ$ Semestre}
+% 
+% 	\ementa
+% 	Introdução à Informática e a Sistemas Operacionais; Uso de processadores de texto; Uso de planilhas eletrônicas; Elaboração de apresentações de Slides;  Internet e aplicações. Sistema operacional Windows, sistema operacional GNU/Linux, procedimentos de instalação dos sistemas operacionais, configuração e gerenciamento de dispositivos de segurança.
+% 	
+% 	\objetivos
+% 	Capacitar o aluno a utilizar as principais ferramentas da Informática, proporcionando um melhor desempenho de suas atribuições como um profissional adequado ao atual competitivo mercado de trabalho.  Fornecer conhecimento sobre o ambiente Microsoft Windows e GNU/Linux, tanto a nível de usuário comum como de usuário avançado.
+% 	
+% 	\programa
+% 	\begin{description}[itemsep=0em]
+% 	   	\item[UNIDADE I:] Informática básica;
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+% 				\item Utilização da informática;
+%                 \item Uso de processadores de texto;
+%                 \item  Elaboração de planilhas eletrônicas e de gráficos;
+%                 \item  Elaboração de slides para apresentações;
+%                 \item Internet e aplicações.
+%             \end{enumerate}
+%  
+%         \item[UNIDADE II:]  Sistemas operacionais;
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]
+% 	         	\item Processos;
+% 				\item Organizações de sistemas operacionais;
+% 				\item Chamadas de sistema. 
+%                 
+%             \end{enumerate}
+%  
+%         \item[UNIDADE III:] Microsoft Windows;
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+% 				\item Introdução ao Windows;
+% 				\item Configurações/Painel de Controle;
+% 				\item  Configuração de dispositivos;
+% 				\item Gerenciamento de arquivos e diretórios;
+% 				\item Conceitos de contas de usuário e grupos locais;
+% 				\item Instalação.                
+%             \end{enumerate}
+% 
+%         \item[UNIDADE IV:] GNU/Linux.
+% 	         \begin{enumerate}[itemsep=0em, topsep=0em]                
+% 				\item Introdução ao GNU/Linux;
+% 				\item Comandos básicos (cd, ls, mkdir e outros);
+% 	   			\item Gerenciamento de arquivos e diretórios;
+% 				\item Conceitos de contas de usuário e grupos locais;
+% 				\item Instalação;
+% 				\item Instalação de aplicativos através de linha de comando.
+% 	                
+%             \end{enumerate}
+%         \end{description}
+% 
+% 
+% 	\metodologia
+% 	A disciplina contará com aulas expositivas dialogadas, atividades práticas em laboratório e a realização de trabalhos em equipe e individuais, além da análise e discussão de estudos de caso e a aplicação de metodologias ativas para promover a construção do conhecimento no estudante.
+% 	
+% 	\avaliacao
+% 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+% 	
+% 	\begin{bibbasica}
+% 		
+% 		%\item BIANCI, L. BIZZOTTO, C. E. N. \textbf{Informática básica}: passo a passo. Blumenau: Acadêmica, 2000.
+% 		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do Linux}: guia do administrador. Tradução de Carlos Schafranski, Edson Furmankiewicz. Revisão técnica de Nivaldo Foresti. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
+% 		
+% 		\item SILBERSCHATZ, Abraham \textit{et al}. \textbf{Fundamentos de sistemas operacionais}. 8. ed. Rio de Janeiro, RJ: LTC, 2012. 515 p. ISBN 9788521617471.
+% 		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo, SP: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
+% 	
+% 	\end{bibbasica}
+% 	
+% 	\begin{bibcomplementar}
+% 		\item DEITEL, Harvey M.; DEITEL, Paul J.; CHOFFNES, David R. \textbf{Sistemas Operacionais}. 3. ed. Editora Pearson, 2005. Livro.  784 p.  ISBN 9788576050117. (BVU)
+%   		\item  SILVA, Mário Gomes. \textbf{Informática -- Terminologia}: Microsoft Windows 8, Internet, Segurança, Microsoft Office Word 2010, Microsoft Office Excel 2010, Microsoft Office PowerPoint 2010, Microsoft Office Access 2010. São Paulo, SP: Érica, 2012. 380 p. Inclui bibliografia. ISBN 9788536504339.
+% 		\item STALLINGS, William. \textbf{Arquitetura e organização de computadores}. Tradução de Daniel Vieira, Ivan Bosnic. Revisão técnica de Ricardo Pannain. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 624 p. Inclui bibliografia. ISBN 9788576055648.  (BVU)
+% 		\item TANENBAUM, Andrew S. \textbf{Organização estruturada de computadores}. 6. ed. São Paulo, Pearson, 2007. ISBN 9788581435398. (BVU)
+%         \item  TANENBAUM, Andrew S.; WETHERALL, David J.  \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU)
+% 	
+% 	\end{bibcomplementar}
+% 	
+% \end{pud}
+% 
 
 %%%% Web Design
 
+
+
+
 \begin{pud}
-	\pudinfo{TSII.104}{Web Design}{---}{40}{40}{4}{1$^\circ$ Semestre}
+	\pudinfo{TSII.104}{Tecnologias WEB}{---}{40}{40}{4}{1$^\circ$ Semestre}
 	
-	\ementa
-	Introdução à Internet e World Wide Web: histórico da internet e web, conceitos básicos de arquitetura cliente-servidor, serviços da internet; Hypertext Markup Language (HTML): estrutura, semântica, elementos, boas práticas, multi pages websites; Cascading Style Sheets (CSS): especificidade, seletores, elementos, CSS Resets, media queries; Estruturação para a apresentação da informação: box model, posicionamento com floats, grids; Efeitos gráficos e animações: animações, transições e transformações CSS; Framework para front-end: introdução e instalação, CSS responsivo, Grid responsivo; Design da experiência de usuário (UX): Princípios de IHC, princípios e elementos da UX, requisitos de usabilidade, acessibilidade na web, padrões de interação e navegação na Web, layout e composição, avaliação de usabilidade.
+\ementa Introdução à Internet e World Wide Web: histórico da internet e web,
+conceitos básicos de arquitetura cliente-servidor, serviços da internet;
+Hypertext Markup Language (HTML): estrutura, semântica, elementos, boas
+práticas, multi pages websites; Cascading Style Sheets (CSS): especificidade,
+seletores, elementos, CSS Resets, media queries; Estruturação para a
+apresentação da informação: box model, posicionamento com floats, grids; Efeitos
+gráficos e animações: animações, transições e transformações CSS; Framework para
+front-end: introdução e instalação, CSS responsivo, Grid responsivo; Design da
+experiência de usuário (UX): Princípios de IHC, princípios e elementos da UX,
+requisitos de usabilidade, acessibilidade na web, padrões de interação e
+navegação na Web, layout e composição, avaliação de usabilidade.
 	
-	\objetivos
-	\textbf{OBJETIVO GERAL}:
+\objetivos \textbf{OBJETIVO GERAL}:
 	
 	Construir páginas WEB observando as tecnologias mais atuais e as melhores práticas de construção e formatação de seus elementos, focando na aplicação de práticas e técnicas de Design da Experiência de Usuário na construção de Interfaces Humano-Computador (IHC).
 	\newline\\
@@ -531,7 +717,7 @@
 
 
 \begin{pud}
-	\pudinfo{TSII.105}{Redes de  Computadores}{---}{30}{10}{2}{1$^\circ$ Semestre}
+	\pudinfo{TSII.105}{Redes de  Computadores}{---}{40}{40}{2}{1$^\circ$ Semestre}
 	
 	\ementa
 	Princípios de Comunicação de dados, Topologias, Arquiteturas de redes de computadores, Nível físico, Nível de enlace, Padrões para nível físico e de enlace, Nível de rede, Ligação Inter--Redes, Nível de aplicação e atividade prática em laboratório físico ou virtual.

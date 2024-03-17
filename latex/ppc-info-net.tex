@@ -155,14 +155,9 @@
 \titulo{PROJETO PEDAGÓGICO DO CURSO TÉCNICO SUBSEQUENTE EM INFORMÁTICA  PARA INTERNET}
 \autor{Equipe \abnTeX}
 \local{}
-\data{Tauá -- CE, 2021}
-\instituicao{%
-  Universidade do Brasil -- UBr
-  \par
-  Faculdade de Arquitetura da Informação
-  \par
-  Programa de Pós-Graduação}
-\tipotrabalho{Relatório técnico}
+\data{Tauá -- CE, 2024}
+\instituicao{}
+\tipotrabalho{}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
 \preambulo{}
@@ -261,17 +256,17 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
     
     \small
     {\bfseries REITOR} \\
-    VIRGÍLIO AUGUSTO SALES ARARIPE \par
+    \MakeUppercase{José Wally Mendonça Menezes} \par
 
-    {\bfseries PRÓ-REITOR DE ENSINO}\\
-    REUBER SARAIVA DE SANTIAGO \par
+    {\bfseries PRÓ-REITORA DE ENSINO}\\
+    \MakeUppercase{Cristiane Borges Braga} \par
     
     
     {\bfseries PRÓ-REITOR DE PESQUISA, PÓS-GRADUAÇÃO E INOVAÇÃO}\\
-    JOSÉ WALLY MENDONÇA MENESES \par
+    \MakeUppercase{Joélia Marques de Carvalho} \par
 
     {\bfseries PRÓ-REITOR DE EXTENSÃO}\\
-    ZANDRA MARIA RIBEIRO MENDES DUMARESQ \par
+    \MakeUppercase{Ana Cláudia Uchôa} \par
 
     {\bfseries DIRETOR GERAL DO {CAMPUS} TAUÁ}\\
     JOSÉ ALVES DE OLIVEIRA NETO \par
@@ -279,8 +274,11 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
     {\bfseries  CHEFE DE DEPARTAMENTO DE ENSINO DO {CAMPUS} TAUÁ}\\
     WEBERTE ALAN SOMBRA \par
 
-    {\bfseries COORDENADOR DE PESQUISA E EXTENSÃO DO {CAMPUS} TAUÁ}\\
-    ALEXCIANO DE SOUSA MARTINS \par
+    {\bfseries COORDENADOR DE PESQUISA   DO {CAMPUS} TAUÁ}\\
+    TIAGO DE SOUSA LEITE \par
+    
+    {\bfseries COORDENADOR DE  EXTENSÃO DO {CAMPUS} TAUÁ}\\
+    \MakeUppercase{Willame de Araújo Cavalcante} \par
     
     
      {\bfseries COORDENADOR DO CURSO TÉC. EM INFORMÁTICA PARA INTERNET}\\
@@ -488,6 +486,10 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
 
 }
 
+\newcommand{\altera}[1]{
+	{\color{red}{#1}}
+}
+
 \newcommand{\tecnico}[4]{
 
     \multicolumn{2}{l}{\cellcolor{gray!15}\bfseries \uppercase{#1}} \\
@@ -585,11 +587,16 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
     
     \multicolumn{4}{c}{\textbf{IDENTIFICAÇÃO DA INSTITUIÇÃO DE ENSINO}} \\
     \toprule
-     \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{INSTITUIÇÃO DE ENSINO}} \\
-    \multicolumn{4}{l}{Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- \textit{campus} Tauá} \\ 
-     
-     \cellcolor{gray!20} \textbf{CNPJ} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{ENDEREÇO}} \\
-     10.744.098/0015-40 & \multicolumn{3}{l}{Rua Antônio Teixeira Benevides, 01, CEP: 63660-000} \\ 
+    \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{Nome:}} \\
+    \multicolumn{4}{l}{Instituto Federal de Educação, Ciência e Tecnologia do Ceará -- \textit{campus} Tauá} \\
+    
+    \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{CNPJ:}} \\
+    \multicolumn{4}{l}{10.744.098/0015-40} \\
+    
+    \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{Endere\c{c}o:}} \\
+    \multicolumn{4}{l}{Rua Antônio Teixeira Benevides, 01, Bairro Colibris -- CEP: 63660-000} \\
+    
+    
      
     \cellcolor{gray!20} \textbf{BAIRRO} & \cellcolor{gray!20} \textbf{CIDADE} & \cellcolor{gray!20} \textbf{UF} & \cellcolor{gray!20} \textbf{TELEFONE} \\
      
@@ -600,7 +607,7 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
      
      
      \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{E-MAILS}} \\
-     \multicolumn{4}{l}{\href{mailto:gabinete.taua@ifce.edu.br}{gabinete.taua@ifce.edu.br}} \\
+     \multicolumn{4}{l}{\href{mailto:cinformaticainternet@taua.ifce.edu.br}{cinformaticainternet@taua.ifce.edu.br}} \\
      
      \bottomrule
      
@@ -734,391 +741,12 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
 
 \normalsize
 
-\chapter{Apresentação}
 
-
-%  
- 
- O Projeto Pedagógico de um curso é o documento que expressa a sua identidade.
- Tem como finalidade precípua apresentar à comunidade acadêmica como o curso
- caracteriza-se e organiza-se, em função de suas escolhas e percursos, para
- contribuir na formação profissional que se propõe a oferecer aos discentes.
- 
- Nesse sentido, o presente documento versa sobre o projeto pedagógico do Curso
- Técnico Subsequente em Informática para Internet do Instituto Federal de
- Educação, Ciência e Tecnologia do Ceará, \textit{campus} Tauá, e está
- fundamentado nas bases legais e nos princípios norteadores que regulamentam a
- educação profissional de nível médio.
- 
- 
- A idealização deste curso foi feita por meio do projeto de expansão do
- \textit{campus} Tauá, pensando em atender e melhorar seu atendimento ao município
- de Tauá e municípios vizinhos. 
- Foi observado que há na região demanda reprimida de alunos que
- não possuíam dimensões profissionalizantes. Assim, movido pelo seu Plano de Desenvolvimento da Instituição, que tem por
- objetivo expandir as possibilidades de oferta de cursos na comunidade visando
- um melhor desenvolvimento tecnológico e interdisciplinar, o \textit{campus} Tauá, que já tinha o parecer favorável à implantação 
- do Curso Técnico em Informática para Internet, na modalidade subsequente, deu início às tratativas da criação do referido curso.
- 
- 
- Para o processo de criação, foi instituída uma comissão, mediante
- Portaria N$^\circ$ 163/GAB-TAU/DG-TAU/TAUA, DE 11 DE DEZEMBRO DE 2019, composta pelos professores
- Jefferson Calixto Figueiredo, Lucas Ferreira Mendes, Saulo Anderson Freitas de
- Oliveira e Weberte Alan Sombra, a pedagoga Prucina de Carvalho Bezerra
- e a  bibliotecária-documentalista 
-Analice Fraga de Oliveira. Os membros atuaram
- em diversas reuniões e, por meio de consultas a todos os docentes vinculados
- ao curso e aos coordenadores dos cursos de Baturité e Jaguaribe  para, observando a legislação vigente, construiram o
- presente documento. Foi dada atenção especial aos Programas de Unidades Didáticas
- e as cargas horárias das disciplinas, de maneira a melhor distribuir as trilhas de conhecimento e a complexidade
- delas pelo curso.
- 
- 
-
- 
-
-
- 
- % A elaboração deste projeto pedagógico teve como primeiro procedimento
- % metodológico a pesquisa documental nas leis, decretos e resoluções acerca da
- % criação e oferta de cursos subsequentes pelas Instituições Federais. Com
- % isso, delimitou-se a base pedagógica e normativa para o curso subsequente a
- % ser ofertado no Campus Tauá.
- Além disso, contou-se com as orientações pertinentes nas normativas
- institucionais no âmbito dos cursos técnicos, tais como, o Regulamento da
- Organização Didática do IFCE (ROD) e  o Plano de Desenvolvimento Institucional
- do IFCE (PDI) e o Projeto Político-Pedagógico Institucional (PPI).
-% \begin{itemize} \setlength\itemsep{0em} \item Regulamento da Organização
-% Didática no IFCE -- ROD; \item Plano de Desenvolvimento Institucional do IFCE
-% -- PDI; \item Projeto Pedagógico Institucional -- PPI.
-% \end{itemize}
- 
-
-O documento está organizado em dez (10) seções, a saber: Apresentação, Contextualização da Instituição, Justificativa para a Criação do Curso, Fundamentação Legal, Objetivos do Curso, Organização do Curso, Avaliação do Projeto do Curso, Políticas Institucionais Constantes no PDI, Apoio ao Docente, e, por fim, Infraestrutura.
-
-
-Inicialmente, nas seções Contextualização da Instituição e Justificativa para a Criação do Curso são descritos um breve histórico da Instituição e do \textit{campus} Tauá, a justificativa para criação do curso e os princípios norteadores regionais que guiam a proposta de implantação deste curso. Em seguida, apresenta-se a fundamentação legal, os objetivos e os itens que compõem a organização do curso, tais como: as formas de ingresso, as áreas de atuação e o perfil esperado do futuro profissional. Logo após, é apresentada a  matriz curricular e seu fluxograma, os aspectos referentes à avaliação da aprendizagem, à prática profissional, ao aproveitamento de conhecimentos, à emissão de diploma, ao perfil docente e ao rodízio nas unidades curriculares. Aborda-se ainda, sobre projetos integradores, atividades complementares, metodologias empregadas no ensino e sua integração \`a pesquisa e extensão.
-
-Logo depois, são abordados aspectos  da avaliação do projeto do curso e as metas que serão oportunizadas dentro do Plano de Desenvolvimento Institucional do \textit{campus} Tauá. Continuando, são elencadas ações estratégicas de apoio ao discente através dos setores existentes, apresentando o corpo docente necessário para a execução do curso. Na sequência, a seção Infraestrutura descreve as instalações e espaços disponibilizados pelo \textit{campus} para as diversas atividades inerentes ao dia-a-dia do curso. Por fim, os anexos detalham os Programas de Unidade Didática (PUDs) das disciplinas que formam a matriz curricular do curso e demais anexos referentes à organização da Instituição e do curso.
-
-
-\chapter{Contextualização da Instituição}
-
-\section{Finalidades do Instituto Federal de Educação, Ciência e Tecnologia do Ceará}
-
-
-O Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) é uma Instituição Tecnológica que tem como marco referencial de sua história a evolução contínua com crescentes indicadores de qualidade. A sua trajetória corresponde ao processo histórico de desenvolvimento industrial e tecnológico da Região Nordeste e do Brasil.
-
-A história institucional inicia-se no século XX, quando o então Presidente Nilo Peçanha cria, mediante o Decreto n$^\circ$  7.566, de 23 de setembro de 1909, as Escolas de Aprendizes Artífices, com a inspiração orientada pelas escolas vocacionais francesas, destinadas a atender à formação profissional aos pobres e desvalidos da sorte. O incipiente processo de industrialização passa a ganhar maior impulso durante os anos 40, em decorrência do ambiente gerado pela II Guerra Mundial, levando à transformação da Escola de Aprendizes Artífices em Liceu Industrial de Fortaleza, no ano de 1941 e, no ano seguinte, passa a ser chamado de Escola Industrial de Fortaleza, passando a ofertar formação profissional diferenciada das artes e ofícios, mas orientada para atender às profissões básicas do ambiente industrial e ao processo de modernização do País.
-
-O crescente processo de industrialização, mantido por meio da importação de tecnologias orientadas para a substituição de produtos importados, gerou a necessidade de formar mão de obra técnica para operar esses novos sistemas industriais e para atender às necessidades governamentais de investimento em infraestrutura. No ambiente desenvolvimentista da década de 50, a Escola Industrial de Fortaleza, mediante a Lei Federal n$^\circ$ 3.552, de 16 de fevereiro de 1959, ganhou a personalidade jurídica de Autarquia Federal, passando a gozar de autonomia administrativa, patrimonial, financeira, didática e disciplinar, incorporando a missão de formar profissionais técnicos de nível médio.
-
-Em 1965, passa a se chamar Escola Industrial Federal do Ceará e em 1968, recebe então a denominação de Escola Técnica Federal do Ceará, demarcando o início de uma trajetória de consolidação de sua imagem como instituição de educação profissional, com elevada qualidade, passando a ofertar cursos técnicos de nível médio nas áreas de Edificações, Estradas, Eletrotécnica, Mecânica, Química Industrial, Telecomunicações e Turismo.
-
-
-O contínuo avanço do processo de industrialização, com crescente complexidade tecnológica, orientada para a exportação, originou a demanda de evolução da Rede de Escolas Técnicas Federais, já no final dos anos 70, para a criação de um novo modelo institucional, surgindo então os Centros Federais de Educação Tecnológica – CEFET's.
-
-
-A partir da Lei 11.892, de 29 de dezembro de 2008, sancionada pelo então
-presidente Luiz Inácio Lula da Silva, passou \`a denominação de Instituto
-Federal de Educação, Ciência e Tecnologia do Ceará, mediante integração do
-Centro Federal de Educação Tecnológica do Ceará e das Escolas Agrotécnicas
-Federais de Crato e de Iguatu, tendo hoje 35 unidades (34 \textit{campi} e Reitoria), distribuídas em todas as
-regiões do Estado.
-Ao longo da história, os Institutos Federais tornaram-se instituições de
-educação superior, básica e profissional, pluricurriculares e multicampi,
-especializados na oferta de educação profissional e tecnológica nas diferentes
-modalidades de ensino, com base na conjugação de conhecimentos técnicos e
-tecnológicos com práticas pedagógicas.
-
-% O campus de Tauá, do Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE), foi inaugurado em 20 de novembro de 2009, como um campus avançado do IFCE de Crateús. Situado em Tauá, município polo da região do sertão dos Inhamuns, distante 334 km de Fortaleza, abrange os municípios de Quiterianópolis, Parambu, Arneiroz e Aiuaba, recebendo também alunos de várias outras regiões, por meio do Sistema de Seleção Unificada (SISU) do Ministério da Educação (MEC), e outros processos seletivos que se fizerem necessários conforme a demanda.
-
-
-\section{Histórico e Estrutura do IFCE \textit{campus} Tauá}
-
-O \textit{campus} Tauá do IFCE foi inaugurado em 20 de novembro de 2009 como um \textit{campus} avançado do IFCE de Crateús. Situado na cidade de Tauá, município-polo da região Sertão dos Inhamuns, distante 334 $\mathrm{km}$ de Fortaleza, abrange os municípios de Arneiroz, Aiuaba, Parambu e Quiterianópolis \cite{ipece17}, e recebe alunos de várias outras regiões, por meio do Sistema de Seleção Unificada (SISU) do Ministério da Educação (MEC), e outros processos seletivos.
-
-Mesmo antes da inauguração, começaram as tratativas para a definição dos primeiros cursos e serviços a serem ofertados pelo \textit{campus} Tauá. Após uma ampla discussão com a sociedade, ficou definido que, inicialmente, haveria a oferta de dois cursos, um de nível técnico em Agronegócio e outro de nível superior em Tecnologia em Telemática (criado pela Resolução 23/2010 do CONSUP/IFCE, em 31 de maio de 2010).
-
-Procedeu-se à organização de um vestibular e um exame de seleção que, após divulgação e realização, possibilitou o ingresso dos primeiros alunos, ocorrendo inicialmente a oferta de 70 vagas, 35 para cada curso. As primeiras turmas iniciaram as atividades em setembro de 2010 e, semestralmente, novos ingressos foram promovidos, sendo que, para o curso de Telemática, o acesso passou a ser realizado através do SISU/MEC.
-
-Com a adesão ao Programa Nacional de Acesso ao Ensino Técnico e Emprego (PRONATEC), em 2012, o \textit{campus} Tauá passou a ofertar, de forma concomitante, aos alunos do ensino médio da região, um Curso Técnico de Informática, curso este que teve uma oferta única com 40 vagas. Ainda em 2012, o \textit{campus} começou a promover eventos de extensão voltados à divulgação da instituição e fortalecimento das atividades acadêmicas, com destaque para o I Encontro de Tecnologia em Telemática (TECTEL), que passa a ser realizado anualmente pelo curso de Telemática, e a I Semana do Agronegócio, o que inclusive possibilitou o aumento de parcerias com organizações públicas e privadas.
-
-Em 2013, o \textit{campus} Tauá deixou de ser avançado, adquirindo assim, autonomia administrativa, patrimonial, financeira, didático-pedagógica e disciplinar. Nos anos seguintes, tiveram continuidade os investimentos estruturais, como reordenamento de salas, quadra esportiva, laboratórios, e com destaque o novo bloco didático, que possibilitaria a ampliação de cursos e que foi inaugurado em 5 de julho de 2016.
-
-O crescimento da infraestrutura é acompanhado pelo aumento de servidores técnicos administrativos em educação, suprindo as áreas: pedagógica, de assistência estudantil e administrativa, bem como pela chegada de novos docentes.
-
-Um marco das ações do \textit{campus} Tauá, em 2016, foi a sua inserção em programa de intercâmbio internacional, em que, anualmente, o  \textit{campus} tem enviado alunos para cursar um semestre no exterior, atividade que se repetiu em 2017, 2018 e 2019. Em 2016, também houve ofertas de projetos e cursos de extensão: projeto de Xadrez, cursos de planilhas eletrônicas, preparatórios para concursos e para o Enem.
-
-O ano de 2017 foi marcado pela implantação do curso técnico integrado em Redes de Computadores, criado pela Resolução 11/2016 do CONSUP/IFCE, de 4 de março de 2016, possibilitando o \textit{campus} atuar também na oferta do ensino médio. Ademais, com essa nova oferta, o \textit{campus} passa a contar com o aumento significativo de docentes, que, inclusive, reforçam as atividades de extensão. O ano de 2017 culminou com a organização do novo semestre com a nova oferta de turmas do superior em Telemática (via SISU), técnico integrado em Redes de computadores (via edital de seleção), o novo curso de Licenciatura em Letras, com habilitação em Língua Portuguesa e Língua Inglesa e o novo curso técnico Integrado de Agropecuária.
-
-
-Com o apoio dos docentes e técnicos, o \textit{campus} ofertou em 2018 na vertente extensão, as seguintes atividades:
-\begin{alineas}
-    \setlength\itemsep{0em}
-    \item Projeto de Difusão de Tecnologias de Manejo de Ordenha e Produção e Conservação de Volumosos;
-    \item  Projeto Protagonismo Juvenil para a Saúde;
-    \item  Projeto Conhecer para Incluir, Capacitação para Educação Inclusiva;
-    \item  Projetos de Formação Esportiva (basquete, vôlei e futsal);
-    \item  Curso Preparatório para o ENEM;
-    \item  Curso Preparatório para os Cursos Técnicos (Pré-Técnico);
-    \item  Cursos de Línguas Estrangeiras (Inglês Básico e Espanhol Básico);
-    \item  Cursos de Formação Musical (iniciação ao violão e aperfeiçoamento musical).
-\end{alineas}
-
-O \textit{campus} Tauá, em 2018, promoveu a I Jornada de Humanidades. Evento este que debateu  gênero e questões raciais. Em seguida, foram realizadas eleições para a para direção-geral, culminando no início do mandato do terceiro diretor da história do \textit{campus}. Ainda em 2018, em fevereiro, foi realizada audiência pública  para definição de cursos a serem ofertados em Tauá. Nutrição, Manutenção Automotiva e \textbf{Informática para Internet}, por exemplo, foram cursos  apontados e votados pelos membros da consulta. 
-
-Além disso,  o ano de 2018 também contou com a participação de mais um aluno enviado à Portugal pelo programa  IFCE Internacional. Por fim, o ano de 2018 culminou com a aprovação da primeira aluna do curso de Telemática, na seleção para mestrado do Programa de Pós-graduação em Sistemas e Computação (PPgSC) da Universidade Federal do Rio Grande do Norte (UFRN).
-
-
-Em 2019, o IFCE \textit{campus} Tauá vence etapa estadual de Prêmio de Educação do SEBRAE. O Projeto premiado foi parceria entre os campi de Tauá e Boa Viagem. No segundo semestre daquele ano, o Encontro Pedagógico debate Base Nacional Comum Curricular. Após o início do segundo semestre, diversas ações planejadas no início do ano são executadas no \textit{campus} Tauá:
-\begin{alineas}
-    \item Participação dos alunos da Feira Agropecuária dos Inhamuns (Inhamunsagro), com apresentações de produtos derivados do leite de cabra;
-    \item Maratona Universitário Empreendedor (Sebrae);
-    \item  Corredores Digitais (Sebrae);
-    \item VII TECTEL, cujo tema principal é a interdisciplinaridade entre tecnologia e agropecuária;
-    \item II Jornada de Humanidades;
-    \item I Semana de Letras;
-    \item II Concurso de Educação Integradora do IFCE, promovido pelos \textit{campi} de Tauá, Boa Viagem e Crateús;
-    \item Corrida de Rua Comemorativa do Aniversário de uma Década do \textit{campus} Tauá.
-\end{alineas}
-
-No final do ano, mais especificamente no dia 20 de novembro de 2019, foi comemorada a chegada, há dez anos, do  \textit{campus} Tauá no município.  Para celebrar uma década de atividades juntamente com todos que fizeram e fazem parte dessa história, o \textit{campus} preparou uma programação especial. O ano de 2019  encerrou-se com a formatura da primeira turma do curso técnico integrado em Redes de Computadores e com o  IV Encontro dos Profetas da Chuva dos Inhamuns.
-
-
-Como se pode perceber, o \textit{campus} Tauá, com a diversidade formativa que nele começa a se fortalecer, coloca-se como exemplo viável ao potencial que hoje possui o IFCE na direção de uma formação autônoma e contextualizada para a juventude, em face aos desafios postos pelo moderno e competitivo mercado de trabalho. Logo, este é um terreno no qual todos (professores, técnicos, gestores e comunitários) podem e devem dar a sua contribuição.
-
-
-
-\chapter{Justificativa para a Criação do Curso}
-
-Com a popularização da Internet e diversificação de seus serviços, uma demanda crescente e variada por serviços informatizados está ocorrendo na sociedade como um todo.  A Internet atualmente faz parte da rotina diária das pessoas. Cada vez mais tem-se a necessidade de se realizar atividades corriqueiras sem sair de casa, como por exemplo, fazer compras, realizar pagamento de contas, estudar, ler um livro, realizar reuniões, dentre outras. Com isso, soluções computacionais que utilizam internet tornam-se vitais.
-
-
-Neste contexto, novas ocupações estão sendo criadas e outras estão sendo
-elevadas em nível de importância. É também neste contexto que atua o
-profissional de Informática para Internet, criando sistemas \emph{web} para a
-resolução de problemas ou realização de tarefas, acessíveis de diferentes aparelhos.
-
-No Ceará especificamente, segundo a Associação das Empresas Brasileiras de Tecnologia da Informação, Software e Internet (ASSESPRO), enquanto o desemprego atinge profissionais em vários segmentos da economia no país, o setor de Tecnologia da Informação (TIC)  tem muitas vagas ainda não preenchidas para profissionais qualificados na área \cite{estadao2019}. Segundo a Agência de Desenvolvimento do Estado do Ceará (ADECE), através da plataforma de planejamento estratégico Ceará 2050, o setor de TIC foi identificado como uma das megatendências que afetarão os serviços no Ceará nos próximos anos. Esta é uma área que está associada à criação de oportunidades em vários setores econômicos dinâmicos ou de suporte às empresas e que pode potencializar significativos ganhos de produtividade para o mercado cearense~\cite{adece2019}.
-
-Em acompanhamento a essa tendência, o governo do estado do Ceará está ampliando o Cinturão Digital \cite{diario2018cinturao}, que vem viabilizando o funcionamento de diversos projetos e transformando sensivelmente a vida de milhões de cearenses, especialmente o interior. O Cinturão Digital dota o estado de um avançadíssimo serviço de transmissão de dados que tem como resultado prático a melhoria na qualidade e eficiência nos serviços prestados ao cidadão. %Neste processo, estão incluídos a educação à distância, o acesso à Internet de alta velocidade em todos os órgãos governamentais, principalmente nas escolas, a tele-medicina, a TV Digital e o monitoramento de câmeras de vigilância em praticamente todo o estado (ADECE, 2014). 
-
-
-Sendo Tauá um dos pontos principais do \emph{backbone} do cinturão digital, surgem diversas oportunidades de exploração e aproveitamento dos recursos por ele oferecidos, favorecendo o desenvolvimento sustentável da cidade e abrindo as portas para que esse município cearense possa se inserir no mercado da TIC de forma eficiente e competitiva, criando meios de proporcionar o desenvolvimento e o fortalecimento   de todos os setores, como o agronegócio e o comércio local, por exemplo. Além de proporcionar abertura para a exploração de novas áreas, surgindo, com isso,  a necessidade crescente de profissionais qualificados em informática para a atuação de forma direta e indireta nas tecnologias proporcionadas pelo Cinturão Digital.
-
-
-
-Em virtude da contextualização e das características do IFCE  \textit{campus} Tauá, que busca um novo parâmetro de desenvolvimento regional para a melhoria da qualidade de vida, o Curso Técnico Subsequente em Informática para Internet  configura-se como uma excelente oportunidade, tendo em vista que se caracteriza por despertar a vocação empreendedora na área de informática, bem como motivar a participação efetiva na evolução econômica, social e cultural da comunidade.
-
-	
-Outro aspecto que norteou a proposição deste Curso foi o aumento do contingente
-escolar no ensino médio. As estatísticas revelam uma tendência de forte
-aceleração da demanda reprimida de candidatos à matrícula em cursos técnicos em
-toda a região de sua abrangência. Com o objetivo de contemplar novos cursos com base nos princípios e diretrizes do
-Projeto Político-Pedagógico Institucional (PPI) e  nas
- metas do Plano de Desenvolvimento Institucional (PDI), a gestão do  \textit{campus}
- realizou um estudo de potencialidades e uma audiência pública para que a
-comunidade pudesse referendar os cursos escolhidos.
-
-
-% Com o objetivo de contemplar novos cursos nas suas metas do Plano de Desenvolvimento Institucional -- PDI, a gestão do Campus planejou realizar uma consulta à população, através da aplicação de uma enquete e, em seguida, apresentação dos resultados e, por fim, a realização de uma audiência pública para que a comunidade pudesse referendar os cursos escolhidos.
-
-% O processo de expansão de novos cursos começou com um levantamento prévio de oportunidades e potencialidades da região dos Inhamuns, apontando os eixos adequados, prioritários e de longo prazo.
-% Em seguida, o Campus consultou a população acerca da implantação de novos cursos. Inicialmente, foi realizada a divulgação, junto às rádios do município, da enquete que seria realizada, no período de 03 a 14 de novembro de 2014. 
-
-% A pesquisa foi aplicada por meio físico e por plataforma web, sendo ouvidas cerca de duas mil pessoas e envolveu diversos segmentos da sociedade, dentre estes, alunos e servidores da instituição, alunos e professores das escolas de ensino médio dos municípios de Tauá, Quiterianópolis, Parambu, Arneiroz e Aiuaba, além de servidores públicos, profissionais liberais, representantes sindicais, bancários, comerciantes, comerciários, feirantes etc.
-
-
-
-%%%%OK
-
-O estudo de potencialidades, apresentado na audiência, considerou questionários
-realizados com a população local e informações levantadas em parceria com
-secretarias de municípios que compõem a região e diversos órgãos, como o
-Instituto Brasileiro de Geografia e Estatística (IBGE), o Sistema Nacional de
-Emprego (SINE), o Serviço Brasileiro de Apoio às Micro e Pequenas Empresas
-(SEBRAE) e a Câmara de Dirigentes Lojistas (CDL) de Tauá.
-
-%%% OK
-
-Após amplo debate com a sociedade da região dos Inhamuns, a audiência pública,
-realizada no dia 07 de março de 2018, concretizou o processo democrático de
-escolha e implantação de novos cursos no \textit{campus} de Tauá. O objetivo foi
-possibilitar que a comunidade apontasse as qualificações que mais se adequam às
-necessidades da região. O evento teve a participação de servidores e alunos do
-\textit{campus}, assim como de representantes de secretarias municipais, instituições de
-ensino, comércio e diversos outros setores da região. Foi priorizada a oferta de
-cursos técnicos subsequentes, voltados a quem já tenha concluído o ensino médio.
-
-
-Foram definidos onze (11) cursos técnicos (Agropecuária, Alimentos,
-Agroindústria, Apicultura, Comércio, Manutenção Automotiva, Eletrotécnica,
-Geoprocessamento, \textbf{Informática para Internet}, Nutrição e Dietética e 
-Meio ambiente); cinco (5) cursos superiores (Agronomia, Nutrição, Sistemas de
-Informação, Gestão Comercial e Alimentos) e duas (2) licenciaturas (Matemática e
-História).
-
-
-Além do quadro nacional exposto acima  e da necessidade e procura da região por
-cursos subsequentes, são elencados, a seguir, acontecimentos na região do Sertão
-dos Inhamuns que se alinham com essa perspectiva de transformação digital.
-
-\section{Demanda de dimensões profissionalizantes na formação  dos
-alunos}
-
-Na realidade específica do município de Tauá e microrregião atendida pelo \textit{campus} Tauá, há diversas escolas municipais que ofertam ensino médio e que apresentam expressivos números de alunos matriculados, conforme descrito na \autoref{tab:inep_ibge_matriculas}.
-
-
-\begin{table}[htpb]
-\IBGEtab{
-    \caption{Censo Escolar dos municípios limítrofes da Cidade de Tauá: número de matrículas escolares no ensino médio.}
-        \label{tab:inep_ibge_matriculas}
-}{
-
-
-	
-	    \renewcommand{\arraystretch}{1.3}
-	\normalsize
-	%\begin{tabular}{l r r r r}
-	\begin{tabularx}{.97\linewidth}{X}
-	\centering
-		\begin{tabular}{l r r r r r }
-            \toprule
-            \cellcolor{gray!20} \textbf{MUNICÍPIO} & \cellcolor{gray!20}\textbf{2015} &  \cellcolor{gray!20}\textbf{2016} & \cellcolor{gray!20}\textbf{2017} & \cellcolor{gray!20}\textbf{2018}  & \cellcolor{gray!20}\textbf{2019} \\
-
-            Aiuaba & 520 &  513 & 591 & 561 & 565 \\
-            Arneiroz & 245 & 291 & 261 & 304 & 313\\
-            Quiterianópolis & 729 & 712 & 771 & 778 & 669 \\
-            Parambu & 1375 & 1216 & 1224 & 1258 & 1285 \\
-            Tauá & 2477 & 2598 & 2664 & 2600 & 2834 \\
-
-
-
-            \cellcolor{gray!10}\textbf{TOTAL} & \cellcolor{gray!10}\bfseries 5346 & \cellcolor{gray!10}\bfseries 4330 & \cellcolor{gray!10}\bfseries 5511 & \cellcolor{gray!10}\bfseries 5501 & \cellcolor{gray!10}\bfseries  5666 \\
-	\bottomrule
-	\end{tabular}
-        \end{tabularx}
-        \vspace{1em}
-}
-{
-    \fonte{Ministério da Educação, Instituto Nacional de Estudos e Pesquisas Educacionais - INEP - Censo Educacional 2015-2019.}
-}
-\end{table}
-
-
- No entanto, nem todas as escolas da região oferecem educação profissionalizante
- como parte da formação destes discentes. De acordo com a Coordenadoria Regional
- de Desenvolvimento da Educação (CREDE), somente duas\footnote{Endereço das Escolas
- . Disponível em:
- \url{https://educacaoprofissional.seduc.ce.gov.br/index.php?option=com_content&view=article&id=192:lista-escolas&catid=10:servicos&Itemid=344}.
- Acessado em: 6 de novembro de 2020.} escolas estaduais, a saber, a EEEP Monsenhor Odorico de
- Andrade, em Tauá, e a EEEP Joaquim Filomeno Noronha, em Parambu, e o IFCE 
- \textit{campus} Tauá possuem ofertas de cursos técnicos em toda a região de
- abrangência.  Nos último editais de seleção de alunos para o ano letivo de 2021, a EEEP Monsenhor Odorico de Andrade, em Tauá,
- ofertou 180 vagas\footnote{EDITAL n$^\circ$ 002/2020, de 15 de
- dezembro de 2020. Seleção de alunos novatos para a EEEP Monsenhor Odorico de
- Andrade referente ao ano letivo 2021. Disponível em:
- \href{https://crede15.seduc.ce.gov.br/index.php/listanoticias/1743-selecao-de-alunos-da-escola-estadual-de-educacao-profissional-monsenhor-odorico-de-andrade-para-o-ano-letivo-2021}{https://crede15.seduc.ce.gov.br/index.php/listanoticias/1743-selecao-de-alunos-da-escola-estadual-de-educacao-profissional-monsenhor-odorico-de-andrade-para-o-ano-letivo-2021}.},
- a EEEP Joaquim Filomeno Noronha, em Parambu, ofertou
- 180 vagas\footnote{EDITAL n$^\circ$ 004/2020, de 16 de dezembro de
- 2020. Seleção de alunos da Escola Estadual de Educação Profissional Joaquim
- Fiomeno Noronha para o ano letivo 2021. Disponível em:
- \href{https://crede15.seduc.ce.gov.br/index.php/listanoticias/1744-selecao-de-alunos-novatos-para-a-eeep-joaquim-filomeno-noronha-referente-ao-ano-letivo-2021}{https://crede15.seduc.ce.gov.br/index.php/listanoticias/1744-selecao-de-alunos-novatos-para-a-eeep-joaquim-filomeno-noronha-referente-ao-ano-letivo-2021}.
- Acessado em: 29 de jan de 2021.} e o IFCE \textit{campus} Tauá ofertou 70 vagas\footnote{Processo Seletivo
- 2021.1 - Cursos Técnicos - 15 campi. Disponível em:
- \href{https://qselecao.ifce.edu.br/concurso.aspx?cod_concurso=6040}{https://qselecao.ifce.edu.br/concurso.aspx?cod\_concurso=6040}. Acessado
- em: 29 de jan de 2021.}. Assim, as estatísticas revelam uma tendência de falta de cobertura
- reprimida de candidatos à matrícula em cursos de técnicos em toda a região, uma vez que anualmente somente há 430 vagas para cursos técnicos, representando algo em torno de 7\% das matrículas totais.
- 
- Essa realidade de estreitamento dos conteúdos educacionais nos currículos do ensino médio, o que restringe os discentes em dimensões prático-utilitárias, vai em na direção oposta \`a viabilidade de os mesmos conquistarem seu espaço no mercado de trabalho e progredirem com sucesso.
- 
- Como alternativa a esse cenário de discentes com horizontes profissionais limitados, a busca por um equilíbrio nos percursos educacionais  faz-se necessária. Portanto, a oferta do Curso Técnico Subsequente em Informática para Internet objetiva oportunizar ao discente uma formação sólida e atualizada, aliada ao desenvolvimento de competências que possibilitarão o atendimento de várias demandas profissionais.
- 
-A escolha da modalidade subsequente também vai ao encontro desse sentimento de disponibilidade de oportunidades. Por ser menos restritiva que a versão concomitante e integrada, a modalidade subsequente viabiliza para quem já concluiu o ensino médio o acesso à Educação Profissionalizante. Portanto, esses alunos são potenciais candidatos ao Curso Técnico Subsequente em Informática para Internet.
-
-Além da motivação supracitada, a seguir são elencados alguns acontecimentos que fazem o município de Tauá viver um momento ímpar. Estas demandas e arranjos trazem consigo novas oportunidades de trabalho, criando assim um período de efervescência econômica que, se bem aproveitado, pode elevar os índices de desenvolvimento da região como um todo.
-
-\section{Modernização do Poder Judiciário no Estado do Ceará e a Integração das Comarcas de Quiterianópolis e Parambu \`a Tauá}
-
-Em 05 de dezembro de 2019, através de resolução aprovada pelo pleno do Tribunal de Justiça do Estado do Ceará (TJCE), na Região dos Inhamuns, as Comarcas de Quiterianópolis e Parambu foram incorporadas \`a de Tauá. 
-A reestruturação visa reduzir o número de comarcas físicas. No ranking nacional, o Ceará perdeu quatro posições no percentual de cobertura física interna. Saiu do 4$^\circ$ lugar para o 8$^\circ$ em um ano. Passou de 83,7\% de cobertura (física) nos municípios para 75,5\%.
-
-Para o desembargador Washington Luis Bezerra Araújo, presidente do Tribunal de Justiça do Ceará (TJCE), a redução não é um problema, e sim uma solução para o novo formato que o Tribunal está adotando no Estado. Os investimentos, agora, são direcionados à esfera digital, e não mais em unidades físicas. Nesse sentido, destaca-se abaixo um trecho da entrevista coletiva dada pelo presidente do TJCE:
-
-\begin{citacao}
-Esse modelo (físico), hoje, não é mais possível e não é mais necessário. Estamos num mundo em que o processo é eletrônico e o meio é digital. Não temos mais papel, não tem mais distância. Isso vai nos permitir fazer uma revolução. A nossa estrutura é cara, pesada e obsoleta. Não temos braços para alcançar essas comarcas todas. Nós temos 91 cargos de juízes vagos, e isso gera ineficiência, gera acúmulo de processos, gera uma alta taxa de congestionamento. Estamos enxugando a estrutura para torná-la mais ágil e eficiente \cite{teste}.
-\end{citacao}
-
-%\url{https://diariodonordeste.verdesmares.com.br/editorias/politica/tribunal-de-justica-planeja-reestruturacao-digital-para-o-ceara-1.2183795}
-
-
-Essa integração é resultado de uma parceria entre TJCE e Governo do Estado em busca de recursos para modernização do Poder Judiciário através do Programa de Modernização do Judiciário Cearense (Promojud). O Promojud tem como finalidade principal a modernização do Judiciário, principalmente ancorado em transformação digital para melhorar o atendimento à população. Ele está baseado em dois componentes: governança e gestão judiciária e a transformação digital para o aprimoramento do cidadão. \textbf{Esse último terá 80\% dos investimentos previstos}\footnote{Fonte:~
-\href{https://www.tjce.jus.br/noticias/parceria-entre-tjce-e-governo-do-estado-busca-recursos-para-modernizacao-do-poder-judiciario/}{http://www.tjce.jus.br/noticias/parceria-entre-tjce-e-governo-do-estado-busca-recursos-para-modernizacao-do-poder-judiciario/}. Acessado em \today.}.
-
-
-A operação de crédito,  no valor de US\$ 28 milhões, que já foi autorizada pelo Executivo Estadual e será avaliada pelo Ministério da Economia até o final de 2019, deverá subsidiar o Promojud. Os recursos serão emprestados pelo Banco Interamericano de Desenvolvimento (BID) e investidos no aprimoramento de ações que garantam eficiência profissional e uma produtividade sustentável. 
-
-
-
-Entre as medidas, estão a manutenção de atendimento ao público nos fóruns, audiências realizadas por videoconferências, processos digitalizados, designação de núcleos de produtividade remota e de qualidade da informação para atuar nas comarcas agregadas com o acervo digitalizado, além de outros pontos. 
-
-
-Aproveitar esse momento de reestruturação digital do Judiciário e de investimentos voltados à esfera tecnológica é estratégico. Diversos Tribunais t\^em implementado e aprimorado seus sistemas informatizados para se adequarem aos novos paradigmas e dar maior celeridade à prestação jurisdicional. Na prática, isso significa novos postos de trabalho e a oferta do Curso Técnico Subsequente em Informática para Internet vai ao encontro de desenvolvimento de competências que atenderão esses postos.
-
-
-
-\section{Oferta de Voos para Tau\'a em 2020}
-
-
-Em 18 de dezembro de 2019, o Governo do Ceará fechou  um acordo com a GOL Linhas Aéreas que garantirá voos regionais a oito municípios cearenses. A partir de 1$^\circ$ de fevereiro, a Capital estará ligada a Sobral, São Benedito, Tauá, Crateús, Iguatu e Aracati, semanalmente, e ganhará três voos diários para Jericoacoara e dois voos diários para Juazeiro do Norte. Os horários disponíveis compreendem uma janela de uma hora de tr\^ansito aéreo da capital, Fortaleza, à Tauá. Neste contexto, destaca-se um trecho da fala do governador Camilo Santana:
-
-\begin{citacao}
-Pra nós essa conquista é muito importante porque vamos interiorizar a conectividade do nosso \textit{hub} em Fortaleza para oito cidades do Ceará. Vamos poder comprar uma passagem de Crateús para Paris, por exemplo. Ampliando as possibilidades para os cearenses. A GOL tem sido uma grande parceira do Estado, que tem crescido à frente do Brasil no turismo. Os voos também vão movimentar a economia, gerando mais emprego e renda para o cearense \cite{voos2019camilo}
-\end{citacao}
-
-
-% Diante desta realidade, quais são os fatores principais a serem considerados e implicações que podem vir desta oferta de voos:
-
-Além do benefício direto do aumento da capacidade de circulação de pessoas na região, essa oferta fortalece o acesso ao turismo e aos negócios. Alguns fatores que influenciam o transporte aéreo são elencados a seguir:
-\begin{alineas}
-    \item os tecnológicos, como o nível das frotas das empresas;
-    \item os sistêmicos, entre eles, as malhas de rotas;
-    \item os comerciais, configurados nas estratégias de vendas, \textit{marketing} da empresa, informatização, dentre outros;
-    \item os institucionais, fundamentados em legislações, acordos
-internacionais, atos legais específicos, e por fim;
-    \item os fatores econômicos, esses entendidos como principais e estratégicos.
-\end{alineas}
-
-
-O Governo do Estado do Ceará tem se colocado a frente de iniciativas que visam  fortalecer ainda mais o Estado do Ceará como \textit{hub} aéreo do Nordeste, como destacado na fala do Governador do Estado:
-
-\begin{citacao}
-Esta é mais uma conquista do Ceará, que tem se transformado num dos maiores centros de conexões aéreos do Brasil. Isso significa oportunidades de emprego nos hotéis, restaurantes, no transporte e em todos os setores de nossa economia \cite{ceara2019camilo}.
-\end{citacao}
-
-
-Frente a esse cenário e ao direcionamento do Estado do Ceará em políticas e ações que atraem, além de empreendimentos corporativos, industriais e comerciais em seu entorno, recursos humanos especializados em transporte aéreo, é estratégico e fundamental aproveitar esse momento para desenvolver a região via educação profissionalizante.
-
-
-\section{A proposta do Curso Técnico Subsequente em Informática para Internet}
-
-Mediante os sinais observados no mercado atual, a carência de mão de obra especializada, a baixa cobertura de dimensões profissionalizantes na formação regional dos discentes e visando atender às necessidades que surgem nessa nova configuração econômica de Tauá, o presente projeto visa \`a implantação do Curso Técnico Subsequente em Informática para Internet no IFCE  
-\textit{campus} Tauá objetivando formar profissionais para atender às demandas da área na região do Inhamuns.
-
-% Nota-se que a cidade de Tauá e a região dos Inhamuns suportam e carecem de
-% cursos técnicos com ênfase na área de tecnologia, e neste caso,
-A proposta do Curso Técnico Subsequente em Informática para Internet vem como
-uma oportunidade de formação complementar aos alunos que irão se formar nos
-próximos anos no ensino médio e aos formados que não obtiveram a dimensão
-profissionalizante durante a formação. Assim, fornecendo condições a esses
-alunos de também conquistarem seu espaço no mercado de trabalho e desenvolvam-se
-com sucesso.
-
-
-O IFCE \textit{campus} Tauá, ciente da importância do seu papel diante do cenário de transformações que hoje se apresenta no mundo do trabalho, está se preparando para enfrentar tal tarefa com qualidade, reformulando seus currículos, reinterpretando o seu relacionamento com o segmento produtivo e buscando atender às novas demandas de oportunidades formativas que vão surgindo na região. Dessa forma, a criação do curso subsequente supracitado visa suprir essa carência do mercado, além de elevar o potencial competitivo do IFCE, tornando-o referência no segmento.
-
-
+	% CAPS 
+	% 1 APRESENTAÇÃO
+	% 2 CONTEXTUALIZAÇÃO DA INSTITUIÇÃO
+	% 3 JUSTIFICATIVA PARA A CRIAÇÃO DO CURSO 
+	\include{apresentacao-contexto-justificativa}
 
 \chapter{Fundamentação Legal}
 Para a construção da proposta curricular para o Curso Técnico Subsequente em Informática para Internet, foram observadas as normativas legais relacionadas aos cursos técnicos e ao âmbito geral da educação nacional, assim como os documentos institucionais de organização e regulamentação das atividades do IFCE.
@@ -1126,61 +754,132 @@ Para a construção da proposta curricular para o Curso Técnico Subsequente em 
 \section{Normativas Nacionais Comuns aos Cursos Técnicos e de Graduação}
 
 \begin{itemize}
-   \item Lei \n~9.394, de 20 de dezembro de 1996. Estabelece as Diretrizes e Bases da Educação Nacional (LDB).
-   \item Lei \n~11.892, de 29 de dezembro de 2008. Institui a Rede Federal de Educação Profissional, Científica e Tecnológica, cria o Instituto Federal do Ceará e dá outras providências.
-    \item Lei \n~11.741/2008. Altera dispositivos da Lei \n~9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional, para redimensionar, institucionalizar e integrar as ações da educação profissional técnica de nível médio, da educação de jovens e adultos e da educação profissional e tecnológica.
-    \item Resolução CNE/CES \n~3, de 2 de julho de 2007. Dispõe sobre procedimentos a serem adotados quanto ao conceito de hora-aula, e dá outras providências.
-    \item Referenciais de Qualidade para a Educação Superior a Distância -- 2007.
-    \item  Decreto \n~5.622, publicado no DOU de 20/12/05. Regulamenta o artigo 80 da LDB
-    atual, que dispõe sobre a organização da educação a distância.
-    \item  Decreto \n~5.773, de 9 de maio de 2006, que dispõe sobre o exercício das funções de regulação, supervisão e avaliação de instituições de educação superior e cursos superiores de graduação e sequenciais no sistema federal de ensino.
-    \item Portaria MEC \n~40, de 12 de dezembro de 2007, reeditada em 29 de dezembro de 2011. Institui o e-MEC -- sistema eletrônico de fluxo de trabalho e gerenciamento de informações relativas aos processos de regulação, avaliação e supervisão da educação superior no sistema federal de educação --, o Cadastro e-MEC de Instituições e Cursos Superiores e consolida disposições sobre indicadores de qualidade, banco de avaliadores (Basis) e o Exame Nacional de Desempenho de Estudantes (ENADE), entre outras disposições.
-    %\item  Portaria Normativa \n~2, de 10 de janeiro de 2007. Trata dos procedimentos de regulação e avaliação de educação superior na modalidade a distância.
-    \item  Portaria \n~1.134, de 10 de outubro de 2016. Autoriza as instituições de ensino superior introduzir, na organização pedagógica e curricular de seus cursos de graduação presenciais regularmente autorizados, a oferta de disciplinas na modalidade a distância.
-    \item  Decreto \n~5.626, de 22 de dezembro de 2005. Regulamenta a Lei \n~10.436, de 24 de abril de 2002, que dispõe sobre a Língua Brasileira de Sinais (Libras), e o art. 18 da Lei \n~10.098, de 19 de dezembro de 2000.
-    \item Resolução CNE/CP \n~2, de 15 de junho de 2012. Estabelece as Diretrizes Curriculares Nacionais para a Educação Ambiental.
-    \item Resolução CNE/CP \n~1, de 30 de maio de 2012. Estabelece as Diretrizes Nacionais para a Educação em Direitos Humanos.
-    \item Resolução CNE/CP \n~1, de 17 de junho de 2004. Institui Diretrizes Curriculares Nacionais para a Educação das Relações Étnico-Raciais e para o Ensino de História e Cultura Afro-Brasileira e Africana.
+   \item  Lei \n~9.394, de 20 de dezembro de 1996. Estabelece as Diretrizes e Bases da Educação Nacional (LDB);
+\item Resolução CNE/CP \n~1, de 17 de junho de 2004. Institui Diretrizes Curriculares Nacionais para a Educação das Relações Étnico-Raciais e para o Ensino de História e Cultura Afro-Brasileira e Africana;
+ Decreto \n~5.626, de 22 de dezembro de 2005. Regulamenta a Lei \n~10.436, de 24 de abril
+de 2002, que dispõe sobre a Língua Brasileira de Sinais (Libras), e o art. 18 da Lei nº 10.098,
+de 19 de dezembro de 2000;
+\item  Resolução CNE/CES \n~3, de 2 de julho de 2007. Dispõe sobre procedimentos a serem
+adotados quanto ao conceito de hora-aula, e dá outras providências.
+\item  Lei \n~11.741/2008. Altera dispositivos da Lei \n~9.394, de 20 de dezembro de 1996, que
+estabelece as diretrizes e bases da educação nacional, para redimensionar, institucionalizar
+e integrar as ações da educação profissional técnica de nível médio, da educação de jovens
+e adultos e da educação profissional e tecnológica;
+\item  Lei \n~11.892, de 29 de dezembro de 2008. Institui a Rede Federal de Educação Profissional,
+Científica e Tecnológica, cria o Instituto Federal do Ceará e dá outras providências;
+\item Resolução CNE/CP \n~1, de 30 de maio de 2012. Estabelece as Diretrizes Nacionais para a
+Educação em Direitos Humanos;
+\item  Resolução CNE/CP \n~2, de 15 de junho de 2012. Estabelece as Diretrizes Curriculares
+Nacionais para a Educação Ambiental;
+\item  Decreto \n~9.057, de 25 de maio de 2017. Regulamenta o art. 80 da Lei \n~9.394, de 20 de
+dezembro de 1996, que estabelece as diretrizes e bases da educação nacional;
+\item Resolução CNE/CP \n~1, de 05 de janeiro de 2021. Define as Diretrizes Curriculares Nacionais
+Gerais para a Educação Profissional e Tecnológica.
 \end{itemize}
 
 \section{Normativas Institucionais Comuns aos Cursos Técnicos e de Graduação}
 
 \begin{itemize}
-    \item Regulamento da Organização Didática do IFCE (ROD).
-    \item Plano de Desenvolvimento Institucional do IFCE (PDI).
-    \item Projeto Político-Pedagógico Institucional (PPI).
-    \item Resolução Consup que estabelece os procedimentos para criação, suspensão e extinção de cursos no IFCE.
-    \item Tabela de Perfil Docente.
-    \item Resolução Consup \n~028, de 08 de agosto de 2014, que dispõe sobre o Manual de Estágio do IFCE.
-    \item Resolução vigente que regulamenta a carga horária docente.
-    \item Documento Norteador para Construção dos Projetos Pedagógicos dos Cursos Técnicos Integrados ao Ensino Médio (IFCE, 2014).
-    \item Resolução vigente que determina a organização do Núcleo Docente Estruturante no IFCE.
-    \item Resolução vigente que determina a organização e o funcionamento do Colegiado de curso e dá outras providências.
+    
+   \item Regulamento da Organização Didática do IFCE (ROD).
+
+   \item Plano de Desenvolvimento Institucional do IFCE (PDI).
+
+   \item Projeto Político Pedagógico Institucional (PPPI).
+
+   \item Resolução Consup que estabelece os procedimentos para criação, suspensão e extinção de cursos no IFCE.
+
+   \item Resolução Consup que estabelece o Manual de elaboração de Projetos Pedagógicos.
+
+   \item Tabela de Perfil Docente.
+
+   \item Manual de Estágio do IFCE.
+
+   \item Regulamentação das Atividades Docentes (RAD) do IFCE.
+
+   \item Documento norteador dos cursos técnicos integrados ao ensino médio do Instituto Federal de Educação, Ciência e Tecnologia do Ceará – IFCE.
+
+   \item Regulamento para Programas de Ensino em Educação a Distância no Âmbito do Instituto Federal do Ceará.
+
+   \item Resolução vigente que determina a organização do Núcleo Docente Estruturante no IFCE.
+
+   \item Resolução vigente que determina a organização e o funcionamento do Colegiado de curso e dá outras providências.
+
+   \item Resolução que dispõe sobre a composição e organização dos Núcleos de Tecnologias Educacionais e Educação a Distância (NTEaDs) do IFCE.
+
+   \item Resolução vigente que trata da curricularização da extensão no âmbito do IFCE.
+
+   \item Nota Técnica vigente que trata do alinhamento das matrizes dos cursos técnicos e de graduação.
 \end{itemize}
 
 
 \section{Normativas Nacionais para Cursos Técnicos de Nível Médio}
 
 \begin{itemize}
-    \item Resolução \n~6, de 20 de setembro de 2012. Define Diretrizes Curriculares Nacionais para a Educação Profissional Técnica de Nível Médio.
-    \item  Parecer \n~11 de 2012. Estabelece as Diretrizes Curriculares Nacionais para a Educação Profissional Técnica de Nível Médio.
-    \item Resolução \n~1, de 5 de dezembro de 2014. Atualiza e define novos critérios para a composição do Catálogo Nacional de Cursos Técnicos.
-    \item  Parecer \n~024/2003. Responde a consulta sobre recuperação de conteúdos, sob a forma de Progressão Parcial ou Dependência, sem que se exija obrigatoriedade de frequência.
-    \item  Decreto \n~5.154, de 23 de julho de 2004. Regulamenta o § 2o do art. 36 e os arts. 39 a 41 da Lei \n~9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional e dá outras providências.
-    \item Resolução CNE/CEB \n~6, de 12 de setembro de 2012. Define as Diretrizes Curriculares Nacionais para a Educação Profissional Técnica de Nível Médio.
-    \item  Catálogo Nacional de Cursos Técnicos.
-    \item  Resolução \n~2, de 30 de janeiro de 2012. Define Diretrizes Curriculares Nacionais para o Ensino Médio.
-    \item  Lei \n~11.645, de 10 de março de 2008. Altera a Lei no 9.394, de 20 de dezembro de 1996, modificada pela Lei \n~10.639, de 9 de janeiro de 2003, que estabelece as diretrizes e bases da educação nacional, para incluir no currículo oficial da rede de ensino a obrigatoriedade da temática “História e Cultura Afro-Brasileira e Indígena”.
-    \item  Lei \n~10.793, de 1$^\circ$ de dezembro de 2003. Alterando a redação do art. 26, § 3o, e do art. 92 da Lei \n~9.394, de 20 de dezembro de 1996, trata da Educação Física, integrada à proposta pedagógica da instituição de ensino, prevendo os casos em que sua prática seja facultativa ao estudante.
-    \item  Lei \n~11.684, de 2 de junho de 2008. Altera o art. 36 da Lei \n~9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional, para incluir a Filosofia e a Sociologia como disciplinas obrigatórias nos currículos do ensino médio.
-    \item  Lei \n~11.769, de 18 de agosto de 2008. Altera a Lei \n~9.394, de 20 de dezembro de 1996, Lei de Diretrizes e Bases da Educação, para dispor sobre a obrigatoriedade do ensino da música na educação básica.
-    \item  Lei \n~13.006, de 26 de junho de 2014. Acrescenta § 8$^\circ$ ao art. 26 da Lei \n~9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional, para obrigar a exibição de filmes de produção nacional nas escolas de educação básica.
-    \item  Lei \n~11.947, de 16 de junho de 2009. Dispõe sobre o atendimento da alimentação escolar e do Programa Dinheiro Direto na Escola aos alunos da educação básica; altera a Lei \n~10.880, de 9 de junho de 2004, a \n~11.273, de 6 de fevereiro de 2006 e a \n~11.507, de 20 de julho de 2007; revoga dispositivos da Medida Provisória \n~2.178-36, de 24 de agosto de 2001, e a Lei \n~8.913, de 12 de julho de 1994; e dá outras providências. Dispõe sobre o tratamento transversal e integral que deve ser dado à temática de educação alimentar e nutricional, permeando todo o currículo.
     
-    \item Lei \n~10.741, de 1$^\circ$ de outubro de 2003. Dispõe sobre o Estatuto do Idoso e dá outras providências. Trata do processo de envelhecimento, respeito e valorização do idoso, de forma a eliminar o preconceito e a produzir conhecimentos sobre a matéria.
-    \item Lei \n~9.503, de 23 de setembro de 1997. Institui o Código de Trânsito Brasileiro.
-    \item  Lei \n~13.010, de 26 de junho de 2014. Altera a Lei \n~8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para estabelecer o direito da criança e do adolescente de serem educados e cuidados sem o uso de castigos físicos ou de tratamento cruel ou degradante, e altera a Lei \n~9.394, de 20 de dezembro de 1996.
+   \item Lei \n~9.503, de 23 de setembro de 1997. Institui o Código de Trânsito Brasileiro;
 
+   \item Lei \n~10.741, de 1º de outubro de 2003. Dispõe sobre o Estatuto do Idoso e dá outras
+providências. Trata do processo de envelhecimento, respeito e valorização do idoso, de
+forma a eliminar o preconceito e a produzir conhecimentos sobre a matéria;
+
+   \item Lei \n~10.793, de 1º de dezembro de 2003. Alterando a redação do art. 26, § 3º, e do art. 92
+da Lei \n~9.394, de 20 de dezembro de 1996, trata da Educação Física, integrada à proposta
+pedagógica da instituição de ensino, prevendo os casos em que sua prática seja facultativa
+ao estudante;
+
+   \item Decreto \n~5.154, de 23 de julho de 2004. Regulamenta o § 2º do art. 36 e os arts. 39 a 41 da
+Lei \n~9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação
+nacional e dá outras providências;
+
+   \item Lei \n~11.645, de 10 de março de 2008. Altera a Lei \n~9.394, de 20 de dezembro de 1996,
+modificada pela Lei \n~10.639, de 9 de janeiro de 2003, que estabelece as diretrizes e bases
+da educação nacional, para incluir no currículo oficial da rede de ensino a obrigatoriedade
+da temática  ``História e Cultura Afro-Brasileira e Indígena'';
+
+   \item Lei \n~11.684, de 2 de junho de 2008. Altera o art. 36 da Lei \n~9.394, de 20 de dezembro de
+1996, que estabelece as diretrizes e bases da educação nacional, para incluir a Filosofia e a
+Sociologia como disciplinas obrigatórias nos currículos do ensino médio;
+
+   \item Lei \n~11.769, de 18 de agosto de 2008. Altera a Lei \n~9.394, de 20 de dezembro de 1996,
+Lei de Diretrizes e Bases da Educação, para dispor sobre a obrigatoriedade do ensino da
+música na educação básica;
+
+   \item Lei \n~11.947, de 16 de junho de 2009. Dispõe sobre o atendimento da alimentação escolar
+e do Programa Dinheiro Direto na Escola aos alunos da educação básica; altera a Lei nº
+10.880, de 9 de junho de 2004, a \n~11.273, de 6 de fevereiro de 2006 e a \n~11.507, de 20 de julho de 2007; revoga dispositivos da Medida Provisória \n~2.178-36, de 24 de agosto
+de 2001, e a Lei \n~8.913, de 12 de julho de 1994; e dá outras providências. Dispõe sobre o
+tratamento transversal e integral que deve ser dado à temática de educação alimentar e
+nutricional, permeando todo o currículo;
+
+   \item Lei \n~13.006, de 26 de junho de 2014. Acrescenta o § 8º ao art. 26 da Lei \n~9.394, de 20
+de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional, para
+obrigar a exibição de filmes de produção nacional nas escolas de educação básica;
+
+   \item Lei \n~13.010, de 26 de junho de 2014. Altera a Lei \n~8.069, de 13 de julho de 1990 (Estatuto
+da Criança e do Adolescente), para estabelecer o direito da criança e do adolescente
+de serem educados e cuidados sem o uso de castigos físicos ou de tratamento cruel ou
+degradante, e altera a Lei \n~9.394, de 20 de dezembro de 1996;
+
+   \item Lei \n~13.415 de 2017. Altera as Leis \n~9.394 de 20 de dezembro de 1996, que estabelece as
+diretrizes e bases da educação nacional, e 11.494, de 20 de junho 2007, que regulamenta
+o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos
+Profissionais da Educação, a Consolidação das Leis do Trabalho - CLT, aprovada pelo
+Decreto-Lei \n~5.452, de 1º de maio de 1943, e o Decreto-Lei \n~236, de 28 de fevereiro
+de 1967; revoga a Lei \n~11.161, de 5 de agosto de 2005; e institui a Política de Fomento à
+Implementação de Escolas de Ensino Médio em Tempo Integral;
+
+   \item Resolução CNE/CEB \n~3, de 21 de novembro de 2018. Atualiza as Diretrizes Curriculares
+Nacionais para o Ensino Médio;
+
+   \item Catálogo Nacional dos Cursos Técnicos – CNCT, quarta edição, conforme disposto na
+Resolução \n~02, de 15 de dezembro de 2020, da Câmara de Educação Básica do Conselho
+Nacional de Educação;
+
+   \item Lei \n~14.164, de 10 de junho de 2021. Altera a Lei \n~9.394, de 20 de dezembro de 1996 (Lei
+de Diretrizes e Bases da Educação Nacional), para incluir conteúdo sobre a prevenção da
+violência contra a mulher nos currículos da educação básica, e institui a Semana Escolar de
+Combate à Violência contra a Mulher.
 \end{itemize}
 
 
@@ -1223,7 +922,7 @@ O ingresso do estudante no Curso Técnico Subsequente em Informática para Inter
     
     \item \textbf{Transferidos}: o estudante tem a oportunidade de ingressar em um curso da Intuição nas condições de transferências externa, interna e ex-ofício, respeitando as condições estabelecidas em Edital pela Instituição; e por fim
     
-    \item \textbf{Matrícula Especial}: esta forma de matrícula exige que o interessado possua diploma no nível de ensino pretendido ou superior a ele, permitindo-lhe cursar componentes curriculares na instituição.
+%    \item \textbf{Matrícula Especial}: esta forma de matrícula exige que o interessado possua diploma no nível de ensino pretendido ou superior a ele, permitindo-lhe cursar componentes curriculares na instituição.
 \end{alineas}
 
 Todas as formas de ingresso supracitadas e suas condições de efetivação estão normatizadas no  ROD -- IFCE, no seu TÍTULO III, Capítulo I.
@@ -1233,7 +932,8 @@ Todas as formas de ingresso supracitadas e suas condições de efetivação est�
 
 O Técnico em Informática para Internet poderá atuar tanto em instituições públicas quanto privadas ou como autônomo na prestação de serviços. De acordo com o Catálogo Nacional dos Cursos Técnicos, atualizado pela Resolução N$^\circ$1, de 5 de dezembro de 2014, o Técnico em Informática para Internet tem como campo de atuação:
 \begin{alineas}
-    \item Empresas de desenvolvimento de sites para Internet, indústrias em geral;
+    \item Empresas de desenvolvimento de sites para Internet;
+    \item Indústrias em geral;
     \item Empresas comerciais;
     \item Empresas de consultoria;
     \item Empresas de telecomunicações;
@@ -1245,7 +945,7 @@ O Técnico em Informática para Internet poderá atuar tanto em instituições p
     \item Empresas públicas;
     \item Empresas de desenvolvimento de jogos para consoles, celulares, \textit{tablets} e computadores; e
     \item Agências de publicidade e propaganda;
-    \item  Atividades de desenvolvimento de sistemas.
+    \item Centros públicos de acesso à Internet.
 \end{alineas}
 
 
@@ -1260,29 +960,48 @@ O curso visa formar profissionais com bases tecnológicas voltadas para o desenv
 
 O profissional do Curso Técnico Subsequente em Informática para Internet do IFCE \textit{campus} Tauá deverá ter sólida formação técnico-científica, preparar-se para buscar contínua atualização, bem como aperfeiçoamento e capacidade para desenvolver ações estratégicas no sentido de ampliar e aperfeiçoar as suas formas de atuação, contribuindo para o desenvolvimento tecnológico da região.
 
-Esse profissional deverá demonstrar as capacidades de:
-\begin{alineas}
-\item Conhecer e utilizar as formas contemporâneas de linguagem, com vistas ao exercício da cidadania e à preparação para o trabalho, incluindo a formação ética e o desenvolvimento da autonomia intelectual e do pensamento crítico;
-\item  Compreender a sociedade, sua gênese e transformação e os múltiplos fatores que nela intervêm como produtos da ação humana e do seu papel como agente social;
-\item  Possibilitar reflexões acerca dos fundamentos científico-tecnológicos da formação técnica, relacionando teoria e prática nas diversas áreas do saber;
-\item  Utilizar os conceitos de análise e projeto orientados a objetos, identificando os objetivos, fluxos de trabalho e resultados da análise de requisitos, análise e projeto do sistema de informação;
-\item  Compreender os conceitos de processo de desenvolvimento de software: fases, fluxos de trabalho, iterações, incrementos, papéis, artefatos e atividades;
-\item  Conhecer e aplicar os conceitos de gerência de projetos, identificando os ciclos de vida e de projeto e as áreas de conhecimento do PMBOK (Guia de Conjunto de Conhecimentos em Gerenciamento de Projetos);
-\item  Implementar algoritmos para a solução de problemas propostos;
-\item  Desenvolver programas utilizando os paradigmas de programação estruturada e
-orientada a objetos;
-\item  Desenvolver aplicações para Internet com programação no cliente e servidor, controlando o estado da informação e o acesso às aplicações;
-\item  Desenvolver aplicações seguindo o padrão MVC, utilizando tecnologia AJAX, mapeamento objeto-relacional e ferramentas de relatório;
-\item  Conhecer os princípios da Arquitetura Orientada a Serviços e desenvolver servidores e clientes de serviços para Internet;
-\item  Conhecer os princípios e técnicas de design para construção de interfaces;
-\item  Criar páginas usando linguagem de marcação de texto e hipermídia, aplicando folhas de estilo na formatação da informação;
-\item Conhecer os conceitos de interação usuário-sistema e as fases do processo de design de interface;
-\item Modelar e projetar  banco de dados relacionais;
-\item  Escrever comandos em linguagem de consulta estruturada (SQL) no acesso às
-informações armazenadas em um banco de dados;
-\item Instalar, configurar e realizar a administração básica de infraestrutura de servidores de Internet e de banco de dados.
 
+O Técnico em Informática para internet será habilitado para:
+\begin{alineas}
+	\item Planejar e documentar aplicações para Web e dispositivos móveis;
+	\item Desenvolver e organizar elementos estruturais e visuais de aplicações para Web e dispositivos móveis;
+	\item Monitorar projetos de aplicações para Web e dispositivos móveis;
+	\item Estruturar e implementar banco de dados para aplicações Web;
+	\item Codificar aplicações para Web e dispositivos móveis;
+	\item Publicar e testar aplicações para Web e dispositivos móveis;
+	\item Documentar e realizar manutenção de aplicações para Web e dispositivos móveis.
 \end{alineas}
+
+Além disso, para atuação como Técnico em Informática para Internet, são fundamentais:
+
+\begin{citacao}
+Conhecimentos e saberes relacionados aos processos de planejamento e execução de projetos em websites focados na experiência do usuário, na testagem e análises de produtos web, na liderança de equipe e na ética profissional~\cite{catalog}.
+\end{citacao}
+ 
+
+% Esse profissional deverá demonstrar as capacidades de:
+% \begin{alineas}
+% \item Conhecer e utilizar as formas contemporâneas de linguagem, com vistas ao exercício da cidadania e à preparação para o trabalho, incluindo a formação ética e o desenvolvimento da autonomia intelectual e do pensamento crítico;
+% \item  Compreender a sociedade, sua gênese e transformação e os múltiplos fatores que nela intervêm como produtos da ação humana e do seu papel como agente social;
+% \item  Possibilitar reflexões acerca dos fundamentos científico-tecnológicos da formação técnica, relacionando teoria e prática nas diversas áreas do saber;
+% \item  Utilizar os conceitos de análise e projeto orientados a objetos, identificando os objetivos, fluxos de trabalho e resultados da análise de requisitos, análise e projeto do sistema de informação;
+% \item  Compreender os conceitos de processo de desenvolvimento de software: fases, fluxos de trabalho, iterações, incrementos, papéis, artefatos e atividades;
+% \item  Conhecer e aplicar os conceitos de gerência de projetos, identificando os ciclos de vida e de projeto e as áreas de conhecimento do PMBOK (Guia de Conjunto de Conhecimentos em Gerenciamento de Projetos);
+% \item  Implementar algoritmos para a solução de problemas propostos;
+% \item  Desenvolver programas utilizando os paradigmas de programação estruturada e
+% orientada a objetos;
+% \item  Desenvolver aplicações para Internet com programação no cliente e servidor, controlando o estado da informação e o acesso às aplicações;
+% \item  Desenvolver aplicações seguindo o padrão MVC, utilizando tecnologia AJAX, mapeamento objeto-relacional e ferramentas de relatório;
+% \item  Conhecer os princípios da Arquitetura Orientada a Serviços e desenvolver servidores e clientes de serviços para Internet;
+% \item  Conhecer os princípios e técnicas de design para construção de interfaces;
+% \item  Criar páginas usando linguagem de marcação de texto e hipermídia, aplicando folhas de estilo na formatação da informação;
+% \item Conhecer os conceitos de interação usuário-sistema e as fases do processo de design de interface;
+% \item Modelar e projetar  banco de dados relacionais;
+% \item  Escrever comandos em linguagem de consulta estruturada (SQL) no acesso às
+% informações armazenadas em um banco de dados;
+% \item Instalar, configurar e realizar a administração básica de infraestrutura de servidores de Internet e de banco de dados.
+% 
+% \end{alineas}
 
 \newpage
 \section{Metodologia}
@@ -1473,154 +1192,45 @@ Para aqueles discentes que não atingirem desempenho satisfatório, é garantido
 
 
 
-\section{Pr\'atica Profissional}
+\section{Pr\'atica Profissional Supervisionada}
+% ADS
+As atividades de Prática Profissional Supervisionada (PPS) estão previstas
+com carga horária total de 40 (quarenta) horas. Elas são desenvolvidas nos
+componentes curriculares Projeto Integrador Multidisciplinar I e Projeto Integrador
+Multidisciplinar II.
 
-A  Prática Profissional está prevista como sendo obrigatória para a integralização do curso, perfazendo um total de 160 horas, que deverão ser cumpridas e, devidamente, certificadas, preferencialmente, concomitantemente aos períodos do curso, realizadas dentro ou fora do Instituto Federal do Ceará.
+Estas atividades têm por finalidade enriquecer a aprendizagem, privilegiando a
+complementação da formação social e profissional dos discentes e a articulação
+entre teoria e prática, além de colaborar para a elevação da qualidade
+profissional dos discentes.
 
-Estas atividades têm por finalidade enriquecer a aprendizagem, privilegiando a complementação da formação social e profissional dos discentes e a articulação entre teoria e prática, além de colaborar para a elevação da qualidade profissional dos discentes.
+A prática profissional visa:
+\begin{alineas}
+	\item promover a integração teórica e prática dos conhecimentos, habilidades e
+técnicas desenvolvidas no currículo;
+	\item proporcionar situações de aprendizagem em que o estudante possa
+interagir com a realidade do trabalho, reconstruindo o conhecimento pela
+reflexão-ação complementar à formação profissional;
+	\item desencadear ideias e atividades alternativas;
+	\item atenuar o impacto da passagem da vida acadêmica para o mercado de
+trabalho; e
+	\item desenvolver e estimular as potencialidades individuais proporcionando o
+surgimento de profissionais empreendedores, capazes de adotar modelos
+de gestão e processos inovadores. 
+	 	
+\end{alineas}
 
-As atividades de Prática Profissional serão realizadas, preferencialmente, através dos Projetos Integradores, sendo fundamentais para a formação do aluno e sua preparação para o mercado de trabalho, assim como para que possa atuar compreendendo e concebendo as inovações tecnológicas e científicas da sociedade globalizada.
-
-Nesse modelo, a Prática Profissional pode ser cumprida em atividades promovidas pelo Instituto Federal do Ceará ou por outras Instituições ou empresas, sejam estas públicas ou privadas. Estas atividades serão avaliadas e aprovadas com base em diretrizes especificadas pela Coordenação do Curso, conforme \autoref{quadro:pp} e \hyperref[anexoe]{Anexo C}.
-
-
-\begin{quadro}
-
-
-	\IBGEtab{
-		\caption{{Aproveitamento da Prática Profissional no Curso.}}
-		\label{quadro:pp}
-	}{
-	\small
- 	\OnehalfSpacing
- 
-\begin{tabularx}{\textwidth}{X X}
-
- 	
- 		
-	\cellcolor{gray!20}\bfseries{1. INICIAÇÃO CIENTÍFICA} \\
-	\cellcolor{gray!02}
-	\textbf{1.1} Pesquisas desenvolvidas durante o curso, sob orientação docente no IF.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]   50 horas por pesquisa, máximo de 100 horas em todo o curso.
- 	  \item[\faCheckCircle] Certificado ou  Declaração assinada pelo professor orientador.	
- 	\end{itemize} 
-	 
-	\textbf{1.2} Pesquisas desenvolvidas durante o curso, sob orientação docente em outra instituição. 
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] 30 horas por pesquisa, máximo de 60 horas em todo o curso.
- 	  \item[\faCheckCircle] Certificado ou  Declaração assinada pelo professor orientador.
-	\end{itemize}
-	 
-	\textbf{1.3}  Publicação/Comunicação de resultados de pesquisa sob orientação docente em  eventos científicos específicos (seminários, colóquios, congressos, simpósios, dentre outros) e/ou publicados em anais.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] 20 horas por publicação, máximo de 40 horas em todo o curso.
- 	  \item[\faCheckCircle] Cópia do Aceite da publicação ou Certificado.
-	\end{itemize}
-	
-	\textbf{1.4}  Produção científica publicada em periódicos reconhecidos pela CAPES ou que tenha registro ISSN.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]  30 horas por trabalho, máximo de 90 horas em todo o curso. 
- 	  \item[\faCheckCircle] Cópia do Aceite da publicação ou Certificado. 
- 	\end{itemize}
-	 
-	\textbf{1.5} Publicação de livros ou capítulos de livros com registro ISBN.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] 50 horas por trabalho, máximo de 100 horas em todo o curso. 
- 	  \item[\faCheckCircle] Cópia da Ficha Catalográfica relativa à publicação. 
-	\end{itemize}
-	 
-	\textbf{1.6} Participação em grupos de estudos, sob orientação docente.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]  30 horas por grupo de estudo, máximo de 60 horas em todo o curso. 
- 	  \item[\faCheckCircle]  Declaração do Professor Orientador. \vspace{-1em}
-	\end{itemize}  \\
- 
-	\cellcolor{gray!20}\bfseries{2. ATIVIDADES DE MONITORIA E REPRESENTAÇÃO DISCENTE} \\
-	\cellcolor{gray!02}\textbf{2.1}  Atuação em Comissões de Formatura.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]   20 horas em todo o curso.
- 	  \item[\faCheckCircle] Declaração de participação.
- 	\end{itemize}
-	 
-	\textbf{2.2} Exercício de liderança em sala de aula ou Centro Acadêmico mediante eleição. 
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]  15 horas por ano letivo para Titulares e 10 horas por ano letivo para suplentes.
- 	  \item[\faCheckCircle]  Documento de comprovação de eleição assinado pela Coordenação de Curso.
-	\end{itemize}
-	 
-	\textbf{2.3}  Atividades de monitoria em disciplinas relacionadas ao Curso.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] 30 horas por ano letivo, no máximo de 60 horas no curso. 
- 	  \item[\faCheckCircle]  Certificado ou declaração assinada pelo professor orientador.  \vspace{-1em}
-	\end{itemize} \\
-	
-	
-
-	\cellcolor{gray!20}\bfseries{3. EXTENS\~AO} \\
-	\cellcolor{gray!02}\textbf{3.1} Participação em projetos e/ou cursos de extensão, congressos, seminários, oficinas, workshops e  palestras oferecidos pelo IFCE. 
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]  30 horas por projeto ou curso, máximo de 60 durante todo o curso. 
- 	  \item[\faCheckCircle] Certificado ou declaração assinada pelo professor orientador.
- 	\end{itemize}
+Tais atividades estão integradas às disciplinas e objetivam a integração teoria-
+prática, com base no princípio da interdisciplinaridade. Elas devem constituir-se em
+um espaço de complementação, ampliação e aplicação dos conhecimentos adquiridos
+durante o curso, tendo em vista a intervenção no mundo do trabalho e na realidade
+social, além de contribuir para a solução de problemas, caso detectados.
 
 
-\end{tabularx}
-	}{}
-\end{quadro}
-\begin{quadro}[t]
-
-
-	\IBGEtab{
-	}{
-	\small
- 	\OnehalfSpacing
- 
-\begin{tabularx}{\textwidth}{X X}
-
- 	
-
-	\cellcolor{gray!02}\textbf{3.2} Participação em projetos e/ou cursos de extensão,
-	congressos, seminários, oficinas, workshops e  palestras oferecidos por outras instituições, incluindo os realizados à distância.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]  30 horas por projeto ou curso, máximo de 60 durante todo o curso.
- 	  \item[\faCheckCircle]  Certificado ou declaração assinada pelo professor orientador.
-	\end{itemize}
-
-	\textbf{3.3} Organização/Socialização dos projetos de extensão ou de cursos de extensão.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] 20 horas por evento, máximo de 40 horas durante todo o curso.
- 	  \item[\faCheckCircle] Certificado ou Declaração de participação.
-	\end{itemize}
-
-	\textbf{3.4} Visita Técnica.
-	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO]  Até 30 horas.
- 	  \item[\faCheckCircle] Declaração da organização da visita.  \vspace{-1em}
-	\end{itemize} \\
-
-	\cellcolor{gray!20}\bfseries{4. PRÁTICAS CURRICULARES E ESTÁGIO EXTRACURRICULAR} \\
- 	\cellcolor{gray!02}\textbf{4.1} Participação em grupos de estudos, de caráter de apoio pedagógico, sob orientação docente.
- 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] 10 horas por disciplina cursada no semestre, máximo de 40 horas durante todo o curso.
- 	  \item[\faCheckCircle]  Diário de classe da disciplina de apoio pedagógico.  
-	\end{itemize} 
-
-	%\cellcolor{gray!20}\bfseries{5. ESTÁGIO EXTRACURRICULAR} \\
- 	\textbf{4.2} Realização de estágio extracurricular na área/nível relacionado ao Curso, bem como atuação na área de concentração do curso.
- 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
- 	  \item[\faClockO] Até 30 horas por semestre, máximo de 60 horas durante o curso.
- 	 \item[\faCheckCircle] Declaração de execução dos estágios assinada pelo(a) coordenador(a) da organização, ou Carteira de Trabalho e Previdência Social assinada pela Organização contratante.
- 	 \vspace{-1em}
- 	\end{itemize}
-	
-\end{tabularx}
-	}{
-	
-		\fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-	
-	}
-\end{quadro}
+A metodologia a ser adotada será através de visitas, estudos de caso,
+atividades em laboratório, desenvolvimento de projetos, entre outras, com
+levantamento de problemas relativos ao objeto da pesquisa e possíveis soluções para
+os problemas detectados.
 
 
 \subsection{Monitoria}
@@ -1920,74 +1530,53 @@ demonstradas pela clientela com possíveis mudanças estruturais e pedagógicas.
 
 \chapter{Políticas Institucionais Constantes do PDI}% no Âmbito do Curso}
 
-No \autoref{quadro:metas} são elencadas as metas que o  Curso Técnico Subsequente em Informática para Internet oportunizará dentro do  Plano de Desenvolvimento Institucional do \textit{campus} Tauá\footnote{Disponível em: \url{https://ifce.edu.br/proap/pdi/imagens/plano-de-metas-taua.pdf}}.
-\begin{quadro}[h]
-    \IBGEtab{
-    \caption{Plano de Desenvolvimento Institucional do \textit{campus} Tauá por Área.}
-    \label{quadro:metas}
-}{
-\normalsize
 
-    \begin{tabular}{ p{.97\linewidth} }
-	        \toprule
-        
-        \cellcolor{gray!20}\bfseries ENSINO  \\
-        \vspace{-1em}\small
-        \begin{itemize}
-            \setlength\itemsep{0em}
-            
-            \item Ampliação do número de estudantes egressos com êxito.
-            
-            \item Sedimentar ações de realização de seminário ou fórum de educação profissional de nível técnico do IFCE.
-            
-            \item Ampliar o índice Relação Aluno--professor.
-            
-            \item Realização de feiras científicas e tecnológicas e olimpíadas internas e externas.
-        \end{itemize}  \\
-        \vspace{-0.5em}
-        \cellcolor{gray!20}\bfseries PESQUISA, INOVAÇÃO E PÓS-GRADUAÇÃO  \\
-        \vspace{-1em}\small
-        \begin{itemize}
-            \setlength\itemsep{0em}
-            
-            \item Expandir e consolidar a inovação: Volume de recursos captados em projetos de Pesquisa e Desenvolvimento; e Depósitos de propriedade intelectual;
-            
-            \item Ampliar a parceria com empresas, instituições diversas para captação de projetos. Ampliar as parcerias e o volume de recursos captados em projetos de PD\&I;
-            
-            \item Mapear o potencial de inovação do  \textit{campus};
-            
-            \item Expandir e consolidar a pesquisa científica institucional, através de uma média de 2 produções anuais por pesquisador cadastrado na plataforma NL da PRPI;
-            
-            \item Estimular, nas pessoas residentes nas regiões visitadas pelo \textit{campus}, o gosto e a curiosidade pelas ciências e artes, bem como apresentar as áreas do conhecimento ofertadas no \textit{campus} e as formas de interação do \textit{campus} com a sociedade (Extensão-Pesquisa-Ensino).
-        \end{itemize} \\
-        \vspace{-0.5em}
-        
-        \cellcolor{gray!20}\bfseries EXTENSÃO  \\
-        \vspace{-1em}
-        \small
-        \begin{itemize}
-            \setlength\itemsep{0em}
-        
-            \item Fortalecer as relações socioprodutivas e culturais nos contextos locais e regionais através do aumento da taxa de discentes matriculados em estágio curricular; 
-        
-            \item  Consolidar o programa \textbf{JOVEM APRENDIZ}, visando maior visibilidade de nossos cursos perante as empresas;
-        
-            \item  Realizar momentos de integração entre empresas públicas, privadas e o \textit{campus}, aumentando a quantidade e qualidade das ofertas de estágio;
-        
-            \item Aumentar o número de empresas com convênio de estágio devidamente celebrado, visando ampliar o número de vagas de estágio em empresas parceiras; 
-        
-            \item  Ampliar as parcerias com ecossistemas empreendedores em âmbito local, estadual e nacional, visando aumento da taxa de parcerias em ações de empreendedorismo.\vspace{-1em}
-        \end{itemize}  \\
-        \bottomrule
-    \end{tabular}
-}
-{
-  \fonte{Plano de Metas do \textit{campus} Tauá 2020-2023.}
-}
-\end{quadro}
+O modelo de planejamento estratégico do IFCE para o quinquênio
+2024-2028, do Plano de Desenvolvimento Institucional~\footnote{Disponível em:
+\url{https://pdi.ifce.edu.br/pdf/pdi_ifce_2024_2028.pdf}}, buscou dar ênfase aos macroprocessos da cadeia de valor da instituição,
+assegurando que as tomadas de decisões estejam voltadas para a geração de valor
+para a sociedade. Assim, para esta edição do PDI, ao invés de estabelecer indicadores próprios, optou-se
+por utilizar os indicadores que foram estabelecidos pela Setec para monitorar o
+desempenho da Rede Federal de Educação Profissional, Científica e Tecnológica
+(RFEPCT)\footnote{\href{Portaria \N~299, de 06 de maio de 2022}{https://www.in.gov.br/en/web/dou/-/portaria-n-299-de-6-de-maio-de-2022-399680297}
+que dispõe sobre os indicadores de Pesquisa e Extensão a serem utilizados pelas
+Instituições que compõem a Rede Federal de Educação Profissional, Científica e
+Tecnológica (Rede Federal de EPCT).}.
 
 
+Essa abordagem traz consigo uma série de vantagens, assegurando ainda que a
+instituição esteja em conformidade com as diretrizes e políticas nacionais
+estabelecidas para a RFEPCT. Com a mudança, as metas  referem-se a algo que pode ser medido ou expresso numericamente. Elas são
+associadas aos indicadores de desempenho e são critérios de avaliação de desempenho da instituição.
 
+Na listagem abaixo  são elencadas as metas que o  Curso Técnico Subsequente em
+Informática para Internet oportunizará dentro do PDI 2024-2028:
+\begin{alineas}
+\item \textbf{ENS-1}. 
+Matrículas em cursos
+técnicos;
+	\item \textbf{P\&I-1}.
+Porcentagem de projetos
+de pesquisa aplicada;
+\item \textbf{P\&I-4}
+Porcentagem de alunos
+provenientes das ações
+afirmativa da instituição
+envolvidos em projetos de
+pesquisa. 
+	\item \textbf{P\&I-3}. Porcentagem de alunos da
+instituição envolvidos em
+projetos de pesquisa;
+\item \textbf{EXT-1}.
+Percentual de recursos
+financeiros do orçamento
+anual público aplicados em
+extensão;
+	\item  \textbf{EXT-3}.
+Percentual de servidores
+envolvidos em ações de
+extensão.
+\end{alineas}
 
 
 
@@ -2060,19 +1649,18 @@ Detalhes do perfil docente necessário para o desenvolvimento do Curso Técnico 
     \cellcolor{gray!20} \bfseries DISCIPLINAS ATENDIDAS \\
          
          \cellcolor{gray!05} Administração &  \cellcolor{gray!05}Administração de \newline Empresas &  \cellcolor{gray!05}1 &  \cellcolor{gray!05} Empreendedorismo; \newline Gestão de Projetos;
-          \newline Projeto Integrador I; \newline  Projeto Integrador II; e \newline Projeto Integrador III. 
+          \newline Projeto Integrador. 
         \\
-        Ciência da \newline Computação       &  Sistemas de \newline Computação \newline \textbf{OU} \newline Metodologia e \newline Técnicas da \newline Computação &  1 & Redes de Computadores;
-        \newline Sistemas Operacionais; \newline Servidores; e
-            \newline Segurança de Redes. \\[1em]
+        Ciência da \newline Computação       &  Sistemas de \newline Computação  &  1 & Redes de Computadores; e \newline Desenvolvimento e Operações.
+             \\[1em]
 %        
 %         \cellcolor{gray!05}Ciência da \newline Computação  &  \cellcolor{gray!05} Metodologia e \newline Técnicas da \newline Computação &  \cellcolor{gray!05} \quad  4 &   \cellcolor{gray!05} Web Design; \newline  Desenvolvimento WEB I; \newline Desenvolvimento WEB II;  \newline Desenvolvimento WEB III;  \newline Lógica de Programação; \newline Programação Orientada a Objetos; \newline Engenharia de Software; \newline Banco de Dados; \newline Análise e Projeto de Sistemas; \newline Programação para Dispositivos Móveis; \newline Projeto Integrador I; \newline  Projeto Integrador II; e \newline Projeto Integrador III. \\
 
-   \cellcolor{gray!05}Ciência da \newline Computação  &  \cellcolor{gray!05}Computação \newline Gráfica \newline \qquad\textbf{OU} \newline Metodologia e \newline Técnicas da \newline Computação &  \cellcolor{gray!05}1 &   \cellcolor{gray!05} Web Design; \newline  Desenvolvimento WEB I; \newline Desenvolvimento WEB II; e \newline Desenvolvimento WEB III. \\[1em]
+   \cellcolor{gray!05}Ciência da \newline Computação  &  \cellcolor{gray!05}Computação \newline Gráfica \newline \qquad\textbf{OU} \newline Metodologia e \newline Técnicas da \newline Computação &  \cellcolor{gray!05}1 &   \cellcolor{gray!05} Introdução ao Desenvolvimento WEB; \newline  Desenvolvimento WEB I; e \newline Desenvolvimento WEB II. \\[1em]
         
-        Ciência da \newline Computação       &  Metodologia e \newline Técnicas da \newline Computação &  3 & Lógica de Programação; \newline Programação Orientada a Objetos; \newline Engenharia de Software; \newline Banco de Dados; \newline Análise e Projeto de Sistemas; e \newline Programação para Dispositivos Móveis.\\
+        Ciência da \newline Computação       &  Metodologia e \newline Técnicas da \newline Computação  \newline \textbf{OU} \newline Teoria da Computação &  3 & Lógica de Programação;  \newline Pensamento Computacional; \newline Programação Orientada a Objetos; \newline Engenharia de Software; \newline Banco de Dados; \newline Estrutura de Dados; \newline Análise e Projeto de Sistemas; \newline Inteligência Computacional Aplicada; \newline Programação para Dispositivos Móveis.\\
         
-        \cellcolor{gray!05}Letras &   \cellcolor{gray!05}Língua Portuguesa     &    \cellcolor{gray!05}1 &   \cellcolor{gray!05}Produção de Texto Técnico.  \\
+        \cellcolor{gray!05}Letras &   \cellcolor{gray!05}Língua Inglesa     &    \cellcolor{gray!05}1 &   \cellcolor{gray!05}Inglês Instrumental.  \\
        
 
         \bottomrule
@@ -2082,7 +1670,10 @@ Detalhes do perfil docente necessário para o desenvolvimento do Curso Técnico 
             \vspace{-1em}
    }
 \end{quadro}
-Já o corpo docente do IFCE \textit{campus} Tauá que atuará durante o semestre letivo 2021.1 no Curso  Técnico Subsequente em Informática para Internet está descrito no \autoref{tab:corpo_docente}. No momento, atuarão no curso 07 professores, sendo que 05 (71,5\%) possuem título de mestrado,  01 (14,3\%) possui título de especialista e 01 (14,3\%) é graduado. 
+Já o corpo docente do IFCE \textit{campus} Tauá que atuará durante o semestre
+letivo 2024.2 no Curso  Técnico Subsequente em Informática para Internet está
+descrito no \autoref{tab:corpo_docente}. No momento, atuarão no curso 07
+professores, sendo que 03 possuem título de doutor (43\%) e  04 (57\%) possuem título de mestre.
 
 O corpo docente do Curso Técnico Subsequente em Informática para Internet é formado por equipe experiente de professores com perfil profissional e acadêmico, que possuem tanto experiência no mercado na área de tecnologia quanto bagagem em pesquisas científicas na área de Computação. Em termos de regime de trabalho, todos dedicam-se exclusivamente ao IFCE. Logo, comprova-se, pelo corpo docente, tanto a qualificação técnica quanto à disponibilidade para dar suporte a um curso de bom nível acadêmico.
 
@@ -2099,16 +1690,8 @@ O corpo docente do Curso Técnico Subsequente em Informática para Internet é f
 
 	\doc{Amarilton Lopes Magalhães}{Mestre em Engenharia de Telecomunicações}{Graduação em Engenharia de Telecomunicações}{Sistemas de Telecomunicações} 
          
-         \doc{Antônia de Jesus Sales}{Mestra em Estudos da Tradução}{Graduação em Letras Inglês}{Língua Inglesa}
-         
-         \doc{Antônia Elaine Frutuoso Limas}{Mestra em Tecnologia em Alimentos}{Graduação em Tecnologia em Alimentos}{Tecnologia em Alimentos}
-         
-         
-          \doc{Auricélio Ferreira de Souza}{Doutor em Literatura e Interculturalidade}{Graduação em Licenciatura em Letras}{Língua Portuguesa}
-         
+        
 	\doc{Carlos Getúlio de Freitas Maia}{Mestre Filosofia}{Graduação em Filosofia}{Filosofia}
-	
-	\doc{Cássia Alves da Silva}{Doutora em Letras}{Graduação em Letras}{Língua Portuguesa}
 	
          \doc{Cledinaldo Alves Pinheiro Junior }{Mestre em Música}{Graduação em Licenciatura em Música}{Cordas Dedilhadas} 
 
@@ -2125,19 +1708,12 @@ O corpo docente do Curso Técnico Subsequente em Informática para Internet é f
 \noindent\begin{tabularx}{\textwidth}{ X X X } 
 
 
-	  \doc{Douglas Chielle}{Mestre em Matemática}{Graduação em Matemática}{Matemática Básica}
-         
-         \doc{Edson Alencar Collares de Bessa}{Mestre em Antropologia}{Graduação em Ciências Sociais}{Sociologia Geral}
+	     \doc{Edson Alencar Collares de Bessa}{Mestre em Antropologia}{Graduação em Ciências Sociais}{Sociologia Geral}
          
    
-          \doc{Eduardo de Olivindo Cavalcante}{Mestre em Engenharia de Telecomunicações}{Graduação em Engenharia de Teleinformática}{Sistemas de Telecomunicações}
-          
-            \doc{Elpida Andreia de Queiroz Niko Kavouras}{Mestra em Desenvolvimento e Meio Ambiente }{Graduação em Ciências Biológicas}{Biologia Geral}
+             \doc{Elpida Andreia de Queiroz Niko Kavouras}{Mestra em Desenvolvimento e Meio Ambiente }{Graduação em Ciências Biológicas}{Biologia Geral}
             
-           \docv{Felipe Costa Melo Cunha }{Licenciado em Física}{Graduação em Licenciatura em Física}{Física Geral e Experimental}
-         
-  	 \doc{Francisco Luciano Castro Martins}{Especialista em Educação a Distância}{Graduação em Tecnologia em Redes de Computadores}{Sistemas de Computação} 
-             
+                    
           \doc{Jayme Félix Xavier Júnior }{Mestre em Educação Física}{Licenciatura em Educação Física}{Educação Física}
             
 
@@ -2153,19 +1729,13 @@ O corpo docente do Curso Técnico Subsequente em Informática para Internet é f
 
 \noindent\begin{tabularx}{\textwidth}{ X X X } 
 
-             \doc{Jefferson Calixto Figueiredo}{Engenheiro de Computação}{Graduação em Engenharia de Teleinformática}{Metodologia e Técnicas da  Computação}
-                
                 
                \doc{Jhonata da Costa Bezerra}{Mestre em Matemática}{Graduação em Matemática}{Matemática Básica}
      
-              \doc{José Alexandre de Castro Bezerra Filho}{Mestre em Engenharia de Telecomunicações}{Graduação em Engenharia de Telecomunicações}{Sistemas de Telecomunicações}
-    
+             
     	      \doc{José Alves de Oliveira Neto}{Mestre em Matemática}{Graduação em Matemática}{Matemática Básica}
 
-            \doc{José Aureliano Arruda Ximenes de Lima}{Especialista em Administração Pública}{Graduação em Administração}{Administração de Empresas} 
-         
-         \doc{Karine Leitão do Nascimento}{Licenciada em Letras--Espanhol}{Graduação em Letras--Espanhol}{Língua Espanhola}
-                  
+                     
           \doc{Kélvia Jacome de Castro}{Doutora em Zootecnia}{Graduação em Zootecnia}{Zootecnia}
          
 \end{tabularx}
@@ -2181,21 +1751,13 @@ O corpo docente do Curso Técnico Subsequente em Informática para Internet é f
 
 	\noindent\begin{tabularx}{\textwidth}{ X X X } 
 
-             \doc{Kilbert Amorim Maciel}{Especialista em Pós Graduação em Docência do Ensino Superior}{Graduação em Engenharia Elétrica}{Sistemas de Telecomunicações}
-
-	  \doc{Leiliana Rebouças Freire }{Mestra em Educação e Ensino}{Graduação em Pedagogia}{Fundamentos da Educação,  Política  e \newline Gestão Educacional	}
-	
-	\doc{Leonardo Castro Vieira}{Especialista em Tradução de Inglês}{Graduação em Letras}{Língua Inglesa} 
-             
+                      
 	  \doc{Lucas Ferreira Mendes}{Especialista em  Tecnologias para Aplicações Web}{Graduação em Tecnologia em Telemática}{Sistemas de Computação}
          
          
           \doc{Ludovica Olímpio Magalhães}{Especialista em  Língua Inglesa}{Graduação em Letras -- Inglês}{Língua Inglesa}
          
          
-         \doc{Luís Nery Rodrigues}{Doutor em Engenharia Agrícola}{Graduação em Engenharia Agronômica}{Aquicultura}
-       
-            \doc{Mário Henrique Barros Oliveira de Souza Pereira}{Mestre em Engenharia de Telecomunicações}{Graduação em Engenharia de Telecomunicações}{Sistemas de Telecomunicações}
        
 	\end{tabularx}
 
@@ -2213,17 +1775,10 @@ O corpo docente do Curso Técnico Subsequente em Informática para Internet é f
 
              \doc{Nádia de Melo Braz}{Doutora em Zootecnia}{Graduação em Zootecnia}{Zootecnia}
              
-                \doc{Raimunda Costa Cruz}{Mestra em Sociologia}{Graduação em Pedagogia}{Fundamentos da Educação Política e \newline Gestão Educacional}
-         
          
           \doc{Roberto Luís Alexandrino Feitosa }{Mestre em Engenharia Civil}{Graduação em Engenharia Química}{Química Geral}
           
-           \doc{Rodrigo Cavalcante de Almeida}{Mestre em História}{Graduação em História}{História Geral, da América, do Brasil, do Ceará e da Arte}
-         
-          
-        \doc{Rubens Maciel Miranda Pinheiro}{Doutor em Engenharia de Processos}{Graduação em Física}{Física Geral e Experimental}
-        
-        
+       
 
         \doc{Samuel Alves Soares}{Mestre em Ciências da Computação}{Graduação em Ciências da Computação}{Metodologia e Técnicas  da Computação} 
          
@@ -2248,9 +1803,7 @@ O corpo docente do Curso Técnico Subsequente em Informática para Internet é f
 	\noindent\begin{tabularx}{\textwidth}{ X X X } 
 
         
-    	\doc{Vládia da Silva Souza}{Mestra em Geografia}{Graduação em Geografia}{Geografia Humana}
-
- 
+    	
         \doc{Weberte Alan Sombra}{Mestre em Engenharia Agrícola}{Graduação em Agronomia}{Pastagem e Forragicultura}
 
         \doc{Willame de Araújo Cavalcante}{Mestre em Engenharia Hidráulica e Saneamento}{Graduação em Ciências Ambientais}{Gestão Ambiental}
@@ -2291,10 +1844,7 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
     
     \tecn{Analice Fraga de Oliveira }{Bibliotecária}{Graduação}{Biblioteca} 
     
-    
-    \tecn{Carlos Magno Bezerra de Oliveira Magalhaes }{Técnico em Eletrônica}{Técnico}{Laboratório de Eletrônica} 
-    
-    
+   
     \tecn{Claudenira Cavalcante Melo}{Assistente Social}{Mestrado}{Assistência Estudantil} 
     
 
@@ -2327,9 +1877,7 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
                     
                     \tecn{Jobson Vital Costa }{Psicólogo}{Mestre}{Assistência Estudantil} 
                     
-                    
-                    \tecn{José Chagas de Oliveira }{Assistente de Alunos}{Graduação}{Assistente de Aluno} 
-                    
+                     
                     
                     \tecn{José Wendell Araujo Pedrosa }{Auxiliar em Biblioteca}{Ensino Médio}{Biblioteca} 
                 
@@ -2340,13 +1888,6 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
                        \tecn{Karla Gonçalves de Oliveira }{Pedagoga}{Especialização}{Coordenação Técnico-Pedagógica} 
                     
                 
-                    \tecn{Larissa Lima de Albuquerque}{Jornalista}{Especialização}{Comunicação Social} 
-                
-
-        
-
-	\tecn{Livia Maria de Lima Santiago}{Assistente em Administração}{Mestrado}{Gabinete} 
-    
     
         
     \tecn{Lorene Maciel Barreto}{Técnico em Secretariado}{Especialização}{Administração} 
@@ -2365,8 +1906,6 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
 		\small
 		\noindent\begin{tabularx}{\textwidth}{ XX } 
 	    
-    \tecn{Maressa Santos Ferreira}{Nutricionista}{Especialização}{Assistência Estudantil} 
-    
     
     \tecn{Margarida Maria Xavier da Silva}{Técnica em Laboratório de Biologia}{Mestrado}{Laboratório de Biologia} 
     
@@ -2381,15 +1920,6 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
     \tecn{Rafael Eferson Pinheiro Nogueira}{Técnico em Eletrotécnica}{Graduação}{Infraestrutura} 
     
     
-
-	          \tecn{Rayanny Francisdarc Alves da Silva}{Auxiliar em Administração}{Ensino Médio}{Coordenadoria de Gestão de Pessoas}
-    
-
-    
-	    \tecn{Robson Gomes}{Assistente em Administração}{Graduação}{Setor de Contratos} 
-    
-    
-        		\tecn{Samir Coutinho Costa}{Técnico em Tecnologia da Informação}{Graduação}{Coordenadoria de TI} 
 
 
 
@@ -2722,452 +2252,6 @@ O Curso Técnico Subsequente em Informática para Internet dispõe de laboratór
     	\include{puds}
 	}
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter*{}
-{
-    
-    \begin{center}
-    \begin{vplace}
-        \bfseries{
-            \vspace{-2em}
-            \fontsize{1cm}{1.5cm}\selectfont
-    	    \textbf{ANEXO B -- MINUTA DO}  \newline \\
-    	    \vspace{-1.5em}
-    	    \textbf{REGULAMENTO DO RODÍZIO}
-    	    \par
-    	    \textbf{DOCENTE NAS UNIDADES}
-    	    \par\vspace{1em}
-    	    \textbf{CURRICULARES}
-	    \label{anexo:rodizio}
-        }
-    \end{vplace}
-        \addcontentsline{toc}{chapter}{ANEXO B -- MINUTA DO REGULAMENTO DO RODÍZIO DOCENTE NAS UNIDADES CURRICULARES}
-	
-    \end{center}
-}
-
-\clearpage
-
-\NewEnviron{assinaturas}{
-	\noindent\begin{tabularx}{\textwidth}{  X  }
-		\begin{center}
-			Tau\'a -- CE, \rule{.05\linewidth}{0.2mm} de \rule{.25\linewidth}{0.2mm} de 20\rule{.05\linewidth}{0.2mm}. \\
-			\vspace{0.5em}
-			\BODY\\
-			\vspace{-1em}
-			\rule{0.7\linewidth}{0.2mm}\\
-			Assinatura 
-		\end{center}
-	\end{tabularx}
-}
-
-
-%%%%
-
-\begin{center}\bfseries
-	MINUTA DO REGULAMENTO DO RODÍZIO DOCENTE NAS UNIDADES CURRICULARES DO CURSO TÉCNICO EM INFORMÁTICA PARA INTERNET
-	\vspace{2em}
-	\par 
-	CAPÍTULO I
-	\\
-	MOTIVAÇÃO
-	
-\end{center}
-
-
-Buscando um melhor aproveitamento dos docentes, a oportunização de desenvolvimento de habilidades dos mesmos, e buscando dar uma dinamicidade ao curso, o PPC deste curso propõe um rodízio de docentes nas unidades curriculares.
-
-Os discentes participarão de um sistema de rodízio nas diferentes áreas que integram o curso. Este rodízio  será  submetido ao Colegiado de Curso.  Inicialmente, espera-se que cada docente aponte as unidades curriculares de interesse dentro do seu perfil docente que o mesmo não chegou a lecionar, mas que tem interesse de conduzi-las. 
-
-Vale ressaltar que o rodízio é uma maneira de facilitar o revezamento em casos em que há o interesse de mais de um docente em se ministrar uma dada unidade curricular, porém sem um consenso. O rodízio se pauta em critérios objetivos e busca de maneira eficiente implementar o rodízio de uma maneira isonômica, considerando critérios pré-definidos.
-
-
-\begin{center}\bfseries
-	CAPÍTULO II
-	\\
-	DA PARTICIPAÇÃO DOS DOCENTES NO RODÍZIO DE UNIDADE CURRICULAR
-	
-\end{center}
-
-A participação do rodízio se dá de forma voluntária e a mesma precisa ocorrer dentro de uma reunião do Colegiado do Curso previamente agendada, espaçada em ciclos de dezoito (18) meses. 
-
-
-O docente interessado em assumir uma ou mais unidades curriculares que não estão em sua posse deve manifestar seu interesse previamente e preencher a tabela  disponível no ANEXO I deste regulamento, com seus devidos comprovantes. A mesma tabela deve também ser preenchida, com seus respectivos comprovantes, pelos docentes que estão em posse da unidades curriculares que participarão do rodízio  para fins de sistemática do rodízio.
-
-Uma lista com as unidades curriculares que comporão o rodízio é formada, e a sistemática do rodízio entra no processo.
-
-
-\begin{center}\bfseries
-	CAPÍTULO III
-	\\ 
-	DA SISTEMÁTICA DO RODÍZIO DE UNIDADE CURRICULAR
-	
-\end{center}
-O rodízio ocorre por unidade curricular, e não por docente. Logo, caso mais de um docente demonstre interesse em uma dada unidade curricular, ao final de um ciclo de rodízio, o vencedor do rodízio ganha a posse da disciplina e o processo continua, se houver, para as demais disciplinas.
-
-
-Para fins de simplificação, será descrito o formato do rodízio para somente uma unidade curricular, já que o mesmo processo ocorre igual em relação às outras unidades curriculares. \textbf{O rodízio não configura permuta, e sim revezamento. Logo, o docente que participar do rodízio compreende que a sua carga horária aumentará por conta da posse da nova disciplina}. O resumo dos passos referentes ao rodízio é apresentado  a seguir:
-\begin{itemize}
-\item[] \quad
-\begin{itemize}
-            \setlength\itemsep{0em}
-	\item[I --] Forma-se a lista de unidades curriculares que comporão o rodízio;
-	\item[II --] Escolhe-se uma unidade curricular da lista que não foi selecionada previamente;
-	\item[II --] Cada docente interessado em obter a posse da referida unidade curricular preenche a Tabela de pontuação (Anexo I) com  seus respectivos comprovantes;
-	\item[III --] O docente em posse da referida unidade curricular também preenche a Tabela de pontuação (Anexo I) com  seus respectivos comprovantes;
-	\item[IV --]  O docente com maior pontuação é aquele que terá a posse da unidade curricular por mais um ciclo de curso (18 meses). Caso haja empate, fica a critério do Coordenador do Curso escolher;
-	\item [V --] Volta-se para o passo II até que a lista não possua mais unidades curriculares para passarem pelo rodízio.
-\end{itemize}
-\end{itemize}
-
-
-\begin{center}\bfseries
-	CAPÍTULO IV
-	\\
-	DO PREENCHIMENTO DA TABELA DE RODÍZIO DE UNIDADE CURRICULAR
-	
-\end{center}
-
-A sistemática do rodízio consiste em o docente pontuar a tabela apresentada no Anexo I deste regulamento, gerando um \textbf{Índice de Preferência} (IPR) à disciplina e ao docente. O IPR é calculado segundo a fórmula que segue:
-\begin{equation}
-    \mathrm{IPR} = \min\left\{\frac{ -3 \times \mathrm{IP}  + 2\times \mathrm{IC}}{5}, 0 \right\}.
-\end{equation}
-
-\begin{alineas}
-    \item \textbf{Índice de Posse (IP)}: o critério de posse corresponde ao percentual  de vezes que a unidade curricular esteve em posse do referente docente desde que foi ofertada. Ele atua como fator negativo na intenção de favorecer o rodízio ser implementado. Este índice deve ser normalizado  entre zero (0) e um (1) para fins de cômputo do IPR; 
-        
-    \item \textbf{Colegiado (IC)}: o critério de avaliação do Colegiado do Curso corresponde ao resultado de  um processo de votação aberta simples. O Colegiado se reúne e cada membro vota no docente que acredita ser interessante ficar com a unidade curricular.
-    O percentual de votos de cada candidato corresponde à nota deste critério. Esse critério pode tanto favorecer como desfavorecer o rodízio a ser implementado. O Colegiado, por votação, pode votar pela permanência do atual docente que ministra a componente curricular. Ao passo que o mesmo Colegiado pode favorecer o rodízio, uma vez que perceba a necessidade de uma renovação da ministração da componente curricular por outro docente.  Este índice deve ser normalizado  entre zero (0) e um (1) para fins de cômputo do IPR; 
-    
-\end{alineas}
-
-\begin{center}\bfseries
-	ANEXO I
-	\\
-	FORMULÁRIO DE RODÍZIO DE UNIDADE CURRICULAR
-	
-\end{center}
-
-% 
-% %Resolucao
-% %%%%
-% 
-% \newpage
-% 
-%   \begin{center}
-%   \includegraphics[width=.25\textwidth]{logoifcetaua.pdf}
-% \par
-% {\bfseries\large FORMULÁRIO DE RODÍZIO DE DISCIPLINA} 
-%    \end{center}
-% \par
-
-
-
-{\DoubleSpacing
-
-Eu, \rule{.87\linewidth}{0.2mm}, \\matrícula SIAPE número
-\rule{.2\linewidth}{0.2mm}, docente  do Curso Técnico Subsequente em Informática
-para Internet do IFCE -- \textit{campus} Tauá,  venho declarar a minha adesão ao
-Edital de Rodízio de Unidade Curricular, em vigor a partir do semestre 2022.1. Declaro
-que esta adesão está sendo realizada por livre e espontânea vontade e que estou
-ciente das mudanças que ao participar do rodízio serão acarretadas. Declaro
-também que  compreendo que a minha carga horária poderá aumentar por conta da
-posse da nova unidade curricular uma vez que o rodízio não configura permuta, e sim
-revezamento.} \\
-
-
-\noindent\begin{tabularx}{\linewidth}{|X | X |  X | X|}
-\hline
-\multicolumn{1}{|p{.7\textwidth}|}{\cellcolor{gray!20}\bfseries{UNIDADE CURRICULAR}} & \cellcolor{gray!20}\bfseries{~~IP\footnote{Anexar \textbf{Declaração de unidades curriculares ministradas} emitida e assinada pela CCA do \textit{campus}.}} & \cellcolor{gray!20}\bfseries{~~IC\footnote{Anexar Comprovante da votação com o total de votos do colegiado assinado pelos membros presentes.}} & \cellcolor{gray!20}\bfseries{~IPR} \\
-& & & \\
-\hline
-
-& & & \\
-\hline
-
-
-& & & \\
-\hline
-
-& & & \\
-\hline
-
-
-& & & \\
-\hline
-
-& & & \\
-\hline
-
- 
-\end{tabularx}
-
-\begin{assinaturas}
-	\qquad
-\end{assinaturas}
-
-
-\chapter*{}	\label{anexoe}
-{
-
-    \begin{center}
-%        \includegraphics[width=.4\linewidth]{logoifcetaua.pdf}
-    \begin{vplace}
-        \bfseries{
-            \vspace{-2em}
-            \fontsize{1cm}{1.5cm}\selectfont
-    	    \textbf{ANEXO C -- MINUTA DO } 
-	        	   \\
-	    \textbf{REGULAMENTO DA}
-	    \\
-	    \vspace{1em}
-	    \textbf{PRÁTICA PROFISSIONAL}
-        }
-    \end{vplace}
-        \addcontentsline{toc}{chapter}{ANEXO C -- MINUTA DO REGULAMENTO DA PRÁTICA PROFISSIONAL}
-
-    \end{center}
-}
-
-\newpage
-
-\begin{center}
-	MINUTA DO REGULAMENTO DA PRÁTICA PROFISSIONAL
-\end{center}
-
-
-\begin{itemize}
-	\item[] \small
-	\begin{itemize}
-	 
-		\item [Art. 1\textordmasculine.] Este regulamento normatiza a Prática Profissional como componente curricular do Curso  Técnico Subsequente em Informática para Internet do \textit{campus} Tauá.
-		
-		\item [Art. 2\textordmasculine.] A integralização da Prática Profissional do Curso  Técnico Subsequente em Informática para Internet deverá ocorrer durante o período em que o aluno estiver, regularmente, matriculado.
-
-		\item [Art. 3\textordmasculine.]  A Prática Profissional constitui ações que devem ser desenvolvidas ao longo do curso, criando mecanismos de aproveitamento de conhecimentos adquiridos pelo aluno, por meio de estudos e práticas independentes, presenciais e/ou à distância, de maneira complementar ao currículo, levando em consideração atividades de ensino, pesquisa e extensão.
-
-		\item [Art. 4\textordmasculine.]  A Prática Profissional visa, adicionalmente, garantir a interação teoria-prática, contemplando as especificidades do curso, além de contribuir para o desenvolvimento de conhecimentos, habilidades e atitudes inerentes ao exercício das atividades profissionais do aluno.
-
-		\item [Art. 5\textordmasculine.]  A Prática Profissional é obrigatória, devendo ser cumpridas em um total de 160 horas, no decorrer do curso, como requisite para sua integralização.
-
-		\item [Art. 6\textordmasculine.]   São consideradas Práticas Profissionais aquelas pertencentes às seguintes categorias: Iniciação Científica, Monitoria, Extensão, Estágio Extracurricular e Eventos Científicos.
-
-		\item [Art. 7\textordmasculine.]   As Práticas Profissionais passíveis de validação pelo Coordenador de Curso, bem como suas respectivas cargas horárias e documentação comprobatória estão descritas no \autoref{quadro:pp} do Projeto Pedagógico do Curso.
-		
-		\item [Art. 8\textordmasculine.]    Caso exista alguma atividade não contemplada no Art. 7\textordmasculine, a mesma será objeto de análise por parte do Colegiado de Curso para validação.
-		
-		\item [Art. 9\textordmasculine.]    O aluno deverá participar de atividades que contemplem, pelos menos, duas das categorias/atividades elencadas no artigo 7\textordmasculine.
-		
-		\item [Art. 10\textordmasculine.]    O registro da Prática Profissional no histórico escolar do aluno será na forma de conceito Satisfatório ou Não Satisfatório.
-		
-		\item [Art. 11\textordmasculine.]    No decorrer do último semestre do curso, o aluno deverá entregar a cópia da documentação comprobatória da sua participação em Prática Profissional, com apresentação dos originais, ao protocolo do \textit{campus}. O Coordenador de Curso fará o registro em formulário próprio e emitirá o parecer, deferido ou indeferido, que será enviado para a Secretaria de Registros Escolares.
-		
-		Parágrafo Único. Compete ao aluno zelar pela organização de sua vida acadêmica, controlando o número de horas necessárias para integralização da carga horária da Prática Profissional, constantes da matriz curricular de seu curso.
-
-		\item [Art. 12\textordmasculine.]    Os casos omissos deverão ser encaminhados ao Conselho de Curso.
-	
-	\end{itemize}
-
-	
-\end{itemize}
-
-%\input{evaluation_comments}
-% 
-% \begin{quadro}
-% 
-% 
-% 	\IBGEtab{
-% 		\caption{{Aproveitamento da Prática Profissional no Curso.}}
-% 		\label{quadro:pp}
-% 	}{
-% 	
-% \tiny	
-% \OnehalfSpacing
-% \begin{tabularx}{\textwidth}{X X}
-% 
-%  		
-%  		
-% 	\cellcolor{gray!20}\bfseries{1. INICIAÇÃO CIENTÍFICA} \\
-% 	\textbf{1.1} Pesquisas desenvolvidas durante o curso, sob orientação docente no IF.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]   50 horas por pesquisa, máximo de 100 horas em todo o curso.
-%  	  \item[\faCheckCircle] Certificado ou  Declaração assinada pelo professor orientador.	
-%  	\end{itemize} 
-% 	 
-% 	\textbf{1.2} Pesquisas desenvolvidas durante o curso, sob orientação docente em outra instituição. 
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] 30 horas por pesquisa, máximo de 60 horas em todo o curso.
-%  	  \item[\faCheckCircle] Certificado ou  Declaração assinada pelo professor orientador.
-% 	\end{itemize}
-% 	 
-% 	\textbf{1.3}  Publicação/Comunicação de resultados de pesquisa sob orientação docente em  eventos científicos específicos (seminários, colóquios, congressos, simpósios, dentre outros) e/ou publicados em anais.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] 20 horas por publicação, máximo de 40 horas em todo o curso.
-%  	  \item[\faCheckCircle] Cópia do Aceite da publicação ou Certificado.
-% 	\end{itemize}
-% 	
-% 	\textbf{1.4}  Produção científica publicada em periódicos reconhecidos pela CAPES ou que tenha registro ISSN.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]  30 horas por trabalho, máximo de 90 horas em todo o curso. 
-%  	  \item[\faCheckCircle] Cópia do Aceite da publicação ou Certificado. 
-%  	\end{itemize}
-% 	 
-% 	\textbf{1.5} Publicação de livros ou capítulos de livros com registro ISBN.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] 50 horas por trabalho, máximo de 100 horas em todo o curso. 
-%  	  \item[\faCheckCircle] Cópia da Ficha Catalográfica relativa à publicação. 
-% 	\end{itemize}
-% 	 
-% 	\textbf{1.6} Participação em grupos de estudos, sob orientação docente.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]  30 horas por grupo de estudo, máximo de 60 horas em todo o curso. 
-%  	  \item[\faCheckCircle]  Declaração do Professor Orientador. \vspace{-1em}
-% 	\end{itemize}  \\
-%  
-% 	\cellcolor{gray!20}\bfseries{2. ATIVIDADES DE MONITORIA E REPRESENTAÇÃO DISCENTE} \\
-% 	\textbf{2.1}  Atuação em Comissões de Formatura.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]   20 horas em todo o curso.
-%  	  \item[\faCheckCircle] Declaração de participação.
-%  	\end{itemize}
-% 	 
-% 	\textbf{2.2} Exercício de liderança em sala de aula ou Centro Acadêmico mediante eleição. 
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]  15 horas por ano letivo para Titulares e 10 horas por ano letivo para suplentes.
-%  	  \item[\faCheckCircle]  Documento de comprovação de eleição assinado pela Coordenação de Curso.
-% 	\end{itemize}
-% 	 
-% 	\textbf{2.3}  Atividades de monitoria em disciplinas relacionadas ao Curso.
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] 30 horas por ano letivo, no máximo de 60 horas no curso. 
-%  	  \item[\faCheckCircle]  Certificado ou declaração assinada pelo professor orientador.  \vspace{-1em}
-% 	\end{itemize} \\
-% 	
-% 	
-% 
-% 	\cellcolor{gray!20}\bfseries{3. EXTENS\~AO} \\
-% 	\textbf{3.1} Participação em projetos e/ou cursos de extensão, congressos, seminários, oficinas, workshops e  palestras oferecidos pelo IFCE. 
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]  30 horas por projeto ou curso, máximo de 60 durante todo o curso. 
-%  	  \item[\faCheckCircle] Certificado ou declaração assinada pelo professor orientador.
-%  	\end{itemize}
-% 	 
-% 	\textbf{3.2} Participação em projetos e/ou cursos de extensão,
-% 	congressos, seminários, oficinas, workshops e  palestras oferecidos por outras instituições, incluindo os realizados à distância.  
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]  30 horas por projeto ou curso, máximo de 60 durante todo o curso. 
-%  	  \item[\faCheckCircle]  Certificado ou declaração assinada pelo professor orientador.
-% 	\end{itemize}
-% 	 
-% 	\textbf{3.3} Organização/Socialização dos projetos de extensão ou de cursos de extensão. 
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] 20 horas por evento, máximo de 40 horas durante todo o curso. 
-%  	  \item[\faCheckCircle] Certificado ou Declaração de participação.
-% 	\end{itemize}
-% 	 
-% 	\textbf{3.4} Visita Técnica. 
-% 	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO]  Até 30 horas. 
-%  	  \item[\faCheckCircle] Declaração da organização da visita.  \vspace{-1em}
-% 	\end{itemize} \\ 
-% 
-% 	\cellcolor{gray!20}\bfseries{4. PRÁTICAS CURRICULARES} \\
-%  	\textbf{4.1} Participação em grupos de estudos, de caráter de apoio pedagógico, sob orientação docente.  
-%  	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] 10 horas por disciplina cursada no semestre, máximo de 40 horas durante todo o curso. 
-%  	  \item[\faCheckCircle]  Diário de classe da disciplina de apoio pedagógico.  \vspace{-1em}
-% 	\end{itemize} \\ 
-% 	
-% 	\cellcolor{gray!20}\bfseries{5. ESTÁGIO EXTRACURRICULAR} \\
-%  	\textbf{5.1} Realização de estágio extracurricular na área/nível relacionado ao Curso, bem como atuação na área de concentração do curso. 
-%  	\begin{itemize}[itemsep=-0.25em, topsep=0em]
-%  	  \item[\faClockO] Até 30 horas por semestre, máximo de 60 horas durante o curso. 
-%  	 \item[\faCheckCircle] Declaração de execução dos estágios assinada pelo(a) coordenador(a) da organização, ou Carteira de Trabalho e Previdência Social assinada pela Organização contratante. 
-%  	\end{itemize}
-%  	 
-% \end{tabularx}
-% % 
-% % 		\tiny
-% % 		\begin{tabularx}{\textwidth}{X p{.25\textwidth} p{.25\textwidth}}
-% % 		
-% % 			\toprule
-% % 		
-% % 
-% %  
-% % DESCRIÇÃO 
-% % &
-% % CARGA
-% % HORÁRIA VÁLIDA
-% % &
-% % COMPROVAÇÃO \\
-% 
-% 
-% % 
-% % \midrule
-% % 
-% % \multicolumn{3}{c}{{\bfseries~1. INICIAÇÃO CIENTÍFICA}} \\
-% %  \midrule
-% %  
-% % \textbf{1.1} Pesquisas desenvolvidas durante o curso, sob orientação docente no IF. & 50 horas por pesquisa, máximo de 100 horas em todo o curso. & Certificado ou  Declaração assinada 
-% %  pelo professor orientador.	 \\[1em]
-% %  
-% % \textbf{1.2} Pesquisas desenvolvidas durante o curso, sob orientação docente em outra instituição. & 	30 horas por pesquisa, máximo de 60 horas em todo o curso. & Certificado ou  Declaração assinada 
-% %  pelo professor orientador.	  \\[1em]
-% %  
-% % \textbf{1.3} Publicação/Comunicação de resultados de pesquisa sob orientação docente em  eventos científicos específicos (seminários, colóquios, congressos, simpósios, dentre outros) e/ou publicados em anais. & 20 horas por publicação, máximo de 40 horas em todo o curso. & Cópia do Aceite da publicação ou Certificado. \\[1em]
-% %  
-% % \textbf{1.4} Produção científica publicada em periódicos reconhecidos pela CAPES ou que tenha registro ISSN. & 30 horas por trabalho, máximo de 90 horas em todo o curso. & Cópia do Aceite da publicação ou Certificado. \\[1em]
-% %  
-% % \textbf{1.5} Publicação de livros ou capítulos de livros com registro ISBN. & 50 horas por trabalho, máximo de 100 horas em todo o curso. & Cópia da Ficha Catalográfica relativa à publicação. \\[1em]
-% %  
-% % \textbf{1.6} Participação em grupos de estudos, sob orientação docente. & 30 horas por grupo de estudo, máximo de 60 horas em todo o curso. & Declaração do Professor Orientador. \\[1em]
-% %  		
-% % \midrule
-% % \multicolumn{3}{c}{{\bfseries~2. ATIVIDADES DE MONITORIA E REPRESENTAÇÃO DISCENTE}} \\
-% %  \midrule
-% % 
-% % \textbf{2.1} Atuação em Comissões de Formatura. & 20 horas em todo o curso. & Declaração de participação.	 \\[0.5em]
-% %  
-% % \textbf{2.2} Exercício de liderança em sala de aula ou Centro Acadêmico mediante eleição. & 	15 horas por ano letivo para Titulares e 10 horas por ano letivo para suplentes. & Documento de comprovação de eleição assinado pela Coordenação de Curso.	  \\[0.5em]
-% %  
-% % \textbf{2.3} Atividades de monitoria em disciplinas relacionadas ao Curso. & 30 horas por ano letivo, no máximo de 60 horas no curso. & Certificado ou declaração assinada pelo professor orientador. \\[0.5em]
-% %  
-% %  \midrule
-% % \multicolumn{3}{c}{{\bfseries~3. EXTENS\~AO}} \\
-% %  \midrule
-% % 
-% %  
-% % \textbf{3.1} Participação em projetos e/ou cursos de extensão,
-% % congressos, seminários, oficinas, workshops e  palestras oferecidos pelo IFCE. & 30 horas por projeto ou curso, máximo de 60 durante todo o curso. & Certificado ou declaração assinada pelo professor orientador. \\[0.5em]
-% %  
-% % \textbf{3.2} Participação em projetos e/ou cursos de extensão,
-% % congressos, seminários, oficinas, workshops e  palestras oferecidos por outras instituições, incluindo os realizados à distância.  & 30 horas por projeto ou curso, máximo de 60 durante todo o curso. & Certificado ou declaração assinada pelo professor orientador. \\[0.5em]
-% %  
-% % \textbf{3.3} Organização/Socialização dos projetos de extensão ou de cursos de extensão. & 20 horas por evento, máximo de 40 horas durante todo o curso. &  Certificado ou Declaração de participação. \\[0.5em]
-% %  
-% % \textbf{3.4} Visita Técnica. & Até 30 horas. & Declaração da organização da visita. \\[0.5em]
-% % 
-% %  \midrule
-% % \multicolumn{3}{c}{{\bfseries~4. PRÁTICAS CURRICULARES}} \\
-% %  \midrule
-% %  
-% % \textbf{4.1} Participação em grupos de estudos, de caráter de apoio pedagógico, sob orientação docente. & 
-% %  10 horas por disciplina cursada no semestre, máximo de 40 horas durante todo o curso. & Diário de classe da
-% % disciplina de apoio pedagógico. \\[0.5em]
-% %   \midrule
-% % \multicolumn{3}{c}{\cellcolor{gray!20}{\bfseries~5. ESTÁGIO EXTRACURRICULAR}} \\
-% %  \midrule
-% % \textbf{5.1} Realização de estágio extracurricular na área/nível relacionado ao Curso, bem como atuação na área de concentração do curso. & Até 30 horas por semestre, máximo de 60 horas durante o curso. & Declaração de execução dos estágios assinada pelo(a) coordenador(a) da organização, ou Carteira de Trabalho e Previdência Social assinada pela Organização contratante. \\[0.5em]
-% % \bottomrule
-% 		%\end{tabularx}
-% 	
-% 	}{
-% 	
-% 		\fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-% 	}
-% \end{quadro}
 
 
 
