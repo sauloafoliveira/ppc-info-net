@@ -10,11 +10,27 @@
        
        % \includegraphics[width=.15\linewidth]{ifce_peb.png}\\
         DEPARTAMENTO DE ENSINO\\
-        COORDENAÇÃO DO CURSO: TÉCNICO  EM INFORMÁTICA PARA INTERNET\\
+        COORDENAÇÃO DO CURSO TÉCNICO  EM INFORMÁTICA PARA INTERNET\\
         PROGRAMA DE UNIDADE DIDÁTICA -- PUD
 \end{center}
 }
 
+
+\newcommand{\naopresencial}{
+
+Quanto às atividades não presenciais, as mesmas serão orientadas e
+acompanhadas pelo(a) docente da disciplina. Nelas, a avaliação deve permitir ao docente
+compreender como o aluno elabora e constrói seu próprio conhecimento. Neste
+caso, o acompanhamento do processo de ensino e aprendizagem discente se dá através de
+ambientes virtuais de aprendizagem e/ou outros sistemas computacionais
+apropriados que possam facilitar o acompanhamento, verificação e validação das
+atividades.
+
+Observa-se que as aulas criadas para fins de realização de atividades não
+presenciais não devem ser consideradas para controle de frequência do discente.
+São registradas as faltas dos estudantes somente quando se ausentarem das aulas
+presenciais.
+}
 
 \setlist[itemize]{noitemsep, topsep=0pt}
 
@@ -28,28 +44,57 @@
     \noindent\begin{tabularx}{\linewidth}{ | X X X X X X | } 
 
     \multicolumn{6}{p{\textwidth-2\tabcolsep}}{\cabecalho} \\
-
+    
+    
+	\multicolumn{6}{p{\textwidth-2\tabcolsep}}{\cellcolor{gray!10}DISCIPLINA: \bfseries #2} \\
 	
-    \multicolumn{1}{p{.16\textwidth-2\tabcolsep}}{\cellcolor{gray!40}\bfseries\large #1} & \multicolumn{5}{p{.84\textwidth-2\tabcolsep}}{\cellcolor{gray!30}\bfseries\uppercase{#2}} \\ 
-    
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Carga Horária}  &
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Teórica} & 
-    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Prática}   \\
-    
-
-    
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{ \MULTIPLY{20}{#6}{\solution} \solution } &
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#4} & 
-    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#5} \\
-    
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Número de Créditos}  &
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Código Pré-Requisito} & 
-    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Semestre}   \\
-    
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#6} &
-    \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\small #3} & 
-    \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#7} \\ 
-    
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{C\'odigo: \bfseries #1 }
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Carga horária total: \bfseries \MULTIPLY{20}{#6}{\solution} \solution{h}}  &
+	\multicolumn{2}{p{.34\textwidth-2\tabcolsep}}{Créditos: \bfseries #6} \\
+	
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Nível: \bfseries Técnico }
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Semestre: \bfseries #7}  &
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Pré-requisitos: \bfseries #3} \\[0.25em]
+		
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Teórica: \bfseries #4{h} } & 
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Prática: \bfseries #5{h} } \\
+	
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Presencial: \bfseries #4{h} } & 
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Distância: \bfseries 0h } \\
+	
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Carga Horária} &
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Profissional: \bfseries #4{h} } & \\
+	
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+	\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Atividades não presenciais: \bfseries #4{h} }  \\
+	
+	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+	\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Extensão: \bfseries #4{h} }  \\
+	 
+	
+% 	
+%     \multicolumn{1}{p{.16\textwidth-2\tabcolsep}}{\cellcolor{gray!40}\bfseries\large #1} & \multicolumn{5}{p{.84\textwidth-2\tabcolsep}}{\cellcolor{gray!30}\bfseries\uppercase{#2}} \\ 
+%     
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Carga Horária}  &
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Teórica} & 
+%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Prática}   \\
+%     
+% 
+%     
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{ \MULTIPLY{20}{#6}{\solution} \solution } &
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#4} & 
+%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#5} \\
+%     
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Número de Créditos}  &
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Código Pré-Requisito} & 
+%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Semestre}   \\
+%     
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#6} &
+%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\small #3} & 
+%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#7} \\ 
+%     
     
 	\end{tabularx}
 
@@ -211,8 +256,11 @@
 	Data-show, pincel e quadro branco, aparelho de som, laboratório de informática e
 dicionários.
 	
-	\avaliacao	
-	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+\avaliacao A avaliação é realizada de forma processual e cumulativa utilizando
+os instrumentos de avaliação especificados pelo Regulamento de Organização
+Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é
+obrigatória, respeitando os limites de ausência previstos em lei.
+\naopresencial
 	
 	\begin{bibbasica}
 		\item CARVALHO, André C. P. L. F. de, LORENA, Ana Carolina. \textbf{Introdução à
@@ -379,14 +427,15 @@ Paulo: Pearson Prentice Hall, 2013. 605 p. ISBN 9788581435398.
 		\item BROWN, H. Douglas. \textbf{Teaching by Princinples}: An Interactive Approach to Language Pedagogy. 2ed. New York: Longman, 2001.
 		\item HORNBY, A. S. \textbf{Oxford advanced learners Dictionary of Current English}. 7. ed. Oxford (Inglaterra): Oxford University Press, 2007. 1779 p., Il. + Inclui CD-ROM. ISBN 9780194001168 (Broch.).
 	
-	\bibcomplementar
+	\begin{bibcomplementar}
 		\item DIAS, Reinildes. \textbf{Inglês Instrumental}: leitura crítica: uma abordagem construtiva. 3. ed. revista e ampliada. Belo Horizonte, UFMG, 2002.
 		\item GLENDINNING, Eric H.; MCEWAN, John. \textbf{Basic english for computing}. Oxford (Inglaterra): Oxford University Press, 2012. 136 p. ISBN 9780194574709.
 		\item LONGMAN. \textbf{Dicionário escolar}: inglês-português, português-inglês. 2. ed. Inglaterra: Pearson, 2009. 770 p. ISBN 9788576592754.
 		\item MUNHOZ, Rosângela. \textbf{Inglês instrumental}: estratégias de leitura: módulo I. São Paulo: Textonovo, 2004. 111 p. ISBN 8585734367.
 		\item MURPHY, Raymond; SMALZER, William R.; CHAPPLE, Joseph. \textbf{English grammar in use intermediate}: self-study reference and practice for students of North American English: with answers. 4th. ed. Cambridge (England): Cambridge University Press, 2018. 374 p. ISBN 9780521189392.
+	
+	\end{bibcomplementar}
 		
-	\endgroup
 	
 \end{pud}
 
@@ -1297,6 +1346,8 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 	\end{bibcomplementar}
 \end{pud}
 
+
+%%% DEV WEB I
 \begin{pud}
 	
 	\pudinfo{TSII.211}{Desenvolvimento WEB I}{TSII.101, TSII.104}{40}{40}{4}{2$^\circ$ Semestre}
@@ -1389,179 +1440,46 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 
 
 
-%%%% SERVIDOR
+
+
+%%% ESTRUTURA DE DADOS
 
 \begin{pud}
 	
-	\pudinfo{TSII.212}{Servidores}{TSII.105}{20}{20}{2}{2$^\circ$ Semestre}
+	\pudinfo{TSII.211}{ESTRUTURA DE DADOS}{TSII.101, TSII.104}{40}{40}{4}{2$^\circ$ Semestre}
 	
 	\ementa
-	Definição de servidor e serviço. Hardware de servidores. Sistemas operacionais para servidores abertos e proprietários. Tipos de Servidores. Servidor DHCP. Servidor de Nomes. Servidor de Arquivos. Servidor Web. Outros serviços de rede.
+	Tipos abstratos de dados. Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pilhas e filas. Variáveis dinâmicas. Ordenação e Busca. Árvores.
 	
-	\objetivos
-	Compreender a estrutura e funcionamento de servidores de rede; Aprender a configurar computadores clientes para utilizar serviços de rede;  Instalar serviços de rede em diferentes tipos de sistemas operacionais; Configurar serviços de rede em diferentes tipos de sistemas operacionais.
-	
-	\programa
-	\begin{description}[itemsep=0em]
-		\item[UNIDADE I:] Introdução a servidores; 
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Definição de servidor;
-				\item Tipos de servidores;
-				\item Hardware de servidores.
-            \end{enumerate}
-            
-        \item[UNIDADE II:] Servidor DNS;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Definição do serviço de DNS;
-				\item Instalação e configuração de servidor DNS.
-            \end{enumerate}
-            
-         \item[UNIDADE III:] Servidor WEB;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Conceituação do serviço WEB;
-				\item Instalação e configuração de servidor WEB.        
-            \end{enumerate}
-            
-         \item[UNIDADE IV:]  Ciclo de desenvolvimento versionado;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Compartilhamento de arquivos em rede;
-				\item Configuração de servidor de rede;
-				\item Configuração de compartilhamento e acesso a arquivos.
-            \end{enumerate}
-            
-         \item[UNIDADE V:]  Virtualização de servidores.
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Visão geral e Tipos de virtualização;
-                \item Configuração de Servidores Virtuais.
-            \end{enumerate}
-
-	\end{description}
-	
-	\clearpage
-	
-	
-	\metodologia
-	Aulas expositivas e interativas com uso de recursos audiovisuais. Aulas práticas a serem realizadas de forma individual ou em grupo com o auxílio de computadores e softwares de simulação e virtualização que contribuam para a aprendizagem do conteúdo. Análise de estudos de caso e situações relacionadas aos assuntos estudados.
-	
-	
-	\avaliacao
-	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
-		
-	\begin{bibbasica}
-		\item BALL, Bill; DUFF, Hoyt. \textbf{Dominando Linux}: Red Hat e Fedora. Editora Pearson. ISBN 9788534615174. (BVU)
-		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. (BVU)
-		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do linux}: guia do administrador. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
-		
-		\item TANENBAUM, Andrew S.; WETHERALL, David J.  \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU) 
-
-		
-	\end{bibbasica}
-	
-	\begin{bibcomplementar}
-	
-		\item ALENCAR, Marcelo Sampaio de. \textbf{Engenharia de redes de computadores}. São Paulo: Érica, 2012. 286 p. Bibliografia. ISBN 9788536504117.
-		\item COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. \textbf{Sistemas distribuídos}: conceitos e projeto. Tradução de João Eduardo Nóbrega Tortello. Revisão técnica de Alexandre da Silva Carissimi. 4. ed. Porto Alegre: Bookman, 2007. 784 p. Inclui bibliografia. ISBN 9788560031498.
-		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
-		\item SOUSA, Lindeberg Barros de. \textbf{Projetos e implementação de redes}: fundamentos, soluções, arquiteturas e planejamento. 3. ed. , rev. São Paulo: Érica, 2013. 318 p. ISBN 9788536501666.		
-		\item TANENBAUM, Andrew S.; STEEN, Maarten Van. \textbf{Sistemas distribuídos}: princípios e paradigmas. Tradução de Arlete Simille Marques. Revisão técnica de Wagner Luiz Zucchi. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 402 p. Inclui bibliografia. ISBN 9788576051428. (BVU)
-
-	\end{bibcomplementar}
-	
-
-\end{pud}
-
-%%%% PROJETO INTEGRADOR 2
-
-\begin{pud}
-
-	\pudinfo{TSII.213}{Projeto Integrador II}{TSII.107}{20}{20}{2}{2$^\circ$ Semestre}
-	
-	
-	\ementa
-	Elementos do contexto sócio-político-econômico da sociedade brasileira.  Movimentos Sociais e a conquista de direitos; Formas de organização e participação em trabalhos sociais. Introdução aos Direitos Humanos e a cidadania.  Formação de valores éticos e de autonomia, pré-requisitos necessários de participação social Métodos e Técnicas de elaboração de projetos sociais. Pressupostos teóricos e práticos a serem considerados na construção de projetos integradores/sociais. Introdução ao Projeto Integrador II. Construção do projeto formal. Desenvolvimento do projeto. Socialização dos limites e possibilidades (resultados).
-	
-	\objetivos
-	\textbf{OBJETIVO GERAL}:
-	Capacitar o aluno quanto à realização de um projeto multidisciplinar que possibilite o desenvolvimento de uma visão dialógica e integrada com as diversas disciplinas do curso Técnico Subsequente em Informática para Internet e suas relações com a sociedade contemporânea, a fim de que o aluno desenvolva habilidades diversas, no sentido de construir um projeto que integre os saberes das disciplinas e busque articular na prática, propondo essas ações através do projeto-problema proposto.	
-	\newline\\	
-	\textbf{OBJETIVOS ESPECÍFICOS}:
+	\objetivo
+	Empregar estruturas de dados adequadas para o desenvolvimento de sistemas de software.
 	\begin{itemize}
-		
-		\item Aprofundar o conhecimento em relação  aspectos sociais articulando com a  prática;
-		\item  Explorar a resolução de problemas reais e/ou inovadores, buscando apontar possíveis soluções   no sentido de integrar a instituição de ensino à sociedade;
-		\item Dominar todas as etapas de planejamento do projeto social, tais como: execução, controle e avaliação de todas as ações de um projeto social;
-		\item Desenvolver a habilidade de trabalho em equipe;
-		\item Elaborar projetos integradores. 
-
-	\end{itemize}	
-	
-	
-	\programa
-	\begin{description}[itemsep=0em]
-		\item[UNIDADE I:] Fundamentos da economia, sociedade e cultura da sociedade brasileira; 
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Desigualdade social e politicas públicas;
-                \item Direitos humanos: democracia e cidadania; % --- (podem ser tratados os direitos de terceira geração/diversos aspectos sociais);
-                \item Movimentos sociais e projetos de integração da sociedade civil;
-                \item Ética como de inserção e de expressão de um mundo mais justo e igualitário.
-            \end{enumerate}
-            
-        \item[UNIDADE II:] Projeto integrador: pressupostos, construção e aplicação;
-	         \begin{enumerate}[itemsep=0em, topsep=0em]
-				\item Objetivos e finalidades do projeto integrador;
-                \item Elementos estruturais do projeto integrador, propostas e temas;
-                \item Construção de um projeto integrador (escrito) que articule habilidade e práticas desenvolvidas e construídas a partir da relação ensino-aprendizagem no curso com questões e âmbitos sociais locais e regionais;
-                \item Aplicação, avaliação e socialização de resultados, limites e possibilidades.
-            \end{enumerate}
-            
-
-	\end{description}
-	
-	\metodologia
-	\textbf{Na primeira etapa}, desenvolveremos estudos de temas relacionados à diversos temas contemporâneos, tendo em vista a instrumentalização teórico-metodológica para a construção de um projeto que integre conhecimentos e práticas desenvolvidas no curso com a realidade concreta local, institucional, a partir de habilidades desenvolvidas em todo o percurso formativo. Considerar-se-á, a realidade econômica, social, cultural e politica da sociedade brasileira. \textbf{Na segunda etapa}, dois momentos serão subsequentes e complementares. Inicialmente será orientada a construção do projeto, articulado às 20 horas/aula teóricas. A articulação e diálogo com professores de áreas especificas será necessário nessa fase da aprendizagem.  Após a construção, segue-se para o contato com os ambientes onde será aplicado, que necessariamente será desenvolvido em momentos subsequentes, a saber: diálogo inicial com a instituição para diagnóstico, divulgação e organização do período de aplicação, seguida de aplicação prática e avaliação. \textbf{O terceiro momento} recairá sobre a socialização de todo o processo de construção e aplicação do projeto, expressando seus resultados, limites e possibilidades.
-	
-	
-	\avaliacao
-	A avaliação será realizada de forma contínua e processual, através da interação professor aluno, observando a participação dos discentes, percebendo o alcance dos objetivos propostos. Serão levados em consideração a atenção e análise dos pontos abordados. Vale ressaltar que a avaliação é dialógica, e levará em consideração os aspectos diagnósticos, somativos e formativos, ou seja, ela se dará pela soma de todos os elementos postos em discussão, pela compreensão de saber onde estamos para podermos avançar e, por todo o processo de ensino-aprendizagem. Alguns critérios:
-	\begin{itemize}
-		\item Participação nos debates e discussões;
-        \item Assiduidade; 
-        \item Responsabilidade na entrega dos trabalhos e realização de leituras solicitadas, dentre outros. 
+	  \item Definir e diferenciar as estruturas de dados genéricas fundamentais, tais como filas, pilhas, listas encadeadas e grafos;
+	  \item Manipular estruturas de dados através do emprego de algoritmos;
+	  \item Selecionar e construir estruturas de dados adequadas para aplicações específicas;
+	  \item Construir algoritmos de ordenação e busca de acordo com a estratégia mais adequada.
 	\end{itemize}
 	
-	Instrumentos de avaliação:
-	\begin{itemize}
-		\item Realização de trabalhos individuais e coletivos, (resumo, fichamentos, etc);
-        \item Seminário; 
-        \item Construção de projeto integrador;
-        \item Aplicação e socialização do projeto integrador.
-    \end{itemize}
-    
 	
-	\begin{bibbasica}
-			
-        \item COHEN, Ernesto; FRANCO, Rolando. \textbf{Avaliação de projetos sociais}.  11 ed. Petrópolis: Vozes, 2016.  ISBN 9788532610577. 
-        \item OLIVEIRA, Valdeir Claudinei de (Org.). \textbf{Capitalismo e questão social}. Editora Pearson, 2014. Livro.  146 p.  ISBN 9788543009780.  (BVU)
-        \item POOLI, Jo\~ao \textit{et. al}. \textbf{Projetos interdisciplinares}.  Curitiba: Editora Intersaberes, 2013. Livro.  202 p.  ISBN 9788582127629. (BVU)
- 		
-	\end{bibbasica}
+	\programa
 	
-	\begin{bibcomplementar}
-		\item AMARO, Sarita. \textbf{Racismo, igualdade racial e políticas de ações afirmativas no Brasil}. Porto Alegre: EDIPUCRS, 2015. Livro. 160 p. ISBN 9788539707331. (BVU)
-    	\item HACK, Neiva Silvana. \textbf{Assessoria, consultoria e avaliação de políticas, programas e projetos sociais}. Curitiba: Contentus, 2020. Livro. 55 p. ISBN 9786557451694. (BVU)
-		\item PROJECT MANAGEMENT INSTITUTE. \textbf{Um Guia do conhecimento em gerenciamento de Projetos}:  guia PMBOK\textregistered. 5. ed. São Paulo: Saraiva, 2014.  589 p. ISBN 9788502223721.
-		\item SANTOS, Boaventura de Souza. \textbf{Pela mão de Alice}: o social e o político na pós modernidade. 12. ed. São Paulo: Cortez, 2008. 348 p. Inclui bibliografia. ISBN 9788524905780.
-		\item SILVA, Marcos Ruiz da. \textbf{Projetos integradores e transversais em educação física escolar}. Curitiba: Contentus, 2020. Livro. 82 p. ISBN 9786557452363. (BVU)
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Atividades práticas em laboratório, realização de trabalhos em equipe e individuais. Pesquisas em artigos científicos e repositórios de códigos-fontes de programas de computador.
+	
+	\recursos
+	
+	
+	\avaliacao
+	A avaliação é realizada de forma sistemática, periódica e cumulativa utilizando os
+instrumentos de avaliação especificados pelo Regulamento de Organização
+Didática (ROD) em seu art. 94 § 1º, conforme for mais adequado. A frequência é
+obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 
-	\end{bibcomplementar}
-	
-	
-    
-    
-    
+
 	
 \end{pud}
+
 
 %%%% 3o SEMESTRE
 
@@ -2028,6 +1946,74 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 	\end{bibcomplementar}
 	
 \end{pud}
+
+
+%%% NOSQL
+
+\begin{pud}
+
+	\pudinfo{TSII.319}{Bancos de Dados Não-Relacionais}{TSII.213}{20}{20}{4}{3$^\circ$ Semestre}
+	
+	\ementa
+	Introdução e conceitos de Bancos de Dados Não-Relacionais (NoSQL).
+Características, vantagens, desvantagens, aplicações e implementação em bancos
+de dados não relacionais.
+
+	\objetivos
+	Conhecer e utilizar técnicas bem como tendências atuais e não convencionais que visam o alto desempenho de sistemas de bancos de dados.
+	
+	\begin{itemize}
+	  \item Distinguir bancos de dados não-relacionais de bancos de dados relacionais;
+	  \item Conhecer tecnologias atuais para integração com banco de dados NoSQL;
+	  \item Utilizar operações e instruções de bancos de dados NoSQL para a implementação de código.
+	\end{itemize}
+	
+	
+	\programa
+	
+	
+	\metodologia
+	Aulas expositivas e interativas com uso de recursos audiovisuais. Atividades
+práticas de implementação de aplicações com bancos de dados NoSQL. Realização
+de trabalhos em equipe e individuais. Análise e discussão de estudos de caso.
+
+	
+	\recursos
+	Data-show, pincel e quadro branco, laboratório de informática, computadores,
+softwares para apoio em classe e extraclasse, softwares de implementação de
+sistemas com bancos de dados NoSQL.
+
+	\avaliacao
+	A avaliação é realizada de forma sistemática, periódica e cumulativa utilizando os
+instrumentos de avaliação especificados pelo Regulamento de Organização
+Didática (ROD) em seu art. 94 § 1º, conforme for mais adequado. A frequência é
+obrigatória, respeitando os limites de ausência previstos em lei.
+
+	\naopresencial
+	
+	
+	\bibbasica
+	\item GUERRA, José Luiz. NoSQL: Uma abordagem prática. São Paulo: Novatec	Editora, 2021.
+	
+	\item SADALAGE, Pramod J.; FOWLER, Martin. NoSQL Essencial: Um Guia Conciso
+	para o Mundo Emergente da Persistência Poliglota. São Paulo: Novatec Editora, 2014. ISBN 978-8575223383.
+	
+	\item SILVA, Luiz F. Calaça; RIVA, Aline Duarte; ROSA, Gabriel Augusto et al. Banco
+	de Dados Não Relacional. Porto Alegre: SAGAH, 2021. E-book. ISBN 9786556901534. (MB)
+	
+	\bibcomplementar
+		\item ARBUES, Leandro. Desenvolvimento de aplicações distribuídas com o
+	Apache Kafka: Um guia prático. São Paulo: Casa do Código, 2021.
+		\item FERREIRA, Rafael. Desvendando Apache Cassandra: Uma abordagem prática
+	para bancos de dados distribuídos. São Paulo: Casa do Código, 2020.
+		\item OLIVEIRA, Eudes S. Introdução ao NoSQL: Como os Bancos de Dados Não-
+	Relacionais Podem Ajudar o seu Negócio. São Paulo: Novatec Editora, 2020.
+		\item 	SANTOS, Izaías. Modelagem de dados não-relacionais: Um guia prático. São
+	Paulo: Casa do Código, 2021.
+	\item SILVA, Jefferson. Redis: Conceitos e Práticas. São Paulo: Casa do Código, 2020.
+	
+\end{pud}
+
 
 
 %%%% PROJETO INTEGRADOR III
