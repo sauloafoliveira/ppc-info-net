@@ -52,6 +52,7 @@
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{hyphens}{url}
 \usepackage{hyperref}
+\usepackage{ifthen}
 
 
 % ---
@@ -166,7 +167,7 @@
 \def\UrlRight{}
 
 \regtotcounter{section}
-\newcommand{\n}{N$^\circ$}
+\newcommand{\nord}[1]{N$^\circ$ #1}
 
 % ---
 % Configurações de aparência do PDF final
@@ -327,13 +328,28 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
     {\bfseries BIBLIOTECÁRIA}\\
     ANALICE FRAGA DE OLIVEIRA  \par
     
+    {\bfseries PROFESSOR DA ÁREA DIVERSIFICADA}\\
+    ANELISE DANIELA SCHINAIDER \par
     
-    {\bfseries PROFESSOR DA ÁREA TÉCNICA}\\
-    JEFFERSON CALIXTO FIGUEIREDO \par
     
     {\bfseries PROFESSOR DA ÁREA TÉCNICA}\\
     LUCAS FERREIRA MENDES \par
     
+    
+    {\bfseries PROFESSOR DA ÁREA TÉCNICA}\\
+    ANT\^ONIO S\'AVIO SILVA OLIVEIRA \par
+    
+    {\bfseries PROFESSOR DA ÁREA TÉCNICA}\\
+    J\'ULIO SERAFIM MARTINS \par
+    
+    {\bfseries COORDENADORA NEABI}\\
+    MARGARIDA MARIA XAVIER DA SILVA \par
+    
+    {\bfseries COORDENADORA NAPNE}\\
+    SHARLENE PAREIRA ALVES \par
+    
+    {\bfseries COORDENADORA NUGEDS}\\
+    CARLOS GET\'ULIO DE FREITAS MAIA\par
     
     
     % Saulo Anderson Freitas De Oliveira -- {\bfseries Coordenador do Curso} \par
@@ -598,128 +614,145 @@ SECRETARIA DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA \par INSTITUTO FEDERAL DE E
     
     
      
-    \cellcolor{gray!20} \textbf{BAIRRO} & \cellcolor{gray!20} \textbf{CIDADE} & \cellcolor{gray!20} \textbf{UF} & \cellcolor{gray!20} \textbf{TELEFONE} \\
+    \multicolumn{2}{l}{\cellcolor{gray!20}\textbf{CIDADE}} & \cellcolor{gray!20} \textbf{UF} & \cellcolor{gray!20} \textbf{TELEFONE} \\
      
-     Colibris & Tauá & Ceará & (88) 3437-4249\\
+    \multicolumn{2}{l}{Tauá} & Ceará & (88) 3437-4249\\
 
-     \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{PÁGINA INSTITUCIONAL}} \\
-     \multicolumn{4}{l}{\href{http://ifce.edu.br/taua}{ifce.edu.br/taua}} \\
+     \multicolumn{2}{l}{\cellcolor{gray!20}\textbf{PÁGINA INSTITUCIONAL}} &
+     \multicolumn{2}{l}{\cellcolor{gray!20}\textbf{E-MAILS}} \\
      
-     
-     \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{E-MAILS}} \\
-     \multicolumn{4}{l}{\href{mailto:cinformaticainternet@taua.ifce.edu.br}{cinformaticainternet@taua.ifce.edu.br}} \\
+     \multicolumn{2}{l}{\href{http://ifce.edu.br/taua}{ifce.edu.br/taua}} &
+     \multicolumn{2}{l}{\href{mailto:cinformaticainternet@taua.ifce.edu.br}{cinformaticainternet@taua.ifce.edu.br}} \\
      
      \bottomrule
      
 \end{tabularx}
 \vspace{2em}
 \noindent
-\begin{tabularx}{\linewidth}{X X X X X X}
-    
-    
-        \multicolumn{6}{c}{\textbf{INFORMAÇÕES GERAIS DO CURSO}} \\
-\toprule
-    \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{DENOMINAÇÃO}} \\
-    
-    \multicolumn{6}{l}{Curso Técnico Subsequente em Informática para Internet} \\
-    
-        
-    \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{TITULAÇÃO CONFERIDA}} \\
-    
-    \multicolumn{6}{l}{Técnico em Informática para Internet} \\
-    
-    %%%%%
-    \multicolumn{1}{l}{\cellcolor{gray!20}\textbf{NÍVEL}} & \multicolumn{5}{l}{\cellcolor{gray!20}\textbf{\qquad~FORMA DE ARTICULAÇÃO COM O ENSINO MÉDIO}} \\
-    
-    \multicolumn{1}{l}{Médio} & \multicolumn{5}{l}{\qquad~~Subsequente} \\
-    
-    %%%%%
-    \multicolumn{3}{ p{.5\linewidth-2\tabcolsep }  }{\cellcolor{gray!20}\textbf{MODALIDADE DE OFERTA}} & \multicolumn{3}{ p{.5\linewidth-2\tabcolsep } }{\cellcolor{gray!20}\textbf{DURAÇÃO}} \\
-    
-    \multicolumn{3}{l}{Presencial} & \multicolumn{3}{l}{Entre 3 e 6 semestres} \\
-    %%%%
-    \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{PERIODICIDADE}} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{FORMA DE INGRESSO}} \\ 
-    
-    \multicolumn{3}{l}{Semestral} & \multicolumn{3}{l}{Processo Seletivo Regular, Diplomados,} \\
 
-   \multicolumn{3}{l}{} & \multicolumn{3}{l}{Transferência e Matrícula Especial.} \\
-     
-     
-      %%%%
-    \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{NÚMERO DE VAGAS ANUAIS}} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{TURNO DE FUNCIONAMENTO}} \\ 
-    
-    \multicolumn{3}{l}{60} & \multicolumn{3}{l}{Noturno} \\
-    
-    
-    \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{ANO E SEMESTRE DO INÍCIO DO FUNCIONAMENTO}} \\
-    
-    \multicolumn{6}{l}{2022.1} \\
-    
-        \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{CARGA HORÁRIA TOTAL}} \\
-    
-    \multicolumn{6}{l}{1200 horas-aula (1000 horas)} \\
-
-    
-    
-    \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{CARGA HORÁRIA DOS COMPONENTES CURRICULARES}} \\
-    
-    \multicolumn{6}{l}{1040 horas-aula (866 horas e 40 minutos)} \\
-    
-    
-    %%%%%
-    
-    
-    
-     
-    \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{CARGA HORÁRIA DA PRÁTICA PROFISSIONAL}} \\
-    
-    \multicolumn{6}{l}{~160 horas-aula (133 horas e 20 minutos)} \\
-    
-    
-      %%%%
-    \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{SISTEMA DE CARGA HORÁRIA}} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{DURAÇÃO DA HORA-AULA}} \\ 
-    
-    \multicolumn{3}{l}{1 crédito = 20 horas-aula} & \multicolumn{3}{l}{50 minutos} \\
-    
-    
-    \bottomrule
-    
-    % \textbf{Denominação} & Curso Técnico Subsequente em Informática para Internet \\ \hline
-    
-    % \textbf{Titulação conferida} &  Técnico  em Informática para \newline Internet \\ \hline
-    
-    % \textbf{Nível} &  M\'edio \\ \hline
-    
-    % % \textbf{Forma de articulação com o Ensino Médio} &  Subsequente \\ \hline
-    
-    % \textbf{Modalidade de oferta} & Presencial \\ \hline
-    
-    % \textbf{Duração} &  1 ano e meio (18 meses) \\ \hline
-    
-    % \textbf{Periodicidade} &  Semestral \\ \hline
-    
-    % \textbf{Forma de ingresso} &  Processo seletivo \\ \hline
-    
-    % \textbf{Número de vagas anuais} &  50 \\ \hline
-    
-    % \textbf{Turno de funcionamento} &  Integral \\ \hline
-    
-    % \textbf{Ano e semestre do início do funcionamento} &  2021.1 \\ \hline
-    
-    % \textbf{Carga horária dos componentes curriculares (disciplinas)} &  Integral \\ \hline
-    
-    % \textbf{Carga horária da prática profissional} &  100 horas \\ \hline
-    
-    %  \textbf{Carga horária total} &  100 horas \\ \hline
-    
-    
-    %  \textbf{Sistema de carga horária} &  1 crédito = 20 horas \\ \hline
-    
-    %     \textbf{Duração da hora-aula} & 50 minutos \\ \hline
-
+\begin{tabularx}{\linewidth}{X X}
+	\multicolumn{2}{c}{\cellcolor{gray!10}\textbf{Informações sobre carga horária do curso}} \\
+	
+	\cellcolor{gray!10}\textbf{Carga horária total para integralização} &
+	\cellcolor{gray!10}\textbf{Carga horária dos componentes curriculares (disciplinas)} \\
+	
+	1000h & 1000h\\
+	
+	\cellcolor{gray!10}\textbf{Carga horária dos componentes curriculares optativos} &
+	\cellcolor{gray!10}\textbf{Carga horária total da Prática Profissional Supervisionada no curso} \\
+	
+	120h & 40h\\
+	
+	 
 \end{tabularx}
 
-
+% 
+% \begin{tabularx}{\linewidth}{X X X X X X}
+%     
+%     
+%         \multicolumn{6}{c}{\textbf{INFORMAÇÕES GERAIS DO CURSO}} \\
+% \toprule
+%     \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{DENOMINAÇÃO DO CURSO}} \\
+%     
+%     \multicolumn{6}{l}{Curso Técnico Subsequente em Informática para Internet} \\
+%     
+%         
+%     \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{TITULAÇÃO CONFERIDA}} \\
+%     
+%     \multicolumn{6}{l}{Técnico em Informática para Internet} \\
+%     
+%     %%%%%
+%     \multicolumn{1}{l}{\cellcolor{gray!20}\textbf{NÍVEL}} & \multicolumn{5}{l}{\cellcolor{gray!20}\textbf{\qquad~FORMA DE ARTICULAÇÃO COM O ENSINO MÉDIO}} \\
+%     
+%     \multicolumn{1}{l}{Médio} & \multicolumn{5}{l}{\qquad~~Subsequente} \\
+%     
+%     %%%%%
+%     \multicolumn{3}{ p{.5\linewidth-2\tabcolsep }  }{\cellcolor{gray!20}\textbf{MODALIDADE DE ENSINO}} & \multicolumn{3}{ p{.5\linewidth-2\tabcolsep } }{\cellcolor{gray!20}\textbf{DURAÇÃO DO CURSO}} \\
+%     
+%     \multicolumn{3}{l}{Presencial} & \multicolumn{3}{l}{Entre 3 e 6 semestres -- 1,5 anos} \\
+%     %%%%
+%     \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{PERIODICIDADE}} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{FORMA DE INGRESSO}} \\ 
+%     
+%     \multicolumn{3}{l}{Semestral} & \multicolumn{3}{l}{Processo Seletivo Regular, Diplomados,} \\
+% 
+%    \multicolumn{3}{l}{} & \multicolumn{3}{l}{Transferência e Matrícula Especial.} \\
+%      
+%      
+%       %%%%
+%     \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{NÚMERO DE VAGAS ANUAIS}} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{TURNO DE FUNCIONAMENTO}} \\ 
+%     
+%     \multicolumn{3}{l}{60} & \multicolumn{3}{l}{Noturno} \\
+%     
+%     
+%     \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{ANO E SEMESTRE DO INÍCIO DO FUNCIONAMENTO}} \\
+%     
+%     \multicolumn{6}{l}{2022.1} \\
+%     
+%     
+%     
+%     \multicolumn{2}{l}{\cellcolor{gray!20}\textbf{CARGA HORÁRIA TOTAL}} &
+%     \multicolumn{4}{l}{\cellcolor{gray!20}\textbf{CARGA HORÁRIA DOS COMPONENTES CURRICULARES}} \\
+%     
+%     \multicolumn{2}{l}{1200 horas-aula (1000 horas)} &
+%     \multicolumn{4}{l}{1200 horas-aula (1000 horas)} 
+%      \\
+% 
+%     
+%     
+%     %%%%%
+%     
+%     
+%     
+%      
+%     \multicolumn{6}{l}{\cellcolor{gray!20}\textbf{CARGA HORÁRIA TOTAL DA PRÁTICA PROFISSIONAL}} \\
+%     
+%     \multicolumn{6}{l}{~160 horas-aula (133 horas e 20 minutos)} \\
+%     
+%     
+%       %%%%
+%     \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{SISTEMA DE CARGA HORÁRIA}} & \multicolumn{3}{l}{\cellcolor{gray!20}\textbf{DURAÇÃO DA HORA-AULA}} \\ 
+%     
+%     \multicolumn{3}{l}{1 crédito = 20 horas-aula} & \multicolumn{3}{l}{50 minutos} \\
+%     
+%     
+%     \bottomrule
+%     
+%     % \textbf{Denominação} & Curso Técnico Subsequente em Informática para Internet \\ \hline
+%     
+%     % \textbf{Titulação conferida} &  Técnico  em Informática para \newline Internet \\ \hline
+%     
+%     % \textbf{Nível} &  M\'edio \\ \hline
+%     
+%     % % \textbf{Forma de articulação com o Ensino Médio} &  Subsequente \\ \hline
+%     
+%     % \textbf{Modalidade de oferta} & Presencial \\ \hline
+%     
+%     % \textbf{Duração} &  1 ano e meio (18 meses) \\ \hline
+%     
+%     % \textbf{Periodicidade} &  Semestral \\ \hline
+%     
+%     % \textbf{Forma de ingresso} &  Processo seletivo \\ \hline
+%     
+%     % \textbf{Número de vagas anuais} &  50 \\ \hline
+%     
+%     % \textbf{Turno de funcionamento} &  Integral \\ \hline
+%     
+%     % \textbf{Ano e semestre do início do funcionamento} &  2021.1 \\ \hline
+%     
+%     % \textbf{Carga horária dos componentes curriculares (disciplinas)} &  Integral \\ \hline
+%     
+%     % \textbf{Carga horária da prática profissional} &  100 horas \\ \hline
+%     
+%     %  \textbf{Carga horária total} &  100 horas \\ \hline
+%     
+%     
+%     %  \textbf{Sistema de carga horária} &  1 crédito = 20 horas \\ \hline
+%     
+%     %     \textbf{Duração da hora-aula} & 50 minutos \\ \hline
+% 
+% \end{tabularx}
+% 
+% 
 
 
 % ----------------------------------------------------------
@@ -754,27 +787,28 @@ Para a construção da proposta curricular para o Curso Técnico Subsequente em 
 \section{Normativas nacionais comuns aos cursos técnicos e de graduação}
 
 \begin{itemize}
-   \item  Lei \n~9.394, de 20 de dezembro de 1996. Estabelece as Diretrizes e Bases da Educação Nacional (LDB);
-\item Resolução CNE/CP \n~1, de 17 de junho de 2004. Institui Diretrizes Curriculares Nacionais para a Educação das Relações Étnico-Raciais e para o Ensino de História e Cultura Afro-Brasileira e Africana;
- Decreto \n~5.626, de 22 de dezembro de 2005. Regulamenta a Lei \n~10.436, de 24 de abril
-de 2002, que dispõe sobre a Língua Brasileira de Sinais (Libras), e o art. 18 da Lei nº 10.098,
+   \item Lei \nord{9.394}, de 20 de dezembro de 1996. Estabelece as Diretrizes e Bases da Educa\c{c}\~ao Nacional (LDB);
+\item Resolu\c{c}\~ao CNE/CP \nord{1}, de 17 de junho de 2004. Institui Diretrizes Curriculares Nacionais para a Educa\c{c}\~ao das Rela\c{c}\~oes \'Etnico-Raciais e para o Ensino de Hist\'oria e Cultura Afro-Brasileira e Africana;
+Decreto \nord{5.626}, de 22 de dezembro de 2005. Regulamenta a Lei \nord{10.436}, de 24 de abril
+de 2002, que disp\~oe sobre a L\'i­ngua Brasileira de Sinais (Libras), e o art. 18 da Lei \nord{10.098},
 de 19 de dezembro de 2000;
-\item  Resolução CNE/CES \n~3, de 2 de julho de 2007. Dispõe sobre procedimentos a serem
-adotados quanto ao conceito de hora-aula, e dá outras providências.
-\item  Lei \n~11.741/2008. Altera dispositivos da Lei \n~9.394, de 20 de dezembro de 1996, que
-estabelece as diretrizes e bases da educação nacional, para redimensionar, institucionalizar
-e integrar as ações da educação profissional técnica de nível médio, da educação de jovens
-e adultos e da educação profissional e tecnológica;
-\item  Lei \n~11.892, de 29 de dezembro de 2008. Institui a Rede Federal de Educação Profissional,
-Científica e Tecnológica, cria o Instituto Federal do Ceará e dá outras providências;
-\item Resolução CNE/CP \n~1, de 30 de maio de 2012. Estabelece as Diretrizes Nacionais para a
-Educação em Direitos Humanos;
-\item  Resolução CNE/CP \n~2, de 15 de junho de 2012. Estabelece as Diretrizes Curriculares
-Nacionais para a Educação Ambiental;
-\item  Decreto \n~9.057, de 25 de maio de 2017. Regulamenta o art. 80 da Lei \n~9.394, de 20 de
-dezembro de 1996, que estabelece as diretrizes e bases da educação nacional;
-\item Resolução CNE/CP \n~1, de 05 de janeiro de 2021. Define as Diretrizes Curriculares Nacionais
-Gerais para a Educação Profissional e Tecnológica.
+\item  Resolu\c{c}\~o CNE/CES \nord{3}, de 2 de julho de 2007. Disp\~oe sobre procedimentos a serem
+adotados quanto ao conceito de hora-aula, e d\'a outras provid\^encias.
+\item  Lei \nord{11.741/2008}. Altera dispositivos da Lei \nord{9.394}, de 20 de dezembro de 1996, que
+estabelece as diretrizes e bases da educa\c{c}\~ao nacional, para redimensionar, institucionalizar
+e integrar as a\c{c}\~oes da educa\c{c}\~ao profissional t\'ecnica de n\'ivel m\'edio, da educa\c{c}\~ao de jovens
+e adultos e da educa\c{c}\~ao profissional e tecnol\'ogica;
+\item Lei \nord{11.892}, de 29 de dezembro de 2008. Institui a Rede Federal de Educa\c{c}\~ao Profissional,
+Cient\'ifica e Tecnol\'ogica, cria o Instituto Federal do Cear\'a e d\'a outras provid\^encias;
+\item Resolu\c{c}\~ao CNE/CP \nord{1}, de 30 de maio de 2012. Estabelece as Diretrizes Nacionais para a
+Educa\c{c}\~ao em Direitos Humanos;
+
+\item Resolu\c{c}\~ao CNE/CP \nord{2}, de 15 de junho de 2012. Estabelece as Diretrizes Curriculares
+Nacionais para a Educa\c{c}\~ao Ambiental;
+\item Decreto \nord{9.057}, de 25 de maio de 2017. Regulamenta o art. 80 da Lei \nord{9.394}, de 20 de
+dezembro de 1996, que estabelece as diretrizes e bases da educa\c{c}\~ao nacional;
+\item Resolu\c{c}\~ao CNE/CP \nord{1}, de 05 de janeiro de 2021. Define as Diretrizes Curriculares Nacionais
+Gerais para a Educa\c{c}\~ao Profissional e Tecnol\'ogica.
 \end{itemize}
 
 \section{Normativas Institucionais Comuns aos Cursos Técnicos e de Graduação}
@@ -817,66 +851,65 @@ Gerais para a Educação Profissional e Tecnológica.
 
 \begin{itemize}
     
-   \item Lei \n~9.503, de 23 de setembro de 1997. Institui o Código de Trânsito Brasileiro;
+   \item Lei \nord{9.503}, de 23 de setembro de 1997. Institui o Código de Trânsito Brasileiro;
 
-   \item Lei \n~10.741, de 1º de outubro de 2003. Dispõe sobre o Estatuto do Idoso e dá outras
+   \item Lei \nord{10.741}, de 1º de outubro de 2003. Dispõe sobre o Estatuto do Idoso e dá outras
 providências. Trata do processo de envelhecimento, respeito e valorização do idoso, de
 forma a eliminar o preconceito e a produzir conhecimentos sobre a matéria;
 
-   \item Lei \n~10.793, de 1º de dezembro de 2003. Alterando a redação do art. 26, § 3º, e do art. 92
-da Lei \n~9.394, de 20 de dezembro de 1996, trata da Educação Física, integrada à proposta
+   \item Lei \nord{10.793}, de 1º de dezembro de 2003. Alterando a redação do art. 26, § 3º, e do art. 92
+da Lei \nord{9.394}, de 20 de dezembro de 1996, trata da Educação Física, integrada à proposta
 pedagógica da instituição de ensino, prevendo os casos em que sua prática seja facultativa
 ao estudante;
 
-   \item Decreto \n~5.154, de 23 de julho de 2004. Regulamenta o § 2º do art. 36 e os arts. 39 a 41 da
-Lei \n~9.394, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação
+   \item Decreto \nord{5.154}, de 23 de julho de 2004. Regulamenta o § 2º do art. 36 e os arts. 39 a 41 da
+Lei \nord{9.394}, de 20 de dezembro de 1996, que estabelece as diretrizes e bases da educação
 nacional e dá outras providências;
 
-   \item Lei \n~11.645, de 10 de março de 2008. Altera a Lei \n~9.394, de 20 de dezembro de 1996,
-modificada pela Lei \n~10.639, de 9 de janeiro de 2003, que estabelece as diretrizes e bases
+   \item Lei \nord{11.645}, de 10 de março de 2008. Altera a Lei \nord{9.394}, de 20 de dezembro de 1996,
+modificada pela Lei \nord{10.639}, de 9 de janeiro de 2003, que estabelece as diretrizes e bases
 da educação nacional, para incluir no currículo oficial da rede de ensino a obrigatoriedade
 da temática  ``História e Cultura Afro-Brasileira e Indígena'';
 
-   \item Lei \n~11.684, de 2 de junho de 2008. Altera o art. 36 da Lei \n~9.394, de 20 de dezembro de
+   \item Lei \nord{11.684}, de 2 de junho de 2008. Altera o art. 36 da Lei \nord{9.394}, de 20 de dezembro de
 1996, que estabelece as diretrizes e bases da educação nacional, para incluir a Filosofia e a
 Sociologia como disciplinas obrigatórias nos currículos do ensino médio;
 
-   \item Lei \n~11.769, de 18 de agosto de 2008. Altera a Lei \n~9.394, de 20 de dezembro de 1996,
+   \item Lei \nord{11.769}, de 18 de agosto de 2008. Altera a Lei \nord{9.394}, de 20 de dezembro de 1996,
 Lei de Diretrizes e Bases da Educação, para dispor sobre a obrigatoriedade do ensino da
 música na educação básica;
 
-   \item Lei \n~11.947, de 16 de junho de 2009. Dispõe sobre o atendimento da alimentação escolar
-e do Programa Dinheiro Direto na Escola aos alunos da educação básica; altera a Lei nº
-10.880, de 9 de junho de 2004, a \n~11.273, de 6 de fevereiro de 2006 e a \n~11.507, de 20 de julho de 2007; revoga dispositivos da Medida Provisória \n~2.178-36, de 24 de agosto
-de 2001, e a Lei \n~8.913, de 12 de julho de 1994; e dá outras providências. Dispõe sobre o
+   \item Lei \nord{11.947}, de 16 de junho de 2009. Dispõe sobre o atendimento da alimentação escolar
+e do Programa Dinheiro Direto na Escola aos alunos da educação básica; altera a Lei \nord{10.880}, de 9 de junho de 2004, a \nord{11.273}, de 6 de fevereiro de 2006 e a \nord{11.507}, de 20 de julho de 2007; revoga dispositivos da Medida Provisória \nord{2.178-36}, de 24 de agosto
+de 2001, e a Lei \nord{8.913}, de 12 de julho de 1994; e dá outras providências. Dispõe sobre o
 tratamento transversal e integral que deve ser dado à temática de educação alimentar e
 nutricional, permeando todo o currículo;
 
-   \item Lei \n~13.006, de 26 de junho de 2014. Acrescenta o § 8º ao art. 26 da Lei \n~9.394, de 20
+   \item Lei \nord{13.006}, de 26 de junho de 2014. Acrescenta o § 8º ao art. 26 da Lei \nord{9.394}, de 20
 de dezembro de 1996, que estabelece as diretrizes e bases da educação nacional, para
 obrigar a exibição de filmes de produção nacional nas escolas de educação básica;
 
-   \item Lei \n~13.010, de 26 de junho de 2014. Altera a Lei \n~8.069, de 13 de julho de 1990 (Estatuto
+   \item Lei \nord{13.010}, de 26 de junho de 2014. Altera a Lei \nord{8.069}, de 13 de julho de 1990 (Estatuto
 da Criança e do Adolescente), para estabelecer o direito da criança e do adolescente
 de serem educados e cuidados sem o uso de castigos físicos ou de tratamento cruel ou
-degradante, e altera a Lei \n~9.394, de 20 de dezembro de 1996;
+degradante, e altera a Lei \nord{9.394}, de 20 de dezembro de 1996;
 
-   \item Lei \n~13.415 de 2017. Altera as Leis \n~9.394 de 20 de dezembro de 1996, que estabelece as
+   \item Lei \nord{13.415} de 2017. Altera as Leis \nord{9.394} de 20 de dezembro de 1996, que estabelece as
 diretrizes e bases da educação nacional, e 11.494, de 20 de junho 2007, que regulamenta
 o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos
 Profissionais da Educação, a Consolidação das Leis do Trabalho - CLT, aprovada pelo
-Decreto-Lei \n~5.452, de 1º de maio de 1943, e o Decreto-Lei \n~236, de 28 de fevereiro
-de 1967; revoga a Lei \n~11.161, de 5 de agosto de 2005; e institui a Política de Fomento à
+Decreto-Lei \nord{5.452}, de 1º de maio de 1943, e o Decreto-Lei \nord{236}, de 28 de fevereiro
+de 1967; revoga a Lei \nord{11.161}, de 5 de agosto de 2005; e institui a Política de Fomento à
 Implementação de Escolas de Ensino Médio em Tempo Integral;
 
-   \item Resolução CNE/CEB \n~3, de 21 de novembro de 2018. Atualiza as Diretrizes Curriculares
+   \item Resolução CNE/CEB \nord{3}, de 21 de novembro de 2018. Atualiza as Diretrizes Curriculares
 Nacionais para o Ensino Médio;
 
    \item Catálogo Nacional dos Cursos Técnicos – CNCT, quarta edição, conforme disposto na
-Resolução \n~02, de 15 de dezembro de 2020, da Câmara de Educação Básica do Conselho
+Resolução \nord{02}, de 15 de dezembro de 2020, da Câmara de Educação Básica do Conselho
 Nacional de Educação;
 
-   \item Lei \n~14.164, de 10 de junho de 2021. Altera a Lei \n~9.394, de 20 de dezembro de 1996 (Lei
+   \item Lei \nord{14.164}, de 10 de junho de 2021. Altera a Lei \nord{9.394}, de 20 de dezembro de 1996 (Lei
 de Diretrizes e Bases da Educação Nacional), para incluir conteúdo sobre a prevenção da
 violência contra a mulher nos currículos da educação básica, e institui a Semana Escolar de
 Combate à Violência contra a Mulher.
@@ -1005,69 +1038,123 @@ Conhecimentos e saberes relacionados aos processos de planejamento e execução 
 \chapter{Metodologia}
 
 
-O fazer pedagógico consiste no processo de construção e reconstrução da aprendizagem a partir da dialética da intenção da tarefa partilhada, em que todos são sujeitos do conhecer e aprender, visando a construção do conhecimento pautada na reflexão, no debate e na crítica, numa perspectiva criativa, interdisciplinar e contextualizada.
-%
-Para isso, é necessário entender que o currículo vai além das atividades convencionais da sala de aula, pois consiste em tudo que afeta direta ou indiretamente o processo de ensino e aprendizagem. Portanto, devem ser consideras atividades complementares, tais como {projetos integradores} interdisciplinares, iniciação científica e tecnológica, programas acadêmicos consistentes, programa de extensão, visitas técnicas, eventos científicos, além de atividades culturais, políticas e sociais, dentre outras desenvolvidas pelos alunos durante o curso.
+O fazer pedagógico consiste no processo de construção e reconstrução da
+aprendizagem a partir da dialética da intenção da tarefa partilhada, em que
+todos são sujeitos do conhecer e aprender, visando a construção do conhecimento
+pautada na reflexão, no debate e na crítica, numa perspectiva criativa,
+interdisciplinar e contextualizada.
+Para isso, é necessário entender que o currículo vai além das atividades
+convencionais da sala de aula, pois consiste em tudo que afeta direta ou
+indiretamente o processo de ensino e aprendizagem. Portanto, devem ser
+consideras atividades complementares, tais como {projetos integradores}
+interdisciplinares, iniciação científica e tecnológica, programas acadêmicos
+consistentes, programa de extensão, visitas técnicas, eventos científicos, além
+de atividades culturais, políticas e sociais, dentre outras desenvolvidas pelos
+alunos durante o curso.
 
-A metodologia consiste na adoção de práticas pedagógicas presenciais que busquem o desenvolvimento de competências por meio da aprendizagem ativa do aluno, estimulando a busca por sua autonomia e o seu protagonismo no processo de ensino-aprendizagem. As atividades propostas têm como princípio a relação teoria–prática, visando a formação de profissionais que atendam as demandas do setor produtivo e as novas concepções de desenvolvimento socioeconômico.
+A metodologia consiste na adoção de práticas pedagógicas presenciais que busquem
+o desenvolvimento de competências por meio da aprendizagem ativa do aluno,
+estimulando a busca por sua autonomia e o seu protagonismo no processo de
+ensino-aprendizagem. As atividades propostas têm como princípio a relação
+teoria–prática, visando a formação de profissionais que atendam as demandas do
+setor produtivo e as novas concepções de desenvolvimento socioeconômico.
 
-Assim, os princípios pedagógicos, filosóficos e legais que subsidiam a organização do Curso Técnico Subsequente em Informática para Internet, na forma subsequente, em que a relação teoria-prática é o princípio fundamental, estão associados à estrutura curricular do curso ao lado de práticas profissionais por meio de projetos integradores interdisciplinares.
+Assim, os princípios pedagógicos, filosóficos e legais que subsidiam a
+organização do Curso Técnico Subsequente em Informática para Internet, na forma
+subsequente, em que a relação teoria-prática é o princípio fundamental, estão
+associados à estrutura curricular do curso ao lado de práticas profissionais por
+meio de projetos integradores interdisciplinares.
 
-Em um curso dessa especificidade, assim como as demais atividades de formação acadêmica, o uso de tecnologias de informação e comunicação bem como as aulas práticas e de laboratório são essenciais para que o aluno possa experimentar metodologia pedagógica diferenciada, adequada ao ensino de tecnologia. Inicialmente, o aluno terá contato com os procedimentos que serão utilizados em aulas práticas, realizadas por toda a turma, acompanhados pelo professor.% \textcolor{red}{Além disso, os alunos do curso têm a oportunidade de, semestralmente, participarem do processo de seleção para atividades de monitoria nas disciplinas, com ou sem remuneração. O exercício de monitoria permite adquirir créditos na modalidade de atividades complementares.}
+Em um curso dessa especificidade, assim como as demais atividades de formação
+acadêmica, o uso de tecnologias de informação e comunicação bem como as aulas
+práticas e de laboratório são essenciais para que o aluno possa experimentar
+metodologia pedagógica diferenciada, adequada ao ensino de tecnologia.
+Inicialmente, o aluno terá contato com os procedimentos que serão utilizados em
+aulas práticas, realizadas por toda a turma, acompanhados pelo professor. 
 
 
-A cada semestre, os alunos terão a missão de implementar um projeto integrador, totalizando 03 (três) ao longo do curso, criando assim um portfólio de ações que compreendem o desenvolvimento de competências e possibilitará a formação de profissionais com autonomia intelectual e moral, aptos ao exercício da cidadania e conscientes de sua responsabilidade com a sustentabilidade ambiental, dentre outros aspectos formadores. 
+No final do curso, os alunos terão a missão de implementar um projeto integrador multidisciplinar, criando assim um portfólio de ações que
+compreendem o desenvolvimento de competências e possibilitará a formação de
+profissionais com autonomia intelectual e moral, aptos ao exercício da cidadania
+e conscientes de sua responsabilidade com a sustentabilidade ambiental, dentre
+outros aspectos formadores. Devido a este caráter interdisciplinar, os projetos integradores também proverão
+alicerces para a prática científica. Tal articulação deve ser uma preocupação
+constante do professor. 
 
-Devido a este caráter interdisciplinar, os projetos integradores também proverão alicerces para a prática científica. Tal articulação deve ser uma preocupação constante do professor. %\textcolor{red}{Assim, tão quanto oportuno, esses projetos podem estar vinculados a uma bolsa de pesquisa de iniciação científica dos programas de pesquisa regidas por editais do IFCE, como PIBIC e PIBIT, a programas de pesquisa próprios do campus Tauá, entre outros}.
+Por se tratar de um curso  noturno, a matriz está estruturada por disciplinas
+distribuídas em três semestres letivos com uma aula equivalendo a 50 minutos.
+Devido cada aula do turno noturno equivaler a 50 minutos e a carga-horária das
+disciplinas serem contabilizadas em hora-relógio (60 minutos), torna-se
+necessário compensar os minutos faltantes em aulas adicionais não presenciais no
+semestre letivo a fim de manter os componentes curriculares compatíveis entre os
+turnos, conforme
+\href{https://sei.ifce.edu.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?pSdNG33E_H5RgkZP0Y1tBOG_OM2Qv61jOOoqx4oE7sNAWcCdIhmOMLz3x2VuFbFYA6o55XpOC_JbvRh_e41TnnlYiQfR74_ZQ4xraRCcRkpFd9zHQ3RL361JLigfqkwQ}{Instrução
+Normativa IFCE Nº 16, de 07 de julho de 2023}. Assim, as disciplinas com
+carga-horária de 80 horas terão 80 aulas presenciais e 16 aulas
+registradas mediante atividades não presenciais. Já as disciplinas de 40 horas
+terão 40 aulas presenciais  e 8 aulas registradas como atividades
+não presenciais.
+
+A Instrução Normativa IFCE Nº 16, de 07 de julho de 2023, indica que ``as
+atividades não presenciais são atividades pedagógicas desenvolvidas pelos
+estudantes sob a orientação e acompanhamento do professor.'' Essas atividades
+poderão ser realizadas, por exemplo, através de estudos de caso, relatórios, listas
+de exercícios, resoluções de problemas, trabalho de pesquisa, desenvolvimento de
+produtos, projetos, seminários, estudos dirigidos, jogos, fichas de leitura, resenhas
+e/ou relatórios. As atividades podem ser desenvolvidas de forma individual ou em
+grupo.
 
 
-Dessa forma, a metodologia adotada neste curso propiciará condições para que o educando possa vivenciar e desenvolver suas competências cognitiva (aprender a aprender); produtiva (aprender a fazer); relacional (aprender a conviver) e pessoal (aprender a ser).
+Dessa forma, a metodologia adotada neste curso propiciará condições para que o
+educando possa vivenciar e desenvolver  competências de natureza cognitiva (aprender a
+aprender), produtiva (aprender a fazer), relacional (aprender a conviver) e
+pessoal (aprender a ser).
 
 
 
 \chapter{Organização curricular} 
 
-O curso está estruturado em uma matriz curricular (\autoref{quadro:disciplinas}) constituída por:
+O curso está estruturado em uma matriz curricular (\autoref{quadro:disciplinas})
+constituída por:
 \begin{alineas}
-	\item um núcleo tecnológico em Computação (de formação profissional em Informática para Internet), contemplando métodos, técnicas, ferramentas e outros elementos das tecnologias relativas aos componentes curriculares:  Lógica de Programação, Redes de Computadores, Web Design, Sistemas Operacionais, Programação Orientada a Objetos, Engenharia de Software, Desenvolvimento WEB I, Servidores WEB, Banco de Dados, Programação para Dispositivos Móveis, Análise e Projeto de Sistemas, Desenvolvimento WEB II e Segurança em Redes; e 
-	\item um núcleo Humanístico, Empreendedor e Multidisciplinar, provendo percepções socioculturais e organizacionais através de uma visão humanística das questões sociais e profissionais, em sintonia com os princípios de cidadania e ética.  Além disso, inclui a base teórica e prática para que o egresso possa atuar de forma empreendedora no planejamento, na organização, na gestão e no controle das empresas. Estes temas são abordados através dos componentes: {Produção de Texto Técnico,  Empreendedorismo, Gestão de Projetos, Artes, Educação Física, Libras}, Projeto Integrador I, Projeto Integrador II e Projeto Integrador III.
+	\item um núcleo tecnológico em Computação (de formação profissional em Informática para Internet), contemplando métodos, técnicas, ferramentas e outros elementos das tecnologias relativas aos componentes curriculares de  Lógica de Programação, Redes de Computadores, Tecnologias WEB, Introdução à Computação, Programação Orientada a Objetos, Engenharia de Software, Desenvolvimento WEB I, Estrutura de Dados, Testes e Qualidade de Software, Banco de Dados, Programação para Dispositivos Móveis, Análise e Projeto de Sistemas, Desenvolvimento WEB II e Desenvolvimento e Operações; e 
+	\item um núcleo Humanístico, Empreendedor e Multidisciplinar, provendo percepções socioculturais e organizacionais através de uma visão humanística das questões sociais e profissionais, em sintonia com os princípios de cidadania e ética.  Além disso, inclui a base teórica e prática para que o egresso possa atuar de forma empreendedora no planejamento, na organização, na gestão e no controle das empresas. Estes temas são abordados através dos componentes de {Inglês Técnico,  Ética e Responsabilidade Socioambiental, Empreendedorismo, Gestão de Projetos, Artes, Educação Física, Libras} e Projeto Integrador Multidisciplinar.
 
 \end{alineas}
 
-Portanto, propõe-se que a capacitação do estudante contemple a formação teórica e prática de forma indissociável, no sentido de fazer do sujeito um cidadão preparado para a vida em sociedade e para o exercício profissional, dominando habilidades e competências que permitirão a atuação de maneira autônoma, eficaz e inovadora.
+Portanto, propõe-se que a capacitação do estudante contemple a formação teórica
+e prática de forma indissociável, no sentido de fazer do sujeito um cidadão
+preparado para a vida em sociedade e para o exercício profissional, dominando
+habilidades e competências que permitirão a atuação de maneira autônoma, eficaz
+e inovadora.
 
-O Curso Técnico Subsequente em Informática para Internet, na forma subsequente, compreende 01 ano e meio (18 meses) de duração, sendo de periodicidade semestral e organizado por meio de uma sólida base de conhecimento científico, tecnológico e humanístico. O curso possui uma carga horária total de componentes curriculares de 1.040 horas e 160 horas de prática profissional obrigatórias que estão relacionadas ao planejamento, concepção e execução de projetos integradores.
+O Curso Técnico Subsequente em Informática para Internet, na forma subsequente, compreende 01 ano e meio (18 meses) de duração, sendo de periodicidade semestral e organizado por meio de uma sólida base de conhecimento científico, tecnológico e humanístico. O curso possui uma carga horária total de componentes curriculares de 1.000 horas (1.200 horas/aulas) e 40 horas de prática profissional obrigatórias que estão relacionadas ao planejamento, concepção e execução de um Projeto Integrador Multidisciplinar.
 
 A cada semestre, um certo percentual de horas de prática profissional é orquestrado, propondo assim, uma visão holística do saber, ou seja, da não fragmentação do conhecimento expresso nas disciplinas, bem como a possibilidade de realizar atividades em grupo a fim de que os educandos possam desenvolver o ser e também a competência de se relacionar e aprender em equipe.
-\begin{landscape}
+\vfill
 
+%\begin{landscape}
 \section{Matriz curricular}
-
 \newcommand{\ccel}[1]{\multicolumn{1}{c}{#1}}
-
 \begin{quadro}[h]
 \IBGEtab{
-\caption{Disciplinas que compõem a Formação Técnica do curso, em hora-aula.}\label{quadro:disciplinas}
+	\caption{Disciplinas que compõem a Formação Técnica do curso, em hora-aula.}
+	\label{quadro:disciplinas}
 }{
-
-\small
-
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
-\begin{tabularx}{\linewidth}{cXrrrccc}
+\centering
+\begin{tabular}{p{1.2cm}p{4.2cm} p{1cm} p{1.2cm} p{1.3cm} p{.8cm} p{1cm} p{1.6cm}}
 \hline
 \rowcolor[HTML]{212121}
-& & \multicolumn{3}{c}{\color[HTML]{FFFFFF}\textbf{Carga Horária}} & &  & \\
+& & \multicolumn{4}{c}{\color[HTML]{FFFFFF}\textbf{Carga Horária}} &   & \\
 \rowcolor[HTML]{212121} 
-{\color[HTML]{FFFFFF} \textbf{Código}} &
-  \muticolumn{1}{c}{{\color[HTML]{FFFFFF} \textbf{Componente Curricular}}} &
-  {\color[HTML]{FFFFFF} \textbf{Total}} &
-  {\color[HTML]{FFFFFF} \textbf{Teórica}} &
-  {\color[HTML]{FFFFFF} \textbf{Prática}} &
-  {\color[HTML]{FFFFFF} \textbf{PPS}} &
-  {\color[HTML]{FFFFFF} \textbf{Créditos}} &
-  {\color[HTML]{FFFFFF} \textbf{Pré-requisitos}} \\ \hline
+   {\color[HTML]{FFFFFF}\textbf{Código}} &
+  {\color[HTML]{FFFFFF}\textbf{Componente  curricular}} &
+  {\color[HTML]{FFFFFF}\textbf{Total}} &
+  {\color[HTML]{FFFFFF}\textbf{Teórica}} &
+  {\color[HTML]{FFFFFF}\textbf{Prática}} &
+  {\color[HTML]{FFFFFF}\textbf{PPS}} &
+  {\color[HTML]{FFFFFF}\textbf{Créd.}} &
+  {\color[HTML]{FFFFFF}\textbf{Pré-requisitos}} \\  \midrule
 \rowcolor[HTML]{EFEFEF} 
 TSII.101 & Introdução à Computação                 & 40 & 20 & 20 & 0  & 2 & -                   \\
 TSII.102 & Lógica de Programação                   & 80 & 40 & 40 & 0  & 4 & -                   \\
@@ -1076,35 +1163,41 @@ TSII.103 & Inglês Técnico                          & 40 & 20 & 20 & 0  & 2 & -
 TSII.104 & Tecnologias WEB                         & 80 & 40 & 40 & 0  & 4 & -                   \\
 \rowcolor[HTML]{EFEFEF} 
 TSII.105 & Redes de Computadores                   & 80 & 40 & 40 & 0  & 4 & -                   \\
-TSII.106 & Banco de Dados                          & 80 & 40 & 40 & 0  & 4 & -                   \\
-\\
+TSII.106 & Banco de Dados                          & 80 & 40 & 40 & 0  & 4 & -                   \\ \midrule
+
 \rowcolor[HTML]{EFEFEF} 
 TSII.201 & Programação Orientada a Objetos         & 80 & 40 & 40 & 0  & 4 & TSII.102            \\
 TSII.202 & Engenharia de Software                  & 80 & 40 & 40 & 0  & 4 & -                   \\
 \rowcolor[HTML]{EFEFEF} 
-TSII.203 & Ética e Responsabilidade Socioambiental & 40 & 28 & 0  & 12 & 2 & -                   \\
+TSII.203 & Ética e Responsabilidade \newline Socioambiental & 40 & 28 & 0  & 12 & 2 & -                   \\
 TSII.204 & Empreendedorismo                        & 40 & 28 & 0  & 12 & 2 & -                   \\
 \rowcolor[HTML]{EFEFEF} 
 TSII.205 & Estrutura de Dados                      & 80 & 40 & 40 & 0  & 4 & TSII.102            \\
-TSII.206 & Desenvolvimento WEB I                   & 80 & 40 & 40 & 0  & 4 & TSII.102 e TSII.104 \\
-                            \\
+TSII.206 & Desenvolvimento WEB I                   & 80 & 40 & 40 & 0  & 4 & TSII.102 e TSII.104 \\\midrule
+
 \rowcolor[HTML]{EFEFEF} 
-TSII.301 & Programação para Dispositivos Móveis    & 80 & 40 & 40 & 0  & 4 & TSII.106 e TSII.201 \\
+TSII.301 & Programação para  \newline Dispositivos Móveis    & 80 & 40 & 40 & 0  & 4 & TSII.106 e TSII.201 \\
 TSII.302 & Análise e Projeto de Sistemas           & 40 & 20 & 20 & 0  & 2 & TSII.201 e TSII.202 \\
 \rowcolor[HTML]{EFEFEF} 
-TSII.303 & Desenvolvimento e Operações             & 80 & 40 & 40 & 0  & 4 & TSII.102 e TSII.105 \\
-TSII.304 & Projeto Integrador Multidisciplinar     & 40 & 24 & 0  & 16 & 2 & TSII.206            \\
+TSII.303 & Desenvolvimento e  \newline Operações             & 80 & 40 & 40 & 0  & 4 & TSII.102 e TSII.105 \\
+TSII.304 & Projeto Integrador  \newline Multidisciplinar     & 40 & 24 & 0  & 16 & 2 & TSII.206            \\
 \rowcolor[HTML]{EFEFEF} 
 TSII.305 & Desenvolvimento WEB II                  & 80 & 40 & 40 & 0  & 4 & TSII.201 e TSII.206 \\
 TSII.306 & Gestão de Projetos                      & 40 & 20 & 20 & 0  & 2 & TSII.204            \\
 \rowcolor[HTML]{EFEFEF} 
-TSII.307 & Testes e Qualidade de Software          & 40 & 20 & 20 & 0  & 2 & TSII.202            \\ \hline
-\end{tabularx}
+TSII.307 & Testes e Qualidade  \newline de Software          & 40 & 20 & 20 & 0  & 2 & TSII.202            \\ \midrule
+
+TSII.401 & Artes          & 40 & 20 & 20 & 0  & 2 & -          \\ 
+TSII.402 & Educação Física          & 40 & 15 & 25 & 0  & 2 & -            \\  
+TSII.403 & Libras          & 40 & 20 & 20 & 0  & 2 & -            \\  \hline
+
+\end{tabular}
 
 }{
     \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
 }
 \end{quadro}
+O fluxograma curricular a seguir (\autoref{fig:fluxo}) apresenta as disciplinas, classificando-as por núcleo, permitindo informar o seu código, nome da disciplina, pré-requisitos, a sua respectiva carga horária total dividida em carga horária prática e teórica, e o total de créditos. %Para auxiliar a sua compreensão é preciso observar antes a legenda na parte inferior da figura:
 
 \clearpage
 \newpage
@@ -1112,7 +1205,7 @@ TSII.307 & Testes e Qualidade de Software          & 40 & 20 & 20 & 0  & 2 & TSI
 %\section{Fluxograma Curricular}
 
 
-\end{landscape}
+%\end{landscape}
 
 \section{Fluxograma curricular}
 
@@ -1198,8 +1291,7 @@ Para aqueles discentes que não atingirem desempenho satisfatório, é garantido
 % ADS
 As atividades de Prática Profissional Supervisionada (PPS) estão previstas
 com carga horária total de 40 (quarenta) horas. Elas são desenvolvidas nos
-componentes curriculares Projeto Integrador Multidisciplinar I e Projeto Integrador
-Multidisciplinar II.
+componentes curriculares de Ética e Responsabilidade Socioambiental, Empreendedorismo e Projeto Integrador Multidisciplinar.
 
 Estas atividades têm por finalidade enriquecer a aprendizagem, privilegiando a
 complementação da formação social e profissional dos discentes e a articulação
@@ -1233,6 +1325,18 @@ A metodologia a ser adotada será através de visitas, estudos de caso,
 atividades em laboratório, desenvolvimento de projetos, entre outras, com
 levantamento de problemas relativos ao objeto da pesquisa e possíveis soluções para
 os problemas detectados.
+
+Mais especificamente, no componente  Projeto Integrador Multidisciplinar, configurar-se-á uma oportunidade na qual os alunos, por meio de uma produção acadêmica e/ou técnico-científica, a integração dos conhecimentos trabalhados durante o seu percurso formativo, de forma que se possa, ao final, demonstrar o resultado da experiência ensino-aprendizagem e o domínio de competências para o exercício de sua profissão.
+
+A seguir, são elencados elementos norteadores para realização das atividades referentes ao Projeto Integrador Multidisciplinar:
+
+\begin{alineas}
+	\item Exploração das temáticas de educação das relações étnico-raciais, história e cultura afro-brasileira e indígena, bem como educação ambiental. Também deve trabalhar o desenvolvimento de projetos para resolução de problemas que envolvam as temáticas em questão de forma integradora, possibilitando  o desenvolvimento de uma visão dialógica e integrada  suas relações com a sociedade contemporânea;
+	\item Aperfeiçoar o trabalho em equipe e desenvolver uma cultura solidária de partilha e de compromisso social, de modo que possam construir e exercitar a sua cidadania contribuindo para melhoria da qualidade de vida dos cidadãos envolvidos no projeto. Assim, espera-se que o projeto que vise atividades que contribuam para melhoria da qualidade de vida da sociedade local, principalmente em comunidades carentes, para o desenvolvimento sustentável, a valorização dos direitos humanos, a conscientização ambiental, a educação nas relações étnico-raciais e sua participação como cidadão compromissado com o bem-estar social. Todo este arcabouço de ideias devem contribuir para a execução de um projeto que construa e exercite a cidadania contribuindo para melhoria da qualidade de vida dos cidadãos envolvidos no projeto;
+	\item Propiciar aos discentes o conhecimento teórico das competências, habilidades e atitudes empreendedoras e de inovação, ao passo que, de modo prático, introduz ao gerenciamento de projetos, análise de riscos e custos, gerenciamento da qualidade, liderança e trabalho em equipe, culminando na avaliação de resultados do projeto proposto.
+
+
+\end{alineas}
 
 
 \subsection{Monitoria}
@@ -1279,139 +1383,16 @@ Os estágios constituem oportunidade de aproximação do IFCE com a empresa, pod
 
 O estágio supervisionado poderá ainda ser realizado no âmbito do próprio IFCE, nos laboratórios do \textit{campus}, através de atividades de extensão ou projetos integradores ou bolsas de iniciação científica. Nesses casos, o estágio supervisionado será orientado por professor da instituição de ensino superior concedente, através de atividades correspondentes a uma carga horária didática semanal de no mínimo 12 horas até o máximo de 20 horas.
 
-Antes do início do estágio supervisionado, a entidade concedente deverá firmar um termo de compromisso com o IFCE e com o estagiário e fazer um seguro de acidentes pessoais em benefício do estagiário, com ônus para a concedente conforme a lei de N$^\circ$\,11.788, de 25 de setembro de 2008. O início do estágio supervisionado deve ser precedido pela designação de um professor orientador no IFCE e pela elaboração de um plano de estágio, cujo acompanhamento será efetuado pelo orientador através de relatórios parciais, contatos com o supervisor de estágio na empresa, correio eletrônico, telefone, correspondência e, caso necessário, visitas ao local do estágio. Ao final do estágio, o aluno deverá elaborar um relatório final de estágio supervisionado, onde são detalhadas as atividades desenvolvidas. A avaliação do relatório final de estágio supervisionado será realizada pelo orientador de estágio, que emitirá seu parecer e nota. 
+Antes do início do estágio supervisionado, a entidade concedente deverá firmar um termo de compromisso com o IFCE e com o estagiário e fazer um seguro de acidentes pessoais em benefício do estagiário, com ônus para a concedente conforme a lei de \nord{11.788}, de 25 de setembro de 2008. O início do estágio supervisionado deve ser precedido pela designação de um professor orientador no IFCE e pela elaboração de um plano de estágio, cujo acompanhamento será efetuado pelo orientador através de relatórios parciais, contatos com o supervisor de estágio na empresa, correio eletrônico, telefone, correspondência e, caso necessário, visitas ao local do estágio. Ao final do estágio, o aluno deverá elaborar um relatório final de estágio supervisionado, onde são detalhadas as atividades desenvolvidas. A avaliação do relatório final de estágio supervisionado será realizada pelo orientador de estágio, que emitirá seu parecer e nota. 
 
 A realização do estágio nas férias não dispensa a designação prévia de um
 professor orientador, a elaboração do plano de estágio, a assinatura do termo de compromisso e a contratação de um seguro de acidentes pessoais em favor do estagiário.
 
-As atividades de estágio do IFCE \textit{campus} Tauá são geridas e acompanhadas pela Comissão de Coordenação de Estágio, conforme  PORTARIA N$^\circ$\,18/GAB-TAU/DG-TAU/TAUA, de 17 de fevereiro de 2020. Destaca-se, ainda, que é papel do corpo docente do Curso Técnico de Informática para Internet discutir e avaliar continuamente a política de estágios do curso, promovendo aperfeiçoamentos necessários à sua execução, acompanhando e avaliando a sua operação.
+As atividades de estágio do IFCE \textit{campus} Tauá são geridas e acompanhadas pela Comissão de Coordenação de Estágio, conforme  \href{https://sei.ifce.edu.br/sei/controlador_externo.php?acao=documento_conferir&codigo_verificador=5049721&codigo_crc=D2A855C5&hash_download=8211d5eecb230cb8765ceb54199b56b9dcf61d684050d5c575df55732d493c4e40f77568847d43c092af63a30df085c55666384493a581b4cc78038b5247d885&visualizacao=1&id_orgao_acesso_externo=0}{PORTARIA \nord{176}/GAB-TAU/DG-TAU/TAUA, DE 29 DE JUNHO DE 2023}. Destaca-se, ainda, que é papel do corpo docente do Curso Técnico de Informática para Internet discutir e avaliar continuamente a política de estágios do curso, promovendo aperfeiçoamentos necessários à sua execução, acompanhando e avaliando a sua operação.
 
 
 \subsection{Atividades de Pesquisa e Extensão}
 Os alunos do curso são incentivados a participarem de projetos de pesquisa e extensão junto aos docentes do curso. Esses projetos podem estar vinculados a uma bolsa de pesquisa de iniciação científica dos programas de pesquisa regidos por editais do IFCE, como o  Programa Institucional de Bolsas de Iniciação Científica Júnior (PIBIC Jr.), a projetos integradores, a programas de pesquisa próprios do \textit{campus} Tauá, entre outros. 
-
-
-\subsection{Projeto Integrador}
-
-
-No curso Técnico Subsequente em Informática para Internet, o Projeto Integrador configura-se como uma oportunidade na qual os alunos, por meio de uma produção acadêmica e/ou técnico-científica, integrarão os conhecimentos trabalhados durante o seu percurso formativo, de forma que se possa, ao final, demonstrar o resultado da experiência ensino-aprendizagem e o domínio de competências para o exercício de sua profissão.
-
-O Projeto Integrador caracteriza-se como uma ação de integração curricular em que ocorre uma interconexão de conteúdos e atividades de várias disciplinas \cite{pj}, como uma atividade de promoção e desenvolvimento de pesquisa e prática científica, de trabalho em equipe e que visa desenvolver a interdisciplinaridade, estabelecendo a integração dos conhecimentos adquiridos, de forma integrada aos demais componentes curriculares constantes na Matriz Curricular do curso.
-
-
-Assim, os objetivos do Projeto Integrador são:
-\begin{alineas}
-\item Aprofundar o conhecimento e articulação entre teoria e prática;
-\item  Possibilitar ao estudante consolidar os conhecimentos construídos ao longo
-do curso em projetos de sistemas web;
-\item  Explorar a resolução de problemas reais e/ou inovadores buscando apontar possíveis soluções no sentido de integrar a instituição de ensino à sociedade; e
-\item Desenvolver a habilidade de trabalho em equipe.
-
-\end{alineas}
-
-O Curso Técnico Subsequente em Informática para Internet possibilitará a realização de 3 projetos integradores,  um em cada semestre do curso, aplicando as competências desenvolvidas nas disciplinas do semestre e serão estruturados conforme  descritos  nas subseções específicas de cada projeto.
-
-
-Cada grupo de Projeto Integrador deve ser formado por, no mínimo, um professor orientador e 2 (dois) discentes orientandos, todos do IFCE \textit{campus} Tauá. Cada grupo deve ter, no máximo, 5 (cinco) discentes. Cada professor estará limitado à orientação de 2 (dois) projetos e contabilizará, em seu Plano de Trabalho Docente, uma hora semanal para cada projeto, conforme Resolução CONSUP \n~039 de 22 de agosto de 2016, referente à atividade de ensino extracurricular. Caberá ao grupo a escolha do tema, dentro do escopo em que o Projeto Integrador esteja inserido, o planejamento e a execução das atividades.
-
-Após a formação do grupo, será necessária a avaliação e aprovação do projeto pela Comissão de Projeto Integrador do Curso do IFCE \textit{campus} Tauá que será designada pelo docente encarregado da disciplina na qual o Projeto Integrador ocorre, a fim de garantir o aproveitamento da disciplina de Projeto Integrador na qual o aluno está matriculado. O grupo deverá apresentar seu relatório de proposta de trabalho com antecedência mínima de 24 (vinte e quatro) horas antes da primeira convocação da referida comissão no semestre letivo. 
-
-A proposta deve ser acompanhada de parecer da anuência do orientador do grupo e o desenvolvimento do trabalho só se dará a partir da aprovação da proposta de trabalho por parte do colegiado supracitado.
-
-As datas e horários da orientação devem ser acertados entre orientador e orientandos. Cada discente do projeto deverá preencher o relatório de atividades realizadas mensalmente para aproveitamento  em conjunto com o professor orientador. 
-
-Ao final do projeto, de acordo com o cronograma de execução estabelecido no relatório aprovado pela  Comissão de Projeto Integrador, cada grupo deverá entregar ao coordenador do curso o relatório final do projeto em formato eletrônico. Este relatório  obedecerá às normas técnicas (Norma ABNT), devendo  conter as seções de introdução, fundamentação teórica, disciplinas e áreas relacionadas, procedimentos metodológicos, resultados, validação e discussão do experimento, conclusão e referências bibliográficas. 
-
-O resultado desta ação deverá ser apresentado na disciplina.
-
-
-
-\textbf{São responsabilidades dos Professores Orientadores}:
-\begin{alineas}
-    \item Orientar o discente na elaboração do Projeto Integrador;
-    \item Indicar bibliografia adequada à elaboração do projeto;
-    \item Acompanhar a elaboração do Projeto Integrador, observando o que dispõe este Projeto Pedagógico;
-    \item Avaliar o rendimento de seus orientandos;
-    \item Registrar na ficha de controle de frequência a frequência dos estudantes sob sua orientação, bem como, as atividades desenvolvidas e propostas.
-\end{alineas}   
-
-\textbf{São responsabilidades dos discentes}:
-\begin{alineas}
-    \item Elaborar o projeto conforme metodologia própria definida pelo docente orientador;
-    \item Atuar efetivamente em todas as etapas do Projeto Integrador;
-    \item Realizar as atividades propostas pelo docente orientador;
-    \item Comparecer às orientações (encontros presenciais), nas datas definidas pelo docente orientador;
-    \item  Entregar ao coordenador do curso seu relatório final no prazo estabelecido;
-    \item  Estar ciente e cumprir os procedimentos descritos neste PPC.
-\end{alineas}
-
-
-
-Os casos omissos serão analisados pelo Colegiado do Curso. Para questões mais complexas, a decisão será em conjunto com a Coordenação do Curso e a Direção de Ensino. A seguir, são elencados direcionamentos acerca da execução de cada módulo de Projeto Integrador no Curso Técnico Subsequente em Informática para Internet.
-
-
-%
-%\subsection*{\small Das Atividades Possíveis no Âmbito dos Projetos Integradores}
-%Devido à diversidade de atividades possíveis no âmbito dos Projetos Integradores, a Coordenação do Curso orientará os alunos no sentido de que a escolha das atividades possa fortalecer, ainda mais, a sua formação. Exemplos de atividades válidas a serem desenvolvidas dentro dos Projetos Integradores:
-%
-%
-%\begin{alineas}
-%   % \item Atividades práticas de laboratório;
-%%    \item Monitorias;
-%    \item Grupos de estudos supervisionados por um docente;
-%    \item Unidades Curriculares que não integram a matriz curricular do curso;
-%    \item Elaboração de material didático com orientação de um docente;
-%    \item Curso regular de língua estrangeira;
-%%    \item Estágio extracurricular;
-%    \item Participação em projetos de pesquisa;
-%    \item Apresentação de trabalhos em eventos científicos;
-%    \item Trabalhos publicados em periódicos científicos;
-%    \item Participação em evento científico;
-%    \item Participação em eventos de extensão;
-%    \item  Participação em oficinas;
-%    \item  Participação em minicursos;
-%    \item  Apresentação de trabalhos em eventos de extensão;
-%    \item  Organização de eventos acadêmicos, científicos, políticos, artísticos, e culturais, vinculados à instituição;
-%    \item  Participação como voluntário em atividades de caráter humanitário e social, programadas e organizadas pela instituição.
-%\end{alineas}
-%
-%
-%%%%%
-%
-
-
-A seguir, são elencados as propostas de realização das atividades referentes a cada Projeto Integrador:
-\begin{alineas}
-	\item \textbf{Projeto Integrador I}: 
-	
-No primeiro módulo, o Projeto
-Integrador I deverá auxiliar os estudantes na organização de atividades de
-projeto para resolução de problemas reais envolvendo as diversas competências do
-módulo para o desenvolvimento de um site \textit{front-end} estático utilizando ferramentas de desenvolvimento \textit{web}
-com o conteúdo dos sites em língua portuguesa e inglesa.
-
-O projeto deve explorar as temáticas de educação das relações étnico-raciais, história e cultura afro-brasileira e indígena, bem como educação ambiental. Também deve trabalhar o desenvolvimento de projetos de pesquisa para resolução de problemas que envolvam as temáticas em questão de forma integradora.
-
-O objetivo deste primeiro é módulo é a capacitação o aluno quanto à realização de um projeto multidisciplinar que possibilite o desenvolvimento de uma visão dialógica e integrada com as unidades curriculares do curso Técnico Subsequente em Informática para Internet presentes no primeiro semestre e suas relações com a sociedade contemporânea.
-
-	\item \textbf{Projeto Integrador II}:
-
-No segundo módulo, o Projeto Integrador II deverá auxiliar os estudantes a aperfeiçoar o trabalho em equipe e desenvolver uma cultura solidária de partilha e de compromisso social, de modo que possam construir e exercitar a sua cidadania contribuindo para melhoria da qualidade de vida dos cidadãos envolvidos no projeto.
-
-De forte cunho social, o Projeto Integrador II deve corresponder à execução de um projeto que vise atividades que contribuam para melhoria da qualidade de vida da sociedade local, principalmente em comunidades carentes, para o desenvolvimento sustentável, a valorização dos direitos humanos, a conscientização ambiental, a educação nas relações étnico-raciais e sua participação como cidadão compromissado com o bem-estar social. Todo este arcabouço de ideias devem contribuir para a execução de um projeto que construa e exercite a cidadania contribuindo para melhoria da qualidade de vida dos cidadãos envolvidos no projeto.
-
-
-	\item \textbf{Projeto Integrador III}: 
-	
-No terceiro módulo, o Projeto Integrador III deverá auxiliar os discentes nas boas práticas de gerenciamento de projeto ágeis, de modo a resolver problemas reais no desenvolvimento de um sistema com escopo aberto.
-
-De forte cunho empreendedor, o Projeto Integrador III propicia aos discentes o conhecimento teórico das competências, habilidades e atitudes empreendedoras e de inovação, ao passo que, de modo prático, introduz ao gerenciamento de projetos, análise de riscos e custos, gerenciamento da qualidade, liderança e trabalho em equipe, culminando na avaliação de resultados do projeto proposto.
-
-Apesar de possuir um escopo aberto, neste módulo, busca-se elaborar, testar e prototipar um modelo de negócio através de uma estratégia de marketing com projeto e estudo de viabilidade financeira e valor da proposta de negócio do projeto em si. Ao final, os discentes deverão desenvolver e lançar um Produto Mínimo Viável -- MVP (do inglês, \textit{Minimum Viable Product}).
-
-\end{alineas}
-
-%\chapter{ATIVIDADES COMPLEMENTARES}
 
 
 \chapter{Critérios de aproveitamento de conhecimentos e experiências anteriores}
@@ -1446,58 +1427,6 @@ Ainda de acordo com o ROD, a validação de conhecimentos deverá ser solicitada
 Após a integralização dos componentes curriculares previstos para o Curso Técnico Subsequente em Informática para Internet e a conclusão da carga horária prevista para a prática profissional, será expedido ao concluinte o diploma de Técnico em Informática para Internet. Os diplomas deverão ser acompanhados do Histórico Escolar em que constem todos os componentes curriculares cursados, com suas respectivas cargas horárias, frequências e aproveitamento dos discentes. O modelo do diploma seguirá a legislação vigente e o modelo utilizado pelo IFCE.
 
 
-
-
-% 
-% \subsection{Da participação dos docentes}
-% 
-% A participação do rodízio se dá de forma voluntária e a mesma precisa ocorrer dentro de uma reunião do Colegiado do Curso previamente agendada, espaçada em ciclos de dezoito (18) meses. 
-% 
-% 
-% O docente interessado em assumir uma ou mais disciplinas que não estão em sua posse deve manifestar seu interesse previamente e preencher a tabela  disponível no \hyperref[anexo:rodizio]{Anexo B}, com seus devidos comprovantes. A mesma tabela deve também ser preenchida, com seus respectivos comprovantes, pelos docentes que estão em posse da disciplinas que participarão do rodízio  para fins de sistemática do rodízio.
-% 
-% Uma lista com as disciplinas que comporão o rodízio é formada, e a sistemática do rodízio entra no processo.
-% 
-% 
-% \subsection{Da sistemática do rodízio}
-% 
-% O rodízio ocorre por disciplina, e não por docente. Logo, caso mais de um docente demonstre interesse em uma dada disciplina, ao final de um ciclo de rodízio, o vencedor do rodízio ganha a posse da disciplina e o processo continua, se houver, para as demais disciplinas.
-% 
-% 
-% Para fins de simplificação, será descrito o formato do rodízio para somente uma disciplina, já que o mesmo processo ocorre igual em relação às outras disciplinas. \textbf{O rodízio não configura permuta, e sim revezamento. Logo, o docente que participar do rodízio compreende que a sua carga horária aumentará por conta da posse da nova disciplina}. O resumo dos passos referentes ao rodízio é apresentado  a seguir:
-% \begin{itemize}
-% \item[] \quad
-% \begin{itemize}
-%             \setlength\itemsep{0em}
-% 	\item[I --] Forma-se a lista de disciplinas que comporão o rodízio;
-% 	\item[II --] Escolhe-se uma disciplina da lista que não foi selecionada previamente;
-% 	\item[II --] Cada docente interessado em obter a posse da referida disciplina preenche a Tabela de pontuação (ver \hyperref[anexo:rodizio]{Anexo B}) com  seus respectivos comprovantes;
-% 	\item[III --] O docente em posse da referida disciplina também preenche a Tabela de pontuação (ver \hyperref[anexo:rodizio]{Anexo B}) com  seus respectivos comprovantes;
-% 	\item[IV --]  O docente com maior pontuação é aquele que terá a posse da disciplina por mais um ciclo de curso (18 meses). Caso haja empate, fica a critério do Coordenador do Curso escolher;
-% 	\item [V --] Volta-se para o passo II até que a lista não possua mais disciplinas para passarem pelo rodízio.
-% \end{itemize}
-% \end{itemize}
-% 
-% \subsection{Do preenchimento da Tabela de Rodízio de Disciplina}
-% 
-% A sistemática do rodízio consiste em o docente pontuar a tabela apresentada no \hyperref[anexo:rodizio]{Anexo B}, gerando um \textbf{Índice de Preferência} (IPR) à disciplina e ao docente. O IPR é calculado segundo a fórmula que segue:
-% \begin{equation}
-%     \mathrm{IPR} = \min\left\{\frac{ -3 \times \mathrm{IP}  + 2\times \mathrm{IC}}{5}, 0 \right\}.
-% \end{equation}
-% 
-% \begin{alineas}
-%     \item \textbf{Índice de Posse (IP)}: o critério de posse corresponde ao percentual  de vezes que a disciplina esteve em posse do referente docente desde que foi ofertada. Ele atua como fator negativo na intenção de favorecer o rodízio ser implementado. Este índice deve ser normalizado  entre zero (0) e um (1) para fins de cômputo do IPR; 
-%         
-%     \item \textbf{Colegiado (IC)}: o critério de avaliação do Colegiado do Curso corresponde ao resultado de  um processo de votação aberta simples. O Colegiado se reúne e cada membro vota no docente que acredita ser interessante ficar com a disciplina.
-%     O percentual de votos de cada candidato corresponde à nota deste critério. Esse critério pode tanto favorecer como desfavorecer o rodízio a ser implementado. O Colegiado, por votação, pode votar pela permanência do atual docente que ministra o componente curricular. Ao passo que o mesmo Colegiado pode favorecer o rodízio, uma vez que perceba a necessidade de uma renovação da ministração do componente curricular por outro docente.  Este índice deve ser normalizado  entre zero (0) e um (1) para fins de cômputo do IPR; 
-%     
-% \end{alineas}
-
-%Uma vez realizada a verificação dos IPR de cada docente em relação a cada disciplina do rodízio, o  docente que possuir o maior valor de IPR, posse da disciplina.  
-
-
-
-
 \chapter{Avaliação do projeto do curso}
 
 
@@ -1525,10 +1454,10 @@ A Coordenação do Curso Técnico em Informática para Internet atua para promov
 âmbito do curso, estabelecendo o diálogo entre estudantes, professores e demais
 membros da equipe gestora.
 
-As atribuições do coordenador do curso estão definidas na Nota Técnica Nº 2
+As atribuições do coordenador do curso estão definidas na Nota Técnica \nord{2}
 PROEN, de 18 de maio de 2015. O coordenador do curso também atua de acordo
 com um plano de ação, cujo procedimento de elaboração é definido na Nota Técnica
-Nº 4 PROEN, de 30 de novembro de 2018.
+\nord{4} PROEN, de 30 de novembro de 2018.
 
 
 \chapter{Políticas Institucionais Constantes do PDI}% no Âmbito do Curso}
@@ -1541,10 +1470,10 @@ assegurando que as tomadas de decisões estejam voltadas para a geração de val
 para a sociedade. Assim, para esta edição do PDI (2024-2028), ao invés de estabelecer indicadores próprios, optou-se
 por utilizar os indicadores que foram estabelecidos pela Setec para monitorar o
 desempenho da Rede Federal de Educação Profissional, Científica e Tecnológica
-(RFEPCT)\footnote{\href{https://www.in.gov.br/en/web/dou/-/portaria-n-299-de-6-de-maio-de-2022-399680297}{Portaria \N~299, de 06 de maio de 2022}
+(RFEPCT)\footnote{\href{https://www.in.gov.br/en/web/dou/-/portaria-n-299-de-6-de-maio-de-2022-399680297}{Portaria \nord{299}, de 06 de maio de 2022}
 que dispõe sobre os indicadores de Pesquisa e Extensão a serem utilizados pelas
 Instituições que compõem a Rede Federal de Educação Profissional, Científica e
-Tecnológica (Rede Federal de EPCT).}.
+Tecnol\'ogica (Rede Federal de EPCT).}.
 
 
 Essa abordagem traz consigo uma série de vantagens, assegurando ainda que a
@@ -1574,36 +1503,36 @@ projetos de pesquisa;
 Percentual de recursos
 financeiros do orçamento
 anual público aplicados em
-extensão;
+extensão; e 
 	\item  \textbf{EXT-3}.
 Percentual de servidores
 envolvidos em ações de
 extensão.
 \end{alineas}
 
-Ademais, são elencadas as metas que o Curso Técnico Subsequente em Informática para Internet oportunizará dentro do Plano de Desenvolvimento Institucional do campus Tauá.
+Ademais, são elencadas as metas que o Curso Técnico Subsequente em Informática
+para Internet oportunizará dentro do Plano de Desenvolvimento Institucional do
+\textit{campus} Tauá.
 
+\textbf{No âmbito do Ensino}:
 
-
-\begin{alineas}
-	\item Ensino:
 	\begin{alineas}
 	  \item Ampliação do número de estudantes egressos com êxito;
 	  \item Sedimentar ações de realização de seminário ou fórum de educação profissional de nível técnico do IFCE;
-	  \item Ampliar o índice Relação Aluno–professor;
+	  \item Ampliar o índice Relação Aluno -- professor;
 	  \item Realização de feiras científicas e tecnológicas e olimpíadas internas e externas.
 	\end{alineas}
 	
-	\item Pesquisa, Inovação e Pós-graduação:
+	\textbf{Pesquisa, Inovação e Pós-graduação}:
 	\begin{alineas}
 	  \item Expandir e consolidar a inovação: Volume de recursos captados em projetos de Pesquisa e Desenvolvimento; e Depósitos de propriedade intelectual;
 	  \item Ampliar a parceria com empresas, instituições diversas para captação de projetos. Ampliar as parcerias e o volume de recursos captados em projetos de PD\&I;
 	  \item Mapear o potencial de inovação do campus;
-	  \item Expandir e consolidar a pesquisa científica institucional, através de uma média de 2 produções anuais por pesquisador cadastrado na plataforma NL da PRPI;
+	  \item Expandir e consolidar a pesquisa científica institucional, através de uma média de 02 (duas) produções anuais por pesquisador cadastrado na plataforma NL da PRPI;
 	  \item Estimular, nas pessoas residentes nas regiões visitadas pelo campus, o gosto e a curiosidade pelas ciências e artes, bem como apresentar as áreas do conhecimento ofertadas no campus e as formas de interação do campus com a sociedade (Extensão-Pesquisa-Ensino).
 	\end{alineas}
 	
-	\item Extensão :
+	\textbf{Extensão}:
 	\begin{alineas}
 	  \item Fortalecer as relações socioprodutivas e culturais nos contextos locais e regionais através do aumento da taxa de discentes matriculados em estágio curricular;
 	  \item Realizar momentos de integração entre empresas públicas, privadas e o campus, aumen- tando a quantidade e qualidade das ofertas de estágio;
@@ -1612,7 +1541,7 @@ Ademais, são elencadas as metas que o Curso Técnico Subsequente em Informátic
 	  
 
 	\end{alineas}
-\end{alineas}
+
 
 \chapter{Apoio ao discente}
 O IFCE \textit{campus} Tauá possibilita aos estudantes algumas ações estratégicas de apoio através dos setores de Assistência Estudantil, Coordenação Técnico-Pedagógica e das demais atividades relacionadas ao desenvolvimento integral do educando.
@@ -1659,7 +1588,7 @@ Os procedimentos realizados são pautados no ROD, que traz orientações sobre o
 
 A Coordenação do Curso Subsequente em Informática para Internet atua para promover o sucesso das ações acadêmicas e administrativas no âmbito do curso, estabelecendo o diálogo entre estudantes, professores e demais membros da equipe gestora.
 
-As atribuições do coordenador do curso estão definidas na Nota Técnica \n~2 PROEN, de 18 de maio de 2015. O coordenador do curso também atua de acordo com um plano de ação, cujo procedimento de elaboração é definido na Nota Técnica \n~4 PROEN, de 30 de novembro de 2018.
+As atribuições do coordenador do curso estão definidas na Nota Técnica \nord{2} PROEN, de 18 de maio de 2015. O coordenador do curso também atua de acordo com um plano de ação, cujo procedimento de elaboração é definido na Nota Técnica \nord{4} PROEN, de 30 de novembro de 2018.
 
 
 \chapter{Corpo docente}
@@ -1674,31 +1603,40 @@ Detalhes do perfil docente necessário para o desenvolvimento do Curso Técnico 
    \caption{Perfil do docente necessário para a realização do curso.}
     \label{tab:perfil_docente}
 }{
-    \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{ p{.19\textwidth-2\tabcolsep} p{.24\textwidth-2\tabcolsep} c p{.47\textwidth-2\tabcolsep}} 
-    \toprule
-    \cellcolor{gray!20} \bfseries ÁREA & 
-    \cellcolor{gray!20} \bfseries SUBÁREA & 
-    \cellcolor{gray!20} \bfseries QTD. &
-    \cellcolor{gray!20} \bfseries DISCIPLINAS ATENDIDAS \\
-         
-         \cellcolor{gray!05} Administração &  \cellcolor{gray!05}Administração de \newline Empresas &  \cellcolor{gray!05}1 &  \cellcolor{gray!05} Empreendedorismo; \newline Gestão de Projetos;
-          \newline Projeto Integrador. 
-        \\
-        Ciência da \newline Computação       &  Sistemas de \newline Computação  &  1 & Redes de Computadores; e \newline Desenvolvimento e Operações.
-             \\[1em]
-%        
-%         \cellcolor{gray!05}Ciência da \newline Computação  &  \cellcolor{gray!05} Metodologia e \newline Técnicas da \newline Computação &  \cellcolor{gray!05} \quad  4 &   \cellcolor{gray!05} Web Design; \newline  Desenvolvimento WEB I; \newline Desenvolvimento WEB II;  \newline Desenvolvimento WEB III;  \newline Lógica de Programação; \newline Programação Orientada a Objetos; \newline Engenharia de Software; \newline Banco de Dados; \newline Análise e Projeto de Sistemas; \newline Programação para Dispositivos Móveis; \newline Projeto Integrador I; \newline  Projeto Integrador II; e \newline Projeto Integrador III. \\
+    % Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
 
-   \cellcolor{gray!05}Ciência da \newline Computação  &  \cellcolor{gray!05}Computação \newline Gráfica \newline \qquad\textbf{OU} \newline Metodologia e \newline Técnicas da \newline Computação &  \cellcolor{gray!05}1 &   \cellcolor{gray!05} Introdução ao Desenvolvimento WEB; \newline  Desenvolvimento WEB I; e \newline Desenvolvimento WEB II. \\[1em]
-        
-        Ciência da \newline Computação       &  Metodologia e \newline Técnicas da \newline Computação  \newline \textbf{OU} \newline Teoria da Computação &  3 & Lógica de Programação;  \newline Pensamento Computacional; \newline Programação Orientada a Objetos; \newline Engenharia de Software; \newline Banco de Dados; \newline Estrutura de Dados; \newline Análise e Projeto de Sistemas; \newline Inteligência Computacional Aplicada; \newline Programação para Dispositivos Móveis.\\
-        
-        \cellcolor{gray!05}Letras &   \cellcolor{gray!05}Língua Inglesa     &    \cellcolor{gray!05}1 &   \cellcolor{gray!05}Inglês Instrumental.  \\
-       
-
-        \bottomrule
-    \end{tabular}
+\begin{tabular}{ p{11em} p{8em} p{1cm} p{6.5cm}}
+\rowcolor[HTML]{000000} 
+{\color[HTML]{FFFFFF}\textbf{Área}} &
+  {\color[HTML]{FFFFFF}\textbf{Subárea}} &
+  {\color[HTML]{FFFFFF}\textbf{QTD.}} &
+  {\color[HTML]{FFFFFF}\textbf{Componentes curriculares}} \\
+\rowcolor[HTML]{EFEFEF} 
+Administração &
+  Administração \newline de Empresas &
+  1 &
+  Empreendedorismo; \newline Gestão de Negócios; e \newline Ética e Responsabilidade Socioambiental. \\[2em]
+Ciência da Computação &
+  Sistemas \newline de  Computação &
+  1 &
+  Introdução à Computação; \newline Redes de Computadores; e \newline Desenvolvimento e Operações. \\[2em]
+\rowcolor[HTML]{EFEFEF} 
+Ciência da Computação &
+  Metodologia e \newline Técnicas \newline da Computação &
+  2 &
+  Análise e Projeto de Sistemas; \newline Engenharia de Software; \newline Tecnologias WEB; e \newline  Testes e Qualidade de Software. \\[2em]
+Ciência da Computação &
+  Metodologia e \newline  Técnicas \newline da Computação \newline \textbf{OU} \newline Teoria da \newline Computação &
+  2 &
+  Banco de Dados; \newline Estrutura de Dados; \newline  Lógica de Programação; \newline Projeto Integrador Multidisciplinar; \newline  Programação Orientada a Objetos; e \newline Programação para Dispositivos Móveis. \\[2em]
+\rowcolor[HTML]{EFEFEF} 
+Letras &
+  Língua Inglesa &
+  1 &
+  Inglês Técnico
+\end{tabular}
    }{
     \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
             \vspace{-1em}
@@ -1930,7 +1868,7 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
     
      \tecn{André Luíz de Araújo Barros}{Auxiliar de Biblioteca}{Ensino Médio}{Biblioteca} 
     
-    \tecn{Carlos Andrá Monteiro de Sousa}{Contador}{Graduação}{Departamento de Administração e Planejamento}
+    \tecn{Carlos André Monteiro de Sousa}{Contador}{Graduação}{Departamento de Administração e Planejamento}
    
     \tecn{Claudenira Cavalcante Melo}{Assistente Social}{Mestrado}{Assistência Estudantil} 
     
@@ -1955,35 +1893,24 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
      
      \tecn{Francisca Paula Araujo de Sousa}{Assistente em Administração}{Ensino Médio}{Departamento de Administração e Planejamento}
    
-    \tecn{George Luíz de Freitas Souza}{Assistente em Administração}{Especialização}{Assistente em Administração} 
+    \tecn{George Luíz de Freitas Souza}{Assistente em Administração}{Especialização}{Departamento de Administração e Planejamento} 
     
                     
-                    \tecn{Gessianne Carvalho Castro}{Assistente em Administração}{Especialização}{Assistente em Administração} 
+                    \tecn{Gessianne Carvalho Castro}{Assistente em Administração}{Especialização}{Coordenadoria de Controle Acadêmico} 
                     
                     \tecn{Jackson Weslley do Nascimento}{Administrador}{Especialização}{Infraestrutura} 
                     
-                    \tecn{Jardel Leite de Oliveira}{Técnico em Laborátorio em Física}{Especialização}{Laboratório de Física} 
+                      \tecn{Janiele Vital Norões}{Assistente em Administração}{Especialização}{Gabinete do Diretor Geral} 
                     
+                    \tecn{Jardel Leite de Oliveira}{Técnico em Laborátorio em Física}{Especialização}{Laboratório de Física} 
+                        \tecn{João Paulo Oliveira}{Técnico de Tecnologia da Informação}{Especialização}{Coordenadoria de TI} 
+
+		  \tecn{José Orlando dos Santos Lopes}{Assistente de Alunos}{Especialização}{Coordenadoria Técnico-Pedagógica } 
+
                     
                     \tecn{Jobson Vital Costa }{Psicólogo}{Mestre}{Assistência Estudantil} 
                     
-                     
-                    
-                    \tecn{José Wendell Araujo Pedrosa }{Auxiliar em Biblioteca}{Ensino Médio}{Biblioteca} 
-                
-                
-                    \tecn{Juliana Cândida Albano }{Técnica em Audiovisual}{Graduação}{Comunicação Social} 
-                    
-                   
-                       \tecn{Karla Gonçalves de Oliveira }{Pedagoga}{Especialização}{Coordenação Técnico-Pedagógica} 
-                    
-                
-    
-        
-    \tecn{Lorene Maciel Barreto}{Técnico em Secretariado}{Especialização}{Administração} 
-    
-
-		
+               		
 		\end{tabularx}
 	
 	}{}
@@ -1995,8 +1922,32 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
 		
 		\small
 		\noindent\begin{tabularx}{\textwidth}{ XX } 
-	    
+		
+		      
+                    
+                    \tecn{José Wendell Araujo Pedrosa }{Auxiliar em Biblioteca}{Ensino Médio}{Biblioteca} 
+                
+                
+                    \tecn{Juliana Cândida Albano }{Técnica em Audiovisual}{Graduação}{Comunicação Social} 
+                    
+                   	              
+
+
+
+		  \tecn{Juliana Sousa Rodrigues}{Assistente de Alunos}{Graduação}{Coordenadoria Técnico-Pedagógica} 
+                
     
+        
+
+
+                       \tecn{Karla Gonçalves de Oliveira }{Pedagoga}{Especialização}{Coordenadoria Técnico-Pedagógica} 
+                    
+
+        \tecn{Lorene Maciel Barreto}{Técnico em Secretariado}{Especialização}{Administração} 
+
+    \tecn{Marcus Vinícius de Moura Pacheco}{Técnico de Tecnologia da Informação}{Graduação}{Coordenadoria de TI} 
+
+
     \tecn{Margarida Maria Xavier da Silva}{Técnica em Laboratório de Biologia}{Mestrado}{Laboratório de Biologia} 
     
     
@@ -2004,13 +1955,27 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
     
     	\tecn{Meiryfrance Cavalcante Vital}{Assistente em Administração}{Especialização}{Administração} 
 	
-	  
-        \tecn{Prucina de Carvalho Bezerra}{Pedagoga}{Mestrado}{Coordenação Técnico-Pedagógica} 
+	      	\tecn{Micaelle de Oliveira Vieira}{Nutricionista}{Especialização}{Assistência Estudantil} 
 
+        \tecn{Prucina de Carvalho Bezerra}{Pedagoga}{Mestrado}{Coordenadoria Técnico-Pedagógica} 
+
+   	\end{tabularx}
+	
+	}{
+	}
+\end{quadro} 
+    
+    \clearpage
+    
+\begin{quadro}[t]
+	\IBGEtab{}{
+		
+		\small
+		\noindent\begin{tabularx}{\textwidth}{ XX } 
+		
     \tecn{Rafael Eferson Pinheiro Nogueira}{Técnico em Eletrotécnica}{Graduação}{Infraestrutura} 
     
-    
-		\tecn{Rogerio Barbosa de Araujo dos Santos}{Assistente em Administração}{}{}
+		\tecn{Rogério Barbosa de Araujo dos Santos}{Assistente em Administração}{Especialização}{Infraestrutura}
 
 
        \tecn{Sharlene Pereira Alves}{Enfermeira}{Graduação}{Assistência Estudantil} 
@@ -2024,9 +1989,10 @@ O  corpo técnico-administrativo relacionado ao curso está descrito no \autoref
 	}{
 		\fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
 	}
+
 \end{quadro}
-
-
+	\vspace{10em}
+\ 
 
 \chapter{Infraestrutura}
 
@@ -2045,13 +2011,13 @@ A Biblioteca do IFCE \textit{campus} Tauá funciona de forma integral, no horár
 
 Aos usuários vinculados ao \textit{campus} e cadastrados na Biblioteca, é concedido o empréstimo de livros e outros materiais, exceto obras de referência, periódicos, publicações indicadas para reserva e outras publicações conforme recomendação do setor. As formas de empréstimo, bem como o uso e oferta de serviços da Biblioteca do IFCE \textit{campus} Tauá, são estabelecidos em regulamento próprio, aprovado mediante Portaria no 13/GDG, de 5 de fevereiro de 2010. 
 
-A Biblioteca do \textit{campus} de Tauá do IFCE oferece uma estrutura moderna e acervo que atende as demandas dos seus usuários: docentes, discentes e técnicos administrativos. O ambiente da biblioteca é climatizado, dispõe de mesas e cabines para estudos em grupos, guarda-volumes, internet Wi-Fi e computadores conectados a internet para a realização de pesquisas e acesso online ao Sistema de Gerenciamento de Biblioteca (SophiA) e Biblioteca Virtual Universitária (BVU).
+A Biblioteca do \textit{campus} de Tauá do IFCE oferece uma estrutura moderna e acervo que atende as demandas dos seus usuários: docentes, discentes e técnicos administrativos. O ambiente da biblioteca é climatizado, dispõe de mesas e cabines para estudos em grupos, guarda-volumes, internet Wi-Fi e computadores conectados a internet para a realização de pesquisas e acesso online ao Sistema de Gerenciamento de Biblioteca (SophiA) e ao catálogo de livros virtuais..
 
 São oferecidos os seguintes serviços: empréstimo domiciliar, auxílio à pesquisa e ao estudo, consulta local, acesso à internet/Wi-Fi; orientação à Normalização de Trabalhos Acadêmicos; elaboração de ficha catalográfica; oficinas de Normalização de Trabalhos Acadêmicos; levantamento bibliográfico; treinamentos ao acesso ao Portal de Periódicos da CAPES; acesso à Biblioteca Virtual; Sistema de Gerenciamento de Bibliotecas do SIBI (SophiA) e processamento técnico (classificação, catalogação e indexação) no SophiA.
-
-Relevante ainda nesse sentido é o recurso da Biblioteca Virtual Universitária (BVU) já disponível, em todos os campi do IFCE. Por meio desta  ação, coordenada pela Pró-reitoria de Ensino e Departamento de Bibliotecas, discentes e servidores da instituição passam a ter acesso, gratuito, a  livros virtuais, complementando o acervo de livros impressos já existentes nas bibliotecas. 
-
-Essa nova fonte de pesquisa flexibiliza o acesso da comunidade acadêmica a informações, já que há títulos em mais de 50 áreas de conhecimento, como administração, marketing, engenharia, economia, direito, letras, computação, educação, medicina, enfermagem, psicologia, psiquiatria, gastronomia, turismo, informática,  entre outras. O acesso pode ser feito a qualquer hora do dia e de qualquer computador com acesso à internet.
+%
+%Relevante ainda nesse sentido é o recurso da Biblioteca Virtual Universitária (BVU) já disponível, em todos os campi do IFCE. Por meio desta  ação, coordenada pela Pró-reitoria de Ensino e Departamento de Bibliotecas, discentes e servidores da instituição passam a ter acesso, gratuito, a  livros virtuais, complementando o acervo de livros impressos já existentes nas bibliotecas. 
+%
+%Essa nova fonte de pesquisa flexibiliza o acesso da comunidade acadêmica a informações, já que há títulos em mais de 50 áreas de conhecimento, como administração, marketing, engenharia, economia, direito, letras, computação, educação, medicina, enfermagem, psicologia, psiquiatria, gastronomia, turismo, informática,  entre outras. O acesso pode ser feito a qualquer hora do dia e de qualquer computador com acesso à internet.
 
 Com relação ao acervo bibliográfico é composto por livros, periódicos, CDs, Trabalhos de Conclusão de Curso, livros em Braile e  obras de referência. O acervo está catalogado em meios Informatizados.
 
@@ -2060,306 +2026,191 @@ Com relação ao acervo bibliográfico é composto por livros, periódicos, CDs,
 
 \section{Infraestrutura física e recursos materiais}
 
-A seguir, listamos na infraestrutura física \autoref{tab:instalacoes} e recursos
-materiais no \autoref{tab:recursos}.
-
-\begin{table}[htpb]
-\IBGEtab{
-   \caption{Instalações existentes  no \textit{campus} Tauá.}
-    \label{tab:instalacoes}
-}{
-    
-    
-    \begin{tabularx}{\textwidth}{ X l} 
-        \toprule
-        
-        \cellcolor{gray!20} \bfseries DEPÊNDENCIAS & \cellcolor{gray!20} \bfseries QUANTIDADE \\
-                
-        Almoxarifado & \qquad\qquad 01 \\
-        Auditório &  \qquad\qquad 01 \\
-        Biblioteca & \qquad\qquad   01 \\
-        Cantina  &  \qquad\qquad 01 \\
-        Praça de alimentação &  \qquad\qquad  01 \\
-        Quadra esportiva coberta  &  \qquad\qquad 01\\
-        Sala de direção administrativa &   \qquad\qquad 01 \\
-        Sala de direção de ensino  &  \qquad\qquad   01 \\
-        Sala de direção geral  &  \qquad\qquad  01 \\
-        Sala de professores  &  \qquad\qquad  02 \\
-        Sala de registro acadêmico  &  \qquad\qquad  01 \\
-        Sala de suporte de TI  &  \qquad\qquad  01 \\
-        Sala de videoconferência  &  \qquad\qquad  01 \\
-        Salas de aula  &  \qquad\qquad  11 \\
-        Salas de coordenação  &  \qquad\qquad  03 \\
-        Sanitários  &  \qquad\qquad  08 \\
-        Sanitários adaptados para pessoas com necessidades especiais  &  \qquad\qquad  03 
-        \\
-        \bottomrule
-    \end{tabularx}
-   }{
-    \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-   }
-\end{table}
-
-
-
-
-\begin{table}[htpb]
-\IBGEtab{
-   \caption{Laboratórios existentes  no \textit{campus} Tauá.}
-    \label{tab:labs}
-}{
-    
-    \begin{tabularx}{\textwidth}{ X l } 
-        \toprule
-        
-        \cellcolor{gray!20} \bfseries LABORATÓRIO & \cellcolor{gray!20} \bfseries QUANTIDADE \\
-        
-        Informática &   \qquad\qquad 	01 \\
-        Redes &  \qquad\qquad 	01 \\
-        Física &	 \qquad\qquad 01 \\
-        Biologia/Química &  \qquad\qquad 01 \\
-        Eletrônica &  \qquad\qquad 	01 \\
-        Eletromagnetismo &  \qquad\qquad 	01\\
-        \bottomrule
-    \end{tabularx}
-   }{
-    \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-   }
-\end{table}
-
-
-
-\section{Infraestrutura de laboratórios}
-
-Nesta seção apresentamos as informações quanto aos laboratórios necessários para a implementação do
-curso.
+A seguir, listamos a \textbf{Infraestrutura física} do \textit{campus}:
 
 \begin{alineas}
-	\item 02 $\times$ Laboratórios de informática;
-	\item 01 $\times$ Laboratório de redes.
+	\item 01 Almoxarifado;
+	\item 01 Auditório;
+	\item 01 Biblioteca;
+	\item 01 Cantina;
+	\item 01  Praça de alimentação;
+	\item 01 Quadra esportiva coberta;
+	\item 01 Sala de direção administrativa;
+	\item 01 Sala de direção de ensino;
+	\item 01 Sala de direção geral;
+	\item 01 Sala de professores;
+	\item 01 Sala de registro acadêmico;
+	\item 01 Sala de suporte de TI;
+	\item 01 Sala de videoconferência (multiuso);
+	\item 12 Salas de aula;
+	\item 01 Sala de coordenação;
+	\item 08 Sanitários; e
+	\item 03 Sanitários adaptados para pessoas com necessidades especiais.	
+\end{alineas}
+
+A seguir, listamos os \textbf{Equipamentos} do \textit{campus}:
+
+\begin{alineas}
+	\item 60 Computadores para uso dos alunos;
+	\item 02 Televisores;
+	\item 01 Vídeo Cassete Aparelho de DVD;
+	\item 01 Retroprojetores;
+	\item 12 Data Show;
+	\item 20 Quadros Branco;
+	\item 01 Flip-Shart;
+	\item 01 Receptor para antena parabólica;
+	\item 01 Monitor para videoconferência;
+	\item 01 Câmera Fotográfica; e
+	\item 01 Filmadora Digital;
+\end{alineas}
+
+A seguir, listamos os \textbf{Laboratórios existentes}  no \textit{campus}:
+\begin{alineas}
+	\item 02 de Informática;
+	\item 01 de Redes;
+	\item 01 de Física;
+	\item 01 de Biologia/Química; e
+	\item 01 de Eletrônica.
+\end{alineas}
+
+
+\section{Infraestrutura de laboratórios}\label{labs-info}
+
+Nesta seção apresentamos as informações quanto aos laboratórios necessários para a implementação do
+curso. O Curso Técnico Subsequente em Informática para Internet dispõe de 03 laboratórios específicos para realização das atividades práticas de ensino: laboratório de informática e laboratório de redes.
+
+A seguir, descrevemos a estrutura do \textbf{Laboratório de Informática 01}:
+\begin{alineas}
+	\item 35 Carteiras para alunos com apoio de costas e assento em plástico;
+	\item 02 Ar-condicionados na cor branca de 18000 btu/h;
+	\item 01 Quadro branco dimensões 5,00 $\times$ 1,20;
+	\item 01 Suporte de teto para projetor multimídia;
+	\item 01 Conjunto mesa com tampo medindo 1100  $\times$ 600  $\times$ 720mm, em MDF 25mm, e painel frontal em MDF 15mm;
+\item 01 Cadeira para professor de ferro com assento em plástico preto;
+\item 30 Mesas para computador de dimensões 600  $\times$ 800  $\times$ 750mm com 2 pés em aço pintados em pó epóxi;
+\item 30 Computadores Core i5 8500, 8 GB de Memória RAM e SSD de 256 GB,
+com gabinete para CPU e monitor; e
+\item 03 Computadores acessíveis para pessoas com deficiência.
+\end{alineas}
+
+
+Agora, descrevemos a estrutura do \textbf{Laboratório de Informática 02}:
+
+\begin{alineas}
+\item  35 Carteiras para alunos com apoio de costas e assento em plástico;
+\item 02 Ar-condicionados na cor branca de 18000 btu/h;
+\item 01 Quadro branco dimensões 5,00 $\times$ 1,20;
+	\item 01 Conjunto mesa com tampo medindo 1100  $\times$ 600  $\times$ 720mm, em MDF 25mm, e painel frontal em MDF 15mm;
+	\item 01 Cadeira para professor de ferro com assento em plástico preto;
+\item 36 Mesas para computador de dimensões 600  $\times$ 800  $\times$ 750mm com 2 pés em aço pintados em pó epóxi;
+\item 27 Computadores HP, 4 GB de Memória RAM e SSD de 256 GB, com
+gabinete para CPU e monitor;
+\item 03 Computadores Core i5 8500, 8 GB de Memória RAM e SSD de 256 GB,
+com gabinete para CPU e monitor; e
+\item  03 Computadores acessíveis para pessoas com deficiência;
+\end{alineas}
+
+E, por fim, descrevemos a estrutura do \textbf{Laboratório de Redes}:
+
+
+\begin{alineas}
+	\item 22 Carteiras -- 01 para professor em aço na cor preta e 21 para alunos com apoio em plástico verde, sem braços;
+	\item 13 Monitores tela LED na cor preta;
+	\item 19 CPUs na cor preta;
+	\item 06 Módulos isolador estabilizador, potência nominal 440VA modelo
+isol.est.biv/115;
+	\item 04 Estabilizadores na cor preta modelo ML-1000B1;
+	\item 01 Suporte de parede para projetor multimídia com as seguintes
+características, suporte antifurto, acabamento em pintura eletrostática
+com capacidade de até 10 kg;
+
+	\item  01 Conjunto mesa com tampo medindo 1100 $\times$ 600 $\times$ 720mm, em MDF 25mm, e painel frontal em MDF 15mm, revestidos em laminado melamínico na cor azul;
+	\item 19  Mesas retangulares para escritório -- 02  na cor branca com dimensões 1,20 $\times$ 60 cm e 17  com dimensões 80 $\times$ 60 cm com pés em aço preto;
+	\item 01 Quadro branco 5,00 $\times$ 1,20;
+	\item Ar condicionado na cor branca;
+	\item 03 Racks para equipamentos de rede;
+	\item 04 Centrais IP/Gateway marca Intelbras modelo CIP 850;
+	\item 10 Patch Panels -- 06 Patch Panel Category 3 ISDN marca Maxi Telecom modelo YPPS-
+VUVD - 10/50, 03 da marca Soho Plus C5e 24 portas e 01 da marca Marconet Telecom 19'' 24 portas Cat. 5E;
+	\item 08 Telefones IP modelo TIP-100 marca Intelbrás;
+	\item 03 Roteadores -- 02 da marca Wi-Fi TP-Link modelo TL-WR741ND Wireless N 150
+Mbps e 01 da  marca TP-Link modelo AC1750 Archer C7 Band Gigabit Router;
+	\item 06 Switches -- 03 da marca Kaiomy Technology 10/100 Mbps 8 portas 8-PE, 01 da marca D-Link Green Gigabit modelo DGS-1016D 16 portas, 01 na cor preta com 8 entradas modelo enh908-nwy e 01 da marca Planet FNSW-2401 24 portas 10/100 Mbps Fast-
+Ethernet;
+	\item 02 Conversores de mídia -- 01 marca CIANET modelo CT5250 Switch LXB e 01 da marca CIANET SFOG 570 CIS 50 LXB 20 km;
+Série 25102755 (não homologado);
+	\item 01 Modem ADSL2 e roteador Wi-Fi marca D-Link modelo DSL-2640B;
+	\item 05 Roteadores Wi-Fi -- 03 da  marca TP-Link modelo TL-WR340GD, 01 da marca Engenius modelo ESR-1221, 01 da  marca TP-Link modelo AC 1750 e 01  marca D-Link modelo TM-G5240;
+	\item 04 Mesa -- 01 mesa azul 60cm $\times$ 120cm e 03 mesas brancas 2m $\times$ 1m;
+	\item 06 Alicates para Crimpar Conectores Rj09 / Rj11 / Rj45 Categoria 5e;
+	\item 06 Sistemas de Catraca;
+	\item 04 Testadores de Conectores Rj-45, Rj-11, BNC Usb e Firewire1394;
+	\item 02 Ferramentas de inserção Punchdown fixação Conector/Plug Rj-45;
+	\item 03 Conjuntos de ferramentas compostas por aço carbono e plástico.
+Conteúdo: 2 Pinças, 1 Tubo Plástico, 1 Chave Teste, 1 Extrator Com
+3 Garras, 1 Chave Torx: T15, 2 Chaves Phillips: 1 - 0, 2 Chaves de
+Fenda 3/16'' - 1/8'', 2 Chaves Canhão: 3/16'' - 1/4'', 1 Alicate Bico
+Meia-Cana 5" com mola, com estojo para organização, 13 peças.
+	\item 01 Multímetro digital.
+
+	
 \end{alineas}
 
 \section{Infraestrutura de laboratório de informática conectado à internet}
 
-
-\begin{table}[htpb]
-\IBGEtab{
-   \caption{Estrutura do Laboratório de Informática no \textit{campus} Tauá.}
-    \label{tab:labinfo}
-}{
-    \small
-    \begin{tabular}{ p{.74\textwidth} l}
-        \toprule
-        
-        \cellcolor{gray!20} \bfseries DESCRIÇÃO & \cellcolor{gray!20} \bfseries QUANTIDADE \\
-        
-       Carteira aluno com apoio e assento em plástico azul. & \qquad\qquad 23 \\[1em]
-       
-        Módulo isolador estabilizador, potência nominal 440va modelo isol.biv/116.	& \qquad\qquad 09 \\[1em]
-        
-        Ar condicionado na cor branca modelo msc-18crn1 18000 btu/h. &
-        \qquad\qquad 01 \\[1em]
-        
-        Ar condicionado na cor branca modelo asba24jfc no de série e007211 18000 btu/h. & \qquad\qquad 01 \\[1em]
-        
-        Quadro branco dimensões $5,00 \times 1,20$. & \qquad\qquad 01 \\[1em]
-        
-        Suporte de teto para projetor multimídia com as seguintes características, suporte antifurto, acabamento em pintura  eletrostática com capacidade de até 10 kg.  & \qquad\qquad 01 \\\\
-        
-        Cadeira fixa: cadeira para alunos com pés em aço tubular de seção quadrada $30 \times 30$mm, assento de 410 x 400mm e encosto de $410 \times 240$mm, ambos anatômicos fabricados em resina plástica de superfície lisa, na cor branca. & \qquad\qquad 20 \\\\
-        
-        Conjunto mesa com tampo medindo $1100 \times 600 \times 720$mm, em mdf 25mm, e painel frontal em mdf 15mm, revestidos em  laminado melamínico na cor azul. & \qquad\qquad 01 \\\\
-        
-        
-        Cadeira professor de ferro com assento em plástico preto. & \qquad\qquad 01 \\[1em]
-        
-        Mesa para computador: mesa de dimensões $600 \times 800 \times 750$mm (profundidade $\times$ largura $\times$ altura respectivamente), com 2 pés em  aço pintados em pó epóxi na cor argila. & \qquad\qquad 19 \\\\
-        
-        {Mesa para computador dimensões $600 \times 800 \times  750$mm (profundidade $\times$ largura $\times$ altura, respectivamente) com 2 pés de aço pintados em époxi pó na cor argila, intertravados - (os pés) por painel frontal em mdf 18 mm, revestido nas 2 faces com laminado melamínico mr: adri.} & \qquad\qquad 01 \\\\
-        
-        Quadro branco magnético com moldura em alumínio dimensões $1,80 \times 1,20$cm. & \qquad\qquad 01 \\[1em]
-        
-        CPU na cor preta no de série BRJ650BG7N. & \qquad\qquad 20 \\[1em]
-      
-        Monitor na cor preta modelo V225HZ no de série BRG63801ZJ. & \qquad\qquad 20 \\[1em]
-        
-        Switch PORT NWAY modelo ENH908-NWY com 8 entradas na cor preta. & \qquad\qquad 04 \\\\
-
-        Switch PORT NWAY com 16 entradas na cor preta. & \qquad\qquad 01\\
-        
-        \bottomrule
-    \end{tabular}
-   }{
-    \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-   }
-\end{table}
+Ver \textbf{Laboratório de Informática 01}, descrito na \autoref{labs-info}.
 
 \section{Laboratórios básicos}
 
+Ver \textbf{Laboratório de Informática 02}, descrito na \autoref{labs-info}.
+
+
 \section{Laboratórios específicos à área do curso}
 
+Ver \textbf{Laboratório de Informática 01}, \textbf{Laboratório de Informática 02} e \textbf{Laboratório de Redes}, descritos nas seções anteriores.
+\begin{quadro}
+	\IBGEtab{
+		\caption{Componentes curriculares e indicação de seu respectivo laboratório.}
+		
+	}{
+		\renewcommand{\arraystretch}{1.3}
+		\begin{tabular}{p{9cm} p{5cm}}
+		
+			\rowcolor[HTML]{212121} 				
+			{\color{white}COMPONENTE} & {\color{white}ESPAÇO FÍSICO}\vspace{1em}\\
 
+		
+	
+			Empreendedorismo;  \newline 
+			Gestão de Negócios;  \newline  
+			Inglês Técnico; e \newline
+			Ética e Responsabilidade Socioambiental. & Sala de aula; \\
 
-O Curso Técnico Subsequente em Informática para Internet dispõe de laboratórios
-específicos para realização das atividades práticas de ensino:  laboratório de
-informática 01 (\autoref{tab:labinfo}) e 02  e laboratório de redes. As estruturas desses laboratórios são
-apresentadas nas Tabelas a seguir.
+			\rowcolor[HTML]{EFEFEF} 
+			Introdução à Computação;  \newline 
+			Redes de Computadores; e  \newline 
+			Desenvolvimento e Operações. & Laboratório de Redes. \\
+			
 
-----
+			Análise e Projeto de Sistemas;  \newline 
+			Engenharia de Software;  \newline 
+			Tecnologias WEB; e  \newline 
+			Testes e Qualidade de Software. & Laboratório de Informática 2. \\
 
-\section{Instalações e Equipamentos}
+			\rowcolor[HTML]{EFEFEF} 				
+			Banco de Dados;  \newline 
+			Estrutura de Dados;  \newline 
+			Lógica de Programação;  \newline 
+			Projeto Integrador Multidisciplinar;  \newline 
+			Programação Orientada a Objetos; e  \newline 
+			Programação para Dispositivos Móveis. & Laboratório de Informática 1.
 
-As Tabelas a seguir demonstram as instalações (\autoref{tab:instalacoes}) e
-equipamentos (\autoref{tab:recursos}) existentes no \textit{campus} Tauá.
-\begin{table}[htpb]
-\IBGEtab{
-   \caption{Equipamentos existentes  no \textit{campus} Tauá.}
-    \label{tab:recursos}
-}{
-    
-    \begin{tabularx}{\textwidth}{ X l} 
-        \toprule
-        
-        \cellcolor{gray!20} \bfseries RECURSO & \cellcolor{gray!20} \bfseries QUANTIDADE \\
-                
-        Computador para uso dos alunos &  \qquad\qquad 	50 \\
-        Televisor &  \qquad\qquad 	02 \\
-        Vídeo Cassete Aparelho de DVD &  \qquad\qquad 	01 \\
-        Retroprojetores	 &  \qquad\qquad 01 \\
-        Data Show &  \qquad\qquad 	12 \\ 
-        Quadro Branco &  \qquad\qquad 	20 \\
-        Flip-Shart	&  \qquad\qquad  01 \\
-        Receptor para antena parabólica	&  \qquad\qquad  01 \\
-        Monitor para vídeo-conferência &  \qquad\qquad 	01 \\
-        Câmera Fotográfica &  \qquad\qquad 	01 \\ 
-        Filmadora Digital &  \qquad\qquad 	01
-%        Sanitários adaptados para pessoas com necessidades especiais  &  \qquad\qquad  03 
-        \\
-        \bottomrule
-    \end{tabularx}
-   }{
-    \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-   }
-\end{table}
-
-
-
-
-
-
-\section{Laboratórios Específicos ao Curso}
-
-O Curso Técnico Subsequente em Informática para Internet dispõe de laboratórios
-específicos para realização das atividades práticas de ensino:  laboratório de
-informática e laboratório de redes. As estruturas desses laboratórios são
-apresentadas nas Tabelas a seguir.
-
-
-
-\begin{table}[htpb]
-\IBGEtab{
-   \caption{Estrutura do Laboratório de Informática no \textit{campus} Tauá.}
-    \label{tab:labinfo}
-}{
-    \small
-    \begin{tabular}{ p{.74\textwidth} l}
-        \toprule
-        
-        \cellcolor{gray!20} \bfseries DESCRIÇÃO & \cellcolor{gray!20} \bfseries QUANTIDADE \\
-        
-       Carteira aluno com apoio e assento em plástico azul. & \qquad\qquad 23 \\[1em]
-       
-        Módulo isolador estabilizador, potência nominal 440va modelo isol.biv/116.	& \qquad\qquad 09 \\[1em]
-        
-        Ar condicionado na cor branca modelo msc-18crn1 18000 btu/h. &
-        \qquad\qquad 01 \\[1em]
-        
-        Ar condicionado na cor branca modelo asba24jfc no de série e007211 18000 btu/h. & \qquad\qquad 01 \\[1em]
-        
-        Quadro branco dimensões $5,00 \times 1,20$. & \qquad\qquad 01 \\[1em]
-        
-        Suporte de teto para projetor multimídia com as seguintes características, suporte antifurto, acabamento em pintura  eletrostática com capacidade de até 10 kg.  & \qquad\qquad 01 \\\\
-        
-        Cadeira fixa: cadeira para alunos com pés em aço tubular de seção quadrada $30 \times 30$mm, assento de 410 x 400mm e encosto de $410 \times 240$mm, ambos anatômicos fabricados em resina plástica de superfície lisa, na cor branca. & \qquad\qquad 20 \\\\
-        
-        Conjunto mesa com tampo medindo $1100 \times 600 \times 720$mm, em mdf 25mm, e painel frontal em mdf 15mm, revestidos em  laminado melamínico na cor azul. & \qquad\qquad 01 \\\\
-        
-        
-        Cadeira professor de ferro com assento em plástico preto. & \qquad\qquad 01 \\[1em]
-        
-        Mesa para computador: mesa de dimensões $600 \times 800 \times 750$mm (profundidade $\times$ largura $\times$ altura respectivamente), com 2 pés em  aço pintados em pó epóxi na cor argila. & \qquad\qquad 19 \\\\
-        
-        {Mesa para computador dimensões $600 \times 800 \times  750$mm (profundidade $\times$ largura $\times$ altura, respectivamente) com 2 pés de aço pintados em époxi pó na cor argila, intertravados - (os pés) por painel frontal em mdf 18 mm, revestido nas 2 faces com laminado melamínico mr: adri.} & \qquad\qquad 01 \\\\
-        
-        Quadro branco magnético com moldura em alumínio dimensões $1,80 \times 1,20$cm. & \qquad\qquad 01 \\[1em]
-        
-        CPU na cor preta no de série BRJ650BG7N. & \qquad\qquad 20 \\[1em]
-      
-        Monitor na cor preta modelo V225HZ no de série BRG63801ZJ. & \qquad\qquad 20 \\[1em]
-        
-        Switch PORT NWAY modelo ENH908-NWY com 8 entradas na cor preta. & \qquad\qquad 04 \\\\
-
-        Switch PORT NWAY com 16 entradas na cor preta. & \qquad\qquad 01\\
-        
-        \bottomrule
-    \end{tabular}
-   }{
-    \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-   }
-\end{table}
-
-
-
-\begin{table}[htpb]
-\IBGEtab{
-   \caption{Estrutura do Laboratório de Redes no \textit{campus} Tauá.}
-    \label{tab:labredes}
-}{
-    
-    \normalsize
-    \begin{tabular}{ p{.735\linewidth} p{.205\linewidth} } 
-        \toprule
-        
-       
-        \cellcolor{gray!20} \bfseries DESCRIÇÃO & \cellcolor{gray!20} \bfseries QUANTIDADE \\
-        
-        Carteira aluno com apoio em plástico azul. & \qquad\qquad 28 \\ \\
-        
-        Monitor tela LED na cor preta modelo 19IEL. & \qquad\qquad 12 \\ \\
-        
-        CPU na cor preta no de série IFB110103241. & \qquad\qquad 11 \\ \\
-        
-        Módulo isolador estabilizador, potência nominal 440VA modelo isol.est.biv/115. & \qquad\qquad 03 \\ \\
-        
-        Estabilizador na cor preta modelo ML-1000B1 & \qquad\qquad 04 \\\\ 
-        
-        Suporte de teto para projetor multimídia com as seguintes características, suporte antifurto, acabamento em pintura  eletrostática com capacidade de até 10 kg. & \qquad\qquad 03 \\\\
-        
-        Switch PORT NWAY na cor preta com 8 entradas modelo enh908-nwy. & \qquad\qquad 03 \\\\
-        
-        Cadeira fixa: cadeira para alunos com pés em aço tubular de seção quadrada $30 \times 30$mm, assento de $410 \times  400$mm e encosto de $410 \times  240$mm, ambos anatômicos fabricados em resina plástica de superfície lisa, na cor branca. & \qquad\qquad 13 \\\\ 
-        
-        Cadeira professor em aço na cor preta 01 Conjunto mesa com tampo medindo $1100  \times  600  \times  720$mm, em mdf 25mm, e painel frontal em mdf 15mm, revestidos em laminado melamínico na cor azul. & \qquad\qquad 01 \\\\
-        
-        Mesa retângular para escritório na cor branca com dimensões $120 \times 60$ cm. & \qquad\qquad 01 \\\\
-        
-        Mesa retângular para escritório com dimensões $80\times 60$ cm com pés em aço preto. & \qquad\qquad 11 \\\\ 
-
-
-        Quadro branco $5,00 \times 1,20$m. & \qquad\qquad 01\\\\
-        
-         Ar condicionado na cor branca modelo asba30jfc no de série e006172 18000 btu/h &  \qquad\qquad 01\\\\
-         
-         Ar condicionado na cor branca modelo tcl-24co-a/tco-24coa-2400 24000 btu/h &  \qquad\qquad 01\\
-         
-        \bottomrule
-    \end{tabular}
-   }{
-    \fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
-   }
-\end{table}
-    
-
+		\end{tabular}
+	
+	}{
+		\fonte{Comissão de Elaboração do Projeto Pedagógico do Curso.}
+	}
+\end{quadro}
 
 % ---
 % Finaliza a parte no bookmark do PDF
@@ -2398,11 +2249,10 @@ apresentadas nas Tabelas a seguir.
     \begin{vplace}
         \bfseries
         {
-        \fontsize{5cm}{5.5cm}\selectfont
-
-        ANEXOS
+        	\fontsize{5cm}{5.5cm}\selectfont
+        	ANEXOS
         }
-\end{vplace}
+	\end{vplace}
         
     \end{center}
 }
@@ -2427,7 +2277,7 @@ apresentadas nas Tabelas a seguir.
     
     {
     	\setlength{\parindent}{15em}    	
-    	\include{puds}
+    	%\include{puds}
 	}
 }
 

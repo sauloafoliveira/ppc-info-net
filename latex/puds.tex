@@ -55,23 +55,25 @@ presenciais.
 	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Nível: \bfseries Técnico }
 	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Semestre: \bfseries #7}  &
 	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Pré-requisitos: \bfseries #3} \\[0.25em]
+
+	\ifthenelse{
 		
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Teórica: \bfseries #4{h} } & 
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Prática: \bfseries #5{h} } \\
+		
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Presencial: \bfseries \ifthenelse{\equal{2}{#6}}{32}{64}h } & 
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Distância: \bfseries 0h } \\
+		
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Carga Horária} &
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Profissional: \bfseries \ifthenelse{\equal{TSII.203}{#1} \OR \equal{TSII.204}{#1} \OR \equal{TSII.304}{#1}}{12}{0}h } & \\
+		
+		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
+		\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Atividades não presenciais: \bfseries \ifthenelse{\equal{2}{#6}}{8}{16}h }  \\
+	}
 	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Teórica: \bfseries #4{h} } & 
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Prática: \bfseries #5{h} } \\
-	
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Presencial: \bfseries #4{h} } & 
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Distância: \bfseries 0h } \\
-	
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Carga Horária} &
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Profissional: \bfseries #4{h} } & \\
-	
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-	\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Atividades não presenciais: \bfseries #4{h} }  \\
-	
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-	\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Extensão: \bfseries #4{h} }  \\
+	\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Extensão: \bfseries 0{h} }  \\
 	 
 	
 % 	
