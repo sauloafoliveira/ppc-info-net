@@ -38,71 +38,71 @@ presenciais.
 
 \renewcommand{\arraystretch}{1.3}
 
+
 \newcommand{\pudinfo}[8]{
 	\newpage
 	%\section{#2}
-    \noindent\begin{tabularx}{\linewidth}{ | X X X X X X | } 
+		\begin{center}
+			\cabecalho
+		\end{center}
+		\noindent\begin{tabularx}{\linewidth}{ p{3.5cm} X X} 
+		
+%		\multicolumn{3}{c}{\cabecalho} \\
+%		
+		\multicolumn{3}{p{\textwidth-2\tabcolsep}}{\cellcolor{gray!10}DISCIPLINA: \bfseries #2} \\
 
-    \multicolumn{6}{p{\textwidth-2\tabcolsep}}{\cabecalho} \\
-    
-    
-	\multicolumn{6}{p{\textwidth-2\tabcolsep}}{\cellcolor{gray!10}DISCIPLINA: \bfseries #2} \\
+		C\'odigo: \bfseries #1 & 
+		Carga horária total: \bfseries \MULTIPLY{20}{#6}{\solution} \solution{h} &
+		Créditos: \bfseries #6 \\
+		
+		Nível: \bfseries Técnico &
+		Semestre: \bfseries #7 &
+		Pré-requisitos: \bfseries  {\tiny #3} \\
+		
+		 \ifthenelse{\equal{TSII.203}{#1} \OR \equal{TSII.204}{#1} \OR \equal{TSII.304}{#1}}{
+		 	
+			\ifthenelse{\equal{TSII.304}{#1}}{
+				& Teórica: \bfseries 24{h}  &
+			}{
+				&  Teórica: \bfseries 28h  &
+			}
+			Prática: \bfseries  0h \\	
+			
+		 }{
+		 	& 
+			Teórica: \bfseries #4{h}  &
+			Prática: \bfseries #5{h} \\
+		 
+		 }
 	
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{C\'odigo: \bfseries #1 }
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Carga horária total: \bfseries \MULTIPLY{20}{#6}{\solution} \solution{h}}  &
-	\multicolumn{2}{p{.34\textwidth-2\tabcolsep}}{Créditos: \bfseries #6} \\
-	
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Nível: \bfseries Técnico }
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Semestre: \bfseries #7}  &
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Pré-requisitos: \bfseries #3} \\[0.25em]
+		% 	\pudinfo{TSII.102}{Lógica de Programação}{---}{40}{40}{4}{1$^\circ$ Semestre}
+%		& 
+%		Teórica: \bfseries #4{h}  &
+%		Prática: \bfseries  \ifthenelse{\equal{TSII.203}{#1} \OR \equal{TSII.204}{#1} \OR \equal{TSII.304}{#1}}{#5}{0}h \\
+		
+		&
+		Presencial: \bfseries \ifthenelse{\equal{2}{#6}}{40}{80}h  &
+		Distância: \bfseries 0h \\
+		
+		Carga Horária &
+		\ifthenelse{\equal{TSII.203}{#1} \OR \equal{TSII.204}{#1} \OR \equal{TSII.304}{#1}}{			
+			\ifthenelse{\equal{TSII.304}{#1}}{
+				Prática Profissional:  \bfseries 16{h} 
+			}{
+				Prática Profissional: \bfseries 12{h} 
+			}			
+		}{
+			Prática Profissional: \bfseries  {0}h 
+		}\\
+		
+		&
+		\multicolumn{2}{p{.6\textwidth}}{Atividades não presenciais: \bfseries \ifthenelse{\equal{2}{#6}}{8}{16}h }  \\
 
-	\ifthenelse{
-		
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Teórica: \bfseries #4{h} } & 
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Prática: \bfseries #5{h} } \\
-		
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Presencial: \bfseries \ifthenelse{\equal{2}{#6}}{32}{64}h } & 
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Distância: \bfseries 0h } \\
-		
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Carga Horária} &
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{Profissional: \bfseries \ifthenelse{\equal{TSII.203}{#1} \OR \equal{TSII.204}{#1} \OR \equal{TSII.304}{#1}}{12}{0}h } & \\
-		
-		\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-		\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Atividades não presenciais: \bfseries \ifthenelse{\equal{2}{#6}}{8}{16}h }  \\
-	}
-	\multicolumn{2}{p{.33\textwidth-2\tabcolsep}}{} &
-	\multicolumn{4}{p{.67\textwidth-2\tabcolsep}}{Extensão: \bfseries 0{h} }  \\
-	 
-	
-% 	
-%     \multicolumn{1}{p{.16\textwidth-2\tabcolsep}}{\cellcolor{gray!40}\bfseries\large #1} & \multicolumn{5}{p{.84\textwidth-2\tabcolsep}}{\cellcolor{gray!30}\bfseries\uppercase{#2}} \\ 
-%     
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Carga Horária}  &
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Teórica} & 
-%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries CH Prática}   \\
-%     
-% 
-%     
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{ \MULTIPLY{20}{#6}{\solution} \solution } &
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#4} & 
-%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#5} \\
-%     
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Número de Créditos}  &
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Código Pré-Requisito} & 
-%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{\cellcolor{gray!10}\bfseries Semestre}   \\
-%     
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{#6} &
-%     \multicolumn{2}{ p{.33\textwidth-2\tabcolsep} }{\small #3} & 
-%     \multicolumn{2}{ p{.34\textwidth-2\tabcolsep} }{#7} \\ 
-%     
-    
+		&
+		\multicolumn{2}{p{.6\textwidth}}{Extensão: \bfseries 0{h}}  \\
+
+	      
 	\end{tabularx}
-
-
-
-	
 
 }
 
@@ -346,23 +346,27 @@ Paulo: Pearson Prentice Hall, 2013. 605 p. ISBN 9788581435398.
 	
 	\avaliacao	
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 	
 	\begin{bibbasica}
+		\item MANZANO, José Augusto N.G.; OLIVEIRA, Jayr Figueiredo de. \textbf{Algoritmos}: lógica para desenvolvimento de programação de computadores. 29. ed. São Paulo: Érica, 2019.368 p. ISBN 9788536531458.
 		\item ALVES, William Pereira. \textbf{Lógica de programação de computadores}: ensino didático. São Paulo: Érica, 2010. 176 p. Bibliografia. ISBN 9788536502892. 
-		\item FORBELLONE, André Luiz Villar. \textbf{Lógica de programação}: a construção de algoritmos e estruturas de dados. 3.ed. São Paulo: Pearson Prentice Hall, 2005.  ISBN 9788576050247. (BVU)
+%		\item FORBELLONE, André Luiz Villar. \textbf{Lógica de programação}: a construção de algoritmos e estruturas de dados. 3.ed. São Paulo: Pearson Prentice Hall, 2005.  ISBN 9788576050247. (BVU)
 	 	\item XAVIER, Gley Fabiano Cardoso. \textbf{Lógica de programação}. 13. ed. rev. e atual São Paulo: Senac, 2014. 318 p. (Nova série informática). ISBN 9788539604579.
 	 	 
 	\end{bibbasica}
 	
 	\begin{bibcomplementar}
 	
-		\item ASCENCIO, Ana Fernanda Gomes. \textbf{Fundamentos da programação de computadores}: algoritmos, Pascal, C/C++ e Java. 2. ed. São Paulo: Pearson, 2010. 434 p. Inclui bibliografia. ISBN 9788576051480.
- (BVU)
-		\item DEITEL, Paul; DEITEL, Harvey. \textbf{Java}: como programar. Tradução de Edson Furmankiewicz. Revisão técnica de Fábio Luis Picelli Lucchini. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 1144 p. ISBN 9788576055631. (BVU)
+%		\item ASCENCIO, Ana Fernanda Gomes. \textbf{Fundamentos da programação de computadores}: algoritmos, Pascal, C/C++ e Java. 2. ed. São Paulo: Pearson, 2010. 434 p. Inclui bibliografia. ISBN 9788576051480.
+% (BVU)
+%		\item DEITEL, Paul; DEITEL, Harvey. \textbf{Java}: como programar. Tradução de Edson Furmankiewicz. Revisão técnica de Fábio Luis Picelli Lucchini. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 1144 p. ISBN 9788576055631. (BVU)
 	    	
-
+	\item ASCENCIO, Ana Fernanda Gomes. \textbf{Fundamentos da programação de computadores}: algoritmos, Pascal, C/C++ e Java. 2. ed. São Paulo: Pearson, 2010. 434p. Inclui bibliografia. ISBN 9788576051480.
+	\item DEITEL, Paul; DEITEL, Harvey. \textbf{Java}: como programar. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 1144 p. ISBN 9788576055631.
+	\item DOUNEY, Allen B. \textbf{Pense em Python}: pense como um cientista da computação. 2. ed. São Paulo: Novatec, 2016. ISBN 9788575225080.
     	\item FARREL, Joyce. \textbf{Lógica e design de programação}. Tradução de André Schifnagel Avrichir. Revisão técnica de Robert Joseph Didio. 5. ed. São Paulo: Cengage Learning, 2010. 416 p. Inclui bibliografia. ISBN 9788522107575.
-    	\item GUEDES, Sérgio (Org.). \textbf{Lógica de programação algorítmica}. São Paulo: Pearson Education do Brasil, 2014.  ISBN 9788543005546. (BVU)
+%    	\item GUEDES, Sérgio (Org.). \textbf{Lógica de programação algorítmica}. São Paulo: Pearson Education do Brasil, 2014.  ISBN 9788543005546. (BVU)
     	\item PEREIRA, Silvio do Lago. \textbf{Algoritmos e lógica de programação em C}: uma abordagem didática. São Paulo: Érica, 2010. 190 p. Bibliográfia. ISBN 9788536503271.
 		
 	\end{bibcomplementar}
@@ -424,10 +428,16 @@ Paulo: Pearson Prentice Hall, 2013. 605 p. ISBN 9788581435398.
 	   \end{enumerate}
 	\end{description}
 	
-	\bibbasica
+	\avaliacao
+	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
+	
+	
+	\begin{bibbasica}
 		\item ALMEIDA, Rubens Queiros de. \textbf{As palavras mais comuns da Língua Inglesa}. São Paulo: Novatec, 2003.312 p. ISBN 97885575220373.
 		\item BROWN, H. Douglas. \textbf{Teaching by Princinples}: An Interactive Approach to Language Pedagogy. 2ed. New York: Longman, 2001.
 		\item HORNBY, A. S. \textbf{Oxford advanced learners Dictionary of Current English}. 7. ed. Oxford (Inglaterra): Oxford University Press, 2007. 1779 p., Il. + Inclui CD-ROM. ISBN 9780194001168 (Broch.).
+	\end{bibbasica}
 	
 	\begin{bibcomplementar}
 		\item DIAS, Reinildes. \textbf{Inglês Instrumental}: leitura crítica: uma abordagem construtiva. 3. ed. revista e ampliada. Belo Horizonte, UFMG, 2002.
@@ -542,21 +552,22 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 	
 	\begin{bibbasica}
 		
 		\item CYBIS, Walter; BETIOL, Adriana Holtz; FAUST, Richard. \textbf{Ergonomia e Usabilidade}: Conhecimentos, Métodos e Aplicações. 2 ed. São Paulo: Novatec, 2010. ISBN 9788575222324.
-	    \item FLATSCHART, Fábio. \textbf{HTML5}: Embarque imediato. Rio de Janeiro: Brasport, 2011.  ISBN 9788574525778. (BVU)
+	    \item FLATSCHART, Fábio. \textbf{HTML5}: Embarque imediato. Rio de Janeiro: Brasport, 2011.  ISBN 9788574525778.
 	    \item MANZANO, José Augusto N. G.; TOLEDO, Suely Alves de. \textbf{Guia de orientação e desenvolvimento de sites HTML, XHTML, CSS e Javascript/JScript}. 2. ed. São Paulo: Érica, 2010. ISBN 9788536501901.
 
 	\end{bibbasica}
 	
 	\begin{bibcomplementar}
 	
- 		\item CHARK, Andrew. \textbf{Como criar sites persuasivos}: clique aqui. São Paulo: Pearson, 2004. ISBN 9788534615112. (BVU)
+ 		\item CHARK, Andrew. \textbf{Como criar sites persuasivos}: clique aqui. São Paulo: Pearson, 2004. ISBN 9788534615112.
         \item NIELSEN, Jakob. \textbf{Projetando Websites.} Rio de Janeiro: Campus, 2000. ISBN 85-352-0656-6.
         \item OLIVIERO, Carlos A. J. \textbf{Faça Um Site HTML 4.0}: conceitos e aplicações. São Paulo: Erica, 2007. ISBN 9788536501635.
-        \item SEGURADO, Valquiria Santos (Org.). \textbf{Projeto de interface com o usuário}. São Paulo: Pearson Education do Brasil, 2015. Livro. 195 p. ISBN 9788543017303. (BVU)
+        \item SEGURADO, Valquiria Santos (Org.). \textbf{Projeto de interface com o usuário}. São Paulo: Pearson Education do Brasil, 2015. Livro. 195 p. ISBN 9788543017303.
         \item TERUEL, Evandro Carlos. \textbf{Web total}: desenvolva sites com tecnologias de uso livre: prático e avançado. São Paulo: Érica, 2009. 336p. Bibliografia. ISBN 9788536502328.	
 
 	\end{bibcomplementar}
@@ -638,14 +649,14 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
+	\naopresencial
 		
 	\begin{bibbasica}
-		\item BALL, Bill; DUFF, Hoyt. \textbf{Dominando Linux}: Red Hat e Fedora. Editora Pearson. ISBN 9788534615174. (BVU)
-		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. (BVU)
-		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do linux}: guia do administrador. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121. (BVU)
+		\item BALL, Bill; DUFF, Hoyt. \textbf{Dominando Linux}: Red Hat e Fedora. Editora Pearson. ISBN 9788534615174. 
+		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. 
+		\item NEMETH, Evi; SNYDER, Garth; HEIN, Trent R. \textbf{Manual completo do linux}: guia do administrador. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 684 p. ISBN 9788576051121.  
 		
-		\item TANENBAUM, Andrew S. \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU) 
+		\item TANENBAUM, Andrew S. \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240.  
 
 		
 	\end{bibbasica}
@@ -745,13 +756,13 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
+	\naopresencial
 
 	\begin{bibbasica}
 			
         \item DATE, C. J. \textbf{Introdução a sistemas de banco de dados}. 8. ed. Rio de Janeiro: Elsevier, 2004. ISBN 9788535212730. 
-		\item ELMASRI, Ramez. E.; NAVATHE, Shamkant B. \textbf{Sistemas de banco de dados}. 6. ed. São Paulo: Pearson Addison Wesley, 2011. ISBN 9788579360855. (BVU)
-		\item SILBERSCHATZ, Abraham; KORTH, Henry; SUDARSHAN, S. \textbf{Sistema de banco de dados}. 6. ed. Rio de Janeiro: Elsevier, 2012. ISBN 9788535245356. 
+		\item ELMASRI, Ramez. E.; NAVATHE, Shamkant B. \textbf{Sistemas de banco de dados}. 6. ed. São Paulo: Pearson Addison Wesley, 2011. ISBN 9788579360855. 
+				\item SILBERSCHATZ, Abraham; KORTH, Henry; SUDARSHAN, S. \textbf{Sistema de banco de dados}. 6. ed. Rio de Janeiro: Elsevier, 2012. ISBN 9788535245356. 
 		
 	\end{bibbasica}
 	
@@ -759,9 +770,9 @@ navegação na Web, layout e composição, avaliação de usabilidade.
     
 	    \item ALVES, William Pereira. \textbf{Bancos de dados}: teoria e desenvolvimento. São Paulo: Érica, 2009. 286 p. ISBN 9788536502557.
 		\item GRAVES, Mark. \textbf{Projeto de banco de dados com XML}. São Paulo: Pearson Education do Brasil, 2003.  ISBN 9788534614719. (BVU)
-		\item HOTKA, Dan. \textbf{Aprendendo Oracle 9i}. São Paulo: Pearson Education do Brasil, 2002. 454 p. ISBN 9788534613248. (BVU)
-		\item LAUDON, Keneth C.; LAUDON, Jane P. \textbf{Sistemas de informação gerenciais}. 11. ed. São Paulo: Pearson Education do Brasil, 2014.  ISBN 9788543005850. (BVU)
-		\item PUGA, Sandra; FRANÇA, Edson; GOYA, Milton. \textbf{Banco de dados}: implementação em SQL, PL/SQL e Oracle 11g. São Paulo: Pearson Education do Brasil, 2013. ISBN 9788581435329. (BVU)
+		\item HOTKA, Dan. \textbf{Aprendendo Oracle 9i}. São Paulo: Pearson Education do Brasil, 2002. 454 p. ISBN 9788534613248.  
+		\item LAUDON, Keneth C.; LAUDON, Jane P. \textbf{Sistemas de informação gerenciais}. 11. ed. São Paulo: Pearson Education do Brasil, 2014.  ISBN 9788543005850.  
+		\item PUGA, Sandra; FRANÇA, Edson; GOYA, Milton. \textbf{Banco de dados}: implementação em SQL, PL/SQL e Oracle 11g. São Paulo: Pearson Education do Brasil, 2013. ISBN 9788581435329.  
 		 
 	\end{bibcomplementar}
 		
@@ -825,12 +836,12 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 	
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
+	\naopresencial
 	
 
 	\begin{bibbasica}
 		\item BARNES, David J.; KÖLLING, Michael. \textbf{Programação orientada a objetos com Java}: uma introdução prática usando o BLUEJ. Tradução de Edson Furmankiewicz. Revisão técnica de João Luiz Silva Barbosa. 4. ed. São Paulo: Pearson Prentice Hall, 2009. 455 p. Inclui bibliografia. ISBN 9788576051879. 
-		\item DEITEL, Paul; DEITEL, Harvey M. \textbf{Java}: como programar. 8. ed. Editora Pearson. Livro. 1178 p. ISBN 9788576055631. (BVU)
+		\item DEITEL, Paul; DEITEL, Harvey M. \textbf{Java}: como programar. 8. ed. Editora Pearson. Livro. 1178 p. ISBN 9788576055631.  
 		\item HORSTMANN, Cay S.; CORNELL, Gary. \textbf{Core Java}: volume I - fundamentos. Tradução de Edson Furmankiewicz, Carlos Schafranski. Revisão técnica de Nivaldo Foresti. 8. ed. São Paulo: Pearson Prentice Hall, 2010. 383 p. (I). ISBN 9788576053576.
 		
 	\end{bibbasica}
@@ -839,8 +850,8 @@ navegação na Web, layout e composição, avaliação de usabilidade.
     
         \item LARMAN, Craig. \textbf{Utilizando UML e padrões}: uma introdução à análise e ao projeto orientados a objetos e ao desenvolvimento iterativo. Tradução de Rosana T. Vaccare Braga. 3, ed. Porto Alegre: Bookman, 2007. 695 p. Inclui bibliografia. ISBN 9788560031528. 
 		\item MCLAUGHLIN, Brett; POLLICE, Gary; WEST, David. \textbf{Use a cabeça}: análise  e projeto orientado ao objeto. Tradução de Betina Macêdo. Revisão técnica de Eduardo Velasco. Rio de Janeiro: Alta Books, 2007. 442 p. ISBN 9788576081456.
-		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo. definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297.  (BVU)
-		\item PAGE-JONES, Meilir. \textbf{Fundamentos do desenho orientado a objeto com UML}.  Editora Pearson. Livro. 488 p. ISBN 9788534612432.  (BVU)
+		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo. definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297.  
+		\item PAGE-JONES, Meilir. \textbf{Fundamentos do desenho orientado a objeto com UML}.  Editora Pearson. Livro. 488 p. ISBN 9788534612432. 
 		\item SANTOS, Rafael. \textbf{Introdução à programação orientada a objetos usando Java}. 2. ed. Rio de Janeiro: Elsevier, 2013. 313 p. (Campus SBC - Sociedade Brasileira de Computação). Inclui bibliografia e índice. ISBN 9788535274332.
 	
 	\end{bibcomplementar}
@@ -931,14 +942,15 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 	
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 	
 	\begin{bibbasica}
 			
         %\item PAULA FILHO, Wilson de Pádua. \textbf{Engenharia de Software}: fundamentos, métodos e padrões. 3. ed. Rio de Janeiro: LTC, 2009.
- 		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo.definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297. (BVU) 
+ 		\item MEDEIROS, Ernani Sales de. \textbf{Desenvolvendo software com UML 2.0}: definitivo.definitivo. São Paulo:  Pearson Makron Books, 2004. Livro. 288 p. ISBN 9788534615297.  
 		
  		\item PRESSMAN, Roger S.; MAXIM, Bruce R. \textbf{Engenharia de software}: uma abordagem profissional.  Tradução de Ariovaldo Griesi, Mario Moro Fecchio. Revisão técnica de Reginaldo Arakaki, Renato Manzan de Andrade, Julio Arakaki. 7. ed. Porto Alegre: AMGH, 2011. 780 p. Inclui bibliografia. ISBN 9788563308337. 
- 		\item SOMMERVILLE, Ian. \textbf{Engenharia de software}. Tradução de Kalinka Oliveira, Ivan Bosnic. Revisão técnica de Kechi Hirama. 9. ed. São Paulo: Pearson Prentice Hall, 2011. 529 p. Inclui bibliografia. ISBN 9788579361081. (BVU)
+ 		\item SOMMERVILLE, Ian. \textbf{Engenharia de software}. Tradução de Kalinka Oliveira, Ivan Bosnic. Revisão técnica de Kechi Hirama. 9. ed. São Paulo: Pearson Prentice Hall, 2011. 529 p. Inclui bibliografia. ISBN 9788579361081. 
  		
 	\end{bibbasica}
 	
@@ -949,8 +961,8 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 		\item ENGHOLM JÚNIOR, Hélio. \textbf{Engenharia de software na prática}. São Paulo: Novatec, 2010. 438 p. Inclui bibliografia. ISBN 9788575222171.
 		\item LIMA, Adilson da Silva. \textbf{UML 2.3}: do requisito à solução. São Paulo: Érica, 2011. 368 p. Inclui bibliografia e índice. ISBN 9788536503776.
 		\item MAGELA, Rogério. \textbf{Engenharia de software aplicada}: fundamentos. Rio de Janeiro: Alta Books, 2006. 418 p. Inclui bibliografia. ISBN 8576081237.
-		\item PFLEEGER, Shari Lawrence. \textbf{Engenharia de Software}: teoria e prática. 2. ed. São Paulo: Prentice Hall, 2004. Livro. 560 p.  ISBN 8587918311 (BVU)
-		\item  VAZQUEZ, C	arlos Eduardo; SIM\~OES, Guilherme Siqueira. \textbf{Engenharia de Requisitos}: software orientado ao negócio. Editora Brasport, 2016.  294 p. ISBN 9788574527963. (BVU)
+		\item PFLEEGER, Shari Lawrence. \textbf{Engenharia de Software}: teoria e prática. 2. ed. São Paulo: Prentice Hall, 2004. Livro. 560 p.  ISBN 8587918311.
+		\item  VAZQUEZ, C	arlos Eduardo; SIM\~OES, Guilherme Siqueira. \textbf{Engenharia de Requisitos}: software orientado ao negócio. Editora Brasport, 2016.  294 p. ISBN 9788574527963. 
 		
 
 % 	    \item BOOCH, Grady; RUMBAUGH, James; JACOBSON, Ivar. \textbf{UML}: guia do usuário.  2. ed. Rio de Janeiro: Elsevier, 2012.
@@ -1031,27 +1043,27 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 
 	\avaliacao
 	A avaliação da aprendizagem deve considerar inicialmente as discussões em sala de aula, bem como os textos escritos durante a disciplina. Também, deve-se avaliar a consolidação dos projetos integradores com temáticas que envolvam tecnologia e os demais temas como questões étnico- raciais e indígenas e educação ambiental.
-	
+	\naopresencial
 	
 
 	\begin{bibbasica}
 			
-        \item AFONSO, Germano. B.; CREMONEZE, Cristina; BUENO, Luiz. (Orgs). \textbf{Ensino de História e Cultura Indígenas}. Curitiba: InterSaberes, 2016. (BVU)
+        \item AFONSO, Germano. B.; CREMONEZE, Cristina; BUENO, Luiz. (Orgs). \textbf{Ensino de História e Cultura Indígenas}. Curitiba: InterSaberes, 2016. 
 		\item BOSI, Alfredo. \textbf{Dialética da colonização}. 4. ed. São Paulo: Companhia das Letras, 2016. 420 p. ISBN 978-85-7164-276-8. %10 Exs. 981 B741d
-		\item CERVO, Amado Luiz; BERVIAN, Pedro Alcino; SILVA, Roberto da. \textbf{Metodologia científica}. 6. ed. São Paulo: Pearson Prentice Hall, 2007. 159 p. Inclui bibliografia. ISBN 8576050471. (BVU) %CAMPUS TAUÁ: 7 ex. 001.42 C419m
+		\item CERVO, Amado Luiz; BERVIAN, Pedro Alcino; SILVA, Roberto da. \textbf{Metodologia científica}. 6. ed. São Paulo: Pearson Prentice Hall, 2007. 159 p. Inclui bibliografia. ISBN 8576050471.    %CAMPUS TAUÁ: 7 ex. 001.42 C419m
 		\item GIL, Antônio Carlos. \textbf{Métodos e técnicas de pesquisa social}. 6.ed.  São Paulo: Atlas, 2016. 200 p. ISBN 978-85-224-5142-5. %CAMPUS TAUÁ: 30 ex. 001.42 G463m
 		\item MARCONI, Marina de Andrade; LAKATOS, Eva Maria. \textbf{Fundamentos de metodologia científica}. 7. ed. São Paulo: Atlas, 2010. 297 p. Inclui bibliografia. ISBN 978852245758. %CAMPUS TAUÁ: 8 ex. 001.42 M321f
-		\item PINOTTI, Rafael. \textbf{Educação ambiental para o século XXI}: no Brasil e no mundo. 2. ed. São Paulo: Blucher, 2016. (BVU)
+		\item PINOTTI, Rafael. \textbf{Educação ambiental para o século XXI}: no Brasil e no mundo. 2. ed. São Paulo: Blucher, 2016. 
 		\item SABBAG, Paulo Yazigi. {\bfseries Gerenciamento de projetos e empreendedorismo}. 2. ed. São Paulo: Saraiva, 2013. 226 p. Inclui bibliografia. ISBN 9788502204447. %CAMPUS TAUÁ: 7 ex. 658.404 S114g
 		\item SEVERINO, Antônio Joaquim. {\bfseries Metodologia do trabalho científico}. 23. ed. rev. e atual São Paulo: Cortez, 2012. 304 p. Inclui bibliografia. ISBN 9788524913112. %CAMPUS TAUÁ: 7 ex. 001.42 S498m
 	 
 	\end{bibbasica}
 	
 	\begin{bibcomplementar}
-        	\item AMARO, Sarita. \textbf{Racismo, igualdade racial e políticas de ações afirmativas no Brasil}.  Porto Alegre: EDIPUCRS, 2015. (BVU)
+        	\item AMARO, Sarita. \textbf{Racismo, igualdade racial e políticas de ações afirmativas no Brasil}.  Porto Alegre: EDIPUCRS, 2015.
 		
- 			\item ARAÚJO, Ulisses F.  {\bfseries Temas transversais, pedagogia de projetos e mudanças na educação}.  São Paulo: Summus, 2014. (BVU)
- 			\item FAZENDA, Ivani C. A.; TAVARES, Dirce E.; GODOY, Hermínia P. \textbf{Interdisciplinaridade na pesquisa científica}. [livro eletrônico].  Campinas, SP: Papirus Editora, 2017.  ISBN 9788544902776. (BVU)
+ 			\item ARAÚJO, Ulisses F.  {\bfseries Temas transversais, pedagogia de projetos e mudanças na educação}.  São Paulo: Summus, 2014. 
+ 			\item FAZENDA, Ivani C. A.; TAVARES, Dirce E.; GODOY, Hermínia P. \textbf{Interdisciplinaridade na pesquisa científica}. [livro eletrônico].  Campinas, SP: Papirus Editora, 2017.  ISBN 9788544902776.  
 		
 		%	\item CERVO, Amado Luiz; BERVIAN, Pedro Alcino; SILVA, Roberto da.  {\bfseries Metodologia científica}. 6. ed. São Paulo: Pearson Prentice Hall, 2007. 159 p. Inclui bibliografia. ISBN 8576050471. % CAMPUS TAUÁ: 7 ex. 001.42 C419m
 %			\item FHILIPPI JR., Arlindo (Coord).  {\bfseries Direitos humanos e meio ambiente}: minorias ambientais. [recurso eletrônico]. Barieri, SP: Manole, 2017. %(BVU)
@@ -1128,26 +1140,27 @@ navegação na Web, layout e composição, avaliação de usabilidade.
             
         \end{description}
 		Os recursos avaliativos serão utilizados com base  no art. 94 \S~1$^\circ$ alínea de I a XV do Regulamento de Organização Didática.
+	\naopresencial
 
 	\begin{bibbasica}
-		\item DEGEN, Ronald Jean. \textbf{O Empreendedor}: fundamentos da iniciativa empresarial. 8. ed. Editora Pearson. Livro. 384 p. ISBN 9788534602174.  (BVU) % Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788534602174>. Acesso em: 31 mar. 2020.
+		\item DEGEN, Ronald Jean. \textbf{O Empreendedor}: fundamentos da iniciativa empresarial. 8. ed. Editora Pearson. Livro. 384 p. ISBN 9788534602174.   % Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788534602174>. Acesso em: 31 mar. 2020.
         
 		%\item DORNELAS, José Carlos Assis. \textbf{Empreendedorismo na prática}: mitos e verdades do empreendedor de sucesso. 3.ed. Rio de Janeiro: LTC, 2015. 141 p.
-		\item MAXIMIANO, Antonio Cesar Amaru. \textbf{Empreendedorismo}. Editora Pearson. Livro. 186 p. ISBN 9788564574342. (BVU)
+		\item MAXIMIANO, Antonio Cesar Amaru. \textbf{Empreendedorismo}. Editora Pearson. Livro. 186 p. ISBN 9788564574342.  
 		
-		\item SERTEK, Paulo. \textbf{Empreendedorismo}.  Editora Intersaberes. Livro. 240 p.  ISBN 9788565704199. (BVU) %Disponível em: <http://ifcefortaleza.bv3.digitalpages.com.br/users/publications/9788565704199/pages/-2>. Acesso em: 31 mar. 2020.
+		\item SERTEK, Paulo. \textbf{Empreendedorismo}.  Editora Intersaberes. Livro. 240 p.  ISBN 9788565704199.  %Disponível em: <http://ifcefortaleza.bv3.digitalpages.com.br/users/publications/9788565704199/pages/-2>. Acesso em: 31 mar. 2020.
          
 		
 	\end{bibbasica}
 	
 	\begin{bibcomplementar}
-		\item ACADEMIA PEARSON. \textbf{Criatividade e Inovação}. São Paulo: Pearson Prentice Hall, 2011. Livro. 150 p. ISBN 9788576058847. (BVU)
+		\item ACADEMIA PEARSON. \textbf{Criatividade e Inovação}. São Paulo: Pearson Prentice Hall, 2011. Livro. 150 p. ISBN 9788576058847. 
         \item BERNARDI, Luiz Antonio. \textbf{Manual de empreendedorismo e gestão}: fundamentos, estratégias e dinâmicas. São Paulo: Atlas, 2012. 314 p. ISBN 9788522433384. 
 		
-        \item DEGEN, Ronald Jean. \textbf{O Empreendedor}: empreender como opção de carreira. São Paulo: Pearson Prentice Hall, 2009. 440 p. ISBN 9788576052050.  (BVU)
-		\item DORNELAS, José Carlos Assis. \textbf{Empreendedorismo na prática}:  mitos e verdades do empreendedor de sucesso. 3.ed. Rio de Janeiro: LTC, 2015. 141 p. ISBN 9788521627920. 
+        \item DEGEN, Ronald Jean. \textbf{O Empreendedor}: empreender como opção de carreira. São Paulo: Pearson Prentice Hall, 2009. 440 p. ISBN 9788576052050.  
+        		\item DORNELAS, José Carlos Assis. \textbf{Empreendedorismo na prática}:  mitos e verdades do empreendedor de sucesso. 3.ed. Rio de Janeiro: LTC, 2015. 141 p. ISBN 9788521627920. 
        
-         \item MAXIMIANO, Antonio Cesar Amaru. \textbf{Administração para empreendedores}: fundamentos da criação e gestão de novos negócios. 2. ed. Pearson.  258 p. ISBN 9788576058762.  (BVU) %Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788576058762>. Acesso em: 31 mar. 2020.
+         \item MAXIMIANO, Antonio Cesar Amaru. \textbf{Administração para empreendedores}: fundamentos da criação e gestão de novos negócios. 2. ed. Pearson.  258 p. ISBN 9788576058762.   %Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788576058762>. Acesso em: 31 mar. 2020.
 % 		%\item MORAIS, Roberto Souza de. \textbf{O profissional do futuro}: uma visão empreendedora. Manole. E-book. 156 p. %(BVU)%  Disponível em: <http://ifce.bv3.digitalpages.com.br/users/publications/9788578680978>. Acesso em: 31 mar. 2020.
 %         \item OSTERWALDER, Alexandrer; PIGNEUR, Yves. Business \textbf{Model Generation}: A Handbook for Visionaries, Game Changers, and Challengers. John Wiley \& Sons, 2013. Disponível em: \url{https://www.strategyzer.com/books/business-model-generation}. Acesso em: 31 mar. 2020. 
 %         \item OSTERWALDER, Alexandrer \textit{et al}. \textbf{Testing Business Ideas}: A Field Guide for Rapid Experimentation. John Wiley \& Sons, 2019. Disponível em: \url{https://www.strategyzer.com/books/testing-business-ideas-david-j-bland}. Acesso em: 31 mar. 2020.
@@ -1171,7 +1184,7 @@ navegação na Web, layout e composição, avaliação de usabilidade.
 	\ementa
 	Tipos abstratos de dados. Listas lineares e suas generalizações: listas ordenadas, listas encadeadas, pilhas e filas. Variáveis dinâmicas. Ordenação e Busca. Árvores.
 	
-	\objetivo
+	\objetivos
 	Empregar estruturas de dados adequadas para o desenvolvimento de sistemas de software.
 	\begin{itemize}
 	  \item Definir e diferenciar as estruturas de dados genéricas fundamentais, tais como filas, pilhas, listas encadeadas e grafos;
@@ -1344,11 +1357,12 @@ dados, com aplicações em Java}. 2. ed. São Paulo: Pearson Prentice Hall,
 	
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 	
 	\begin{bibbasica}
 			
         \item DALL'OGLIO, Pablo. \textbf{PHP}: programando com orientação a objetos. 2. ed. São Paulo: Novatec Editora, 2009.  ISBN 9788575222003.
-		\item DEITEL, Paul J.; DEITEL, Harvey M.  \textbf{Ajax, Rich Internet Applications e Desenvolvimento Web para Programadores}. Editora Pearson. 776 p. ISBN 9788576051619. (BVU)
+		\item DEITEL, Paul J.; DEITEL, Harvey M.  \textbf{Ajax, Rich Internet Applications e Desenvolvimento Web para Programadores}. Editora Pearson. 776 p. ISBN 9788576051619. 
 		%\item OLIVIERO, Carlos A. J. \textbf{Faça um site PHP 5.2 com MySQL 5.0}: comércio eletrônico orientado por projeto. São Paulo: Érica, 2010.
 		\item SOARES, Walace. \textbf{Crie um framework para sistemas web e com PHP 5 e Ajax}. São Paulo: Érica, 2009.  ISBN 9788536502373.
 		
@@ -1358,10 +1372,10 @@ dados, com aplicações em Java}. 2. ed. São Paulo: Pearson Prentice Hall,
     
 	    
 		\item FLATSCHART, F\'abio. \textbf{HTML 5}: embarque Imediato. Editora Brasport. 256 p. ISBN 9788574525778. (BVU)
-		\item LEMAY, Laura; COLBURN, Rafe; TYLER, Denise. \textbf{Aprenda a Criar P\'aginas Web com HTML e XHTML em 21 Dias}. São Paulo: Pearson Education do Brasil, 2002.  1158 p. ISBN 9788534614283. (BVU)
+		\item LEMAY, Laura; COLBURN, Rafe; TYLER, Denise. \textbf{Aprenda a Criar P\'aginas Web com HTML e XHTML em 21 Dias}. São Paulo: Pearson Education do Brasil, 2002.  1158 p. ISBN 9788534614283.  
  		\item MARINHO, Antônio Lopes (Org.). \textbf{Desenvolvimento de aplicações para Internet}. São Paulo: Pearson Education do Brasil, 2016. Livro. 139 p. ISBN 9788543020112. (BVU)
  		
- 		\item PUGA, Sandra; FRANCA, Edson; GOYA, Milton. \textbf{Banco de dados}: Implementa\c{c}\~ao em SQL, PL/SQL e Oracle 11g.  São Paulo: Pearson Education do Brasil, 2013. 356 p.  ISBN 9788581435329. (BVU)
+ 		\item PUGA, Sandra; FRANCA, Edson; GOYA, Milton. \textbf{Banco de dados}: Implementa\c{c}\~ao em SQL, PL/SQL e Oracle 11g.  São Paulo: Pearson Education do Brasil, 2013. 356 p.  ISBN 9788581435329.  
  		\item SEGURADO, Valquiria Santos (Org.). \textbf{Projeto de interface com o usuário}. São Paulo: Pearson Education do Brasil, 2015. Livro. 195 p. ISBN 9788543017303. (BVU) 
  		%\item SILVA, Maur\'icio Samy. \textbf{JavaScript}: guia do programador. S\~ao Paulo: Novatec, 2010. 604 p. Inclui bibliografia e \'indice. ISBN 9788575222485.  
 		 
@@ -1468,9 +1482,8 @@ dados, com aplicações em Java}. 2. ed. São Paulo: Pearson Prentice Hall,
 	
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 	
-    
-	\clearpage
 	\begin{bibbasica}
 			
         \item LECHETA, R. R. \textbf{Google Android}: aprenda a criar aplicações para dispositivos móveis com o Android SDK.  ed. rev. e ampl. São Paulo: Novatec, 2013. 824 p. ISBN 9788575223444. 
@@ -1558,7 +1571,7 @@ dados, com aplicações em Java}. 2. ed. São Paulo: Pearson Prentice Hall,
 	
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-	
+	\naopresencial
 	
 	
 	\begin{bibbasica}
@@ -1850,9 +1863,8 @@ Paulo: Cengage Learning, 2016. 511 p. ISBN: 9788522112760.
 	
 	\avaliacao
 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
+	\naopresencial
 	
-	
-	\clearpage
 	
 	\begin{bibbasica}
 			
@@ -1879,95 +1891,6 @@ Paulo: Cengage Learning, 2016. 511 p. ISBN: 9788522112760.
 	
 	
 \end{pud}
-% 
-% %%%%% SEGURANCA DE REDES
-% \begin{pud}
-% 	
-% 	\pudinfo{TSII.317}{Segurança de Redes}{TSII.212}{20}{20}{2}{3$^\circ$ Semestre}
-% 	
-% 	\ementa
-% 	Fundamentos de gerenciamento em redes de computadores. Protocolos de gerenciamento de redes, Metodologias para resolução de problemas em redes. Ferramentas para gerenciamento. Fundamentos de segurança da informação, Introdução à criptografia. \textit{Firewalls}. Detecção e prevenção de invasões. Segurança em redes sem fio. 
-% 	
-% 	
-% 	\objetivos
-% 	Fornecer ao aluno conhecimento para garantir funcionamento, manutenção e reparos em redes de computadores. Abordar aspectos de gerenciamento e políticas de segurança da informação.
-% 	
-% 	\programa
-% 	\begin{description}[itemsep=0em]
-% 		\item[UNIDADE I:]Fundamentos de Segurança da Informação; 
-% 	         \begin{enumerate}[itemsep=0em, topsep=0em]
-% 				\item Definições de segurança;
-% 				\item A segurança da informação;
-% 				\item Modelos de referência da segurança;
-% 				\item Plano de segurança;
-% 				\item Análise e gerenciamento de riscos;
-% 				\item Política de segurança.
-% 	        \end{enumerate}
-% 	        
-% 	    \item[UNIDADE II:] Criptografia;
-% 	         \begin{enumerate}[itemsep=0em, topsep=0em]
-% 				\item Histórico;
-% 				\item Terminologia;
-% 				\item Usos da criptografia;
-% 				\item Chaves criptográficas;
-% 				\item Algoritmos de criptografia;
-% 				\item Tipos de criptografia;
-% 				\item Funções \textit{hash};
-% 				\item Certificação digital.
-% 	        \end{enumerate}
-% 	
-% 		\item[UNIDADE III:] \textit{Firewalls};
-% 	        
-% 	    \item[UNIDADE IV:] Detecção e Prevenção de Invasões;
-% 	
-% 	        
-% 	    \item[UNIDADE II:] Tipos de Ataques e Contramedidas.
-% 	         \begin{enumerate}[itemsep=0em, topsep=0em]
-% 				\item Vírus;
-% 				\item \textit{Phishing};
-% 				\item Negação de serviço (DoS e DDoS);
-% 				\item \textit{Spoofing};
-% 				\item \textit{Aircrack}.
-% 	        \end{enumerate}
-% 	                                
-% 	
-% 	\end{description}
-% 	
-% 	\metodologia
-% 	Aulas teóricas sobre gerência e segurança de redes e aulas práticas utilizando ferramentas de gerenciamento de rede. Além disso, ocorrerão aulas práticas para execução de um projeto de segurança em redes de computadores.
-% 
-% 
-% 	\avaliacao
-% 	A avaliação é realizada de forma processual e cumulativa utilizando os instrumentos de avaliação especificados pelo Regulamento de Organização Didática em seu art. 94 \S~1$^\circ$, conforme for mais adequado. A frequência é obrigatória, respeitando os limites de ausência previstos em lei.
-% 	
-% 		
-% 	
-% 	\begin{bibbasica}
-% 	
-% 		\item BOMFATI, Cláudio Adriano; KOLBE JUNIOR, Armando. \textbf{Crimes cibernéticos}. Editora Intersaberes. Livro. 198 p. ISBN 9788522702916. (BVU)
-% 		\item KUROSE, James F. \textit{et al}. \textbf{Redes de computadores e a internet}: uma abordagem top-down. 6. ed. São Paulo, SP: Pearson Education do Brasil, 2013. 634 p. Bibliografia. ISBN 9788581436777. (BVU)
-% 		\item STALLINGS, William. \textbf{Criptografia e segurança de redes}: princípios e práticas. 4. ed.  Editora Pearson. Livro. 580 p. ISBN 9788543005898. (BVU)
-% 		
-% 		
-% 		
-% 	\end{bibbasica}
-% 	
-% 	\begin{bibcomplementar}
-% 	
-% 		\item ALENCAR, Marcelo Sampaio de. \textbf{Engenharia de redes de computadores}. São Paulo: Érica, 2012. 286 p. Bibliografia. ISBN 9788536504117.
-% 		\item COULOURIS, George; DOLLIMORE, Jean; KINDBERG, Tim. \textbf{Sistemas distribuídos}: conceitos e projeto. Tradução de João Eduardo Nóbrega Tortello. Revisão técnica de Alexandre da Silva Carissimi. 4. ed. Porto Alegre: Bookman, 2007. 784 p. Inclui bibliografia. ISBN 9788560031498.
-% 		\item SOARES, Walace; FERNANDES, Gabriel. \textbf{Linux}: fundamentos. São Paulo: Érica, 2010. 206 p. Inclui referência e índice. ISBN 9788536503219.
-% 		%\item SOUSA, Lindeberg Barros de. \textbf{Projetos e implementação de redes}: fundamentos, soluções, arquiteturas e planejamento. 3. ed. , rev. São Paulo: Érica, 2013. 318 p. ISBN 9788536501666.		
-% 		\item TANENBAUM, Andrew S. ; WETHERALL, David J. \textbf{Redes de computadores}. Tradução de Daniel Vieira. Revisão técnica de Benedito Isaías Lima Lopes. 5. ed. São Paulo: Pearson Prentice Hall, 2011. 582 p. Inclui bibliografia 9788576059240. (BVU)
-% 		\item TANENBAUM, Andrew S.; STEEN, Maarten Van. \textbf{Sistemas distribuídos}: princípios e paradigmas. Tradução de Arlete Simille Marques. Revisão técnica de Wagner Luiz Zucchi. 2. ed. São Paulo: Pearson Prentice Hall, 2007. 402 p. Inclui bibliografia. ISBN 9788576051428. (BVU)
-% 		
-% 	\end{bibcomplementar}
-% 	
-% 	
-% 	
-% \end{pud}
-
-
 
 %%%% GESTAO DE PROJETOS
 
@@ -2051,9 +1974,10 @@ Paulo: Cengage Learning, 2016. 511 p. ISBN: 9788522112760.
         \item[$\bullet$ Oral,] através de apresentação individual e/ou equipe;
 	\end{description}
 	Os recursos avaliativos serão utilizados com base  no art. 94 \S~1$^\circ$ alínea de I a XV do Regulamento de Organização Didática.
+	
+	\naopresencial
 
 
-	\clearpage
 	\begin{bibbasica}
 		
 		\item CLEMENTS, James P.; GIDO, Jack. \textbf{Gestão de projetos}. 3\textordfeminine\ reimpr. da 2. ed. São Paulo: Cengage Learning, 2016. 511 p. ISBN 978-85-221-1276-0.	
